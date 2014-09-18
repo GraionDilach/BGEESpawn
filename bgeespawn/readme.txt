@@ -45,28 +45,17 @@ Note that the combination of 1000 days between spawns and 100% spawning probabil
 
 INSTALLATION
 
-General (Windows, Mac OS X, and Linux)
-Make sure you back up your game acordingly, just to be sure. 
-
-Extract the contents of the mod archive to your game's main directory. 
-NOTE: For BG:EE it is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
-
-
 Windows
 On successful extraction, there should be an bgeespawn folder and a setup-bgeespawn.exe file in your game folder. To install, simply double-click setup-bgeespawn.exe and follow the instructions on screen.
 Run setup-bgeespawn.exe in your game folder to reinstall, uninstall or otherwise change components.
 
 Mac OS X
-Make sure you have the Mac OS X version of the mod (named "OSX-BGQE-vx.zip"). If properly extracted, you should have a bgeespawn folder and setup-bgeespawn in your game's main directory folder. To install, simply double-click setup-bgqe.command and follow the instructions on screen.
+If properly extracted, you should have a bgeespawn folder, setup-bgeespawn, and setup-bgeespawn.command in your game's main directory folder. To install, simply double-click setup-bgeespawn.command and follow the instructions on screen.
 
 Linux
 Make sure you have the Linux version of the mod (named "lin-bgqe-vx.zip").
 Download the latest version of WeiDU for Linux from WeiDU.org and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal, cd to your BG installation directory, run 'tolower' and answer Y to both queries. You can avoid running the second option (linux.ini) if you have already ran it once in the same directory. To save time, the archive is already tolowered, so there is no need to run the first option (lowercasing file names) either if you have extracted only this mod since the last time you lower cased file name. If you are unsure, running tolower and choosing both options is the safe bet.
 Run WeInstall setup-bgeespawn in your game folder to install the mod.
-
-
-NOTE: BG(II):EE are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update as even after reinstalling the mods, you might not be able to continue with your old savegames. 
-
 
 If you have installation problems or encounter any bugs, please contact me at the BGEE Forums (http://forum.baldursgate.com/).
 
@@ -110,10 +99,7 @@ sed, awk, bash			https://www.gnu.org/software/
 LEGAL INFORMATION
 
 =============================================================================
-BGEE Leveled Spawns Mod for Baldur's Gate Enhanced Edition. This mod is not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., the Wizards of the Coast, Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
-=============================================================================
-=============================================================================
-REDISTRIBUTION NOTE: The BGEE Leveled Spawns Mod was created to be freely enjoyed and may not be sold.
+This mod is not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., the Wizards of the Coast, Overhaul Games or Beamdog. All other trademarks and copyrights are property of their respective owners.
 =============================================================================
 
 
