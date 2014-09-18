@@ -1,10 +1,10 @@
-BGEE Leveled Spawns	Mod
+BGEE Leveled Spawns Mod
 by AstroBryGuy (http://forum.baldursgate.com/profile/14405/AstroBryGuy)
 Version 0.1
 
-BGEE Leveled Spawns replaces the default spawns with spawns that scale in difficulty with the average level of the party.  
+BGEE Leveled Spawns replaces the default spawns with spawns that scale in difficulty with the average level of the party.  Each spawn point will spawn groups of 1-6 creatures, depending on party level and creature strength.
 
-The user can select the minimum time between spawnings as well as the probability that a triggering of a spawn point will result in a spawn being created.  
+The user can select the time interval between spawnings as well as the probability that a triggering of a spawn point will result in that point being populated.  
 
 This mod is based on the "Tutu-style leveled spawns" component of the BGT Tweaks mod (http://readme.spellholdstudios.net/BGTTweakReadme.htm).  However, the spawn point scripts have been greatly simplified.  First, party-size checks have been removed.  Level checks above 12th level have also been removed.
 
