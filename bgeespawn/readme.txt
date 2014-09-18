@@ -53,9 +53,7 @@ Mac OS X
 If properly extracted, you should have a bgeespawn folder, setup-bgeespawn, and setup-bgeespawn.command in your game's main directory folder. To install, simply double-click setup-bgeespawn.command and follow the instructions on screen.
 
 Linux
-Make sure you have the Linux version of the mod (named "lin-bgqe-vx.zip").
-Download the latest version of WeiDU for Linux from WeiDU.org and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal, cd to your BG installation directory, run 'tolower' and answer Y to both queries. You can avoid running the second option (linux.ini) if you have already ran it once in the same directory. To save time, the archive is already tolowered, so there is no need to run the first option (lowercasing file names) either if you have extracted only this mod since the last time you lower cased file name. If you are unsure, running tolower and choosing both options is the safe bet.
-Run WeInstall setup-bgeespawn in your game folder to install the mod.
+Download the latest version of WeiDU for Linux from WeiDU.org and copy weidu, weinstall, and tolower to /usr/bin. Then, open a terminal, cd to your BGEE installation directory, run 'tolower' and answer Y to both queries. Run 'weinstall setup-bgeespawn' in your game folder to install the mod.
 
 If you have installation problems or encounter any bugs, please contact me at the BGEE Forums (http://forum.baldursgate.com/).
 
