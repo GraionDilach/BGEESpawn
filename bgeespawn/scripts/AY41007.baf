@@ -1,0 +1,74 @@
+IF
+  Global("AYSpawnRandomBeenSetAR41007","AR4100",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR41007","AR4100",1)
+    SetGlobal("AYSpawnResetAR41007","AR4100",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR41007_0","AR4100",0)
+  Global("AYSpawnRandomBeenSetAR41007","AR4100",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR41007_0","AR4100",1)
+    SetGlobal("AYSpawnRandomBeenSetAR41007","AR4100",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR41007","AR4100",0)
+  Global("AYSpawnRandomSetAR41007_0","AR4100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41007","AR4100",1)
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR41007","AR4100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR41007","AR4100",0)
+  Global("AYSpawnRandomSetAR41007_0","AR4100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41007","AR4100",1)
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR41007","AR4100",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("TASLOI",60)
+  Global("AYSpawnResetAR41007","AR4100",1)
+  GlobalTimerExpired("AYSpawnTimerAR41007","AR4100")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41007","AR4100",0)
+    SetGlobal("AYSpawnRandomBeenSetAR41007","AR4100",0)
+    SetGlobal("AYSpawnRandomSetAR41007_0","AR4100",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR41007","AR4100",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41007","AR4100",1)
+    CreateCreature("TASLOI",[2668.2165],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR41007","AR4100",AY_SPAWN_TIMER)
+END
+

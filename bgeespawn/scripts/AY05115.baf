@@ -1,0 +1,224 @@
+IF
+  Global("AYSpawnRandomBeenSetAR05115","AR0511",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR05115","AR0511",1)
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR05115_1","AR0511",0)
+  Global("AYSpawnRandomBeenSetAR05115","AR0511",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05115_1","AR0511",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05115","AR0511",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",0)
+  Global("AYSpawnRandomBeenSetAR05115","AR0511",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05115_0","AR0511",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05115","AR0511",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_1","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_1","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_1","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  LevelPartyLT(11)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(10)
+  LevelPartyLT(12)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(11)
+  LevelPartyLT(13)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(12)
+  Global("AYSpawnResetAR05115","AR0511",0)
+  Global("AYSpawnRandomSetAR05115_0","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("SPIDPH",60)
+
+  !Range("ZOMBIE",60)
+  Global("AYSpawnResetAR05115","AR0511",1)
+  GlobalTimerExpired("AYSpawnTimerAR05115","AR0511")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05115","AR0511",0)
+    SetGlobal("AYSpawnRandomSetAR05115_1","AR0511",0)
+    SetGlobal("AYSpawnRandomSetAR05115_0","AR0511",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR05115","AR0511",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","AR0511",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","AR0511",AY_SPAWN_TIMER)
+END
+

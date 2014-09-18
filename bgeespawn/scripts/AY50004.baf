@@ -1,0 +1,299 @@
+IF
+  Global("AYSpawnRandomBeenSetAR50004","AR5000",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR50004","AR5000",1)
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",0)
+  Global("AYSpawnRandomBeenSetAR50004","AR5000",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR50004_2","AR5000",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50004","AR5000",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR50004_1","AR5000",0)
+  Global("AYSpawnRandomBeenSetAR50004","AR5000",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR50004_1","AR5000",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50004","AR5000",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR50004_0","AR5000",0)
+  Global("AYSpawnRandomBeenSetAR50004","AR5000",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR50004_0","AR5000",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50004","AR5000",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  LevelPartyLT(11)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(10)
+  LevelPartyLT(12)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(11)
+  LevelPartyLT(13)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(12)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_2","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[1163.2906],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_1","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_1","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_0","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("DOGWI",[1163.2906],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1163.2906],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1163.2906],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR50004","AR5000",0)
+  Global("AYSpawnRandomSetAR50004_0","AR5000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("DOGWI",[1163.2906],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1163.2906],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1163.2906],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1163.2906],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1163.2906],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1163.2906],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("DOGWI",60)
+
+  !Range("KOBOLD",60)
+
+  !Range("ANKHEG",60)
+  Global("AYSpawnResetAR50004","AR5000",1)
+  GlobalTimerExpired("AYSpawnTimerAR50004","AR5000")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",0)
+    SetGlobal("AYSpawnRandomBeenSetAR50004","AR5000",0)
+    SetGlobal("AYSpawnRandomSetAR50004_2","AR5000",0)
+    SetGlobal("AYSpawnRandomSetAR50004_1","AR5000",0)
+    SetGlobal("AYSpawnRandomSetAR50004_0","AR5000",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR50004","AR5000",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50004","AR5000",1)
+    CreateCreature("KOBOLD",[1163.2906],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR50004","AR5000",AY_SPAWN_TIMER)
+END
+

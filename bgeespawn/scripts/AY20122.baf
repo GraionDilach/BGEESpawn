@@ -1,0 +1,42 @@
+IF
+  Global("AYSpawnRandomBeenSetAR20122","AR2012",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR20122","AR2012",1)
+    SetGlobal("AYSpawnResetAR20122","AR2012",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR20122_0","AR2012",0)
+  Global("AYSpawnRandomBeenSetAR20122","AR2012",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR20122_0","AR2012",1)
+    SetGlobal("AYSpawnRandomBeenSetAR20122","AR2012",1)
+END
+
+IF
+  !Range([PC],60)
+  !Range("WEREWO",60)
+  Global("AYSpawnResetAR20122","AR2012",1)
+  GlobalTimerExpired("AYSpawnTimerAR20122","AR2012")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20122","AR2012",0)
+    SetGlobal("AYSpawnRandomBeenSetAR20122","AR2012",0)
+    SetGlobal("AYSpawnRandomSetAR20122_0","AR2012",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR20122","AR2012",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20122","AR2012",1)
+    CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+    SetGlobalTimer("AYSpawnTimerAR20122","AR2012",AY_SPAWN_TIMER)
+END
+

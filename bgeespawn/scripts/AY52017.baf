@@ -1,0 +1,134 @@
+IF
+  Global("AYSpawnRandomBeenSetAR52017","AR5201",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR52017","AR5201",1)
+    SetGlobal("AYSpawnResetAR52017","AR5201",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR52017_0","AR5201",0)
+  Global("AYSpawnRandomBeenSetAR52017","AR5201",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR52017_0","AR5201",1)
+    SetGlobal("AYSpawnRandomBeenSetAR52017","AR5201",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR52017","AR5201",0)
+  Global("AYSpawnRandomSetAR52017_0","AR5201",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52017","AR5201",1)
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR52017","AR5201",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR52017","AR5201",0)
+  Global("AYSpawnRandomSetAR52017_0","AR5201",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52017","AR5201",1)
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR52017","AR5201",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR52017","AR5201",0)
+  Global("AYSpawnRandomSetAR52017_0","AR5201",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52017","AR5201",1)
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR52017","AR5201",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR52017","AR5201",0)
+  Global("AYSpawnRandomSetAR52017_0","AR5201",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52017","AR5201",1)
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR52017","AR5201",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR52017","AR5201",0)
+  Global("AYSpawnRandomSetAR52017_0","AR5201",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52017","AR5201",1)
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR52017","AR5201",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  Global("AYSpawnResetAR52017","AR5201",0)
+  Global("AYSpawnRandomSetAR52017_0","AR5201",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52017","AR5201",1)
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR52017","AR5201",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("KOBCOMM",60)
+  Global("AYSpawnResetAR52017","AR5201",1)
+  GlobalTimerExpired("AYSpawnTimerAR52017","AR5201")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52017","AR5201",0)
+    SetGlobal("AYSpawnRandomBeenSetAR52017","AR5201",0)
+    SetGlobal("AYSpawnRandomSetAR52017_0","AR5201",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR52017","AR5201",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52017","AR5201",1)
+    CreateCreature("KOBCOMM",[1130.515],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR52017","AR5201",AY_SPAWN_TIMER)
+END
+

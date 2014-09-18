@@ -1,0 +1,74 @@
+IF
+  Global("AYSpawnRandomBeenSetAR47002","AR4700",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR47002","AR4700",1)
+    SetGlobal("AYSpawnResetAR47002","AR4700",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR47002_0","AR4700",0)
+  Global("AYSpawnRandomBeenSetAR47002","AR4700",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR47002_0","AR4700",1)
+    SetGlobal("AYSpawnRandomBeenSetAR47002","AR4700",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR47002","AR4700",0)
+  Global("AYSpawnRandomSetAR47002_0","AR4700",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47002","AR4700",1)
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47002","AR4700",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR47002","AR4700",0)
+  Global("AYSpawnRandomSetAR47002_0","AR4700",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47002","AR4700",1)
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47002","AR4700",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("XVART_C",60)
+  Global("AYSpawnResetAR47002","AR4700",1)
+  GlobalTimerExpired("AYSpawnTimerAR47002","AR4700")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47002","AR4700",0)
+    SetGlobal("AYSpawnRandomBeenSetAR47002","AR4700",0)
+    SetGlobal("AYSpawnRandomSetAR47002_0","AR4700",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR47002","AR4700",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47002","AR4700",1)
+    CreateCreature("XVART_C",[3541.1414],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47002","AR4700",AY_SPAWN_TIMER)
+END
+

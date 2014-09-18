@@ -1,0 +1,74 @@
+IF
+  Global("AYSpawnRandomBeenSetAR29005","AR2900",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR29005","AR2900",1)
+    SetGlobal("AYSpawnResetAR29005","AR2900",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR29005_0","AR2900",0)
+  Global("AYSpawnRandomBeenSetAR29005","AR2900",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR29005_0","AR2900",1)
+    SetGlobal("AYSpawnRandomBeenSetAR29005","AR2900",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR29005","AR2900",0)
+  Global("AYSpawnRandomSetAR29005_0","AR2900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29005","AR2900",1)
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR29005","AR2900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR29005","AR2900",0)
+  Global("AYSpawnRandomSetAR29005_0","AR2900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29005","AR2900",1)
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR29005","AR2900",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("GIBBER",60)
+  Global("AYSpawnResetAR29005","AR2900",1)
+  GlobalTimerExpired("AYSpawnTimerAR29005","AR2900")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29005","AR2900",0)
+    SetGlobal("AYSpawnRandomBeenSetAR29005","AR2900",0)
+    SetGlobal("AYSpawnRandomSetAR29005_0","AR2900",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR29005","AR2900",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29005","AR2900",1)
+    CreateCreature("GIBBER",[2166.2871],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR29005","AR2900",AY_SPAWN_TIMER)
+END
+

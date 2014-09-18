@@ -1,0 +1,463 @@
+IF
+  Global("AYSpawnRandomBeenSetAR44006","AR4400",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR44006","AR4400",1)
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(4,1)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",0)
+  Global("AYSpawnRandomBeenSetAR44006","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44006_3","AR4400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44006","AR4400",1)
+END
+
+IF
+  RandomNum(4,2)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",0)
+  Global("AYSpawnRandomBeenSetAR44006","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44006_2","AR4400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44006","AR4400",1)
+END
+
+IF
+  RandomNum(4,3)
+  Global("AYSpawnRandomSetAR44006_1","AR4400",0)
+  Global("AYSpawnRandomBeenSetAR44006","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44006_1","AR4400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44006","AR4400",1)
+END
+
+IF
+  RandomNum(4,4)
+  Global("AYSpawnRandomSetAR44006_0","AR4400",0)
+  Global("AYSpawnRandomBeenSetAR44006","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44006_0","AR4400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44006","AR4400",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  LevelPartyLT(11)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(10)
+  LevelPartyLT(12)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(11)
+  LevelPartyLT(13)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(12)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_3","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    CreateCreature("OGREMA",[1074.3452],0)  // ~Ogre Mage~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    CreateCreature("OGRE",[1074.3452],0)  // ~Ogre~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[1074.3452],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_0","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR44006","AR4400",0)
+  Global("AYSpawnRandomSetAR44006_0","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("KOBOLA_D",60)
+
+  !Range("OGREGR",60)
+
+  !Range("OGRE",60)
+
+  !Range("OGREMA",60)
+  Global("AYSpawnResetAR44006","AR4400",1)
+  GlobalTimerExpired("AYSpawnTimerAR44006","AR4400")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",0)
+    SetGlobal("AYSpawnRandomBeenSetAR44006","AR4400",0)
+    SetGlobal("AYSpawnRandomSetAR44006_3","AR4400",0)
+    SetGlobal("AYSpawnRandomSetAR44006_2","AR4400",0)
+    SetGlobal("AYSpawnRandomSetAR44006_1","AR4400",0)
+    SetGlobal("AYSpawnRandomSetAR44006_0","AR4400",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR44006","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44006","AR4400",1)
+    CreateCreature("KOBOLA_D",[1074.3452],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44006","AR4400",AY_SPAWN_TIMER)
+END
+

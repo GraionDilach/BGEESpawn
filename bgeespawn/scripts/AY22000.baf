@@ -1,0 +1,253 @@
+IF
+  Global("AYSpawnRandomBeenSetAR22000","AR2200",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR22000","AR2200",1)
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR22000_2","AR2200",0)
+  Global("AYSpawnRandomBeenSetAR22000","AR2200",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR22000_2","AR2200",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22000","AR2200",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR22000_1","AR2200",0)
+  Global("AYSpawnRandomBeenSetAR22000","AR2200",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR22000_1","AR2200",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22000","AR2200",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR22000_0","AR2200",0)
+  Global("AYSpawnRandomBeenSetAR22000","AR2200",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR22000_0","AR2200",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22000","AR2200",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_2","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_2","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_2","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_2","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_2","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_2","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[599.708],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_1","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_1","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_1","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_1","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    CreateCreature("WOLF",[599.708],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_0","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR22000","AR2200",0)
+  Global("AYSpawnRandomSetAR22000_0","AR2200",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("TASLOI",60)
+
+  !Range("WOLF",60)
+
+  !Range("SPIDHU",60)
+  Global("AYSpawnResetAR22000","AR2200",1)
+  GlobalTimerExpired("AYSpawnTimerAR22000","AR2200")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",0)
+    SetGlobal("AYSpawnRandomBeenSetAR22000","AR2200",0)
+    SetGlobal("AYSpawnRandomSetAR22000_2","AR2200",0)
+    SetGlobal("AYSpawnRandomSetAR22000_1","AR2200",0)
+    SetGlobal("AYSpawnRandomSetAR22000_0","AR2200",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR22000","AR2200",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22000","AR2200",1)
+    CreateCreature("TASLOI",[599.708],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR22000","AR2200",AY_SPAWN_TIMER)
+END
+

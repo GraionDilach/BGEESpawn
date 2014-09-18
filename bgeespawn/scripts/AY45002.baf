@@ -1,0 +1,266 @@
+IF
+  Global("AYSpawnRandomBeenSetAR45002","AR4500",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR45002","AR4500",1)
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(4,1)
+  Global("AYSpawnRandomSetAR45002_3","AR4500",0)
+  Global("AYSpawnRandomBeenSetAR45002","AR4500",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR45002_3","AR4500",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45002","AR4500",1)
+END
+
+IF
+  RandomNum(4,2)
+  Global("AYSpawnRandomSetAR45002_2","AR4500",0)
+  Global("AYSpawnRandomBeenSetAR45002","AR4500",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR45002_2","AR4500",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45002","AR4500",1)
+END
+
+IF
+  RandomNum(4,3)
+  Global("AYSpawnRandomSetAR45002_1","AR4500",0)
+  Global("AYSpawnRandomBeenSetAR45002","AR4500",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR45002_1","AR4500",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45002","AR4500",1)
+END
+
+IF
+  RandomNum(4,4)
+  Global("AYSpawnRandomSetAR45002_0","AR4500",0)
+  Global("AYSpawnRandomBeenSetAR45002","AR4500",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR45002_0","AR4500",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45002","AR4500",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_3","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_3","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_3","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4082.230],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_2","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_2","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_2","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_1","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_1","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_1","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_A",[4082.230],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_0","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_0","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  Global("AYSpawnResetAR45002","AR4500",0)
+  Global("AYSpawnRandomSetAR45002_0","AR4500",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_B",[4082.230],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("ZOMBIE_B",60)
+
+  !Range("ZOMBIE_A",60)
+
+  !Range("SKELET_B",60)
+
+  !Range("SKELET_C",60)
+  Global("AYSpawnResetAR45002","AR4500",1)
+  GlobalTimerExpired("AYSpawnTimerAR45002","AR4500")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",0)
+    SetGlobal("AYSpawnRandomBeenSetAR45002","AR4500",0)
+    SetGlobal("AYSpawnRandomSetAR45002_3","AR4500",0)
+    SetGlobal("AYSpawnRandomSetAR45002_2","AR4500",0)
+    SetGlobal("AYSpawnRandomSetAR45002_1","AR4500",0)
+    SetGlobal("AYSpawnRandomSetAR45002_0","AR4500",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR45002","AR4500",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45002","AR4500",1)
+    CreateCreature("SKELET_B",[4082.230],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR45002","AR4500",AY_SPAWN_TIMER)
+END
+

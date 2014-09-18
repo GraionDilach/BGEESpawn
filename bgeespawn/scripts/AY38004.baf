@@ -1,0 +1,133 @@
+IF
+  Global("AYSpawnRandomBeenSetAR38004","AR3800",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR38004","AR3800",1)
+    SetGlobal("AYSpawnResetAR38004","AR3800",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR38004_1","AR3800",0)
+  Global("AYSpawnRandomBeenSetAR38004","AR3800",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR38004_1","AR3800",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38004","AR3800",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR38004_0","AR3800",0)
+  Global("AYSpawnRandomBeenSetAR38004","AR3800",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR38004_0","AR3800",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38004","AR3800",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR38004","AR3800",0)
+  Global("AYSpawnRandomSetAR38004_1","AR3800",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38004","AR3800",1)
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38004","AR3800",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR38004","AR3800",0)
+  Global("AYSpawnRandomSetAR38004_1","AR3800",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38004","AR3800",1)
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38004","AR3800",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  Global("AYSpawnResetAR38004","AR3800",0)
+  Global("AYSpawnRandomSetAR38004_1","AR3800",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38004","AR3800",1)
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[316.1846],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38004","AR3800",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR38004","AR3800",0)
+  Global("AYSpawnRandomSetAR38004_0","AR3800",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38004","AR3800",1)
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR38004","AR3800",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR38004","AR3800",0)
+  Global("AYSpawnRandomSetAR38004_0","AR3800",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38004","AR3800",1)
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR38004","AR3800",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("GIBBER",60)
+
+  !Range("HOBGOB_C",60)
+  Global("AYSpawnResetAR38004","AR3800",1)
+  GlobalTimerExpired("AYSpawnTimerAR38004","AR3800")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38004","AR3800",0)
+    SetGlobal("AYSpawnRandomBeenSetAR38004","AR3800",0)
+    SetGlobal("AYSpawnRandomSetAR38004_1","AR3800",0)
+    SetGlobal("AYSpawnRandomSetAR38004_0","AR3800",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR38004","AR3800",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38004","AR3800",1)
+    CreateCreature("GIBBER",[316.1846],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR38004","AR3800",AY_SPAWN_TIMER)
+END
+

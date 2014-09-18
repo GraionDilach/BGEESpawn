@@ -1,0 +1,134 @@
+IF
+  Global("AYSpawnRandomBeenSetAR21002","AR2100",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR21002","AR2100",1)
+    SetGlobal("AYSpawnResetAR21002","AR2100",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR21002_0","AR2100",0)
+  Global("AYSpawnRandomBeenSetAR21002","AR2100",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR21002_0","AR2100",1)
+    SetGlobal("AYSpawnRandomBeenSetAR21002","AR2100",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR21002","AR2100",0)
+  Global("AYSpawnRandomSetAR21002_0","AR2100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21002","AR2100",1)
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21002","AR2100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR21002","AR2100",0)
+  Global("AYSpawnRandomSetAR21002_0","AR2100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21002","AR2100",1)
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21002","AR2100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR21002","AR2100",0)
+  Global("AYSpawnRandomSetAR21002_0","AR2100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21002","AR2100",1)
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21002","AR2100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR21002","AR2100",0)
+  Global("AYSpawnRandomSetAR21002_0","AR2100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21002","AR2100",1)
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21002","AR2100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR21002","AR2100",0)
+  Global("AYSpawnRandomSetAR21002_0","AR2100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21002","AR2100",1)
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21002","AR2100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  Global("AYSpawnResetAR21002","AR2100",0)
+  Global("AYSpawnRandomSetAR21002_0","AR2100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21002","AR2100",1)
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21002","AR2100",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+  !Range("SPIDHU",60)
+  Global("AYSpawnResetAR21002","AR2100",1)
+  GlobalTimerExpired("AYSpawnTimerAR21002","AR2100")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21002","AR2100",0)
+    SetGlobal("AYSpawnRandomBeenSetAR21002","AR2100",0)
+    SetGlobal("AYSpawnRandomSetAR21002_0","AR2100",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR21002","AR2100",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21002","AR2100",1)
+    CreateCreature("SPIDHU",[4024.1441],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21002","AR2100",AY_SPAWN_TIMER)
+END
+

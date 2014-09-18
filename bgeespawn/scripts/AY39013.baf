@@ -1,0 +1,134 @@
+IF
+  Global("AYSpawnRandomBeenSetAR39013","AR3901",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR39013","AR3901",1)
+    SetGlobal("AYSpawnResetAR39013","AR3901",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR39013_0","AR3901",0)
+  Global("AYSpawnRandomBeenSetAR39013","AR3901",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR39013_0","AR3901",1)
+    SetGlobal("AYSpawnRandomBeenSetAR39013","AR3901",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR39013","AR3901",0)
+  Global("AYSpawnRandomSetAR39013_0","AR3901",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39013","AR3901",1)
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39013","AR3901",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR39013","AR3901",0)
+  Global("AYSpawnRandomSetAR39013_0","AR3901",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39013","AR3901",1)
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39013","AR3901",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR39013","AR3901",0)
+  Global("AYSpawnRandomSetAR39013_0","AR3901",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39013","AR3901",1)
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39013","AR3901",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR39013","AR3901",0)
+  Global("AYSpawnRandomSetAR39013_0","AR3901",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39013","AR3901",1)
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39013","AR3901",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR39013","AR3901",0)
+  Global("AYSpawnRandomSetAR39013_0","AR3901",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39013","AR3901",1)
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39013","AR3901",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  Global("AYSpawnResetAR39013","AR3901",0)
+  Global("AYSpawnRandomSetAR39013_0","AR3901",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39013","AR3901",1)
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39013","AR3901",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+  !Range("WOLFDI",60)
+  Global("AYSpawnResetAR39013","AR3901",1)
+  GlobalTimerExpired("AYSpawnTimerAR39013","AR3901")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39013","AR3901",0)
+    SetGlobal("AYSpawnRandomBeenSetAR39013","AR3901",0)
+    SetGlobal("AYSpawnRandomSetAR39013_0","AR3901",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR39013","AR3901",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39013","AR3901",1)
+    CreateCreature("WOLFDI",[295.464],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39013","AR3901",AY_SPAWN_TIMER)
+END
+

@@ -1,0 +1,209 @@
+IF
+  Global("AYSpawnRandomBeenSetAR36007","AR3600",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR36007","AR3600",1)
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",0)
+  Global("AYSpawnRandomBeenSetAR36007","AR3600",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR36007_0","AR3600",1)
+    SetGlobal("AYSpawnRandomBeenSetAR36007","AR3600",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  LevelPartyLT(11)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(10)
+  LevelPartyLT(12)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(11)
+  LevelPartyLT(13)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(12)
+  Global("AYSpawnResetAR36007","AR3600",0)
+  Global("AYSpawnRandomSetAR36007_0","AR3600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+  !Range("CARRIO",60)
+  Global("AYSpawnResetAR36007","AR3600",1)
+  GlobalTimerExpired("AYSpawnTimerAR36007","AR3600")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",0)
+    SetGlobal("AYSpawnRandomBeenSetAR36007","AR3600",0)
+    SetGlobal("AYSpawnRandomSetAR36007_0","AR3600",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR36007","AR3600",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36007","AR3600",1)
+    CreateCreature("CARRIO",[252.1833],0)  // ~Carrion Crawler~
+    SetGlobalTimer("AYSpawnTimerAR36007","AR3600",AY_SPAWN_TIMER)
+END
+

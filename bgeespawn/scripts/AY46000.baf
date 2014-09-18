@@ -1,0 +1,467 @@
+IF
+  Global("AYSpawnRandomBeenSetAR46000","AR4600",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR46000","AR4600",1)
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",0)
+  Global("AYSpawnRandomBeenSetAR46000","AR4600",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR46000_2","AR4600",1)
+    SetGlobal("AYSpawnRandomBeenSetAR46000","AR4600",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",0)
+  Global("AYSpawnRandomBeenSetAR46000","AR4600",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR46000_1","AR4600",1)
+    SetGlobal("AYSpawnRandomBeenSetAR46000","AR4600",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR46000_0","AR4600",0)
+  Global("AYSpawnRandomBeenSetAR46000","AR4600",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR46000_0","AR4600",1)
+    SetGlobal("AYSpawnRandomBeenSetAR46000","AR4600",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  LevelPartyLT(11)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(10)
+  LevelPartyLT(12)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(11)
+  LevelPartyLT(13)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(12)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_2","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[613.2116],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  LevelPartyLT(11)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(10)
+  LevelPartyLT(12)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(11)
+  LevelPartyLT(13)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(12)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_1","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[613.2116],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_0","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_0","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_0","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_0","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_0","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  Global("AYSpawnResetAR46000","AR4600",0)
+  Global("AYSpawnRandomSetAR46000_0","AR4600",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("BEARBL",60)
+
+  !Range("BEARBR",60)
+
+  !Range("BEARCA",60)
+  Global("AYSpawnResetAR46000","AR4600",1)
+  GlobalTimerExpired("AYSpawnTimerAR46000","AR4600")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",0)
+    SetGlobal("AYSpawnRandomBeenSetAR46000","AR4600",0)
+    SetGlobal("AYSpawnRandomSetAR46000_2","AR4600",0)
+    SetGlobal("AYSpawnRandomSetAR46000_1","AR4600",0)
+    SetGlobal("AYSpawnRandomSetAR46000_0","AR4600",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR46000","AR4600",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46000","AR4600",1)
+    CreateCreature("BEARBL",[613.2116],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR46000","AR4600",AY_SPAWN_TIMER)
+END
+

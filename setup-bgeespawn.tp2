@@ -1,0 +1,378 @@
+////////////////////////////////////////////////////////////
+// BGEE Leveled Spawns installation tp2 file
+////////////////////////////////////////////////////////////
+
+BACKUP ~bgeespawn/backup~
+
+AUTHOR ~AstroBryGuy~
+
+VERSION ~v0.1~
+
+README ~bgeespawn/readme.txt~
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//PATCH_MACRO are_update_offset
+//for addition of extended headers, this macro updates offsets of all extended headers that occur later than the extended header modified, then updates offsets stored in the variables
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//Variables that need to be defined:
+// -are_update_offset_increment
+// -are_update_offset_datatype (can be actor, info, spawn, entrance, container, item, vertex, ambient, variable, door, explored, anim, tiled, song, rest, automap)
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//Other requirements:
+// -all types of %are_update_offset_datatype%_off must have been read
+// -the specified %are_update_offset_datatype%_num must have been read
+//////////////////////////////////////////////////////////////////////////////////////////////////
+DEFINE_PATCH_MACRO are_update_offset BEGIN
+  SPRINT are_update_offset_datatype_off "%are_update_offset_datatype%_off"
+  SPRINT are_update_offset_datatype_num "%are_update_offset_datatype%_num"
+
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "actor")=0))
+            AND (("%actor_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%actor_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0x54 ("%actor_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "info")=0))   
+            AND (("%info_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%info_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0x5c ("%info_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "spawn")=0))
+            AND (("%spawn_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%spawn_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0x60 ("%spawn_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "entrance")=0))
+            AND (("%entrance_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%entrance_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0x68 ("%entrance_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "container")=0))
+            AND (("%container_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%container_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0x70 ("%container_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "item")=0))
+            AND (("%item_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%item_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0x78 ("%item_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "vertex")=0))
+            AND (("%vertex_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%vertex_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0x7c ("%vertex_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "ambient")=0))
+            AND (("%ambient_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%ambient_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0x84 ("%ambient_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "variable")=0))
+            AND (("%variable_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%variable_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0x88 ("%variable_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "door")=0))
+            AND (("%door_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%door_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0xa8 ("%door_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "explored")=0))
+            AND (("%explored_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%explored_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0xa0 ("%explored_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "anim")=0))
+            AND (("%anim_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%anim_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0xb0 ("%anim_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "tiled")=0))
+            AND (("%tiled_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%tiled_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0xb8 ("%tiled_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "song")=0))
+            AND (("%song_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%song_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0xbc ("%song_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "rest")=0))
+            AND (("%rest_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%rest_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0xc0 ("%rest_off%" + "%are_update_offset_increment%")
+  END
+  PATCH_IF (NOT (("%are_update_offset_datatype%" STRING_COMPARE_CASE "automap")=0))
+            AND (("%automap_off%" > EVALUATE_BUFFER "%%are_update_offset_datatype_off%%")
+            OR (("%automap_off%" = EVALUATE_BUFFER "%%are_update_offset_datatype_off%%") AND (EVALUATE_BUFFER "%%are_update_offset_datatype_num%%" = 0))) BEGIN
+    WRITE_LONG 0xc4 ("%automap_off%" + "%are_update_offset_increment%")
+  END
+
+  READ_LONG 0x54 actor_off
+  READ_LONG 0x5c info_off
+  READ_LONG 0x60 spawn_off
+  READ_LONG 0x68 entrance_off
+  READ_LONG 0x70 container_off
+  READ_LONG 0x78 item_off
+  READ_LONG 0x7c vertex_off
+  READ_LONG 0x84 ambient_off
+  READ_LONG 0x88 variable_off
+  READ_LONG 0xa8 door_off
+  READ_LONG 0xa0 explored_off
+  READ_LONG 0xb0 anim_off
+  READ_LONG 0xb8 tiled_off
+  READ_LONG 0xbc song_off
+  READ_LONG 0xc0 rest_off
+  READ_LONG 0xc4 automap_off
+
+END
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Levelled spawns/////////////////////////////////////////
+BEGIN ~BGEE Leveling Spawns Mod~
+REQUIRE_PREDICATE (GAME_IS ~bgee~) ~Baldur's Gate Enhanced Edition could not be detected.~
+DESIGNATED 101
+
+  OUTER_SPRINT ~spawntimer~ ~placeholder_value~
+  OUTER_WHILE (!(IS_AN_INT ~spawntimer~) OR (~spawntimer~ > 0x9) OR (~spawntimer~ < 0x0)) BEGIN
+    PRINT ~Please choose one of the following options for the time interval between spawn point resets:
+[0] 8 hours of game time between spawnings
+[1] 1 day of game time between spawnings
+[2] 2 days of game time between spawnings
+[3] 3 days of game time between spawnings
+[4] 5 days of game time between spawnings
+[5] 7 days of game time between spawnings
+[6] 10 days of game time between spawnings
+[7] 14 days of game time between spawnings
+[8] 30 days of game time between spawnings
+[9] 1000 days of game time between spawnings
+~
+    ACTION_READLN ~spawntimer~
+  END
+
+        ACTION_IF ("spawntimer" = 0) THEN BEGIN
+        APPEND ~gtimes.ids~ ~2400 AY_SPAWN_TIMER~
+        PRINT ~8 hours of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 1) THEN BEGIN
+        APPEND ~gtimes.ids~ ~7200 AY_SPAWN_TIMER~
+        PRINT ~1 day of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 2) THEN BEGIN
+        APPEND ~gtimes.ids~ ~14400 AY_SPAWN_TIMER~
+        PRINT ~2 days of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 3) THEN BEGIN
+        APPEND ~gtimes.ids~ ~21600 AY_SPAWN_TIMER~
+        PRINT ~3 days of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 4) THEN BEGIN
+        APPEND ~gtimes.ids~ ~36000 AY_SPAWN_TIMER~
+        PRINT ~5 days of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 5) THEN BEGIN
+        APPEND ~gtimes.ids~ ~50400 AY_SPAWN_TIMER~
+        PRINT ~7 days of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 6) THEN BEGIN
+        APPEND ~gtimes.ids~ ~7200 AY_SPAWN_TIMER~
+        PRINT ~10 days of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 7) THEN BEGIN
+        APPEND ~gtimes.ids~ ~100800 AY_SPAWN_TIMER~
+        PRINT ~14 days of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 8) THEN BEGIN
+        APPEND ~gtimes.ids~ ~216000 AY_SPAWN_TIMER~
+        PRINT ~30 days of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 9) THEN BEGIN
+        APPEND ~gtimes.ids~ ~7200000 AY_SPAWN_TIMER~
+        PRINT ~1000 days of game time between spawns~
+        END
+
+  OUTER_SPRINT ~spawnchance~ ~placeholder_value~
+  OUTER_WHILE (!(IS_AN_INT ~spawnchance~) OR (~spawnchance~ > 0x9) OR (~spawnchance~ < 0x0)) BEGIN
+    PRINT ~Please choose one of the following options for the probability of spawn point being populated when triggered:
+[1] 10% chance of spawning
+[2] 20% chance of spawning
+[3] 30% chance of spawning
+[4] 40% chance of spawning
+[5] 50% chance of spawning
+[6] 60% chance of spawning
+[7] 70% chance of spawning
+[8] 80% chance of spawning
+[9] 90% chance of spawning
+[0] 100% chance of spawning
+~
+    ACTION_READLN ~spawnchance~
+  END
+
+        ACTION_IF ("spawnchance" = 1) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~10~
+        OUTER_SPRINT ~NoSpawn~ ~90~
+        PRINT ~20% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 2) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~20~
+        OUTER_SPRINT ~NoSpawn~ ~80~
+        PRINT ~20% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 3) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~30~
+        OUTER_SPRINT ~NoSpawn~ ~70~
+        PRINT ~30% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 4) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~40~
+        OUTER_SPRINT ~NoSpawn~ ~60~
+        PRINT ~40% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 5) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~50~
+        OUTER_SPRINT ~NoSpawn~ ~50~
+        PRINT ~50% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 6) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~60~
+        OUTER_SPRINT ~NoSpawn~ ~40~
+        PRINT ~60% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 7) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~70~
+        OUTER_SPRINT ~NoSpawn~ ~30~
+        PRINT ~70% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 8) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~80~
+        OUTER_SPRINT ~NoSpawn~ ~20~
+        PRINT ~80% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 9) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~90~
+        OUTER_SPRINT ~NoSpawn~ ~10~
+        PRINT ~90% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 0) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~100~
+        OUTER_SPRINT ~NoSpawn~ ~0~
+        PRINT ~100% chance of spawning~
+        END
+
+COPY GLOB ~bgeespawn/info/*.nfp~ ~bgeespawn/info~
+  SPRINT source "%SOURCE_RES%"
+  SET info_vertex_num_new_total = 0
+
+  //ignore the placeholder and any 0-byte files
+  PATCH_IF NOT ("%SOURCE_SIZE%" = 0) BEGIN
+    FOR (i=0;i<10000;i+=1) BEGIN
+      READ_ASCII ("%i%"*0xc4) info_data_new (196)
+      READ_ASCII (("%i%" + 1)*0xc4) buffer ELSE 10000 (196) //check if next read is at illegal offset
+      READ_SHORT ("%i%"*0xc4 + 0x2a) info_vertex_num_new
+      SET info_vertex_num_new_total += "%info_vertex_num_new%"
+
+      //add to the corresponding ARE file with the same ResRef
+      INNER_ACTION BEGIN
+        COPY_EXISTING ~%source%.are~ ~override/%source%.are~
+          READ_LONG 0x54 actor_off
+          READ_LONG 0x5c info_off
+          READ_LONG 0x60 spawn_off
+          READ_LONG 0x68 entrance_off
+          READ_LONG 0x70 container_off
+          READ_LONG 0x78 item_off
+          READ_LONG 0x7c vertex_off
+          READ_LONG 0x84 ambient_off
+          READ_LONG 0x88 variable_off
+          READ_LONG 0xa8 door_off
+          READ_LONG 0xa0 explored_off
+          READ_LONG 0xb0 anim_off
+          READ_LONG 0xb8 tiled_off
+          READ_LONG 0xbc song_off
+          READ_LONG 0xc0 rest_off
+          READ_LONG 0xc4 automap_off
+
+          READ_SHORT 0x5a info_num
+          READ_SHORT 0x64 spawn_num
+          READ_SHORT 0x74 container_num
+          READ_SHORT 0x80 vertex_num
+          READ_SHORT 0xa4 door_num
+
+          //deactivate spawn point using its flag
+          FOR (n=0;n<"%spawn_num%";n+=1) BEGIN
+            WRITE_SHORT ("%spawn_off%" + "%n%"*0xc8 + 0x86) 0
+          END
+
+          //update offsets for info information insert first
+          SPRINT are_update_offset_datatype "info"
+          SET are_update_offset_increment = 196
+          LAUNCH_PATCH_MACRO are_update_offset
+
+          //insert info information at the top of the info list
+          INSERT_BYTES "%info_off%" 196
+          WRITE_EVALUATED_ASCII "%info_off%" "%info_data_new%" #196
+          WRITE_LONG ("%info_off%" + 0x2c) 0 //set first vertex index to zero
+          SET info_num +=1
+          WRITE_SHORT 0x5a "%info_num%"
+
+          //update offsets for vertex information insert
+          SPRINT are_update_offset_datatype "vertex"
+          SET are_update_offset_increment = 0x4 * "%info_vertex_num_new%"
+          LAUNCH_PATCH_MACRO are_update_offset
+
+          //insert vertex information at the top of the vertex list
+          FOR (j=0;j<"%info_vertex_num_new%";j+=1) BEGIN
+            
+            INNER_ACTION BEGIN
+              COPY ~bgeespawn/vertex/%source%.vtx~ ~bgeespawn/vertex/%source%.vtx~
+                READ_LONG (("%j%" + "%info_vertex_num_new_total%" - "%info_vertex_num_new%")*0x4) vertex_data_new
+              BUT_ONLY_IF_IT_CHANGES
+            END          
+
+            READ_SHORT 0x80 vertex_num
+            INSERT_BYTES ("%vertex_off%") 4
+            WRITE_LONG ("%vertex_off%") "%vertex_data_new%"
+            SET vertex_num +=1
+            WRITE_SHORT 0x80 "%vertex_num%"
+          END
+
+          //update vertex indices for info points after the new Info Point 0
+          FOR (k=1;k<"%info_num%";k+=1) BEGIN
+            READ_SHORT ("%info_off%" + "%k%"*0xc4 + 0x2c) info_vertex_first_idx
+            WRITE_SHORT ("%info_off%" + "%k%"*0xc4 + 0x2c) ("%info_vertex_first_idx%" + "%info_vertex_num_new%")
+          END
+
+          //update vertex indices for doors
+          FOR (l=0;l<"%door_num%";l+=1) BEGIN
+            READ_LONG ("%door_off%" + "%l%"*0xc8 + 0x2c) door_vertex_open_first_idx
+            READ_LONG ("%door_off%" + "%l%"*0xc8 + 0x34) door_vertex_closed_first_idx
+            READ_LONG ("%door_off%" + "%l%"*0xc8 + 0x48) door_vertex_impede_closed_first_idx
+            READ_LONG ("%door_off%" + "%l%"*0xc8 + 0x50) door_vertex_impede_open_first_idx
+            WRITE_LONG ("%door_off%" + "%l%"*0xc8 + 0x2c) ("%door_vertex_open_first_idx%" + "%info_vertex_num_new%")
+            WRITE_LONG ("%door_off%" + "%l%"*0xc8 + 0x34) ("%door_vertex_closed_first_idx%" + "%info_vertex_num_new%")
+            WRITE_LONG ("%door_off%" + "%l%"*0xc8 + 0x48) ("%door_vertex_impede_closed_first_idx%" + "%info_vertex_num_new%")
+            WRITE_LONG ("%door_off%" + "%l%"*0xc8 + 0x50) ("%door_vertex_impede_open_first_idx%" + "%info_vertex_num_new%")
+          END
+
+          //update vertex indices for containers
+          FOR (m=0;m<"%container_num%";m+=1) BEGIN
+            READ_LONG ("%container_off%" + "%m%"*0xc0 + 0x50) container_vertex_first_idx
+            WRITE_LONG ("%container_off%" + "%m%"*0xc0 + 0x50) ("%container_vertex_first_idx%" + "%info_vertex_num_new%")
+          END
+
+        BUT_ONLY_IF_IT_CHANGES
+      END
+
+      //stop the FOR loop on an illegal offset read
+      PATCH_IF (("%buffer%" STRING_COMPARE_CASE "10000")=0) BEGIN
+        SET i = 10000
+      END
+    END
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+COPY GLOB ~bgeespawn/scripts/*.baf~ ~bgeespawn/scripts~
+  REPLACE_TEXTUALLY EXACT_MATCH ~#GOSPAWN~ ~#%GoSpawn%~
+  REPLACE_TEXTUALLY EXACT_MATCH ~#NOSPAWN~ ~#%NoSpawn%~
+BUT_ONLY_IF_IT_CHANGES
+
+COMPILE ~bgeespawn/scripts~

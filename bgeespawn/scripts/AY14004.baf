@@ -1,0 +1,209 @@
+IF
+  Global("AYSpawnRandomBeenSetAR14004","AR1400",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR14004","AR1400",1)
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",0)
+  Global("AYSpawnRandomBeenSetAR14004","AR1400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR14004_0","AR1400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR14004","AR1400",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  LevelPartyLT(11)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(10)
+  LevelPartyLT(12)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(11)
+  LevelPartyLT(13)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(12)
+  Global("AYSpawnResetAR14004","AR1400",0)
+  Global("AYSpawnRandomSetAR14004_0","AR1400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+  !Range("ANKHEG",60)
+  Global("AYSpawnResetAR14004","AR1400",1)
+  GlobalTimerExpired("AYSpawnTimerAR14004","AR1400")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",0)
+    SetGlobal("AYSpawnRandomBeenSetAR14004","AR1400",0)
+    SetGlobal("AYSpawnRandomSetAR14004_0","AR1400",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR14004","AR1400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","AR1400",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","AR1400",AY_SPAWN_TIMER)
+END
+

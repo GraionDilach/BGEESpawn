@@ -1,0 +1,312 @@
+IF
+  Global("AYSpawnRandomBeenSetAR39007","AR3900",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR39007","AR3900",1)
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",0)
+  Global("AYSpawnRandomBeenSetAR39007","AR3900",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR39007_1","AR3900",1)
+    SetGlobal("AYSpawnRandomBeenSetAR39007","AR3900",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR39007_0","AR3900",0)
+  Global("AYSpawnRandomBeenSetAR39007","AR3900",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR39007_0","AR3900",1)
+    SetGlobal("AYSpawnRandomBeenSetAR39007","AR3900",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  LevelPartyLT(11)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(10)
+  LevelPartyLT(12)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(11)
+  LevelPartyLT(13)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(12)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_1","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    CreateCreature("GHAST",[3351.536],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_0","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_0","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_0","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_0","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_0","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  Global("AYSpawnResetAR39007","AR3900",0)
+  Global("AYSpawnRandomSetAR39007_0","AR3900",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("GHOUL",60)
+
+  !Range("GHAST",60)
+  Global("AYSpawnResetAR39007","AR3900",1)
+  GlobalTimerExpired("AYSpawnTimerAR39007","AR3900")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",0)
+    SetGlobal("AYSpawnRandomBeenSetAR39007","AR3900",0)
+    SetGlobal("AYSpawnRandomSetAR39007_1","AR3900",0)
+    SetGlobal("AYSpawnRandomSetAR39007_0","AR3900",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR39007","AR3900",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39007","AR3900",1)
+    CreateCreature("GHOUL",[3351.536],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR39007","AR3900",AY_SPAWN_TIMER)
+END
+

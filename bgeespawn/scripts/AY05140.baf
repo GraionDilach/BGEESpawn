@@ -1,0 +1,134 @@
+IF
+  Global("AYSpawnRandomBeenSetAR05140","AR0514",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR05140","AR0514",1)
+    SetGlobal("AYSpawnResetAR05140","AR0514",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR05140_0","AR0514",0)
+  Global("AYSpawnRandomBeenSetAR05140","AR0514",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05140_0","AR0514",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05140","AR0514",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR05140","AR0514",0)
+  Global("AYSpawnRandomSetAR05140_0","AR0514",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05140","AR0514",1)
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05140","AR0514",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR05140","AR0514",0)
+  Global("AYSpawnRandomSetAR05140_0","AR0514",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05140","AR0514",1)
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05140","AR0514",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR05140","AR0514",0)
+  Global("AYSpawnRandomSetAR05140_0","AR0514",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05140","AR0514",1)
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05140","AR0514",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR05140","AR0514",0)
+  Global("AYSpawnRandomSetAR05140_0","AR0514",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05140","AR0514",1)
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05140","AR0514",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR05140","AR0514",0)
+  Global("AYSpawnRandomSetAR05140_0","AR0514",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05140","AR0514",1)
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05140","AR0514",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  Global("AYSpawnResetAR05140","AR0514",0)
+  Global("AYSpawnRandomSetAR05140_0","AR0514",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05140","AR0514",1)
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05140","AR0514",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("GHOULLOR",60)
+  Global("AYSpawnResetAR05140","AR0514",1)
+  GlobalTimerExpired("AYSpawnTimerAR05140","AR0514")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05140","AR0514",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05140","AR0514",0)
+    SetGlobal("AYSpawnRandomSetAR05140_0","AR0514",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR05140","AR0514",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05140","AR0514",1)
+    CreateCreature("GHOULLOR",[3648.2944],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05140","AR0514",AY_SPAWN_TIMER)
+END
+

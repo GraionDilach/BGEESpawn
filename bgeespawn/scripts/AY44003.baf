@@ -1,0 +1,358 @@
+IF
+  Global("AYSpawnRandomBeenSetAR44003","AR4400",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR44003","AR4400",1)
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",0)
+  Global("AYSpawnRandomBeenSetAR44003","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44003_2","AR4400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44003","AR4400",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR44003_1","AR4400",0)
+  Global("AYSpawnRandomBeenSetAR44003","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44003_1","AR4400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44003","AR4400",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR44003_0","AR4400",0)
+  Global("AYSpawnRandomBeenSetAR44003","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44003_0","AR4400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44003","AR4400",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  LevelPartyLT(8)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(7)
+  LevelPartyLT(9)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(8)
+  LevelPartyLT(10)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(9)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_2","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4011.1957],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  LevelPartyLT(7)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(6)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[4011.1957],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_0","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_0","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_0","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  Global("AYSpawnResetAR44003","AR4400",0)
+  Global("AYSpawnRandomSetAR44003_0","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("WOLF",60)
+
+  !Range("WOLFDI",60)
+
+  !Range("WOLFDR",60)
+  Global("AYSpawnResetAR44003","AR4400",1)
+  GlobalTimerExpired("AYSpawnTimerAR44003","AR4400")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",0)
+    SetGlobal("AYSpawnRandomBeenSetAR44003","AR4400",0)
+    SetGlobal("AYSpawnRandomSetAR44003_2","AR4400",0)
+    SetGlobal("AYSpawnRandomSetAR44003_1","AR4400",0)
+    SetGlobal("AYSpawnRandomSetAR44003_0","AR4400",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR44003","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44003","AR4400",1)
+    CreateCreature("WOLF",[4011.1957],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44003","AR4400",AY_SPAWN_TIMER)
+END
+

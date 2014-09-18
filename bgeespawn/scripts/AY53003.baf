@@ -1,0 +1,119 @@
+IF
+  Global("AYSpawnRandomBeenSetAR53003","AR5300",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR53003","AR5300",1)
+    SetGlobal("AYSpawnResetAR53003","AR5300",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR53003_1","AR5300",0)
+  Global("AYSpawnRandomBeenSetAR53003","AR5300",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR53003_1","AR5300",1)
+    SetGlobal("AYSpawnRandomBeenSetAR53003","AR5300",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR53003_0","AR5300",0)
+  Global("AYSpawnRandomBeenSetAR53003","AR5300",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR53003_0","AR5300",1)
+    SetGlobal("AYSpawnRandomBeenSetAR53003","AR5300",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR53003","AR5300",0)
+  Global("AYSpawnRandomSetAR53003_1","AR5300",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53003","AR5300",1)
+    CreateCreature("XVART",[3535.3158],0)  // ~Xvart~
+    CreateCreature("XVART",[3535.3158],0)  // ~Xvart~
+    CreateCreature("XVART",[3535.3158],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR53003","AR5300",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR53003","AR5300",0)
+  Global("AYSpawnRandomSetAR53003_1","AR5300",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53003","AR5300",1)
+    CreateCreature("XVART",[3535.3158],0)  // ~Xvart~
+    CreateCreature("XVART",[3535.3158],0)  // ~Xvart~
+    CreateCreature("XVART",[3535.3158],0)  // ~Xvart~
+    CreateCreature("XVART",[3535.3158],0)  // ~Xvart~
+    CreateCreature("XVART",[3535.3158],0)  // ~Xvart~
+    CreateCreature("XVART",[3535.3158],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR53003","AR5300",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR53003","AR5300",0)
+  Global("AYSpawnRandomSetAR53003_0","AR5300",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53003","AR5300",1)
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR53003","AR5300",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR53003","AR5300",0)
+  Global("AYSpawnRandomSetAR53003_0","AR5300",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53003","AR5300",1)
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR53003","AR5300",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("KOBOLA_E",60)
+
+  !Range("XVART",60)
+  Global("AYSpawnResetAR53003","AR5300",1)
+  GlobalTimerExpired("AYSpawnTimerAR53003","AR5300")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53003","AR5300",0)
+    SetGlobal("AYSpawnRandomBeenSetAR53003","AR5300",0)
+    SetGlobal("AYSpawnRandomSetAR53003_1","AR5300",0)
+    SetGlobal("AYSpawnRandomSetAR53003_0","AR5300",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR53003","AR5300",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53003","AR5300",1)
+    CreateCreature("KOBOLA_E",[3535.3158],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR53003","AR5300",AY_SPAWN_TIMER)
+END
+

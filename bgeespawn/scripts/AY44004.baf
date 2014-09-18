@@ -1,0 +1,148 @@
+IF
+  Global("AYSpawnRandomBeenSetAR44004","AR4400",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR44004","AR4400",1)
+    SetGlobal("AYSpawnResetAR44004","AR4400",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR44004_1","AR4400",0)
+  Global("AYSpawnRandomBeenSetAR44004","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44004_1","AR4400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44004","AR4400",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR44004_0","AR4400",0)
+  Global("AYSpawnRandomBeenSetAR44004","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44004_0","AR4400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44004","AR4400",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR44004","AR4400",0)
+  Global("AYSpawnRandomSetAR44004_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","AR4400",1)
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44004","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR44004","AR4400",0)
+  Global("AYSpawnRandomSetAR44004_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","AR4400",1)
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44004","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR44004","AR4400",0)
+  Global("AYSpawnRandomSetAR44004_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","AR4400",1)
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44004","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  Global("AYSpawnResetAR44004","AR4400",0)
+  Global("AYSpawnRandomSetAR44004_1","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","AR4400",1)
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44004","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR44004","AR4400",0)
+  Global("AYSpawnRandomSetAR44004_0","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","AR4400",1)
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR44004","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR44004","AR4400",0)
+  Global("AYSpawnRandomSetAR44004_0","AR4400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","AR4400",1)
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR44004","AR4400",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("XVART_B",60)
+
+  !Range("WOLF",60)
+  Global("AYSpawnResetAR44004","AR4400",1)
+  GlobalTimerExpired("AYSpawnTimerAR44004","AR4400")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","AR4400",0)
+    SetGlobal("AYSpawnRandomBeenSetAR44004","AR4400",0)
+    SetGlobal("AYSpawnRandomSetAR44004_1","AR4400",0)
+    SetGlobal("AYSpawnRandomSetAR44004_0","AR4400",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR44004","AR4400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","AR4400",1)
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR44004","AR4400",AY_SPAWN_TIMER)
+END
+

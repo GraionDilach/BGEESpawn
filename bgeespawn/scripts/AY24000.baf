@@ -1,0 +1,294 @@
+IF
+  Global("AYSpawnRandomBeenSetAR24000","AR2400",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR24000","AR2400",1)
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(4,1)
+  Global("AYSpawnRandomSetAR24000_3","AR2400",0)
+  Global("AYSpawnRandomBeenSetAR24000","AR2400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24000_3","AR2400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24000","AR2400",1)
+END
+
+IF
+  RandomNum(4,2)
+  Global("AYSpawnRandomSetAR24000_2","AR2400",0)
+  Global("AYSpawnRandomBeenSetAR24000","AR2400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24000_2","AR2400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24000","AR2400",1)
+END
+
+IF
+  RandomNum(4,3)
+  Global("AYSpawnRandomSetAR24000_1","AR2400",0)
+  Global("AYSpawnRandomBeenSetAR24000","AR2400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24000_1","AR2400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24000","AR2400",1)
+END
+
+IF
+  RandomNum(4,4)
+  Global("AYSpawnRandomSetAR24000_0","AR2400",0)
+  Global("AYSpawnRandomBeenSetAR24000","AR2400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24000_0","AR2400",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24000","AR2400",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_3","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_3","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_3","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  LevelPartyLT(5)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_3","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(4)
+  LevelPartyLT(6)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_3","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(5)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_3","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1297.529],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_2","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_2","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_1","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_1","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_1","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_0","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_0","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  Global("AYSpawnResetAR24000","AR2400",0)
+  Global("AYSpawnRandomSetAR24000_0","AR2400",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    CreateCreature("BANDIT",[1297.529],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("BANDIT",60)
+
+  !Range("DOGWI",60)
+
+  !Range("IRONELIT",60)
+  Global("AYSpawnResetAR24000","AR2400",1)
+  GlobalTimerExpired("AYSpawnTimerAR24000","AR2400")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",0)
+    SetGlobal("AYSpawnRandomBeenSetAR24000","AR2400",0)
+    SetGlobal("AYSpawnRandomSetAR24000_3","AR2400",0)
+    SetGlobal("AYSpawnRandomSetAR24000_2","AR2400",0)
+    SetGlobal("AYSpawnRandomSetAR24000_1","AR2400",0)
+    SetGlobal("AYSpawnRandomSetAR24000_0","AR2400",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR24000","AR2400",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24000","AR2400",1)
+    CreateCreature("DOGWI",[1297.529],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR24000","AR2400",AY_SPAWN_TIMER)
+END
+

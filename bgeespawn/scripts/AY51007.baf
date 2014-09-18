@@ -1,0 +1,249 @@
+IF
+  Global("AYSpawnRandomBeenSetAR51007","AR5100",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR51007","AR5100",1)
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR51007_2","AR5100",0)
+  Global("AYSpawnRandomBeenSetAR51007","AR5100",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR51007_2","AR5100",1)
+    SetGlobal("AYSpawnRandomBeenSetAR51007","AR5100",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR51007_1","AR5100",0)
+  Global("AYSpawnRandomBeenSetAR51007","AR5100",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR51007_1","AR5100",1)
+    SetGlobal("AYSpawnRandomBeenSetAR51007","AR5100",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR51007_0","AR5100",0)
+  Global("AYSpawnRandomBeenSetAR51007","AR5100",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR51007_0","AR5100",1)
+    SetGlobal("AYSpawnRandomBeenSetAR51007","AR5100",1)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_2","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_2","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_2","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_2","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[2622.2403],0)  // ~Gnoll Elite~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_1","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_1","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_1","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_1","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2622.2403],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_0","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_0","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  LevelPartyLT(4)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_0","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(3)
+  Global("AYSpawnResetAR51007","AR5100",0)
+  Global("AYSpawnRandomSetAR51007_0","AR5100",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],60)
+
+  !Range("GNOLL",60)
+
+  !Range("GNOLL_D",60)
+
+  !Range("GNOLL_A",60)
+  Global("AYSpawnResetAR51007","AR5100",1)
+  GlobalTimerExpired("AYSpawnTimerAR51007","AR5100")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",0)
+    SetGlobal("AYSpawnRandomBeenSetAR51007","AR5100",0)
+    SetGlobal("AYSpawnRandomSetAR51007_2","AR5100",0)
+    SetGlobal("AYSpawnRandomSetAR51007_1","AR5100",0)
+    SetGlobal("AYSpawnRandomSetAR51007_0","AR5100",0)
+END
+
+IF
+  Range([PC],60)
+  Global("AYSpawnResetAR51007","AR5100",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51007","AR5100",1)
+    CreateCreature("GNOLL",[2622.2403],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR51007","AR5100",AY_SPAWN_TIMER)
+END
+
