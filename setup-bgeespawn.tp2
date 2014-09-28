@@ -6,7 +6,7 @@ BACKUP ~bgeespawn/backup~
 
 AUTHOR ~AstroBryGuy~
 
-VERSION ~v0.1~
+VERSION ~v0.2~
 
 README ~bgeespawn/readme.txt~
 
@@ -136,57 +136,57 @@ DESIGNATED 101
   OUTER_SPRINT ~spawntimer~ ~placeholder_value~
   OUTER_WHILE (!(IS_AN_INT ~spawntimer~) OR (~spawntimer~ > 0x9) OR (~spawntimer~ < 0x0)) BEGIN
     PRINT ~Please choose one of the following options for the time interval between spawn point resets:
-[0] 8 hours of game time between spawnings
-[1] 1 day of game time between spawnings
-[2] 2 days of game time between spawnings
-[3] 3 days of game time between spawnings
-[4] 5 days of game time between spawnings
-[5] 7 days of game time between spawnings
-[6] 10 days of game time between spawnings
-[7] 14 days of game time between spawnings
-[8] 30 days of game time between spawnings
-[9] 1000 days of game time between spawnings
+[1] 4 HOURS of game time between spawnings
+[2] 8 HOURS of game time between spawnings
+[3] 12 HOURS of game time between spawnings
+[4] 1 day of game time between spawnings
+[5] 2 days of game time between spawnings
+[6] 4 days of game time between spawnings
+[7] 7 days of game time between spawnings
+[8] 10 days of game time between spawnings
+[9] 14 days of game time between spawnings
+[0] 1000 days of game time between spawnings
 ~
     ACTION_READLN ~spawntimer~
   END
 
-        ACTION_IF ("spawntimer" = 0) THEN BEGIN
+        ACTION_IF ("spawntimer" = 1) THEN BEGIN
+        APPEND ~gtimes.ids~ ~1200 AY_SPAWN_TIMER~
+        PRINT ~4 hours of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 2) THEN BEGIN
         APPEND ~gtimes.ids~ ~2400 AY_SPAWN_TIMER~
         PRINT ~8 hours of game time between spawns~
         END
-        ACTION_IF ("spawntimer" = 1) THEN BEGIN
+        ACTION_IF ("spawntimer" = 3) THEN BEGIN
+        APPEND ~gtimes.ids~ ~3600 AY_SPAWN_TIMER~
+        PRINT ~12 hours of game time between spawns~
+        END
+        ACTION_IF ("spawntimer" = 4) THEN BEGIN
         APPEND ~gtimes.ids~ ~7200 AY_SPAWN_TIMER~
         PRINT ~1 day of game time between spawns~
         END
-        ACTION_IF ("spawntimer" = 2) THEN BEGIN
+        ACTION_IF ("spawntimer" = 5) THEN BEGIN
         APPEND ~gtimes.ids~ ~14400 AY_SPAWN_TIMER~
         PRINT ~2 days of game time between spawns~
         END
-        ACTION_IF ("spawntimer" = 3) THEN BEGIN
-        APPEND ~gtimes.ids~ ~21600 AY_SPAWN_TIMER~
-        PRINT ~3 days of game time between spawns~
+        ACTION_IF ("spawntimer" = 6) THEN BEGIN
+        APPEND ~gtimes.ids~ ~28800 AY_SPAWN_TIMER~
+        PRINT ~4 days of game time between spawns~
         END
-        ACTION_IF ("spawntimer" = 4) THEN BEGIN
-        APPEND ~gtimes.ids~ ~36000 AY_SPAWN_TIMER~
-        PRINT ~5 days of game time between spawns~
-        END
-        ACTION_IF ("spawntimer" = 5) THEN BEGIN
+        ACTION_IF ("spawntimer" = 7) THEN BEGIN
         APPEND ~gtimes.ids~ ~50400 AY_SPAWN_TIMER~
         PRINT ~7 days of game time between spawns~
         END
-        ACTION_IF ("spawntimer" = 6) THEN BEGIN
-        APPEND ~gtimes.ids~ ~7200 AY_SPAWN_TIMER~
+        ACTION_IF ("spawntimer" = 8) THEN BEGIN
+        APPEND ~gtimes.ids~ ~72000 AY_SPAWN_TIMER~
         PRINT ~10 days of game time between spawns~
         END
-        ACTION_IF ("spawntimer" = 7) THEN BEGIN
+        ACTION_IF ("spawntimer" = 9) THEN BEGIN
         APPEND ~gtimes.ids~ ~100800 AY_SPAWN_TIMER~
         PRINT ~14 days of game time between spawns~
         END
-        ACTION_IF ("spawntimer" = 8) THEN BEGIN
-        APPEND ~gtimes.ids~ ~216000 AY_SPAWN_TIMER~
-        PRINT ~30 days of game time between spawns~
-        END
-        ACTION_IF ("spawntimer" = 9) THEN BEGIN
+        ACTION_IF ("spawntimer" = 0) THEN BEGIN
         APPEND ~gtimes.ids~ ~7200000 AY_SPAWN_TIMER~
         PRINT ~1000 days of game time between spawns~
         END
@@ -259,7 +259,8 @@ DESIGNATED 101
         PRINT ~100% chance of spawning~
         END
 
-COPY GLOB ~bgeespawn/info/*.nfp~ ~bgeespawn/info~
+ACTION_BASH_FOR ~bgeespawn/info~ ~.*.nfp~ BEGIN
+COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
   SPRINT source "%SOURCE_RES%"
   SET info_vertex_num_new_total = 0
 
@@ -369,10 +370,13 @@ COPY GLOB ~bgeespawn/info/*.nfp~ ~bgeespawn/info~
     END
   END
 BUT_ONLY_IF_IT_CHANGES
+END
 
-COPY GLOB ~bgeespawn/scripts/*.baf~ ~bgeespawn/scripts~
-  REPLACE_TEXTUALLY EXACT_MATCH ~#GOSPAWN~ ~#%GoSpawn%~
-  REPLACE_TEXTUALLY EXACT_MATCH ~#NOSPAWN~ ~#%NoSpawn%~
-BUT_ONLY_IF_IT_CHANGES
+ACTION_BASH_FOR ~bgeespawn/scripts~ ~.*.baf~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
+  	REPLACE_TEXTUALLY EXACT_MATCH ~#GOSPAWN~ ~#%GoSpawn%~
+  	REPLACE_TEXTUALLY EXACT_MATCH ~#NOSPAWN~ ~#%NoSpawn%~
+  BUT_ONLY_IF_IT_CHANGES
+END
 
 COMPILE ~bgeespawn/scripts~

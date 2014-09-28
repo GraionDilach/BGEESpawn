@@ -1,6 +1,6 @@
 BGEE Leveled Spawns Mod
 by AstroBryGuy (http://forum.baldursgate.com/profile/14405/AstroBryGuy)
-Version 0.1
+Version 0.2
 
 BGEE Leveled Spawns replaces the default spawns with spawns that scale in difficulty with the average level of the party.  Each spawn point will spawn groups of 1-6 creatures, depending on party level and creature strength.
 
@@ -15,18 +15,21 @@ OPTIONS
 
 1. Time Between Spawn Point Resets: After a spawn point has triggered, it will not spawn again until a certain time interval has passed.  The duration of this time interval is user-selectable with the following options:
 
-[0] 8 hours of game time between spawnings
-[1] 1 day of game time between spawnings
-[2] 2 days of game time between spawnings
-[3] 3 days of game time between spawnings
-[4] 5 days of game time between spawnings
-[5] 7 days of game time between spawnings
-[6] 10 days of game time between spawnings
-[7] 14 days of game time between spawnings
-[8] 30 days of game time between spawnings
-[9] 1000 days of game time between spawnings
+[1] 4 HOURS of game time between spawnings
+[2] 8 HOURS of game time between spawnings
+[3] 12 HOURS of game time between spawnings
+[4] 1 day of game time between spawnings
+[5] 2 days of game time between spawnings
+[6] 4 days of game time between spawnings
+[7] 7 days of game time between spawnings
+[8] 10 days of game time between spawnings
+[9] 14 days of game time between spawnings
+[0] 1000 days of game time between spawnings
 
-Note: A spawn point will not reset if the PCs are within a certain range of the spawn point.  This is to prevent spawns from suddenly appearing within the visual range of the PCs.  A spawn point will also not reset until it is "clear" (i.e., there are none of the spawned creatures within range of the spawn point). 
+Notes: 
+* A spawn point will not reset if the PCs are within a certain range of the spawn point.  This is to prevent spawns from suddenly appearing within the visual range of the PCs.  
+* A spawn point will also not reset until it is "clear" (i.e., there are none of the spawned creatures within range of the spawn point).  This is to prevent overly large groups of spawns from accumulating, especially those that are not automatically hostile (e.g., bears).
+* 1000 days effectively ensures that each spawn point will trigger at most once during the game.
 
 2. Spawning Probability: When a spawn point triggers, this probability controls whether or not the spawn point is populated.  If the spawn is not populated, it will not trigger again until the spawn point reset time interval has passed.  The user has the following spawning probability options:
 
@@ -41,7 +44,9 @@ Note: A spawn point will not reset if the PCs are within a certain range of the 
 [9] 90% chance of spawning
 [0] 100% chance of spawning
 
-Note that the combination of 1000 days between spawns and 100% spawning probability would populate every spawn point once.
+Notes: 
+* If you set a low spawn % and a long time between spawns, you will see very few spawns.
+
 
 INSTALLATION
 
@@ -104,4 +109,5 @@ This mod is not developed, supported, or endorsed by BioWare, Black Isle Studios
 
 HISTORY
 
-Version 0.x: Initial public release
+Version 0.2: Install bug fixes, update spawn trigger reset timings.
+Version 0.1: Initial public release
