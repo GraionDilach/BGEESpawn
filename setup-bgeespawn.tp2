@@ -198,13 +198,13 @@ Note: Game default spawn point reset timing is approximately 16 hours.
     PRINT ~Please choose one of the following options for the probability of spawn point being populated when triggered:
 [1] 10% chance of spawning
 [2] 20% chance of spawning
-[3] 30% chance of spawning
-[4] 40% chance of spawning
-[5] 50% chance of spawning
-[6] 60% chance of spawning
-[7] 70% chance of spawning
-[8] 80% chance of spawning
-[9] 90% chance of spawning
+[3] 35% chance of spawning
+[4] 50% chance of spawning
+[5] 65% chance of spawning
+[6] 75% chance of spawning
+[7] 85% chance of spawning
+[8] 90% chance of spawning
+[9] 95% chance of spawning
 [0] 100% chance of spawning
 
 Note: Game defaults are 85-100%, depending on area.
@@ -215,7 +215,7 @@ Note: Game defaults are 85-100%, depending on area.
         ACTION_IF ("spawnchance" = 1) THEN BEGIN
         OUTER_SPRINT ~GoSpawn~ ~10~
         OUTER_SPRINT ~NoSpawn~ ~90~
-        PRINT ~20% chance of spawning~
+        PRINT ~10% chance of spawning~
         END
         ACTION_IF ("spawnchance" = 2) THEN BEGIN
         OUTER_SPRINT ~GoSpawn~ ~20~
@@ -223,39 +223,39 @@ Note: Game defaults are 85-100%, depending on area.
         PRINT ~20% chance of spawning~
         END
         ACTION_IF ("spawnchance" = 3) THEN BEGIN
-        OUTER_SPRINT ~GoSpawn~ ~30~
-        OUTER_SPRINT ~NoSpawn~ ~70~
-        PRINT ~30% chance of spawning~
+        OUTER_SPRINT ~GoSpawn~ ~35~
+        OUTER_SPRINT ~NoSpawn~ ~65~
+        PRINT ~35% chance of spawning~
         END
         ACTION_IF ("spawnchance" = 4) THEN BEGIN
-        OUTER_SPRINT ~GoSpawn~ ~40~
-        OUTER_SPRINT ~NoSpawn~ ~60~
-        PRINT ~40% chance of spawning~
-        END
-        ACTION_IF ("spawnchance" = 5) THEN BEGIN
         OUTER_SPRINT ~GoSpawn~ ~50~
         OUTER_SPRINT ~NoSpawn~ ~50~
         PRINT ~50% chance of spawning~
         END
+        ACTION_IF ("spawnchance" = 5) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~65~
+        OUTER_SPRINT ~NoSpawn~ ~35~
+        PRINT ~65% chance of spawning~
+        END
         ACTION_IF ("spawnchance" = 6) THEN BEGIN
-        OUTER_SPRINT ~GoSpawn~ ~60~
-        OUTER_SPRINT ~NoSpawn~ ~40~
-        PRINT ~60% chance of spawning~
+        OUTER_SPRINT ~GoSpawn~ ~75~
+        OUTER_SPRINT ~NoSpawn~ ~25~
+        PRINT ~75% chance of spawning~
         END
         ACTION_IF ("spawnchance" = 7) THEN BEGIN
-        OUTER_SPRINT ~GoSpawn~ ~70~
-        OUTER_SPRINT ~NoSpawn~ ~30~
-        PRINT ~70% chance of spawning~
+        OUTER_SPRINT ~GoSpawn~ ~85~
+        OUTER_SPRINT ~NoSpawn~ ~15~
+        PRINT ~85% chance of spawning~
         END
         ACTION_IF ("spawnchance" = 8) THEN BEGIN
-        OUTER_SPRINT ~GoSpawn~ ~80~
-        OUTER_SPRINT ~NoSpawn~ ~20~
-        PRINT ~80% chance of spawning~
-        END
-        ACTION_IF ("spawnchance" = 9) THEN BEGIN
         OUTER_SPRINT ~GoSpawn~ ~90~
         OUTER_SPRINT ~NoSpawn~ ~10~
         PRINT ~90% chance of spawning~
+        END
+        ACTION_IF ("spawnchance" = 9) THEN BEGIN
+        OUTER_SPRINT ~GoSpawn~ ~95~
+        OUTER_SPRINT ~NoSpawn~ ~5~
+        PRINT ~95% chance of spawning~
         END
         ACTION_IF ("spawnchance" = 0) THEN BEGIN
         OUTER_SPRINT ~GoSpawn~ ~100~

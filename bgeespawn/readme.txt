@@ -17,7 +17,7 @@ OPTIONS
 
 [1] 4 HOURS of game time between spawnings
 [2] 8 HOURS of game time between spawnings
-[3] 12 HOURS of game time between spawnings
+[3] 16 HOURS of game time between spawnings
 [4] 1 day of game time between spawnings
 [5] 2 days of game time between spawnings
 [6] 4 days of game time between spawnings
@@ -27,26 +27,27 @@ OPTIONS
 [0] 1000 days of game time between spawnings
 
 Notes: 
-* A spawn point will not reset if the PCs are within a certain range of the spawn point.  This is to prevent spawns from suddenly appearing within the visual range of the PCs.  
+* A spawn point will not reset if the PCs are within a certain range of the spawn point.  This is to prevent spawns from suddenly appearing within the visual range of the PCs.
 * A spawn point will also not reset until it is "clear" (i.e., there are none of the spawned creatures within range of the spawn point).  This is to prevent overly large groups of spawns from accumulating, especially those that are not automatically hostile (e.g., bears).
+* Game default behavior is to require at least 16 hours to pass before a spawn point is reset.  Option 3 should match that timing most closely.
 * 1000 days effectively ensures that each spawn point will trigger at most once during the game.
 
 2. Spawning Probability: When a spawn point triggers, this probability controls whether or not the spawn point is populated.  If the spawn is not populated, it will not trigger again until the spawn point reset time interval has passed.  The user has the following spawning probability options:
 
 [1] 10% chance of spawning
 [2] 20% chance of spawning
-[3] 30% chance of spawning
-[4] 40% chance of spawning
-[5] 50% chance of spawning
-[6] 60% chance of spawning
-[7] 70% chance of spawning
-[8] 80% chance of spawning
-[9] 90% chance of spawning
+[3] 35% chance of spawning
+[4] 50% chance of spawning
+[5] 65% chance of spawning
+[6] 75% chance of spawning
+[7] 85% chance of spawning
+[8] 90% chance of spawning
+[9] 95% chance of spawning
 [0] 100% chance of spawning
 
 Notes: 
 * If you set a low spawn % and a long time between spawns, you will see very few spawns.
-
+* Game default spawn percentages are 85% in most areas, with 100% in certain areas like Firewine Ruins.
 
 INSTALLATION
 
