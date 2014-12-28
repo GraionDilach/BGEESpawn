@@ -6,7 +6,7 @@ BACKUP ~bgeespawn/backup~
 
 AUTHOR ~AstroBryGuy~
 
-VERSION ~v0.2~
+VERSION ~v0.3~
 
 README ~bgeespawn/readme.txt~
 
@@ -138,7 +138,7 @@ DESIGNATED 101
     PRINT ~Please choose one of the following options for the time interval between spawn point resets:
 [1] 4 HOURS of game time between spawnings
 [2] 8 HOURS of game time between spawnings
-[3] 12 HOURS of game time between spawnings
+[3] 16 HOURS of game time between spawnings
 [4] 1 day of game time between spawnings
 [5] 2 days of game time between spawnings
 [6] 4 days of game time between spawnings
@@ -146,6 +146,8 @@ DESIGNATED 101
 [8] 10 days of game time between spawnings
 [9] 14 days of game time between spawnings
 [0] 1000 days of game time between spawnings
+
+Note: Game default spawn point reset timing is approximately 16 hours.
 ~
     ACTION_READLN ~spawntimer~
   END
@@ -159,8 +161,8 @@ DESIGNATED 101
         PRINT ~8 hours of game time between spawns~
         END
         ACTION_IF ("spawntimer" = 3) THEN BEGIN
-        APPEND ~gtimes.ids~ ~3600 AY_SPAWN_TIMER~
-        PRINT ~12 hours of game time between spawns~
+        APPEND ~gtimes.ids~ ~4800 AY_SPAWN_TIMER~
+        PRINT ~16 hours of game time between spawns~
         END
         ACTION_IF ("spawntimer" = 4) THEN BEGIN
         APPEND ~gtimes.ids~ ~7200 AY_SPAWN_TIMER~
@@ -204,6 +206,8 @@ DESIGNATED 101
 [8] 80% chance of spawning
 [9] 90% chance of spawning
 [0] 100% chance of spawning
+
+Note: Game defaults are 85-100%, depending on area.
 ~
     ACTION_READLN ~spawnchance~
   END
