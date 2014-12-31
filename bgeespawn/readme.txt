@@ -1,6 +1,6 @@
 BGEE Leveled Spawns Mod
 by AstroBryGuy (http://forum.baldursgate.com/profile/14405/AstroBryGuy)
-Version 0.2
+Version 0.3
 
 BGEE Leveled Spawns replaces the default spawns with spawns that scale in difficulty with the average level of the party.  Each spawn point will spawn groups of 1-6 creatures, depending on party level and creature strength.
 
@@ -110,5 +110,6 @@ This mod is not developed, supported, or endorsed by BioWare, Black Isle Studios
 
 HISTORY
 
+Version 0.3: Added notes regarding game defaults, update spawn trigger reset timings to include selection equivalent to game default, updating spawning probability values to give more options at high probabilities
 Version 0.2: Install bug fixes, update spawn trigger reset timings.
 Version 0.1: Initial public release
