@@ -1,240 +1,240 @@
 IF
-  Global("AYSpawnRandomBeenSetAR43005","AR4300",0)
+  Global("AYSpawnRandomBeenSetAR43005","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR43005","AR4300",1)
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43005","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(3,1)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",0)
-  Global("AYSpawnRandomBeenSetAR43005","AR4300",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43005","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR43005_2","AR4300",1)
-    SetGlobal("AYSpawnRandomBeenSetAR43005","AR4300",1)
+    SetGlobal("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43005","%NorthNashkelRoad%",1)
 END
 
 IF
   RandomNum(3,2)
-  Global("AYSpawnRandomSetAR43005_1","AR4300",0)
-  Global("AYSpawnRandomBeenSetAR43005","AR4300",0)
+  Global("AYSpawnRandomSetAR43005_1","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43005","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR43005_1","AR4300",1)
-    SetGlobal("AYSpawnRandomBeenSetAR43005","AR4300",1)
+    SetGlobal("AYSpawnRandomSetAR43005_1","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43005","%NorthNashkelRoad%",1)
 END
 
 IF
   RandomNum(3,3)
-  Global("AYSpawnRandomSetAR43005_0","AR4300",0)
-  Global("AYSpawnRandomBeenSetAR43005","AR4300",0)
+  Global("AYSpawnRandomSetAR43005_0","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43005","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR43005_0","AR4300",1)
-    SetGlobal("AYSpawnRandomBeenSetAR43005","AR4300",1)
+    SetGlobal("AYSpawnRandomSetAR43005_0","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43005","%NorthNashkelRoad%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
   LevelPartyLT(8)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(7)
   LevelPartyLT(9)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(8)
   LevelPartyLT(10)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(9)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_2","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
     CreateCreature("HOBELITE",[2637.3178],0)  // ~Hobgoblin Elite~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_1","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_1","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("GIBBER",[2637.3178],0)  // ~Gibberling~
     CreateCreature("GIBBER",[2637.3178],0)  // ~Gibberling~
     CreateCreature("GIBBER",[2637.3178],0)  // ~Gibberling~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_1","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_1","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("GIBBER",[2637.3178],0)  // ~Gibberling~
     CreateCreature("GIBBER",[2637.3178],0)  // ~Gibberling~
     CreateCreature("GIBBER",[2637.3178],0)  // ~Gibberling~
     CreateCreature("GIBBER",[2637.3178],0)  // ~Gibberling~
     CreateCreature("GIBBER",[2637.3178],0)  // ~Gibberling~
     CreateCreature("GIBBER",[2637.3178],0)  // ~Gibberling~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_0","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_0","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR43005","AR4300",0)
-  Global("AYSpawnRandomSetAR43005_0","AR4300",1)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43005_0","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -245,24 +245,24 @@ IF
   !Range("GIBBER",60)
 
   !Range("HOBELITE",60)
-  Global("AYSpawnResetAR43005","AR4300",1)
-  GlobalTimerExpired("AYSpawnTimerAR43005","AR4300")
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
+  GlobalTimerExpired("AYSpawnTimerAR43005","%NorthNashkelRoad%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",0)
-    SetGlobal("AYSpawnRandomBeenSetAR43005","AR4300",0)
-    SetGlobal("AYSpawnRandomSetAR43005_2","AR4300",0)
-    SetGlobal("AYSpawnRandomSetAR43005_1","AR4300",0)
-    SetGlobal("AYSpawnRandomSetAR43005_0","AR4300",0)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR43005","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43005_2","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43005_1","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43005_0","%NorthNashkelRoad%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR43005","AR4300",0)
+  Global("AYSpawnResetAR43005","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43005","AR4300",1)
+    SetGlobal("AYSpawnResetAR43005","%NorthNashkelRoad%",1)
     CreateCreature("KOBOLA_D",[2637.3178],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR43005","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43005","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 

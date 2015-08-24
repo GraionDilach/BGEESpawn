@@ -1,123 +1,123 @@
 IF
-  Global("AYSpawnRandomBeenSetAR36006","AR3600",0)
+  Global("AYSpawnRandomBeenSetAR36006","%Lighthouse%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR36006","AR3600",1)
-    SetGlobal("AYSpawnResetAR36006","AR3600",1)
+    SetGlobal("AYSpawnRandomBeenSetAR36006","%Lighthouse%",1)
+    SetGlobal("AYSpawnResetAR36006","%Lighthouse%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(2,1)
-  Global("AYSpawnRandomSetAR36006_1","AR3600",0)
-  Global("AYSpawnRandomBeenSetAR36006","AR3600",0)
+  Global("AYSpawnRandomSetAR36006_1","%Lighthouse%",0)
+  Global("AYSpawnRandomBeenSetAR36006","%Lighthouse%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR36006_1","AR3600",1)
-    SetGlobal("AYSpawnRandomBeenSetAR36006","AR3600",1)
+    SetGlobal("AYSpawnRandomSetAR36006_1","%Lighthouse%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR36006","%Lighthouse%",1)
 END
 
 IF
   RandomNum(2,2)
-  Global("AYSpawnRandomSetAR36006_0","AR3600",0)
-  Global("AYSpawnRandomBeenSetAR36006","AR3600",0)
+  Global("AYSpawnRandomSetAR36006_0","%Lighthouse%",0)
+  Global("AYSpawnRandomBeenSetAR36006","%Lighthouse%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR36006_0","AR3600",1)
-    SetGlobal("AYSpawnRandomBeenSetAR36006","AR3600",1)
+    SetGlobal("AYSpawnRandomSetAR36006_0","%Lighthouse%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR36006","%Lighthouse%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR36006","AR3600",0)
-  Global("AYSpawnRandomSetAR36006_1","AR3600",1)
+  Global("AYSpawnResetAR36006","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36006_1","%Lighthouse%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR36006","AR3600",1)
+    SetGlobal("AYSpawnResetAR36006","%Lighthouse%",1)
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR36006","AR3600",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR36006","%Lighthouse%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR36006","AR3600",0)
-  Global("AYSpawnRandomSetAR36006_1","AR3600",1)
+  Global("AYSpawnResetAR36006","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36006_1","%Lighthouse%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR36006","AR3600",1)
+    SetGlobal("AYSpawnResetAR36006","%Lighthouse%",1)
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR36006","AR3600",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR36006","%Lighthouse%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR36006","AR3600",0)
-  Global("AYSpawnRandomSetAR36006_1","AR3600",1)
+  Global("AYSpawnResetAR36006","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36006_1","%Lighthouse%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR36006","AR3600",1)
+    SetGlobal("AYSpawnResetAR36006","%Lighthouse%",1)
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_E",[2931.1944],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR36006","AR3600",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR36006","%Lighthouse%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR36006","AR3600",0)
-  Global("AYSpawnRandomSetAR36006_0","AR3600",1)
+  Global("AYSpawnResetAR36006","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36006_0","%Lighthouse%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR36006","AR3600",1)
+    SetGlobal("AYSpawnResetAR36006","%Lighthouse%",1)
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR36006","AR3600",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR36006","%Lighthouse%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR36006","AR3600",0)
-  Global("AYSpawnRandomSetAR36006_0","AR3600",1)
+  Global("AYSpawnResetAR36006","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36006_0","%Lighthouse%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR36006","AR3600",1)
+    SetGlobal("AYSpawnResetAR36006","%Lighthouse%",1)
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR36006","AR3600",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR36006","%Lighthouse%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR36006","AR3600",0)
-  Global("AYSpawnRandomSetAR36006_0","AR3600",1)
+  Global("AYSpawnResetAR36006","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36006_0","%Lighthouse%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR36006","AR3600",1)
+    SetGlobal("AYSpawnResetAR36006","%Lighthouse%",1)
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR36006","AR3600",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR36006","%Lighthouse%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -126,23 +126,23 @@ IF
   !Range("HOBGOA_C",60)
 
   !Range("HOBGOA_E",60)
-  Global("AYSpawnResetAR36006","AR3600",1)
-  GlobalTimerExpired("AYSpawnTimerAR36006","AR3600")
+  Global("AYSpawnResetAR36006","%Lighthouse%",1)
+  GlobalTimerExpired("AYSpawnTimerAR36006","%Lighthouse%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR36006","AR3600",0)
-    SetGlobal("AYSpawnRandomBeenSetAR36006","AR3600",0)
-    SetGlobal("AYSpawnRandomSetAR36006_1","AR3600",0)
-    SetGlobal("AYSpawnRandomSetAR36006_0","AR3600",0)
+    SetGlobal("AYSpawnResetAR36006","%Lighthouse%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR36006","%Lighthouse%",0)
+    SetGlobal("AYSpawnRandomSetAR36006_1","%Lighthouse%",0)
+    SetGlobal("AYSpawnRandomSetAR36006_0","%Lighthouse%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR36006","AR3600",0)
+  Global("AYSpawnResetAR36006","%Lighthouse%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR36006","AR3600",1)
+    SetGlobal("AYSpawnResetAR36006","%Lighthouse%",1)
     CreateCreature("HOBGOA_C",[2931.1944],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR36006","AR3600",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR36006","%Lighthouse%",AY_SPAWN_TIMER)
 END
 

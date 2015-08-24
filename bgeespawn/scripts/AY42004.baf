@@ -1,287 +1,287 @@
 IF
-  Global("AYSpawnRandomBeenSetAR42004","AR4200",0)
+  Global("AYSpawnRandomBeenSetAR42004","%FishermansLake%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR42004","AR4200",1)
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42004","%FishermansLake%",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(2,1)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",0)
-  Global("AYSpawnRandomBeenSetAR42004","AR4200",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42004","%FishermansLake%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR42004_1","AR4200",1)
-    SetGlobal("AYSpawnRandomBeenSetAR42004","AR4200",1)
+    SetGlobal("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42004","%FishermansLake%",1)
 END
 
 IF
   RandomNum(2,2)
-  Global("AYSpawnRandomSetAR42004_0","AR4200",0)
-  Global("AYSpawnRandomBeenSetAR42004","AR4200",0)
+  Global("AYSpawnRandomSetAR42004_0","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42004","%FishermansLake%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR42004_0","AR4200",1)
-    SetGlobal("AYSpawnRandomBeenSetAR42004","AR4200",1)
+    SetGlobal("AYSpawnRandomSetAR42004_0","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42004","%FishermansLake%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
   LevelPartyLT(8)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(7)
   LevelPartyLT(9)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(8)
   LevelPartyLT(10)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(9)
   LevelPartyLT(11)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(10)
   LevelPartyLT(12)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(11)
   LevelPartyLT(13)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(12)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_1","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
     CreateCreature("GHAST",[3952.3201],0)  // ~Ghast~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_0","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_0","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_0","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_0","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_0","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_0","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_0","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_0","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_0","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_0","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
-  Global("AYSpawnResetAR42004","AR4200",0)
-  Global("AYSpawnRandomSetAR42004_0","AR4200",1)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42004_0","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -290,23 +290,23 @@ IF
   !Range("GHOUL",60)
 
   !Range("GHAST",60)
-  Global("AYSpawnResetAR42004","AR4200",1)
-  GlobalTimerExpired("AYSpawnTimerAR42004","AR4200")
+  Global("AYSpawnResetAR42004","%FishermansLake%",1)
+  GlobalTimerExpired("AYSpawnTimerAR42004","%FishermansLake%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",0)
-    SetGlobal("AYSpawnRandomBeenSetAR42004","AR4200",0)
-    SetGlobal("AYSpawnRandomSetAR42004_1","AR4200",0)
-    SetGlobal("AYSpawnRandomSetAR42004_0","AR4200",0)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR42004","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42004_1","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42004_0","%FishermansLake%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR42004","AR4200",0)
+  Global("AYSpawnResetAR42004","%FishermansLake%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42004","AR4200",1)
+    SetGlobal("AYSpawnResetAR42004","%FishermansLake%",1)
     CreateCreature("GHOUL",[3952.3201],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR42004","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42004","%FishermansLake%",AY_SPAWN_TIMER)
 END
 

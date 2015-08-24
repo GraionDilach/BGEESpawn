@@ -1,259 +1,259 @@
 IF
-  Global("AYSpawnRandomBeenSetAR31007","AR3100",0)
+  Global("AYSpawnRandomBeenSetAR31007","%ShipwrecksCoast%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR31007","AR3100",1)
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnRandomBeenSetAR31007","%ShipwrecksCoast%",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(2,1)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",0)
-  Global("AYSpawnRandomBeenSetAR31007","AR3100",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomBeenSetAR31007","%ShipwrecksCoast%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR31007_1","AR3100",1)
-    SetGlobal("AYSpawnRandomBeenSetAR31007","AR3100",1)
+    SetGlobal("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR31007","%ShipwrecksCoast%",1)
 END
 
 IF
   RandomNum(2,2)
-  Global("AYSpawnRandomSetAR31007_0","AR3100",0)
-  Global("AYSpawnRandomBeenSetAR31007","AR3100",0)
+  Global("AYSpawnRandomSetAR31007_0","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomBeenSetAR31007","%ShipwrecksCoast%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR31007_0","AR3100",1)
-    SetGlobal("AYSpawnRandomBeenSetAR31007","AR3100",1)
+    SetGlobal("AYSpawnRandomSetAR31007_0","%ShipwrecksCoast%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR31007","%ShipwrecksCoast%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
   LevelPartyLT(8)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(7)
   LevelPartyLT(9)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(8)
   LevelPartyLT(10)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(9)
   LevelPartyLT(11)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(10)
   LevelPartyLT(12)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(11)
   LevelPartyLT(13)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(12)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_1","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
     CreateCreature("CARRIO",[805.2345],0)  // ~Carrion Crawler~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_0","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_0","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_0","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_0","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_0","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_0","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR31007","AR3100",0)
-  Global("AYSpawnRandomSetAR31007_0","AR3100",1)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31007_0","%ShipwrecksCoast%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -262,23 +262,23 @@ IF
   !Range("WOLF",60)
 
   !Range("CARRIO",60)
-  Global("AYSpawnResetAR31007","AR3100",1)
-  GlobalTimerExpired("AYSpawnTimerAR31007","AR3100")
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
+  GlobalTimerExpired("AYSpawnTimerAR31007","%ShipwrecksCoast%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",0)
-    SetGlobal("AYSpawnRandomBeenSetAR31007","AR3100",0)
-    SetGlobal("AYSpawnRandomSetAR31007_1","AR3100",0)
-    SetGlobal("AYSpawnRandomSetAR31007_0","AR3100",0)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR31007","%ShipwrecksCoast%",0)
+    SetGlobal("AYSpawnRandomSetAR31007_1","%ShipwrecksCoast%",0)
+    SetGlobal("AYSpawnRandomSetAR31007_0","%ShipwrecksCoast%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR31007","AR3100",0)
+  Global("AYSpawnResetAR31007","%ShipwrecksCoast%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR31007","AR3100",1)
+    SetGlobal("AYSpawnResetAR31007","%ShipwrecksCoast%",1)
     CreateCreature("WOLF",[805.2345],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR31007","AR3100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR31007","%ShipwrecksCoast%",AY_SPAWN_TIMER)
 END
 

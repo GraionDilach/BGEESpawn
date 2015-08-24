@@ -1,74 +1,74 @@
 IF
-  Global("AYSpawnRandomBeenSetAR18003","AR1800",0)
+  Global("AYSpawnRandomBeenSetAR18003","%CloakwoodMines%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR18003","AR1800",1)
-    SetGlobal("AYSpawnResetAR18003","AR1800",1)
+    SetGlobal("AYSpawnRandomBeenSetAR18003","%CloakwoodMines%",1)
+    SetGlobal("AYSpawnResetAR18003","%CloakwoodMines%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(1,1)
-  Global("AYSpawnRandomSetAR18003_0","AR1800",0)
-  Global("AYSpawnRandomBeenSetAR18003","AR1800",0)
+  Global("AYSpawnRandomSetAR18003_0","%CloakwoodMines%",0)
+  Global("AYSpawnRandomBeenSetAR18003","%CloakwoodMines%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR18003_0","AR1800",1)
-    SetGlobal("AYSpawnRandomBeenSetAR18003","AR1800",1)
+    SetGlobal("AYSpawnRandomSetAR18003_0","%CloakwoodMines%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR18003","%CloakwoodMines%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR18003","AR1800",0)
-  Global("AYSpawnRandomSetAR18003_0","AR1800",1)
+  Global("AYSpawnResetAR18003","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18003_0","%CloakwoodMines%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR18003","AR1800",1)
+    SetGlobal("AYSpawnResetAR18003","%CloakwoodMines%",1)
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
-    SetGlobalTimer("AYSpawnTimerAR18003","AR1800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR18003","%CloakwoodMines%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR18003","AR1800",0)
-  Global("AYSpawnRandomSetAR18003_0","AR1800",1)
+  Global("AYSpawnResetAR18003","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18003_0","%CloakwoodMines%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR18003","AR1800",1)
+    SetGlobal("AYSpawnResetAR18003","%CloakwoodMines%",1)
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
-    SetGlobalTimer("AYSpawnTimerAR18003","AR1800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR18003","%CloakwoodMines%",AY_SPAWN_TIMER)
 END
 
 IF
   !Range([PC],60)
 
   !Range("TASLOI",60)
-  Global("AYSpawnResetAR18003","AR1800",1)
-  GlobalTimerExpired("AYSpawnTimerAR18003","AR1800")
+  Global("AYSpawnResetAR18003","%CloakwoodMines%",1)
+  GlobalTimerExpired("AYSpawnTimerAR18003","%CloakwoodMines%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR18003","AR1800",0)
-    SetGlobal("AYSpawnRandomBeenSetAR18003","AR1800",0)
-    SetGlobal("AYSpawnRandomSetAR18003_0","AR1800",0)
+    SetGlobal("AYSpawnResetAR18003","%CloakwoodMines%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR18003","%CloakwoodMines%",0)
+    SetGlobal("AYSpawnRandomSetAR18003_0","%CloakwoodMines%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR18003","AR1800",0)
+  Global("AYSpawnResetAR18003","%CloakwoodMines%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR18003","AR1800",1)
+    SetGlobal("AYSpawnResetAR18003","%CloakwoodMines%",1)
     CreateCreature("TASLOI",[3809.2863],0)  // ~Tasloi~
-    SetGlobalTimer("AYSpawnTimerAR18003","AR1800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR18003","%CloakwoodMines%",AY_SPAWN_TIMER)
 END
 

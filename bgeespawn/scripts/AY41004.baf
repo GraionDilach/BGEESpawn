@@ -1,193 +1,193 @@
 IF
-  Global("AYSpawnRandomBeenSetAR41004","AR4100",0)
+  Global("AYSpawnRandomBeenSetAR41004","%ArchaeologicalSite%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR41004","AR4100",1)
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnRandomBeenSetAR41004","%ArchaeologicalSite%",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(3,1)
-  Global("AYSpawnRandomSetAR41004_2","AR4100",0)
-  Global("AYSpawnRandomBeenSetAR41004","AR4100",0)
+  Global("AYSpawnRandomSetAR41004_2","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomBeenSetAR41004","%ArchaeologicalSite%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR41004_2","AR4100",1)
-    SetGlobal("AYSpawnRandomBeenSetAR41004","AR4100",1)
+    SetGlobal("AYSpawnRandomSetAR41004_2","%ArchaeologicalSite%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR41004","%ArchaeologicalSite%",1)
 END
 
 IF
   RandomNum(3,2)
-  Global("AYSpawnRandomSetAR41004_1","AR4100",0)
-  Global("AYSpawnRandomBeenSetAR41004","AR4100",0)
+  Global("AYSpawnRandomSetAR41004_1","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomBeenSetAR41004","%ArchaeologicalSite%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR41004_1","AR4100",1)
-    SetGlobal("AYSpawnRandomBeenSetAR41004","AR4100",1)
+    SetGlobal("AYSpawnRandomSetAR41004_1","%ArchaeologicalSite%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR41004","%ArchaeologicalSite%",1)
 END
 
 IF
   RandomNum(3,3)
-  Global("AYSpawnRandomSetAR41004_0","AR4100",0)
-  Global("AYSpawnRandomBeenSetAR41004","AR4100",0)
+  Global("AYSpawnRandomSetAR41004_0","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomBeenSetAR41004","%ArchaeologicalSite%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR41004_0","AR4100",1)
-    SetGlobal("AYSpawnRandomBeenSetAR41004","AR4100",1)
+    SetGlobal("AYSpawnRandomSetAR41004_0","%ArchaeologicalSite%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR41004","%ArchaeologicalSite%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_2","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_2","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_2","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_2","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_2","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_2","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_2","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_2","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
     CreateCreature("WOLF",[2625.3241],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_1","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_1","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_1","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_1","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_1","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_1","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_1","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_1","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
     CreateCreature("DOGWA",[2625.3241],0)  // ~War Dog~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_0","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_0","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR41004","AR4100",0)
-  Global("AYSpawnRandomSetAR41004_0","AR4100",1)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41004_0","%ArchaeologicalSite%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -198,24 +198,24 @@ IF
   !Range("DOGWA",60)
 
   !Range("WOLF",60)
-  Global("AYSpawnResetAR41004","AR4100",1)
-  GlobalTimerExpired("AYSpawnTimerAR41004","AR4100")
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
+  GlobalTimerExpired("AYSpawnTimerAR41004","%ArchaeologicalSite%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",0)
-    SetGlobal("AYSpawnRandomBeenSetAR41004","AR4100",0)
-    SetGlobal("AYSpawnRandomSetAR41004_2","AR4100",0)
-    SetGlobal("AYSpawnRandomSetAR41004_1","AR4100",0)
-    SetGlobal("AYSpawnRandomSetAR41004_0","AR4100",0)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR41004","%ArchaeologicalSite%",0)
+    SetGlobal("AYSpawnRandomSetAR41004_2","%ArchaeologicalSite%",0)
+    SetGlobal("AYSpawnRandomSetAR41004_1","%ArchaeologicalSite%",0)
+    SetGlobal("AYSpawnRandomSetAR41004_0","%ArchaeologicalSite%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR41004","AR4100",0)
+  Global("AYSpawnResetAR41004","%ArchaeologicalSite%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR41004","AR4100",1)
+    SetGlobal("AYSpawnResetAR41004","%ArchaeologicalSite%",1)
     CreateCreature("DOGWI",[2625.3241],0)  // ~Wild Dog~
-    SetGlobalTimer("AYSpawnTimerAR41004","AR4100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR41004","%ArchaeologicalSite%",AY_SPAWN_TIMER)
 END
 

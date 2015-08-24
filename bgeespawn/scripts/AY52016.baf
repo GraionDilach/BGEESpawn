@@ -1,134 +1,134 @@
 IF
-  Global("AYSpawnRandomBeenSetAR52016","AR5201",0)
+  Global("AYSpawnRandomBeenSetAR52016","%FirewineRuins%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR52016","AR5201",1)
-    SetGlobal("AYSpawnResetAR52016","AR5201",1)
+    SetGlobal("AYSpawnRandomBeenSetAR52016","%FirewineRuins%",1)
+    SetGlobal("AYSpawnResetAR52016","%FirewineRuins%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(1,1)
-  Global("AYSpawnRandomSetAR52016_0","AR5201",0)
-  Global("AYSpawnRandomBeenSetAR52016","AR5201",0)
+  Global("AYSpawnRandomSetAR52016_0","%FirewineRuins%",0)
+  Global("AYSpawnRandomBeenSetAR52016","%FirewineRuins%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR52016_0","AR5201",1)
-    SetGlobal("AYSpawnRandomBeenSetAR52016","AR5201",1)
+    SetGlobal("AYSpawnRandomSetAR52016_0","%FirewineRuins%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR52016","%FirewineRuins%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR52016","AR5201",0)
-  Global("AYSpawnRandomSetAR52016_0","AR5201",1)
+  Global("AYSpawnResetAR52016","%FirewineRuins%",0)
+  Global("AYSpawnRandomSetAR52016_0","%FirewineRuins%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR52016","AR5201",1)
+    SetGlobal("AYSpawnResetAR52016","%FirewineRuins%",1)
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR52016","AR5201",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR52016","%FirewineRuins%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR52016","AR5201",0)
-  Global("AYSpawnRandomSetAR52016_0","AR5201",1)
+  Global("AYSpawnResetAR52016","%FirewineRuins%",0)
+  Global("AYSpawnRandomSetAR52016_0","%FirewineRuins%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR52016","AR5201",1)
+    SetGlobal("AYSpawnResetAR52016","%FirewineRuins%",1)
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR52016","AR5201",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR52016","%FirewineRuins%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR52016","AR5201",0)
-  Global("AYSpawnRandomSetAR52016_0","AR5201",1)
+  Global("AYSpawnResetAR52016","%FirewineRuins%",0)
+  Global("AYSpawnRandomSetAR52016_0","%FirewineRuins%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR52016","AR5201",1)
+    SetGlobal("AYSpawnResetAR52016","%FirewineRuins%",1)
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR52016","AR5201",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR52016","%FirewineRuins%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR52016","AR5201",0)
-  Global("AYSpawnRandomSetAR52016_0","AR5201",1)
+  Global("AYSpawnResetAR52016","%FirewineRuins%",0)
+  Global("AYSpawnRandomSetAR52016_0","%FirewineRuins%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR52016","AR5201",1)
+    SetGlobal("AYSpawnResetAR52016","%FirewineRuins%",1)
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR52016","AR5201",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR52016","%FirewineRuins%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR52016","AR5201",0)
-  Global("AYSpawnRandomSetAR52016_0","AR5201",1)
+  Global("AYSpawnResetAR52016","%FirewineRuins%",0)
+  Global("AYSpawnRandomSetAR52016_0","%FirewineRuins%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR52016","AR5201",1)
+    SetGlobal("AYSpawnResetAR52016","%FirewineRuins%",1)
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR52016","AR5201",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR52016","%FirewineRuins%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
-  Global("AYSpawnResetAR52016","AR5201",0)
-  Global("AYSpawnRandomSetAR52016_0","AR5201",1)
+  Global("AYSpawnResetAR52016","%FirewineRuins%",0)
+  Global("AYSpawnRandomSetAR52016_0","%FirewineRuins%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR52016","AR5201",1)
+    SetGlobal("AYSpawnResetAR52016","%FirewineRuins%",1)
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR52016","AR5201",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR52016","%FirewineRuins%",AY_SPAWN_TIMER)
 END
 
 IF
   !Range([PC],60)
 
   !Range("KOBCOMM",60)
-  Global("AYSpawnResetAR52016","AR5201",1)
-  GlobalTimerExpired("AYSpawnTimerAR52016","AR5201")
+  Global("AYSpawnResetAR52016","%FirewineRuins%",1)
+  GlobalTimerExpired("AYSpawnTimerAR52016","%FirewineRuins%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR52016","AR5201",0)
-    SetGlobal("AYSpawnRandomBeenSetAR52016","AR5201",0)
-    SetGlobal("AYSpawnRandomSetAR52016_0","AR5201",0)
+    SetGlobal("AYSpawnResetAR52016","%FirewineRuins%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR52016","%FirewineRuins%",0)
+    SetGlobal("AYSpawnRandomSetAR52016_0","%FirewineRuins%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR52016","AR5201",0)
+  Global("AYSpawnResetAR52016","%FirewineRuins%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR52016","AR5201",1)
+    SetGlobal("AYSpawnResetAR52016","%FirewineRuins%",1)
     CreateCreature("KOBCOMM",[1776.514],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR52016","AR5201",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR52016","%FirewineRuins%",AY_SPAWN_TIMER)
 END
 

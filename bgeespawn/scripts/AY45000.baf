@@ -1,235 +1,235 @@
 IF
-  Global("AYSpawnRandomBeenSetAR45000","AR4500",0)
+  Global("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR45000","AR4500",1)
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(4,1)
-  Global("AYSpawnRandomSetAR45000_3","AR4500",0)
-  Global("AYSpawnRandomBeenSetAR45000","AR4500",0)
+  Global("AYSpawnRandomSetAR45000_3","%FirewineBridge%",0)
+  Global("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR45000_3","AR4500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR45000","AR4500",1)
+    SetGlobal("AYSpawnRandomSetAR45000_3","%FirewineBridge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",1)
 END
 
 IF
   RandomNum(4,2)
-  Global("AYSpawnRandomSetAR45000_2","AR4500",0)
-  Global("AYSpawnRandomBeenSetAR45000","AR4500",0)
+  Global("AYSpawnRandomSetAR45000_2","%FirewineBridge%",0)
+  Global("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR45000_2","AR4500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR45000","AR4500",1)
+    SetGlobal("AYSpawnRandomSetAR45000_2","%FirewineBridge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",1)
 END
 
 IF
   RandomNum(4,3)
-  Global("AYSpawnRandomSetAR45000_1","AR4500",0)
-  Global("AYSpawnRandomBeenSetAR45000","AR4500",0)
+  Global("AYSpawnRandomSetAR45000_1","%FirewineBridge%",0)
+  Global("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR45000_1","AR4500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR45000","AR4500",1)
+    SetGlobal("AYSpawnRandomSetAR45000_1","%FirewineBridge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",1)
 END
 
 IF
   RandomNum(4,4)
-  Global("AYSpawnRandomSetAR45000_0","AR4500",0)
-  Global("AYSpawnRandomBeenSetAR45000","AR4500",0)
+  Global("AYSpawnRandomSetAR45000_0","%FirewineBridge%",0)
+  Global("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR45000_0","AR4500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR45000","AR4500",1)
+    SetGlobal("AYSpawnRandomSetAR45000_0","%FirewineBridge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_3","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_3","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_3","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_3","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_3","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_3","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_C",[1508.262],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_2","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_2","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_2","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_2","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_2","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_2","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_1","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_1","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_1","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_1","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_1","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_1","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_C",[1508.262],0)  // ~Zombie~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_0","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_0","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_0","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_0","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR45000","AR4500",0)
-  Global("AYSpawnRandomSetAR45000_0","AR4500",1)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45000_0","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
     CreateCreature("ZOMBIE_A",[1508.262],0)  // ~Zombie~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -242,25 +242,25 @@ IF
   !Range("SKELET_A",60)
 
   !Range("SKELET_C",60)
-  Global("AYSpawnResetAR45000","AR4500",1)
-  GlobalTimerExpired("AYSpawnTimerAR45000","AR4500")
+  Global("AYSpawnResetAR45000","%FirewineBridge%",1)
+  GlobalTimerExpired("AYSpawnTimerAR45000","%FirewineBridge%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",0)
-    SetGlobal("AYSpawnRandomBeenSetAR45000","AR4500",0)
-    SetGlobal("AYSpawnRandomSetAR45000_3","AR4500",0)
-    SetGlobal("AYSpawnRandomSetAR45000_2","AR4500",0)
-    SetGlobal("AYSpawnRandomSetAR45000_1","AR4500",0)
-    SetGlobal("AYSpawnRandomSetAR45000_0","AR4500",0)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR45000","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomSetAR45000_3","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomSetAR45000_2","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomSetAR45000_1","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomSetAR45000_0","%FirewineBridge%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR45000","AR4500",0)
+  Global("AYSpawnResetAR45000","%FirewineBridge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45000","AR4500",1)
+    SetGlobal("AYSpawnResetAR45000","%FirewineBridge%",1)
     CreateCreature("SKELET_A",[1508.262],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR45000","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45000","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
