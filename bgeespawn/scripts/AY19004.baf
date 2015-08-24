@@ -1,123 +1,123 @@
 IF
-  Global("AYSpawnRandomBeenSetAR19004","AR1900",0)
+  Global("AYSpawnRandomBeenSetAR19004","%BanditCamp%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR19004","AR1900",1)
-    SetGlobal("AYSpawnResetAR19004","AR1900",1)
+    SetGlobal("AYSpawnRandomBeenSetAR19004","%BanditCamp%",1)
+    SetGlobal("AYSpawnResetAR19004","%BanditCamp%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(2,1)
-  Global("AYSpawnRandomSetAR19004_1","AR1900",0)
-  Global("AYSpawnRandomBeenSetAR19004","AR1900",0)
+  Global("AYSpawnRandomSetAR19004_1","%BanditCamp%",0)
+  Global("AYSpawnRandomBeenSetAR19004","%BanditCamp%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR19004_1","AR1900",1)
-    SetGlobal("AYSpawnRandomBeenSetAR19004","AR1900",1)
+    SetGlobal("AYSpawnRandomSetAR19004_1","%BanditCamp%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR19004","%BanditCamp%",1)
 END
 
 IF
   RandomNum(2,2)
-  Global("AYSpawnRandomSetAR19004_0","AR1900",0)
-  Global("AYSpawnRandomBeenSetAR19004","AR1900",0)
+  Global("AYSpawnRandomSetAR19004_0","%BanditCamp%",0)
+  Global("AYSpawnRandomBeenSetAR19004","%BanditCamp%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR19004_0","AR1900",1)
-    SetGlobal("AYSpawnRandomBeenSetAR19004","AR1900",1)
+    SetGlobal("AYSpawnRandomSetAR19004_0","%BanditCamp%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR19004","%BanditCamp%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR19004","AR1900",0)
-  Global("AYSpawnRandomSetAR19004_1","AR1900",1)
+  Global("AYSpawnResetAR19004","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19004_1","%BanditCamp%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR19004","AR1900",1)
+    SetGlobal("AYSpawnResetAR19004","%BanditCamp%",1)
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR19004","AR1900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR19004","%BanditCamp%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR19004","AR1900",0)
-  Global("AYSpawnRandomSetAR19004_1","AR1900",1)
+  Global("AYSpawnResetAR19004","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19004_1","%BanditCamp%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR19004","AR1900",1)
+    SetGlobal("AYSpawnResetAR19004","%BanditCamp%",1)
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR19004","AR1900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR19004","%BanditCamp%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR19004","AR1900",0)
-  Global("AYSpawnRandomSetAR19004_1","AR1900",1)
+  Global("AYSpawnResetAR19004","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19004_1","%BanditCamp%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR19004","AR1900",1)
+    SetGlobal("AYSpawnResetAR19004","%BanditCamp%",1)
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR19004","AR1900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR19004","%BanditCamp%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR19004","AR1900",0)
-  Global("AYSpawnRandomSetAR19004_0","AR1900",1)
+  Global("AYSpawnResetAR19004","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19004_0","%BanditCamp%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR19004","AR1900",1)
+    SetGlobal("AYSpawnResetAR19004","%BanditCamp%",1)
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
-    SetGlobalTimer("AYSpawnTimerAR19004","AR1900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR19004","%BanditCamp%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR19004","AR1900",0)
-  Global("AYSpawnRandomSetAR19004_0","AR1900",1)
+  Global("AYSpawnResetAR19004","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19004_0","%BanditCamp%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR19004","AR1900",1)
+    SetGlobal("AYSpawnResetAR19004","%BanditCamp%",1)
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
-    SetGlobalTimer("AYSpawnTimerAR19004","AR1900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR19004","%BanditCamp%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR19004","AR1900",0)
-  Global("AYSpawnRandomSetAR19004_0","AR1900",1)
+  Global("AYSpawnResetAR19004","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19004_0","%BanditCamp%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR19004","AR1900",1)
+    SetGlobal("AYSpawnResetAR19004","%BanditCamp%",1)
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
     CreateCreature("ZOMBIE_B",[2191.2007],0)  // ~Zombie~
-    SetGlobalTimer("AYSpawnTimerAR19004","AR1900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR19004","%BanditCamp%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -126,23 +126,23 @@ IF
   !Range("ZOMBIE_B",60)
 
   !Range("SKELET03",60)
-  Global("AYSpawnResetAR19004","AR1900",1)
-  GlobalTimerExpired("AYSpawnTimerAR19004","AR1900")
+  Global("AYSpawnResetAR19004","%BanditCamp%",1)
+  GlobalTimerExpired("AYSpawnTimerAR19004","%BanditCamp%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR19004","AR1900",0)
-    SetGlobal("AYSpawnRandomBeenSetAR19004","AR1900",0)
-    SetGlobal("AYSpawnRandomSetAR19004_1","AR1900",0)
-    SetGlobal("AYSpawnRandomSetAR19004_0","AR1900",0)
+    SetGlobal("AYSpawnResetAR19004","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR19004","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomSetAR19004_1","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomSetAR19004_0","%BanditCamp%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR19004","AR1900",0)
+  Global("AYSpawnResetAR19004","%BanditCamp%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR19004","AR1900",1)
+    SetGlobal("AYSpawnResetAR19004","%BanditCamp%",1)
     CreateCreature("SKELET03",[2191.2007],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR19004","AR1900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR19004","%BanditCamp%",AY_SPAWN_TIMER)
 END
 

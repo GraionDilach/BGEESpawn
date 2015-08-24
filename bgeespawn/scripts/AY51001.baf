@@ -1,163 +1,163 @@
 IF
-  Global("AYSpawnRandomBeenSetAR51001","AR5100",0)
+  Global("AYSpawnRandomBeenSetAR51001","%GnollStronghold%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR51001","AR5100",1)
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnRandomBeenSetAR51001","%GnollStronghold%",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(3,1)
-  Global("AYSpawnRandomSetAR51001_2","AR5100",0)
-  Global("AYSpawnRandomBeenSetAR51001","AR5100",0)
+  Global("AYSpawnRandomSetAR51001_2","%GnollStronghold%",0)
+  Global("AYSpawnRandomBeenSetAR51001","%GnollStronghold%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR51001_2","AR5100",1)
-    SetGlobal("AYSpawnRandomBeenSetAR51001","AR5100",1)
+    SetGlobal("AYSpawnRandomSetAR51001_2","%GnollStronghold%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR51001","%GnollStronghold%",1)
 END
 
 IF
   RandomNum(3,2)
-  Global("AYSpawnRandomSetAR51001_1","AR5100",0)
-  Global("AYSpawnRandomBeenSetAR51001","AR5100",0)
+  Global("AYSpawnRandomSetAR51001_1","%GnollStronghold%",0)
+  Global("AYSpawnRandomBeenSetAR51001","%GnollStronghold%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR51001_1","AR5100",1)
-    SetGlobal("AYSpawnRandomBeenSetAR51001","AR5100",1)
+    SetGlobal("AYSpawnRandomSetAR51001_1","%GnollStronghold%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR51001","%GnollStronghold%",1)
 END
 
 IF
   RandomNum(3,3)
-  Global("AYSpawnRandomSetAR51001_0","AR5100",0)
-  Global("AYSpawnRandomBeenSetAR51001","AR5100",0)
+  Global("AYSpawnRandomSetAR51001_0","%GnollStronghold%",0)
+  Global("AYSpawnRandomBeenSetAR51001","%GnollStronghold%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR51001_0","AR5100",1)
-    SetGlobal("AYSpawnRandomBeenSetAR51001","AR5100",1)
+    SetGlobal("AYSpawnRandomSetAR51001_0","%GnollStronghold%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR51001","%GnollStronghold%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR51001","AR5100",0)
-  Global("AYSpawnRandomSetAR51001_2","AR5100",1)
+  Global("AYSpawnResetAR51001","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51001_2","%GnollStronghold%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR51001","AR5100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR51001","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR51001","AR5100",0)
-  Global("AYSpawnRandomSetAR51001_2","AR5100",1)
+  Global("AYSpawnResetAR51001","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51001_2","%GnollStronghold%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR51001","AR5100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR51001","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR51001","AR5100",0)
-  Global("AYSpawnRandomSetAR51001_2","AR5100",1)
+  Global("AYSpawnResetAR51001","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51001_2","%GnollStronghold%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR51001","AR5100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR51001","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR51001","AR5100",0)
-  Global("AYSpawnRandomSetAR51001_2","AR5100",1)
+  Global("AYSpawnResetAR51001","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51001_2","%GnollStronghold%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
     CreateCreature("GNOLL",[853.959],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR51001","AR5100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR51001","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR51001","AR5100",0)
-  Global("AYSpawnRandomSetAR51001_1","AR5100",1)
+  Global("AYSpawnResetAR51001","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51001_1","%GnollStronghold%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
-    SetGlobalTimer("AYSpawnTimerAR51001","AR5100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR51001","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR51001","AR5100",0)
-  Global("AYSpawnRandomSetAR51001_1","AR5100",1)
+  Global("AYSpawnResetAR51001","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51001_1","%GnollStronghold%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
-    SetGlobalTimer("AYSpawnTimerAR51001","AR5100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR51001","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR51001","AR5100",0)
-  Global("AYSpawnRandomSetAR51001_0","AR5100",1)
+  Global("AYSpawnResetAR51001","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51001_0","%GnollStronghold%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
     CreateCreature("XVART_C",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_C",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_C",[853.959],0)  // ~Xvart~
-    SetGlobalTimer("AYSpawnTimerAR51001","AR5100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR51001","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR51001","AR5100",0)
-  Global("AYSpawnRandomSetAR51001_0","AR5100",1)
+  Global("AYSpawnResetAR51001","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51001_0","%GnollStronghold%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
     CreateCreature("XVART_C",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_C",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_C",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_C",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_C",[853.959],0)  // ~Xvart~
     CreateCreature("XVART_C",[853.959],0)  // ~Xvart~
-    SetGlobalTimer("AYSpawnTimerAR51001","AR5100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR51001","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -168,24 +168,24 @@ IF
   !Range("XVART_A",60)
 
   !Range("GNOLL",60)
-  Global("AYSpawnResetAR51001","AR5100",1)
-  GlobalTimerExpired("AYSpawnTimerAR51001","AR5100")
+  Global("AYSpawnResetAR51001","%GnollStronghold%",1)
+  GlobalTimerExpired("AYSpawnTimerAR51001","%GnollStronghold%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",0)
-    SetGlobal("AYSpawnRandomBeenSetAR51001","AR5100",0)
-    SetGlobal("AYSpawnRandomSetAR51001_2","AR5100",0)
-    SetGlobal("AYSpawnRandomSetAR51001_1","AR5100",0)
-    SetGlobal("AYSpawnRandomSetAR51001_0","AR5100",0)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR51001","%GnollStronghold%",0)
+    SetGlobal("AYSpawnRandomSetAR51001_2","%GnollStronghold%",0)
+    SetGlobal("AYSpawnRandomSetAR51001_1","%GnollStronghold%",0)
+    SetGlobal("AYSpawnRandomSetAR51001_0","%GnollStronghold%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR51001","AR5100",0)
+  Global("AYSpawnResetAR51001","%GnollStronghold%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR51001","AR5100",1)
+    SetGlobal("AYSpawnResetAR51001","%GnollStronghold%",1)
     CreateCreature("XVART_A",[853.959],0)  // ~Xvart~
-    SetGlobalTimer("AYSpawnTimerAR51001","AR5100",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR51001","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 

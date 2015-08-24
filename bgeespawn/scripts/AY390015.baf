@@ -1,134 +1,134 @@
 IF
-  Global("AYSpawnRandomBeenSetAR390015","AR3900",0)
+  Global("AYSpawnRandomBeenSetAR390015","%Ulcaster%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR390015","AR3900",1)
-    SetGlobal("AYSpawnResetAR390015","AR3900",1)
+    SetGlobal("AYSpawnRandomBeenSetAR390015","%Ulcaster%",1)
+    SetGlobal("AYSpawnResetAR390015","%Ulcaster%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(1,1)
-  Global("AYSpawnRandomSetAR390015_0","AR3900",0)
-  Global("AYSpawnRandomBeenSetAR390015","AR3900",0)
+  Global("AYSpawnRandomSetAR390015_0","%Ulcaster%",0)
+  Global("AYSpawnRandomBeenSetAR390015","%Ulcaster%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR390015_0","AR3900",1)
-    SetGlobal("AYSpawnRandomBeenSetAR390015","AR3900",1)
+    SetGlobal("AYSpawnRandomSetAR390015_0","%Ulcaster%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR390015","%Ulcaster%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR390015","AR3900",0)
-  Global("AYSpawnRandomSetAR390015_0","AR3900",1)
+  Global("AYSpawnResetAR390015","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR390015_0","%Ulcaster%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR390015","AR3900",1)
+    SetGlobal("AYSpawnResetAR390015","%Ulcaster%",1)
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR390015","AR3900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR390015","%Ulcaster%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR390015","AR3900",0)
-  Global("AYSpawnRandomSetAR390015_0","AR3900",1)
+  Global("AYSpawnResetAR390015","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR390015_0","%Ulcaster%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR390015","AR3900",1)
+    SetGlobal("AYSpawnResetAR390015","%Ulcaster%",1)
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR390015","AR3900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR390015","%Ulcaster%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR390015","AR3900",0)
-  Global("AYSpawnRandomSetAR390015_0","AR3900",1)
+  Global("AYSpawnResetAR390015","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR390015_0","%Ulcaster%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR390015","AR3900",1)
+    SetGlobal("AYSpawnResetAR390015","%Ulcaster%",1)
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR390015","AR3900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR390015","%Ulcaster%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR390015","AR3900",0)
-  Global("AYSpawnRandomSetAR390015_0","AR3900",1)
+  Global("AYSpawnResetAR390015","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR390015_0","%Ulcaster%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR390015","AR3900",1)
+    SetGlobal("AYSpawnResetAR390015","%Ulcaster%",1)
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR390015","AR3900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR390015","%Ulcaster%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR390015","AR3900",0)
-  Global("AYSpawnRandomSetAR390015_0","AR3900",1)
+  Global("AYSpawnResetAR390015","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR390015_0","%Ulcaster%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR390015","AR3900",1)
+    SetGlobal("AYSpawnResetAR390015","%Ulcaster%",1)
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR390015","AR3900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR390015","%Ulcaster%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
-  Global("AYSpawnResetAR390015","AR3900",0)
-  Global("AYSpawnRandomSetAR390015_0","AR3900",1)
+  Global("AYSpawnResetAR390015","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR390015_0","%Ulcaster%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR390015","AR3900",1)
+    SetGlobal("AYSpawnResetAR390015","%Ulcaster%",1)
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR390015","AR3900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR390015","%Ulcaster%",AY_SPAWN_TIMER)
 END
 
 IF
   !Range([PC],60)
 
   !Range("KOBCOMM",60)
-  Global("AYSpawnResetAR390015","AR3900",1)
-  GlobalTimerExpired("AYSpawnTimerAR390015","AR3900")
+  Global("AYSpawnResetAR390015","%Ulcaster%",1)
+  GlobalTimerExpired("AYSpawnTimerAR390015","%Ulcaster%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR390015","AR3900",0)
-    SetGlobal("AYSpawnRandomBeenSetAR390015","AR3900",0)
-    SetGlobal("AYSpawnRandomSetAR390015_0","AR3900",0)
+    SetGlobal("AYSpawnResetAR390015","%Ulcaster%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR390015","%Ulcaster%",0)
+    SetGlobal("AYSpawnRandomSetAR390015_0","%Ulcaster%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR390015","AR3900",0)
+  Global("AYSpawnResetAR390015","%Ulcaster%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR390015","AR3900",1)
+    SetGlobal("AYSpawnResetAR390015","%Ulcaster%",1)
     CreateCreature("KOBCOMM",[4398.3016],0)  // ~Kobold Commando~
-    SetGlobalTimer("AYSpawnTimerAR390015","AR3900",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR390015","%Ulcaster%",AY_SPAWN_TIMER)
 END
 

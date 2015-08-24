@@ -1,42 +1,42 @@
 IF
-  Global("AYSpawnRandomBeenSetAR20125","AR2012",0)
+  Global("AYSpawnRandomBeenSetAR20125","%WerewolfCaverns%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR20125","AR2012",1)
-    SetGlobal("AYSpawnResetAR20125","AR2012",1)
+    SetGlobal("AYSpawnRandomBeenSetAR20125","%WerewolfCaverns%",1)
+    SetGlobal("AYSpawnResetAR20125","%WerewolfCaverns%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(1,1)
-  Global("AYSpawnRandomSetAR20125_0","AR2012",0)
-  Global("AYSpawnRandomBeenSetAR20125","AR2012",0)
+  Global("AYSpawnRandomSetAR20125_0","%WerewolfCaverns%",0)
+  Global("AYSpawnRandomBeenSetAR20125","%WerewolfCaverns%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR20125_0","AR2012",1)
-    SetGlobal("AYSpawnRandomBeenSetAR20125","AR2012",1)
+    SetGlobal("AYSpawnRandomSetAR20125_0","%WerewolfCaverns%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR20125","%WerewolfCaverns%",1)
 END
 
 IF
   !Range([PC],60)
   !Range("WEREWO",60)
-  Global("AYSpawnResetAR20125","AR2012",1)
-  GlobalTimerExpired("AYSpawnTimerAR20125","AR2012")
+  Global("AYSpawnResetAR20125","%WerewolfCaverns%",1)
+  GlobalTimerExpired("AYSpawnTimerAR20125","%WerewolfCaverns%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR20125","AR2012",0)
-    SetGlobal("AYSpawnRandomBeenSetAR20125","AR2012",0)
-    SetGlobal("AYSpawnRandomSetAR20125_0","AR2012",0)
+    SetGlobal("AYSpawnResetAR20125","%WerewolfCaverns%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR20125","%WerewolfCaverns%",0)
+    SetGlobal("AYSpawnRandomSetAR20125_0","%WerewolfCaverns%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR20125","AR2012",0)
+  Global("AYSpawnResetAR20125","%WerewolfCaverns%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR20125","AR2012",1)
+    SetGlobal("AYSpawnResetAR20125","%WerewolfCaverns%",1)
     CreateCreature("WEREWO",[271.493],0)  // ~Werewolf~
-    SetGlobalTimer("AYSpawnTimerAR20125","AR2012",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR20125","%WerewolfCaverns%",AY_SPAWN_TIMER)
 END
 

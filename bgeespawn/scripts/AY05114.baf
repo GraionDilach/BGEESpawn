@@ -1,42 +1,42 @@
 IF
-  Global("AYSpawnRandomBeenSetAR05114","AR0511",0)
+  Global("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR05114","AR0511",1)
-    SetGlobal("AYSpawnResetAR05114","AR0511",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(1,1)
-  Global("AYSpawnRandomSetAR05114_0","AR0511",0)
-  Global("AYSpawnRandomBeenSetAR05114","AR0511",0)
+  Global("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR05114_0","AR0511",1)
-    SetGlobal("AYSpawnRandomBeenSetAR05114","AR0511",1)
+    SetGlobal("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",1)
 END
 
 IF
   !Range([PC],60)
   !Range("BATTHO",60)
-  Global("AYSpawnResetAR05114","AR0511",1)
-  GlobalTimerExpired("AYSpawnTimerAR05114","AR0511")
+  Global("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
+  GlobalTimerExpired("AYSpawnTimerAR05114","%DurlagsTower_D1%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05114","AR0511",0)
-    SetGlobal("AYSpawnRandomBeenSetAR05114","AR0511",0)
-    SetGlobal("AYSpawnRandomSetAR05114_0","AR0511",0)
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR05114","AR0511",0)
+  Global("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05114","AR0511",1)
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
     CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
-    SetGlobalTimer("AYSpawnTimerAR05114","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05114","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 

@@ -130,8 +130,14 @@ END
 
 //Levelled spawns/////////////////////////////////////////
 BEGIN ~BGEE Leveling Spawns Mod~
-REQUIRE_PREDICATE (GAME_IS ~bgee~) ~Baldur's Gate Enhanced Edition could not be detected.~
+REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~Baldur's Gate Enhanced Edition / EET could not be detected.~
 DESIGNATED 101
+
+ACTION_IF (GAME_IS ~bgee~) BEGIN
+	INCLUDE ~bgeespawn/lib/liam_bgee_vars.tpa~
+END ELSE ACTION_IF (GAME_IS ~eet~) BEGIN
+	INCLUDE ~bgeespawn/lib/eet_cpmvars.tpa~
+END
 
   OUTER_SPRINT ~spawntimer~ ~placeholder_value~
   OUTER_WHILE (!(IS_AN_INT ~spawntimer~) OR (~spawntimer~ > 0x9) OR (~spawntimer~ < 0x0)) BEGIN

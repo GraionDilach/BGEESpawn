@@ -1,89 +1,89 @@
 IF
-  Global("AYSpawnRandomBeenSetAR18025","AR1802",0)
+  Global("AYSpawnRandomBeenSetAR18025","%CloakwoodMines_L3%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR18025","AR1802",1)
-    SetGlobal("AYSpawnResetAR18025","AR1802",1)
+    SetGlobal("AYSpawnRandomBeenSetAR18025","%CloakwoodMines_L3%",1)
+    SetGlobal("AYSpawnResetAR18025","%CloakwoodMines_L3%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(1,1)
-  Global("AYSpawnRandomSetAR18025_0","AR1802",0)
-  Global("AYSpawnRandomBeenSetAR18025","AR1802",0)
+  Global("AYSpawnRandomSetAR18025_0","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomBeenSetAR18025","%CloakwoodMines_L3%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR18025_0","AR1802",1)
-    SetGlobal("AYSpawnRandomBeenSetAR18025","AR1802",1)
+    SetGlobal("AYSpawnRandomSetAR18025_0","%CloakwoodMines_L3%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR18025","%CloakwoodMines_L3%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR18025","AR1802",0)
-  Global("AYSpawnRandomSetAR18025_0","AR1802",1)
+  Global("AYSpawnResetAR18025","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18025_0","%CloakwoodMines_L3%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR18025","AR1802",1)
+    SetGlobal("AYSpawnResetAR18025","%CloakwoodMines_L3%",1)
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR18025","AR1802",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR18025","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR18025","AR1802",0)
-  Global("AYSpawnRandomSetAR18025_0","AR1802",1)
+  Global("AYSpawnResetAR18025","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18025_0","%CloakwoodMines_L3%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR18025","AR1802",1)
+    SetGlobal("AYSpawnResetAR18025","%CloakwoodMines_L3%",1)
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR18025","AR1802",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR18025","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR18025","AR1802",0)
-  Global("AYSpawnRandomSetAR18025_0","AR1802",1)
+  Global("AYSpawnResetAR18025","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18025_0","%CloakwoodMines_L3%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR18025","AR1802",1)
+    SetGlobal("AYSpawnResetAR18025","%CloakwoodMines_L3%",1)
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR18025","AR1802",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR18025","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
 END
 
 IF
   !Range([PC],60)
 
   !Range("HOBGOA_A",60)
-  Global("AYSpawnResetAR18025","AR1802",1)
-  GlobalTimerExpired("AYSpawnTimerAR18025","AR1802")
+  Global("AYSpawnResetAR18025","%CloakwoodMines_L3%",1)
+  GlobalTimerExpired("AYSpawnTimerAR18025","%CloakwoodMines_L3%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR18025","AR1802",0)
-    SetGlobal("AYSpawnRandomBeenSetAR18025","AR1802",0)
-    SetGlobal("AYSpawnRandomSetAR18025_0","AR1802",0)
+    SetGlobal("AYSpawnResetAR18025","%CloakwoodMines_L3%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR18025","%CloakwoodMines_L3%",0)
+    SetGlobal("AYSpawnRandomSetAR18025_0","%CloakwoodMines_L3%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR18025","AR1802",0)
+  Global("AYSpawnResetAR18025","%CloakwoodMines_L3%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR18025","AR1802",1)
+    SetGlobal("AYSpawnResetAR18025","%CloakwoodMines_L3%",1)
     CreateCreature("HOBGOA_A",[2075.915],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR18025","AR1802",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR18025","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
 END
 

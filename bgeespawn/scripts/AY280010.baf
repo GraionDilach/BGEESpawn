@@ -1,287 +1,287 @@
 IF
-  Global("AYSpawnRandomBeenSetAR280010","AR2800",0)
+  Global("AYSpawnRandomBeenSetAR280010","%CoastWay%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR280010","AR2800",1)
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnRandomBeenSetAR280010","%CoastWay%",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(2,1)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",0)
-  Global("AYSpawnRandomBeenSetAR280010","AR2800",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",0)
+  Global("AYSpawnRandomBeenSetAR280010","%CoastWay%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR280010_1","AR2800",1)
-    SetGlobal("AYSpawnRandomBeenSetAR280010","AR2800",1)
+    SetGlobal("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR280010","%CoastWay%",1)
 END
 
 IF
   RandomNum(2,2)
-  Global("AYSpawnRandomSetAR280010_0","AR2800",0)
-  Global("AYSpawnRandomBeenSetAR280010","AR2800",0)
+  Global("AYSpawnRandomSetAR280010_0","%CoastWay%",0)
+  Global("AYSpawnRandomBeenSetAR280010","%CoastWay%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR280010_0","AR2800",1)
-    SetGlobal("AYSpawnRandomBeenSetAR280010","AR2800",1)
+    SetGlobal("AYSpawnRandomSetAR280010_0","%CoastWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR280010","%CoastWay%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
   LevelPartyLT(8)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(7)
   LevelPartyLT(9)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(8)
   LevelPartyLT(10)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(9)
   LevelPartyLT(11)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(10)
   LevelPartyLT(12)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(11)
   LevelPartyLT(13)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(12)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_1","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_1","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[1263.894],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_0","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_0","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_0","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_0","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_0","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_0","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_0","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_0","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_0","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_0","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
-  Global("AYSpawnResetAR280010","AR2800",0)
-  Global("AYSpawnRandomSetAR280010_0","AR2800",1)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR280010_0","%CoastWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -290,23 +290,23 @@ IF
   !Range("WOLF",60)
 
   !Range("WOLFDI",60)
-  Global("AYSpawnResetAR280010","AR2800",1)
-  GlobalTimerExpired("AYSpawnTimerAR280010","AR2800")
+  Global("AYSpawnResetAR280010","%CoastWay%",1)
+  GlobalTimerExpired("AYSpawnTimerAR280010","%CoastWay%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",0)
-    SetGlobal("AYSpawnRandomBeenSetAR280010","AR2800",0)
-    SetGlobal("AYSpawnRandomSetAR280010_1","AR2800",0)
-    SetGlobal("AYSpawnRandomSetAR280010_0","AR2800",0)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR280010","%CoastWay%",0)
+    SetGlobal("AYSpawnRandomSetAR280010_1","%CoastWay%",0)
+    SetGlobal("AYSpawnRandomSetAR280010_0","%CoastWay%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR280010","AR2800",0)
+  Global("AYSpawnResetAR280010","%CoastWay%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR280010","AR2800",1)
+    SetGlobal("AYSpawnResetAR280010","%CoastWay%",1)
     CreateCreature("WOLF",[1263.894],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR280010","AR2800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR280010","%CoastWay%",AY_SPAWN_TIMER)
 END
 

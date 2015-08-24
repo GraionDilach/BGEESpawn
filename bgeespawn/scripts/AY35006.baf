@@ -1,392 +1,392 @@
 IF
-  Global("AYSpawnRandomBeenSetAR35006","AR3500",0)
+  Global("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR35006","AR3500",1)
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(5,1)
-  Global("AYSpawnRandomSetAR35006_4","AR3500",0)
-  Global("AYSpawnRandomBeenSetAR35006","AR3500",0)
+  Global("AYSpawnRandomSetAR35006_4","%MutaminsGarden%",0)
+  Global("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR35006_4","AR3500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR35006","AR3500",1)
+    SetGlobal("AYSpawnRandomSetAR35006_4","%MutaminsGarden%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",1)
 END
 
 IF
   RandomNum(5,2)
-  Global("AYSpawnRandomSetAR35006_3","AR3500",0)
-  Global("AYSpawnRandomBeenSetAR35006","AR3500",0)
+  Global("AYSpawnRandomSetAR35006_3","%MutaminsGarden%",0)
+  Global("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR35006_3","AR3500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR35006","AR3500",1)
+    SetGlobal("AYSpawnRandomSetAR35006_3","%MutaminsGarden%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",1)
 END
 
 IF
   RandomNum(5,3)
-  Global("AYSpawnRandomSetAR35006_2","AR3500",0)
-  Global("AYSpawnRandomBeenSetAR35006","AR3500",0)
+  Global("AYSpawnRandomSetAR35006_2","%MutaminsGarden%",0)
+  Global("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR35006_2","AR3500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR35006","AR3500",1)
+    SetGlobal("AYSpawnRandomSetAR35006_2","%MutaminsGarden%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",1)
 END
 
 IF
   RandomNum(5,4)
-  Global("AYSpawnRandomSetAR35006_1","AR3500",0)
-  Global("AYSpawnRandomBeenSetAR35006","AR3500",0)
+  Global("AYSpawnRandomSetAR35006_1","%MutaminsGarden%",0)
+  Global("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR35006_1","AR3500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR35006","AR3500",1)
+    SetGlobal("AYSpawnRandomSetAR35006_1","%MutaminsGarden%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",1)
 END
 
 IF
   RandomNum(5,5)
-  Global("AYSpawnRandomSetAR35006_0","AR3500",0)
-  Global("AYSpawnRandomBeenSetAR35006","AR3500",0)
+  Global("AYSpawnRandomSetAR35006_0","%MutaminsGarden%",0)
+  Global("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR35006_0","AR3500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR35006","AR3500",1)
+    SetGlobal("AYSpawnRandomSetAR35006_0","%MutaminsGarden%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_4","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_4","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_4","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_4","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_4","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_4","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_4","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_4","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
     CreateCreature("GNOLL_E",[1161.3182],0)  // ~Gnoll Veteran~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_3","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_3","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_3","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_3","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_3","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_3","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_3","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_3","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
     CreateCreature("GNOLL_A",[1161.3182],0)  // ~Gnoll Elite~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_2","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_2","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_2","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_2","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_2","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_2","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_2","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_2","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL_B",[1161.3182],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_1","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_1","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_1","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_1","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_1","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_1","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_1","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_1","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_0","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_0","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_0","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_0","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_0","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_0","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_0","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_0","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_0","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_0","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
-  Global("AYSpawnResetAR35006","AR3500",0)
-  Global("AYSpawnRandomSetAR35006_0","AR3500",1)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35006_0","%MutaminsGarden%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
     CreateCreature("BEARBL",[1161.3182],0)  // ~Black Bear~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -401,26 +401,26 @@ IF
   !Range("GNOLL_A",60)
 
   !Range("GNOLL_E",60)
-  Global("AYSpawnResetAR35006","AR3500",1)
-  GlobalTimerExpired("AYSpawnTimerAR35006","AR3500")
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",1)
+  GlobalTimerExpired("AYSpawnTimerAR35006","%MutaminsGarden%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",0)
-    SetGlobal("AYSpawnRandomBeenSetAR35006","AR3500",0)
-    SetGlobal("AYSpawnRandomSetAR35006_4","AR3500",0)
-    SetGlobal("AYSpawnRandomSetAR35006_3","AR3500",0)
-    SetGlobal("AYSpawnRandomSetAR35006_2","AR3500",0)
-    SetGlobal("AYSpawnRandomSetAR35006_1","AR3500",0)
-    SetGlobal("AYSpawnRandomSetAR35006_0","AR3500",0)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR35006","%MutaminsGarden%",0)
+    SetGlobal("AYSpawnRandomSetAR35006_4","%MutaminsGarden%",0)
+    SetGlobal("AYSpawnRandomSetAR35006_3","%MutaminsGarden%",0)
+    SetGlobal("AYSpawnRandomSetAR35006_2","%MutaminsGarden%",0)
+    SetGlobal("AYSpawnRandomSetAR35006_1","%MutaminsGarden%",0)
+    SetGlobal("AYSpawnRandomSetAR35006_0","%MutaminsGarden%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR35006","AR3500",0)
+  Global("AYSpawnResetAR35006","%MutaminsGarden%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR35006","AR3500",1)
+    SetGlobal("AYSpawnResetAR35006","%MutaminsGarden%",1)
     CreateCreature("GNOLL",[1161.3182],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR35006","AR3500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR35006","%MutaminsGarden%",AY_SPAWN_TIMER)
 END
 

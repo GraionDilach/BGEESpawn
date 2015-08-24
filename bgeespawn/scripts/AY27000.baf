@@ -1,103 +1,103 @@
 IF
-  Global("AYSpawnRandomBeenSetAR27000","AR2700",0)
+  Global("AYSpawnRandomBeenSetAR27000","%LionsWay%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR27000","AR2700",1)
-    SetGlobal("AYSpawnResetAR27000","AR2700",1)
+    SetGlobal("AYSpawnRandomBeenSetAR27000","%LionsWay%",1)
+    SetGlobal("AYSpawnResetAR27000","%LionsWay%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(1,1)
-  Global("AYSpawnRandomSetAR27000_0","AR2700",0)
-  Global("AYSpawnRandomBeenSetAR27000","AR2700",0)
+  Global("AYSpawnRandomSetAR27000_0","%LionsWay%",0)
+  Global("AYSpawnRandomBeenSetAR27000","%LionsWay%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR27000_0","AR2700",1)
-    SetGlobal("AYSpawnRandomBeenSetAR27000","AR2700",1)
+    SetGlobal("AYSpawnRandomSetAR27000_0","%LionsWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR27000","%LionsWay%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR27000","AR2700",0)
-  Global("AYSpawnRandomSetAR27000_0","AR2700",1)
+  Global("AYSpawnResetAR27000","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27000_0","%LionsWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR27000","AR2700",1)
+    SetGlobal("AYSpawnResetAR27000","%LionsWay%",1)
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
-    SetGlobalTimer("AYSpawnTimerAR27000","AR2700",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR27000","%LionsWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR27000","AR2700",0)
-  Global("AYSpawnRandomSetAR27000_0","AR2700",1)
+  Global("AYSpawnResetAR27000","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27000_0","%LionsWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR27000","AR2700",1)
+    SetGlobal("AYSpawnResetAR27000","%LionsWay%",1)
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
-    SetGlobalTimer("AYSpawnTimerAR27000","AR2700",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR27000","%LionsWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR27000","AR2700",0)
-  Global("AYSpawnRandomSetAR27000_0","AR2700",1)
+  Global("AYSpawnResetAR27000","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27000_0","%LionsWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR27000","AR2700",1)
+    SetGlobal("AYSpawnResetAR27000","%LionsWay%",1)
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
-    SetGlobalTimer("AYSpawnTimerAR27000","AR2700",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR27000","%LionsWay%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR27000","AR2700",0)
-  Global("AYSpawnRandomSetAR27000_0","AR2700",1)
+  Global("AYSpawnResetAR27000","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27000_0","%LionsWay%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR27000","AR2700",1)
+    SetGlobal("AYSpawnResetAR27000","%LionsWay%",1)
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
-    SetGlobalTimer("AYSpawnTimerAR27000","AR2700",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR27000","%LionsWay%",AY_SPAWN_TIMER)
 END
 
 IF
   !Range([PC],60)
 
   !Range("GIBBER2",60)
-  Global("AYSpawnResetAR27000","AR2700",1)
-  GlobalTimerExpired("AYSpawnTimerAR27000","AR2700")
+  Global("AYSpawnResetAR27000","%LionsWay%",1)
+  GlobalTimerExpired("AYSpawnTimerAR27000","%LionsWay%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR27000","AR2700",0)
-    SetGlobal("AYSpawnRandomBeenSetAR27000","AR2700",0)
-    SetGlobal("AYSpawnRandomSetAR27000_0","AR2700",0)
+    SetGlobal("AYSpawnResetAR27000","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR27000","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomSetAR27000_0","%LionsWay%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR27000","AR2700",0)
+  Global("AYSpawnResetAR27000","%LionsWay%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR27000","AR2700",1)
+    SetGlobal("AYSpawnResetAR27000","%LionsWay%",1)
     CreateCreature("GIBBER2",[3011.323],0)  // ~Diseased Gibberling~
-    SetGlobalTimer("AYSpawnTimerAR27000","AR2700",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR27000","%LionsWay%",AY_SPAWN_TIMER)
 END
 

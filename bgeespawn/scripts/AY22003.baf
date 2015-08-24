@@ -1,238 +1,238 @@
 IF
-  Global("AYSpawnRandomBeenSetAR22003","AR2200",0)
+  Global("AYSpawnRandomBeenSetAR22003","%CloakwoodLodge%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR22003","AR2200",1)
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22003","%CloakwoodLodge%",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(3,1)
-  Global("AYSpawnRandomSetAR22003_2","AR2200",0)
-  Global("AYSpawnRandomBeenSetAR22003","AR2200",0)
+  Global("AYSpawnRandomSetAR22003_2","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomBeenSetAR22003","%CloakwoodLodge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR22003_2","AR2200",1)
-    SetGlobal("AYSpawnRandomBeenSetAR22003","AR2200",1)
+    SetGlobal("AYSpawnRandomSetAR22003_2","%CloakwoodLodge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22003","%CloakwoodLodge%",1)
 END
 
 IF
   RandomNum(3,2)
-  Global("AYSpawnRandomSetAR22003_1","AR2200",0)
-  Global("AYSpawnRandomBeenSetAR22003","AR2200",0)
+  Global("AYSpawnRandomSetAR22003_1","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomBeenSetAR22003","%CloakwoodLodge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR22003_1","AR2200",1)
-    SetGlobal("AYSpawnRandomBeenSetAR22003","AR2200",1)
+    SetGlobal("AYSpawnRandomSetAR22003_1","%CloakwoodLodge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22003","%CloakwoodLodge%",1)
 END
 
 IF
   RandomNum(3,3)
-  Global("AYSpawnRandomSetAR22003_0","AR2200",0)
-  Global("AYSpawnRandomBeenSetAR22003","AR2200",0)
+  Global("AYSpawnRandomSetAR22003_0","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomBeenSetAR22003","%CloakwoodLodge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR22003_0","AR2200",1)
-    SetGlobal("AYSpawnRandomBeenSetAR22003","AR2200",1)
+    SetGlobal("AYSpawnRandomSetAR22003_0","%CloakwoodLodge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22003","%CloakwoodLodge%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_2","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_2","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_2","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_2","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_2","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_2","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_2","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_2","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_2","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_2","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_2","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_2","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
     CreateCreature("SPIDHU",[3832.1836],0)  // ~Huge Spider~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_1","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_1","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_1","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_1","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_1","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_1","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_1","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_1","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_1","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_1","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
     CreateCreature("WORG",[3832.1836],0)  // ~Worg~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_0","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_0","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR22003","AR2200",0)
-  Global("AYSpawnRandomSetAR22003_0","AR2200",1)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22003_0","%CloakwoodLodge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -243,24 +243,24 @@ IF
   !Range("WORG",60)
 
   !Range("SPIDHU",60)
-  Global("AYSpawnResetAR22003","AR2200",1)
-  GlobalTimerExpired("AYSpawnTimerAR22003","AR2200")
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",1)
+  GlobalTimerExpired("AYSpawnTimerAR22003","%CloakwoodLodge%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",0)
-    SetGlobal("AYSpawnRandomBeenSetAR22003","AR2200",0)
-    SetGlobal("AYSpawnRandomSetAR22003_2","AR2200",0)
-    SetGlobal("AYSpawnRandomSetAR22003_1","AR2200",0)
-    SetGlobal("AYSpawnRandomSetAR22003_0","AR2200",0)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR22003","%CloakwoodLodge%",0)
+    SetGlobal("AYSpawnRandomSetAR22003_2","%CloakwoodLodge%",0)
+    SetGlobal("AYSpawnRandomSetAR22003_1","%CloakwoodLodge%",0)
+    SetGlobal("AYSpawnRandomSetAR22003_0","%CloakwoodLodge%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR22003","AR2200",0)
+  Global("AYSpawnResetAR22003","%CloakwoodLodge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR22003","AR2200",1)
+    SetGlobal("AYSpawnResetAR22003","%CloakwoodLodge%",1)
     CreateCreature("TASLOI",[3832.1836],0)  // ~Tasloi~
-    SetGlobalTimer("AYSpawnTimerAR22003","AR2200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR22003","%CloakwoodLodge%",AY_SPAWN_TIMER)
 END
 

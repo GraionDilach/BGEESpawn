@@ -1,337 +1,337 @@
 IF
-  Global("AYSpawnRandomBeenSetAR43003","AR4300",0)
+  Global("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR43003","AR4300",1)
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(4,1)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",0)
-  Global("AYSpawnRandomBeenSetAR43003","AR4300",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR43003_3","AR4300",1)
-    SetGlobal("AYSpawnRandomBeenSetAR43003","AR4300",1)
+    SetGlobal("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",1)
 END
 
 IF
   RandomNum(4,2)
-  Global("AYSpawnRandomSetAR43003_2","AR4300",0)
-  Global("AYSpawnRandomBeenSetAR43003","AR4300",0)
+  Global("AYSpawnRandomSetAR43003_2","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR43003_2","AR4300",1)
-    SetGlobal("AYSpawnRandomBeenSetAR43003","AR4300",1)
+    SetGlobal("AYSpawnRandomSetAR43003_2","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",1)
 END
 
 IF
   RandomNum(4,3)
-  Global("AYSpawnRandomSetAR43003_1","AR4300",0)
-  Global("AYSpawnRandomBeenSetAR43003","AR4300",0)
+  Global("AYSpawnRandomSetAR43003_1","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR43003_1","AR4300",1)
-    SetGlobal("AYSpawnRandomBeenSetAR43003","AR4300",1)
+    SetGlobal("AYSpawnRandomSetAR43003_1","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",1)
 END
 
 IF
   RandomNum(4,4)
-  Global("AYSpawnRandomSetAR43003_0","AR4300",0)
-  Global("AYSpawnRandomBeenSetAR43003","AR4300",0)
+  Global("AYSpawnRandomSetAR43003_0","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR43003_0","AR4300",1)
-    SetGlobal("AYSpawnRandomBeenSetAR43003","AR4300",1)
+    SetGlobal("AYSpawnRandomSetAR43003_0","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
   LevelPartyLT(8)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(7)
   LevelPartyLT(9)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(8)
   LevelPartyLT(10)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(9)
   LevelPartyLT(11)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(10)
   LevelPartyLT(12)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(11)
   LevelPartyLT(13)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(12)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_3","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
     CreateCreature("WOLFVA",[3338.1629],0)  // ~Vampiric Wolf~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_2","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_2","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_2","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_1","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_1","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
-END
-
-IF
-  Range([PC],60)
-  LevelPartyGT(1)
-  LevelPartyLT(3)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_1","AR4300",1)
-THEN
-  RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
-END
-
-IF
-  Range([PC],60)
-  LevelPartyGT(2)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_1","AR4300",1)
-THEN
-  RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
-END
-
-IF
-  Range([PC],60)
-  LevelPartyLT(2)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_0","AR4300",1)
-THEN
-  RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_0","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_1","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR43003","AR4300",0)
-  Global("AYSpawnRandomSetAR43003_0","AR4300",1)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_1","%NorthNashkelRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
     CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyLT(2)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(1)
+  LevelPartyLT(3)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],60)
+  LevelPartyGT(2)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43003_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    CreateCreature("BANDIT",[3338.1629],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -342,25 +342,25 @@ IF
   !Range("KOBOLD",60)
 
   !Range("WOLFVA",60)
-  Global("AYSpawnResetAR43003","AR4300",1)
-  GlobalTimerExpired("AYSpawnTimerAR43003","AR4300")
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
+  GlobalTimerExpired("AYSpawnTimerAR43003","%NorthNashkelRoad%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",0)
-    SetGlobal("AYSpawnRandomBeenSetAR43003","AR4300",0)
-    SetGlobal("AYSpawnRandomSetAR43003_3","AR4300",0)
-    SetGlobal("AYSpawnRandomSetAR43003_2","AR4300",0)
-    SetGlobal("AYSpawnRandomSetAR43003_1","AR4300",0)
-    SetGlobal("AYSpawnRandomSetAR43003_0","AR4300",0)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR43003","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43003_3","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43003_2","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43003_1","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43003_0","%NorthNashkelRoad%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR43003","AR4300",0)
+  Global("AYSpawnResetAR43003","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR43003","AR4300",1)
+    SetGlobal("AYSpawnResetAR43003","%NorthNashkelRoad%",1)
     CreateCreature("KOBOLD",[3338.1629],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR43003","AR4300",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR43003","%NorthNashkelRoad%",AY_SPAWN_TIMER)
 END
 

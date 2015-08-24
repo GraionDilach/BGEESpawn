@@ -1,262 +1,262 @@
 IF
-  Global("AYSpawnRandomBeenSetAR50003","AR5000",0)
+  Global("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR50003","AR5000",1)
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(4,1)
-  Global("AYSpawnRandomSetAR50003_3","AR5000",0)
-  Global("AYSpawnRandomBeenSetAR50003","AR5000",0)
+  Global("AYSpawnRandomSetAR50003_3","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR50003_3","AR5000",1)
-    SetGlobal("AYSpawnRandomBeenSetAR50003","AR5000",1)
+    SetGlobal("AYSpawnRandomSetAR50003_3","%ValleyoftheTombs%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",1)
 END
 
 IF
   RandomNum(4,2)
-  Global("AYSpawnRandomSetAR50003_2","AR5000",0)
-  Global("AYSpawnRandomBeenSetAR50003","AR5000",0)
+  Global("AYSpawnRandomSetAR50003_2","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR50003_2","AR5000",1)
-    SetGlobal("AYSpawnRandomBeenSetAR50003","AR5000",1)
+    SetGlobal("AYSpawnRandomSetAR50003_2","%ValleyoftheTombs%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",1)
 END
 
 IF
   RandomNum(4,3)
-  Global("AYSpawnRandomSetAR50003_1","AR5000",0)
-  Global("AYSpawnRandomBeenSetAR50003","AR5000",0)
+  Global("AYSpawnRandomSetAR50003_1","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR50003_1","AR5000",1)
-    SetGlobal("AYSpawnRandomBeenSetAR50003","AR5000",1)
+    SetGlobal("AYSpawnRandomSetAR50003_1","%ValleyoftheTombs%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",1)
 END
 
 IF
   RandomNum(4,4)
-  Global("AYSpawnRandomSetAR50003_0","AR5000",0)
-  Global("AYSpawnRandomBeenSetAR50003","AR5000",0)
+  Global("AYSpawnRandomSetAR50003_0","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR50003_0","AR5000",1)
-    SetGlobal("AYSpawnRandomBeenSetAR50003","AR5000",1)
+    SetGlobal("AYSpawnRandomSetAR50003_0","%ValleyoftheTombs%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_3","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_3","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_3","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_3","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_3","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_3","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_3","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_3","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
     CreateCreature("FLIND",[2796.2896],0)  // ~Flind~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_2","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_2","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_2","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_2","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_2","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_2","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_2","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_2","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
     CreateCreature("DOGWA",[2796.2896],0)  // ~War Dog~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_1","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_1","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_1","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_1","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_0","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_0","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_0","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_0","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_0","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_0","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR50003","AR5000",0)
-  Global("AYSpawnRandomSetAR50003_0","AR5000",1)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50003_0","%ValleyoftheTombs%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
     CreateCreature("GNOLL",[2796.2896],0)  // ~Gnoll~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -269,25 +269,25 @@ IF
   !Range("DOGWA",60)
 
   !Range("FLIND",60)
-  Global("AYSpawnResetAR50003","AR5000",1)
-  GlobalTimerExpired("AYSpawnTimerAR50003","AR5000")
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
+  GlobalTimerExpired("AYSpawnTimerAR50003","%ValleyoftheTombs%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",0)
-    SetGlobal("AYSpawnRandomBeenSetAR50003","AR5000",0)
-    SetGlobal("AYSpawnRandomSetAR50003_3","AR5000",0)
-    SetGlobal("AYSpawnRandomSetAR50003_2","AR5000",0)
-    SetGlobal("AYSpawnRandomSetAR50003_1","AR5000",0)
-    SetGlobal("AYSpawnRandomSetAR50003_0","AR5000",0)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR50003","%ValleyoftheTombs%",0)
+    SetGlobal("AYSpawnRandomSetAR50003_3","%ValleyoftheTombs%",0)
+    SetGlobal("AYSpawnRandomSetAR50003_2","%ValleyoftheTombs%",0)
+    SetGlobal("AYSpawnRandomSetAR50003_1","%ValleyoftheTombs%",0)
+    SetGlobal("AYSpawnRandomSetAR50003_0","%ValleyoftheTombs%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR50003","AR5000",0)
+  Global("AYSpawnResetAR50003","%ValleyoftheTombs%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR50003","AR5000",1)
+    SetGlobal("AYSpawnResetAR50003","%ValleyoftheTombs%",1)
     CreateCreature("DOGWI",[2796.2896],0)  // ~Wild Dog~
-    SetGlobalTimer("AYSpawnTimerAR50003","AR5000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR50003","%ValleyoftheTombs%",AY_SPAWN_TIMER)
 END
 

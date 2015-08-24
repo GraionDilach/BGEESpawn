@@ -1,123 +1,123 @@
 IF
-  Global("AYSpawnRandomBeenSetAR42000","AR4200",0)
+  Global("AYSpawnRandomBeenSetAR42000","%FishermansLake%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR42000","AR4200",1)
-    SetGlobal("AYSpawnResetAR42000","AR4200",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42000","%FishermansLake%",1)
+    SetGlobal("AYSpawnResetAR42000","%FishermansLake%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(2,1)
-  Global("AYSpawnRandomSetAR42000_1","AR4200",0)
-  Global("AYSpawnRandomBeenSetAR42000","AR4200",0)
+  Global("AYSpawnRandomSetAR42000_1","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42000","%FishermansLake%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR42000_1","AR4200",1)
-    SetGlobal("AYSpawnRandomBeenSetAR42000","AR4200",1)
+    SetGlobal("AYSpawnRandomSetAR42000_1","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42000","%FishermansLake%",1)
 END
 
 IF
   RandomNum(2,2)
-  Global("AYSpawnRandomSetAR42000_0","AR4200",0)
-  Global("AYSpawnRandomBeenSetAR42000","AR4200",0)
+  Global("AYSpawnRandomSetAR42000_0","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42000","%FishermansLake%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR42000_0","AR4200",1)
-    SetGlobal("AYSpawnRandomBeenSetAR42000","AR4200",1)
+    SetGlobal("AYSpawnRandomSetAR42000_0","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42000","%FishermansLake%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR42000","AR4200",0)
-  Global("AYSpawnRandomSetAR42000_1","AR4200",1)
+  Global("AYSpawnResetAR42000","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42000_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42000","AR4200",1)
+    SetGlobal("AYSpawnResetAR42000","%FishermansLake%",1)
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR42000","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42000","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR42000","AR4200",0)
-  Global("AYSpawnRandomSetAR42000_1","AR4200",1)
+  Global("AYSpawnResetAR42000","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42000_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42000","AR4200",1)
+    SetGlobal("AYSpawnResetAR42000","%FishermansLake%",1)
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR42000","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42000","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR42000","AR4200",0)
-  Global("AYSpawnRandomSetAR42000_1","AR4200",1)
+  Global("AYSpawnResetAR42000","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42000_1","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42000","AR4200",1)
+    SetGlobal("AYSpawnResetAR42000","%FishermansLake%",1)
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_B",[2268.439],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR42000","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42000","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR42000","AR4200",0)
-  Global("AYSpawnRandomSetAR42000_0","AR4200",1)
+  Global("AYSpawnResetAR42000","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42000_0","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42000","AR4200",1)
+    SetGlobal("AYSpawnResetAR42000","%FishermansLake%",1)
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR42000","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42000","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR42000","AR4200",0)
-  Global("AYSpawnRandomSetAR42000_0","AR4200",1)
+  Global("AYSpawnResetAR42000","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42000_0","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42000","AR4200",1)
+    SetGlobal("AYSpawnResetAR42000","%FishermansLake%",1)
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR42000","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42000","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR42000","AR4200",0)
-  Global("AYSpawnRandomSetAR42000_0","AR4200",1)
+  Global("AYSpawnResetAR42000","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42000_0","%FishermansLake%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42000","AR4200",1)
+    SetGlobal("AYSpawnResetAR42000","%FishermansLake%",1)
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR42000","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42000","%FishermansLake%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -126,23 +126,23 @@ IF
   !Range("SKELET_A",60)
 
   !Range("SKELET_B",60)
-  Global("AYSpawnResetAR42000","AR4200",1)
-  GlobalTimerExpired("AYSpawnTimerAR42000","AR4200")
+  Global("AYSpawnResetAR42000","%FishermansLake%",1)
+  GlobalTimerExpired("AYSpawnTimerAR42000","%FishermansLake%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42000","AR4200",0)
-    SetGlobal("AYSpawnRandomBeenSetAR42000","AR4200",0)
-    SetGlobal("AYSpawnRandomSetAR42000_1","AR4200",0)
-    SetGlobal("AYSpawnRandomSetAR42000_0","AR4200",0)
+    SetGlobal("AYSpawnResetAR42000","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR42000","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42000_1","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42000_0","%FishermansLake%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR42000","AR4200",0)
+  Global("AYSpawnResetAR42000","%FishermansLake%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR42000","AR4200",1)
+    SetGlobal("AYSpawnResetAR42000","%FishermansLake%",1)
     CreateCreature("SKELET_A",[2268.439],0)  // ~Skeleton~
-    SetGlobalTimer("AYSpawnTimerAR42000","AR4200",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR42000","%FishermansLake%",AY_SPAWN_TIMER)
 END
 

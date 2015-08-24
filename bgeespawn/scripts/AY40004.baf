@@ -1,166 +1,166 @@
 IF
-  Global("AYSpawnRandomBeenSetAR40004","AR4000",0)
+  Global("AYSpawnRandomBeenSetAR40004","%Gullykin%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR40004","AR4000",1)
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnRandomBeenSetAR40004","%Gullykin%",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(3,1)
-  Global("AYSpawnRandomSetAR40004_2","AR4000",0)
-  Global("AYSpawnRandomBeenSetAR40004","AR4000",0)
+  Global("AYSpawnRandomSetAR40004_2","%Gullykin%",0)
+  Global("AYSpawnRandomBeenSetAR40004","%Gullykin%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR40004_2","AR4000",1)
-    SetGlobal("AYSpawnRandomBeenSetAR40004","AR4000",1)
+    SetGlobal("AYSpawnRandomSetAR40004_2","%Gullykin%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR40004","%Gullykin%",1)
 END
 
 IF
   RandomNum(3,2)
-  Global("AYSpawnRandomSetAR40004_1","AR4000",0)
-  Global("AYSpawnRandomBeenSetAR40004","AR4000",0)
+  Global("AYSpawnRandomSetAR40004_1","%Gullykin%",0)
+  Global("AYSpawnRandomBeenSetAR40004","%Gullykin%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR40004_1","AR4000",1)
-    SetGlobal("AYSpawnRandomBeenSetAR40004","AR4000",1)
+    SetGlobal("AYSpawnRandomSetAR40004_1","%Gullykin%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR40004","%Gullykin%",1)
 END
 
 IF
   RandomNum(3,3)
-  Global("AYSpawnRandomSetAR40004_0","AR4000",0)
-  Global("AYSpawnRandomBeenSetAR40004","AR4000",0)
+  Global("AYSpawnRandomSetAR40004_0","%Gullykin%",0)
+  Global("AYSpawnRandomBeenSetAR40004","%Gullykin%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR40004_0","AR4000",1)
-    SetGlobal("AYSpawnRandomBeenSetAR40004","AR4000",1)
+    SetGlobal("AYSpawnRandomSetAR40004_0","%Gullykin%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR40004","%Gullykin%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR40004","AR4000",0)
-  Global("AYSpawnRandomSetAR40004_2","AR4000",1)
+  Global("AYSpawnResetAR40004","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40004_2","%Gullykin%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR40004","AR4000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR40004","%Gullykin%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR40004","AR4000",0)
-  Global("AYSpawnRandomSetAR40004_2","AR4000",1)
+  Global("AYSpawnResetAR40004","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40004_2","%Gullykin%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR40004","AR4000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR40004","%Gullykin%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR40004","AR4000",0)
-  Global("AYSpawnRandomSetAR40004_2","AR4000",1)
+  Global("AYSpawnResetAR40004","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40004_2","%Gullykin%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR40004","AR4000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR40004","%Gullykin%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
-  Global("AYSpawnResetAR40004","AR4000",0)
-  Global("AYSpawnRandomSetAR40004_2","AR4000",1)
+  Global("AYSpawnResetAR40004","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40004_2","%Gullykin%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
     CreateCreature("WOLF",[978.2108],0)  // ~Wolf~
-    SetGlobalTimer("AYSpawnTimerAR40004","AR4000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR40004","%Gullykin%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR40004","AR4000",0)
-  Global("AYSpawnRandomSetAR40004_1","AR4000",1)
+  Global("AYSpawnResetAR40004","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40004_1","%Gullykin%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR40004","AR4000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR40004","%Gullykin%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR40004","AR4000",0)
-  Global("AYSpawnRandomSetAR40004_1","AR4000",1)
+  Global("AYSpawnResetAR40004","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40004_1","%Gullykin%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR40004","AR4000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR40004","%Gullykin%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR40004","AR4000",0)
-  Global("AYSpawnRandomSetAR40004_0","AR4000",1)
+  Global("AYSpawnResetAR40004","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40004_0","%Gullykin%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR40004","AR4000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR40004","%Gullykin%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR40004","AR4000",0)
-  Global("AYSpawnRandomSetAR40004_0","AR4000",1)
+  Global("AYSpawnResetAR40004","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40004_0","%Gullykin%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
     CreateCreature("KOBOLD_D",[978.2108],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR40004","AR4000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR40004","%Gullykin%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -171,24 +171,24 @@ IF
   !Range("KOBOLDA",60)
 
   !Range("WOLF",60)
-  Global("AYSpawnResetAR40004","AR4000",1)
-  GlobalTimerExpired("AYSpawnTimerAR40004","AR4000")
+  Global("AYSpawnResetAR40004","%Gullykin%",1)
+  GlobalTimerExpired("AYSpawnTimerAR40004","%Gullykin%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",0)
-    SetGlobal("AYSpawnRandomBeenSetAR40004","AR4000",0)
-    SetGlobal("AYSpawnRandomSetAR40004_2","AR4000",0)
-    SetGlobal("AYSpawnRandomSetAR40004_1","AR4000",0)
-    SetGlobal("AYSpawnRandomSetAR40004_0","AR4000",0)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR40004","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomSetAR40004_2","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomSetAR40004_1","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomSetAR40004_0","%Gullykin%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR40004","AR4000",0)
+  Global("AYSpawnResetAR40004","%Gullykin%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR40004","AR4000",1)
+    SetGlobal("AYSpawnResetAR40004","%Gullykin%",1)
     CreateCreature("KOBOLDA",[978.2108],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR40004","AR4000",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR40004","%Gullykin%",AY_SPAWN_TIMER)
 END
 

@@ -1,491 +1,491 @@
 IF
-  Global("AYSpawnRandomBeenSetAR55005","AR5500",0)
+  Global("AYSpawnRandomBeenSetAR55005","%GibberlingMountains%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR55005","AR5500",1)
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnRandomBeenSetAR55005","%GibberlingMountains%",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(3,1)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",0)
-  Global("AYSpawnRandomBeenSetAR55005","AR5500",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",0)
+  Global("AYSpawnRandomBeenSetAR55005","%GibberlingMountains%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR55005_2","AR5500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR55005","AR5500",1)
+    SetGlobal("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR55005","%GibberlingMountains%",1)
 END
 
 IF
   RandomNum(3,2)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",0)
-  Global("AYSpawnRandomBeenSetAR55005","AR5500",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",0)
+  Global("AYSpawnRandomBeenSetAR55005","%GibberlingMountains%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR55005_1","AR5500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR55005","AR5500",1)
+    SetGlobal("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR55005","%GibberlingMountains%",1)
 END
 
 IF
   RandomNum(3,3)
-  Global("AYSpawnRandomSetAR55005_0","AR5500",0)
-  Global("AYSpawnRandomBeenSetAR55005","AR5500",0)
+  Global("AYSpawnRandomSetAR55005_0","%GibberlingMountains%",0)
+  Global("AYSpawnRandomBeenSetAR55005","%GibberlingMountains%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR55005_0","AR5500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR55005","AR5500",1)
+    SetGlobal("AYSpawnRandomSetAR55005_0","%GibberlingMountains%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR55005","%GibberlingMountains%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
   LevelPartyLT(8)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(7)
   LevelPartyLT(9)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(8)
   LevelPartyLT(10)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(9)
   LevelPartyLT(11)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(10)
   LevelPartyLT(12)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(11)
   LevelPartyLT(13)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(12)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_2","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
   LevelPartyLT(8)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(7)
   LevelPartyLT(9)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(8)
   LevelPartyLT(10)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(9)
   LevelPartyLT(11)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(10)
   LevelPartyLT(12)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(11)
   LevelPartyLT(13)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(12)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_1","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
     CreateCreature("WOLFWI",[2253.3243],0)  // ~Winter Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_0","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_0","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_0","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_0","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_0","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_0","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_0","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_0","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_0","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_0","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
-  Global("AYSpawnResetAR55005","AR5500",0)
-  Global("AYSpawnRandomSetAR55005_0","AR5500",1)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55005_0","%GibberlingMountains%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 
 IF
   !Range([PC],60)
   !Range("WOLFDI",60)
   !Range("WOLFWI",60)
-  Global("AYSpawnResetAR55005","AR5500",1)
-  GlobalTimerExpired("AYSpawnTimerAR55005","AR5500")
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",1)
+  GlobalTimerExpired("AYSpawnTimerAR55005","%GibberlingMountains%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",0)
-    SetGlobal("AYSpawnRandomBeenSetAR55005","AR5500",0)
-    SetGlobal("AYSpawnRandomSetAR55005_2","AR5500",0)
-    SetGlobal("AYSpawnRandomSetAR55005_1","AR5500",0)
-    SetGlobal("AYSpawnRandomSetAR55005_0","AR5500",0)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR55005","%GibberlingMountains%",0)
+    SetGlobal("AYSpawnRandomSetAR55005_2","%GibberlingMountains%",0)
+    SetGlobal("AYSpawnRandomSetAR55005_1","%GibberlingMountains%",0)
+    SetGlobal("AYSpawnRandomSetAR55005_0","%GibberlingMountains%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR55005","AR5500",0)
+  Global("AYSpawnResetAR55005","%GibberlingMountains%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR55005","AR5500",1)
+    SetGlobal("AYSpawnResetAR55005","%GibberlingMountains%",1)
     CreateCreature("WOLFDI",[2253.3243],0)  // ~Dire Wolf~
-    SetGlobalTimer("AYSpawnTimerAR55005","AR5500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR55005","%GibberlingMountains%",AY_SPAWN_TIMER)
 END
 

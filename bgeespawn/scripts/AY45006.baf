@@ -1,75 +1,75 @@
 IF
-  Global("AYSpawnRandomBeenSetAR45006","AR4500",0)
+  Global("AYSpawnRandomBeenSetAR45006","%FirewineBridge%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR45006","AR4500",1)
-    SetGlobal("AYSpawnResetAR45006","AR4500",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45006","%FirewineBridge%",1)
+    SetGlobal("AYSpawnResetAR45006","%FirewineBridge%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(1,1)
-  Global("AYSpawnRandomSetAR45006_0","AR4500",0)
-  Global("AYSpawnRandomBeenSetAR45006","AR4500",0)
+  Global("AYSpawnRandomSetAR45006_0","%FirewineBridge%",0)
+  Global("AYSpawnRandomBeenSetAR45006","%FirewineBridge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR45006_0","AR4500",1)
-    SetGlobal("AYSpawnRandomBeenSetAR45006","AR4500",1)
+    SetGlobal("AYSpawnRandomSetAR45006_0","%FirewineBridge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45006","%FirewineBridge%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR45006","AR4500",0)
-  Global("AYSpawnRandomSetAR45006_0","AR4500",1)
+  Global("AYSpawnResetAR45006","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45006_0","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45006","AR4500",1)
+    SetGlobal("AYSpawnResetAR45006","%FirewineBridge%",1)
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR45006","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45006","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
-  Global("AYSpawnResetAR45006","AR4500",0)
-  Global("AYSpawnRandomSetAR45006_0","AR4500",1)
+  Global("AYSpawnResetAR45006","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45006_0","%FirewineBridge%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45006","AR4500",1)
+    SetGlobal("AYSpawnResetAR45006","%FirewineBridge%",1)
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR45006","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45006","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 
 IF
   !Range([PC],60)
 
   !Range("KOBOLA_B",60)
-  Global("AYSpawnResetAR45006","AR4500",1)
-  GlobalTimerExpired("AYSpawnTimerAR45006","AR4500")
+  Global("AYSpawnResetAR45006","%FirewineBridge%",1)
+  GlobalTimerExpired("AYSpawnTimerAR45006","%FirewineBridge%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45006","AR4500",0)
-    SetGlobal("AYSpawnRandomBeenSetAR45006","AR4500",0)
-    SetGlobal("AYSpawnRandomSetAR45006_0","AR4500",0)
+    SetGlobal("AYSpawnResetAR45006","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR45006","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomSetAR45006_0","%FirewineBridge%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR45006","AR4500",0)
+  Global("AYSpawnResetAR45006","%FirewineBridge%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR45006","AR4500",1)
+    SetGlobal("AYSpawnResetAR45006","%FirewineBridge%",1)
     CreateCreature("KOBOLA_B",[1488.2336],0)  // ~Kobold~
-    SetGlobalTimer("AYSpawnTimerAR45006","AR4500",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR45006","%FirewineBridge%",AY_SPAWN_TIMER)
 END
 

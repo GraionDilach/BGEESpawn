@@ -1,169 +1,169 @@
 IF
-  Global("AYSpawnRandomBeenSetAR38008","AR3800",0)
+  Global("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR38008","AR3800",1)
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(2,1)
-  Global("AYSpawnRandomSetAR38008_1","AR3800",0)
-  Global("AYSpawnRandomBeenSetAR38008","AR3800",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR38008_1","AR3800",1)
-    SetGlobal("AYSpawnRandomBeenSetAR38008","AR3800",1)
+    SetGlobal("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",1)
 END
 
 IF
   RandomNum(2,2)
-  Global("AYSpawnRandomSetAR38008_0","AR3800",0)
-  Global("AYSpawnRandomBeenSetAR38008","AR3800",0)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR38008_0","AR3800",1)
-    SetGlobal("AYSpawnRandomBeenSetAR38008","AR3800",1)
+    SetGlobal("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR38008","AR3800",0)
-  Global("AYSpawnRandomSetAR38008_1","AR3800",1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
   LevelPartyLT(4)
-  Global("AYSpawnResetAR38008","AR3800",0)
-  Global("AYSpawnRandomSetAR38008_1","AR3800",1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR38008","AR3800",0)
-  Global("AYSpawnRandomSetAR38008_1","AR3800",1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR38008","AR3800",0)
-  Global("AYSpawnRandomSetAR38008_1","AR3800",1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR38008","AR3800",0)
-  Global("AYSpawnRandomSetAR38008_1","AR3800",1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
-  Global("AYSpawnResetAR38008","AR3800",0)
-  Global("AYSpawnRandomSetAR38008_1","AR3800",1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
     CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyLT(2)
-  Global("AYSpawnResetAR38008","AR3800",0)
-  Global("AYSpawnRandomSetAR38008_0","AR3800",1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(1)
   LevelPartyLT(3)
-  Global("AYSpawnResetAR38008","AR3800",0)
-  Global("AYSpawnRandomSetAR38008_0","AR3800",1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(2)
-  Global("AYSpawnResetAR38008","AR3800",0)
-  Global("AYSpawnRandomSetAR38008_0","AR3800",1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -172,23 +172,23 @@ IF
   !Range("HOBGOB_A",60)
 
   !Range("GHOUL",60)
-  Global("AYSpawnResetAR38008","AR3800",1)
-  GlobalTimerExpired("AYSpawnTimerAR38008","AR3800")
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+  GlobalTimerExpired("AYSpawnTimerAR38008","%SouthBeregostRoad%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",0)
-    SetGlobal("AYSpawnRandomBeenSetAR38008","AR3800",0)
-    SetGlobal("AYSpawnRandomSetAR38008_1","AR3800",0)
-    SetGlobal("AYSpawnRandomSetAR38008_0","AR3800",0)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR38008","AR3800",0)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR38008","AR3800",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
     CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
-    SetGlobalTimer("AYSpawnTimerAR38008","AR3800",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
 END
 

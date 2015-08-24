@@ -1,293 +1,293 @@
 IF
-  Global("AYSpawnRandomBeenSetAR05111","AR0511",0)
+  Global("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",0)
 THEN
   RESPONSE #NOSPAWN
-    SetGlobal("AYSpawnRandomBeenSetAR05111","AR0511",1)
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
   RESPONSE #GOSPAWN
     Continue()
 END
 
 IF
   RandomNum(2,1)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",0)
-  Global("AYSpawnRandomBeenSetAR05111","AR0511",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR05111_1","AR0511",1)
-    SetGlobal("AYSpawnRandomBeenSetAR05111","AR0511",1)
+    SetGlobal("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",1)
 END
 
 IF
   RandomNum(2,2)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",0)
-  Global("AYSpawnRandomBeenSetAR05111","AR0511",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnRandomSetAR05111_0","AR0511",1)
-    SetGlobal("AYSpawnRandomBeenSetAR05111","AR0511",1)
+    SetGlobal("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",1)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(3)
   LevelPartyLT(5)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
   LevelPartyLT(8)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(7)
   LevelPartyLT(9)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(8)
   LevelPartyLT(10)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(9)
   LevelPartyLT(11)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(10)
   LevelPartyLT(12)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(11)
   LevelPartyLT(13)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(12)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_1","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(4)
   LevelPartyLT(6)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(5)
   LevelPartyLT(7)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(6)
   LevelPartyLT(8)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(7)
   LevelPartyLT(9)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(8)
   LevelPartyLT(10)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(9)
   LevelPartyLT(11)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(10)
   LevelPartyLT(12)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(11)
   LevelPartyLT(13)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
   Range([PC],60)
   LevelPartyGT(12)
-  Global("AYSpawnResetAR05111","AR0511",0)
-  Global("AYSpawnRandomSetAR05111_0","AR0511",1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
     CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
 IF
@@ -296,23 +296,23 @@ IF
   !Range("SPIDPH",60)
 
   !Range("SPIDWR",60)
-  Global("AYSpawnResetAR05111","AR0511",1)
-  GlobalTimerExpired("AYSpawnTimerAR05111","AR0511")
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+  GlobalTimerExpired("AYSpawnTimerAR05111","%DurlagsTower_D1%")
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",0)
-    SetGlobal("AYSpawnRandomBeenSetAR05111","AR0511",0)
-    SetGlobal("AYSpawnRandomSetAR05111_1","AR0511",0)
-    SetGlobal("AYSpawnRandomSetAR05111_0","AR0511",0)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",0)
 END
 
 IF
   Range([PC],60)
-  Global("AYSpawnResetAR05111","AR0511",0)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
 THEN
   RESPONSE #100
-    SetGlobal("AYSpawnResetAR05111","AR0511",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
     CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
-    SetGlobalTimer("AYSpawnTimerAR05111","AR0511",AY_SPAWN_TIMER)
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
 END
 
