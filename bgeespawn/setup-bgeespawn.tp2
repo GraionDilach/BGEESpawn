@@ -272,6 +272,13 @@ Note: Game defaults are 85-100%, depending on area.
 ACTION_BASH_FOR ~bgeespawn/info~ ~.*.nfp~ BEGIN
 COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
   SPRINT source "%SOURCE_RES%"
+  PATCH_IF (GAME_IS ~eet~) BEGIN
+    INNER_PATCH_SAVE area_name "%SOURCE_RES%" BEGIN
+      REPLACE_TEXTUALLY "^AR" "BG"
+    END  
+  END ELSE BEGIN
+    SPRINT area_name "%SOURCE_RES%"
+  END
   SET info_vertex_num_new_total = 0
 
   //ignore the placeholder and any 0-byte files
@@ -284,7 +291,7 @@ COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
 
       //add to the corresponding ARE file with the same ResRef
       INNER_ACTION BEGIN
-        COPY_EXISTING ~%source%.are~ ~override/%source%.are~
+        COPY_EXISTING ~%area_name%.are~ ~override/%area_name%.are~
           READ_LONG 0x54 actor_off
           READ_LONG 0x5c info_off
           READ_LONG 0x60 spawn_off
