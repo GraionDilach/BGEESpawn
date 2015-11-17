@@ -396,4 +396,4 @@ ACTION_BASH_FOR ~bgeespawn/scripts~ ~.*.baf~ BEGIN
   BUT_ONLY_IF_IT_CHANGES
 END
 
-COMPILE ~bgeespawn/scripts~
+COMPILE ~bgeespawn/scripts~ EVALUATE_BUFFER
