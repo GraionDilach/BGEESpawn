@@ -1,10 +1,9 @@
 /* Declaration of EET Platform Variables */
 ACTION_IF GAME_IS "eet" BEGIN
 	/* tp2, d, and baf parsing variables */
-	OUTER_SPRINT "tutorbgt" ""
-	OUTER_SPRINT "tutubgtbgee" ""
-	OUTER_SPRINT "tutubgteetbgee" "eet"
-	OUTER_SPRINT "bgdreams" "BG1DREAM"
+	OUTER_SPRINT "tutorbgt" "eet"
+	OUTER_SPRINT "tutubgtbgee" "eet"
+	OUTER_SPRINT "bgdreams" "DREAM"
 	OUTER_SPRINT "bgdream1" "2"
 	OUTER_SPRINT "bgdream2" "3"
 	OUTER_SPRINT "bgdream3" "4"
@@ -43,60 +42,33 @@ ACTION_IF GAME_IS "eet" BEGIN
 
 	OUTER_SPRINT "tutu_imoen6" "imoen6_"
 	OUTER_SPRINT "tutu_viconi6" "viconi6_"
+	OUTER_SPRINT "tutu_skeleton_warrior" "bgskel" //exception for the '_' suffix renaming convention due to 8 characters limit (SKELWA02.CRE => BGSKEL02.CRE, SKELWA03.CRE => BGSKEL03.CRE)
 
 	/* EET naming convention */
-	OUTER_SPRINT "eet_var" "_"//EET '_' suffix for conflicting resources with 7 or less characters, otherwise '0' is dropped
-	OUTER_SPRINT "eet_script0" ""//used to remove "0" in conflicting resources with 8 letters, you should also add %eet_var% at the end (SKELWA02.CRE => SKELWA2_.CRE, SKELWA03.CRE => SKELWA3_.CRE, also used for random item tables (RNDEQU / RNDMAG / RNDSCR / RNDTRE / RNDWEP - example: RNDWEP01 => RNDWEP1_)
+	OUTER_SPRINT "eet_var" "_" //EET '_' suffix for conflicting resources with 7 or less characters
 
 	/* EET Worldmap*/
 	OUTER_SET wmp_xCoord_BG1 = 373 //in relation to BG1/Tutu WORLDMAP.WMP add 373 px correction to X coordinate
-	OUTER_SET wmp_yCoord_BG1 = 0
-	OUTER_SET wmp_xCoord_SoA = 0
-	OUTER_SET wmp_yCoord_SoA = 953 //in relation to BG2/BG2:EE WORLDMAP.WMP add 953 px correction to X coordinate
+	OUTER_SET wmp_yCoord_BG1 = 1330 //in relation to BG1/Tutu WORLDMAP.WMP add 1330 px correction to Y coordinate
+	OUTER_SET wmp_xCoord_SoA = 0 //in relation to BG2/BG2:EE WORLDMAP.WMP add 0 px correction to X coordinate
+	OUTER_SET wmp_yCoord_SoA = 2283 //in relation to BG2/BG2:EE WORLDMAP.WMP add 2283 px correction to Y coordinate
 	OUTER_SET wmp_xCoord_ToB = 893 //in relation to BG2/BG2:EE WORLDM25.WMP add 893 px correction to X coordinate
-	OUTER_SET wmp_yCoord_ToB = 1681 //in relation to BG2/BG2:EE WORLDM25.WMP add 1681 px correction to Y coordinate
+	OUTER_SET wmp_yCoord_ToB = 3011 //in relation to BG2/BG2:EE WORLDM25.WMP add 3011 px correction to Y coordinate
 	OUTER_SET wmp_mapIcon_BG1 = 29 //in relation to BG1/Tutu MAPICONS.BAM add 29 cycles correction to map icon
 	OUTER_SET wmp_mapIcon_ToB = 85 //in relation to BG2 25MAPIC.BAM add 85 cycles correction to map icon
 	OUTER_SPRINT wmp_worldmap_ToB "worldmap" //when editing ToB worldmap use WORLDMAP.WMP instead of WORLDM25.WMP
 
 	/* EET continuous journal/chapters system */
-	ACTION_IF (FILE_CONTAINS ~override/EET.flag~ ~EET_JOURNAL~) BEGIN //EET version that will be available after patch 1.4 for BG2:EE release
-		OUTER_SET sod_chapter_1 = 8
-		OUTER_SET sod_chapter_2 = 9
-		OUTER_SET sod_chapter_3 = 10
-		OUTER_SET sod_chapter_4 = 11
-		OUTER_SET sod_chapter_5 = 12
-		OUTER_SET sod_chapter_6 = 13
-		OUTER_SET sod_chapter_7 = 14
-		OUTER_SET bg2_chapter_1 = 15
-		OUTER_SET bg2_chapter_2 = 16
-		OUTER_SET bg2_chapter_3 = 17
-		OUTER_SET bg2_chapter_4 = 18
-		OUTER_SET bg2_chapter_5 = 19
-		OUTER_SET bg2_chapter_6 = 20
-		OUTER_SET bg2_chapter_7 = 21
-		OUTER_SET bg2_chapter_8 = 22
-		OUTER_SET bg2_chapter_9 = 23
-		OUTER_SET bg2_chapter_10 = 24
-	END ELSE BEGIN //compatible with current public EET version
-		OUTER_SET sod_chapter_1 = 1
-		OUTER_SET sod_chapter_2 = 2
-		OUTER_SET sod_chapter_3 = 3
-		OUTER_SET sod_chapter_4 = 4
-		OUTER_SET sod_chapter_5 = 5
-		OUTER_SET sod_chapter_6 = 6
-		OUTER_SET sod_chapter_7 = 7
-		OUTER_SET bg2_chapter_1 = 1
-		OUTER_SET bg2_chapter_2 = 2
-		OUTER_SET bg2_chapter_3 = 3
-		OUTER_SET bg2_chapter_4 = 4
-		OUTER_SET bg2_chapter_5 = 5
-		OUTER_SET bg2_chapter_6 = 6
-		OUTER_SET bg2_chapter_7 = 7
-		OUTER_SET bg2_chapter_8 = 8
-		OUTER_SET bg2_chapter_9 = 9
-		OUTER_SET bg2_chapter_10 = 10
-	END
+	OUTER_SET bg2_chapter_1 = 13
+	OUTER_SET bg2_chapter_2 = 14
+	OUTER_SET bg2_chapter_3 = 15
+	OUTER_SET bg2_chapter_4 = 16
+	OUTER_SET bg2_chapter_5 = 17
+	OUTER_SET bg2_chapter_6 = 18
+	OUTER_SET bg2_chapter_7 = 19
+	OUTER_SET bg2_chapter_8 = 20
+	OUTER_SET bg2_chapter_9 = 21
+	OUTER_SET bg2_chapter_10 = 22
 
 	/* BGT/EET shutdown of D and BAF after BG1 content */
 	OUTER_SPRINT ~BGT_VAR~ ~GlobalLT("ENDOFBG1","GLOBAL",2)~
@@ -152,13 +124,6 @@ ACTION_IF GAME_IS "eet" BEGIN
 	OUTER_SET BGTDYNAHJState0 = 0
 	OUTER_SET BGTDYNAHPState0 = 0
 
-	/* EET FluidStates */
-	ACTION_IF FILE_EXISTS ~EET/FluidStates.tpa~ THEN BEGIN
-		INCLUDE ~EET/FluidStates.tpa~
-	END ELSE BEGIN
-		FAIL ~EET/FluidStates.tpa has not been detected~//there is no point in installing the mod that need these variables if this file has not been generated or has been deleted
-	END
-
 	/* Post Dialogue Files */
 	OUTER_SPRINT "AJANTIS_POST" "AJANTP"
 	OUTER_SPRINT "ALORA_POST" "ALORAP"
@@ -197,26 +162,31 @@ ACTION_IF GAME_IS "eet" BEGIN
 	OUTER_SPRINT "BRANWEN_BANTER" "BBRANW"
 	OUTER_SPRINT "CORAN_BANTER" "BCORAN"
 	OUTER_SPRINT "DYNAHEIR_BANTER" "BDYNAH"
-	OUTER_SPRINT "EDWIN_BANTER" "BEDWIN"
+	OUTER_SPRINT "EDWIN_BANTER" "BEDWIN_"
 	OUTER_SPRINT "ELDOTH_BANTER" "BELDOT"
 	OUTER_SPRINT "FALDORN_BANTER" "BFALDO"
 	OUTER_SPRINT "GARRICK_BANTER" "BGARRI"
-	OUTER_SPRINT "IMOEN_BANTER" "BIMOEN2"
-	OUTER_SPRINT "JAHEIRA_BANTER" "BJAHEIR"
+	OUTER_SPRINT "IMOEN_BANTER" "BIMOEN"
+	OUTER_SPRINT "JAHEIRA_BANTER" "BJAHEI"
 	OUTER_SPRINT "KAGAIN_BANTER" "BKAGAI"
 	OUTER_SPRINT "KHALID_BANTER" "BKHALI"
 	OUTER_SPRINT "KIVAN_BANTER" "BKIVAN"
-	OUTER_SPRINT "MINSC_BANTER" "BMINSC"
+	OUTER_SPRINT "MINSC_BANTER" "BMINSC_"
 	OUTER_SPRINT "MONTARON_BANTER" "BMONTA"
 	OUTER_SPRINT "QUAYLE_BANTER" "BQUAYL"
 	OUTER_SPRINT "SAFANA_BANTER" "BSAFAN"
 	OUTER_SPRINT "SHARTEEL_BANTER" "BSHART"
 	OUTER_SPRINT "SKIE_BANTER" "BSKIE"
 	OUTER_SPRINT "TIAX_BANTER" "BTIAX"
-	OUTER_SPRINT "VICONIA_BANTER" "BVICONI"
+	OUTER_SPRINT "VICONIA_BANTER" "BVICON"
 	OUTER_SPRINT "XAN_BANTER" "BXANNN"
 	OUTER_SPRINT "XZAR_BANTER" "BXZAR"
 	OUTER_SPRINT "YESLICK_BANTER" "BYESLI"
+
+	/* BG:EE Banter Files */
+	OUTER_SPRINT "DORN_BANTER" "BDORN_"
+	OUTER_SPRINT "NEERA_BANTER" "BNEERA_"
+	OUTER_SPRINT "RASAAD_BANTER" "BRASAAD_"
 
 	/* Joined Dialogue Files */
 	OUTER_SPRINT "AJANTIS_JOINED" "AJANTJ"
