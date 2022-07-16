@@ -1,0 +1,461 @@
+IF
+  Global("AYSpawnRandomBeenSetAR42002","%FishermansLake%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR42002","%FishermansLake%",1)
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(5,1)
+  Global("AYSpawnRandomSetAR42002_4","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42002","%FishermansLake%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR42002_4","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42002","%FishermansLake%",1)
+END
+
+IF
+  RandomNum(5,2)
+  Global("AYSpawnRandomSetAR42002_3","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42002","%FishermansLake%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR42002_3","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42002","%FishermansLake%",1)
+END
+
+IF
+  RandomNum(5,3)
+  Global("AYSpawnRandomSetAR42002_2","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42002","%FishermansLake%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR42002_2","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42002","%FishermansLake%",1)
+END
+
+IF
+  RandomNum(5,4)
+  Global("AYSpawnRandomSetAR42002_1","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42002","%FishermansLake%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR42002_1","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42002","%FishermansLake%",1)
+END
+
+IF
+  RandomNum(5,5)
+  Global("AYSpawnRandomSetAR42002_0","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42002","%FishermansLake%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR42002_0","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42002","%FishermansLake%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_4","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+	CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_4","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_4","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_4","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_4","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+	CreateCreature("GNOLL_D",[3702.1965],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_3","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+	CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_3","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_3","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_3","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_3","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+	CreateCreature("GNOLL_B",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_2","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+	CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_2","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_2","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_2","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_2","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+	CreateCreature("GNOLL_A",[3702.1965],0)  // ~Gnoll Elite~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+	CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+	CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42002_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+	CreateCreature("GNOLL",[3702.1965],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GNOLL",75)
+
+  !Range("WOLF",75)
+
+  !Range("GNOLL_A",75)
+
+  !Range("GNOLL_B",75)
+
+  !Range("GNOLL_D",75)
+  Global("AYSpawnResetAR42002","%FishermansLake%",1)
+  GlobalTimerExpired("AYSpawnTimerAR42002","%FishermansLake%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR42002","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42002_4","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42002_3","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42002_2","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42002_1","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42002_0","%FishermansLake%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR42002","%FishermansLake%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42002","%FishermansLake%",1)
+    CreateCreature("WOLF",[3702.1965],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR42002","%FishermansLake%",AY_SPAWN_TIMER)
+END
+

@@ -1,0 +1,315 @@
+IF
+  Global("AYSpawnRandomBeenSetAR19003","%BanditCamp%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR19003","%BanditCamp%",1)
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR19003_2","%BanditCamp%",0)
+  Global("AYSpawnRandomBeenSetAR19003","%BanditCamp%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR19003_2","%BanditCamp%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR19003","%BanditCamp%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR19003_1","%BanditCamp%",0)
+  Global("AYSpawnRandomBeenSetAR19003","%BanditCamp%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR19003_1","%BanditCamp%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR19003","%BanditCamp%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR19003_0","%BanditCamp%",0)
+  Global("AYSpawnRandomBeenSetAR19003","%BanditCamp%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR19003_0","%BanditCamp%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR19003","%BanditCamp%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_2","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_2","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_2","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_2","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+	CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_2","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+	CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+	CreateCreature("ZOMBIE_C",[2027.2434],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+	CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+	CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+	CreateCreature("SKELET_C",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19003_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SKELET_B",75)
+
+  !Range("SKELET_C",75)
+
+  !Range("ZOMBIE_C",75)
+  Global("AYSpawnResetAR19003","%BanditCamp%",1)
+  GlobalTimerExpired("AYSpawnTimerAR19003","%BanditCamp%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR19003","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomSetAR19003_2","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomSetAR19003_1","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomSetAR19003_0","%BanditCamp%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR19003","%BanditCamp%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19003","%BanditCamp%",1)
+    CreateCreature("SKELET_B",[2027.2434],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR19003","%BanditCamp%",AY_SPAWN_TIMER)
+END
+

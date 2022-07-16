@@ -1,0 +1,220 @@
+IF
+  Global("AYSpawnRandomBeenSetAR42008","%FishermansLake%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR42008","%FishermansLake%",1)
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR42008_1","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42008","%FishermansLake%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR42008_1","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42008","%FishermansLake%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR42008_0","%FishermansLake%",0)
+  Global("AYSpawnRandomBeenSetAR42008","%FishermansLake%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR42008_0","%FishermansLake%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR42008","%FishermansLake%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+	CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+	CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+	CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+	CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+	CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_1","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+	CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+	CreateCreature("DOGWA",[1655.2228],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+  Global("AYSpawnRandomSetAR42008_0","%FishermansLake%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("DOGWI",75)
+
+  !Range("DOGWA",75)
+  Global("AYSpawnResetAR42008","%FishermansLake%",1)
+  GlobalTimerExpired("AYSpawnTimerAR42008","%FishermansLake%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR42008","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42008_1","%FishermansLake%",0)
+    SetGlobal("AYSpawnRandomSetAR42008_0","%FishermansLake%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR42008","%FishermansLake%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR42008","%FishermansLake%",1)
+    CreateCreature("DOGWI",[1655.2228],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR42008","%FishermansLake%",AY_SPAWN_TIMER)
+END
+

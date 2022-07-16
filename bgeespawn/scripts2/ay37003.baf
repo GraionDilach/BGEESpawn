@@ -1,0 +1,308 @@
+IF
+  Global("AYSpawnRandomBeenSetAR37003","%RedCanyons%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR37003","%RedCanyons%",1)
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR37003_2","%RedCanyons%",0)
+  Global("AYSpawnRandomBeenSetAR37003","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR37003_2","%RedCanyons%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR37003","%RedCanyons%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR37003_1","%RedCanyons%",0)
+  Global("AYSpawnRandomBeenSetAR37003","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR37003_1","%RedCanyons%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR37003","%RedCanyons%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR37003_0","%RedCanyons%",0)
+  Global("AYSpawnRandomBeenSetAR37003","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR37003_0","%RedCanyons%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR37003","%RedCanyons%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+	CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+	CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+	CreateCreature("SKELET_C",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+	CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37003_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+	CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+	CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SKELET_A",75)
+
+  !Range("SKELET_C",75)
+
+  !Range("SKELET_B",75)
+  Global("AYSpawnResetAR37003","%RedCanyons%",1)
+  GlobalTimerExpired("AYSpawnTimerAR37003","%RedCanyons%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR37003","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomSetAR37003_2","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomSetAR37003_1","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomSetAR37003_0","%RedCanyons%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR37003","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37003","%RedCanyons%",1)
+    CreateCreature("SKELET_A",[3851.3584],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR37003","%RedCanyons%",AY_SPAWN_TIMER)
+END
+

@@ -49,7 +49,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR01231","%Undercity%",0)
   Global("AYSpawnRandomSetAR01231_3","%Undercity%",1)
@@ -62,7 +62,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR01231","%Undercity%",0)
@@ -78,7 +78,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR01231","%Undercity%",0)
   Global("AYSpawnRandomSetAR01231_3","%Undercity%",1)
@@ -95,7 +95,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR01231","%Undercity%",0)
   Global("AYSpawnRandomSetAR01231_2","%Undercity%",1)
@@ -108,7 +108,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR01231","%Undercity%",0)
@@ -124,7 +124,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR01231","%Undercity%",0)
   Global("AYSpawnRandomSetAR01231_2","%Undercity%",1)
@@ -141,7 +141,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR01231","%Undercity%",0)
   Global("AYSpawnRandomSetAR01231_1","%Undercity%",1)
@@ -154,7 +154,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR01231","%Undercity%",0)
@@ -170,7 +170,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR01231","%Undercity%",0)
   Global("AYSpawnRandomSetAR01231_1","%Undercity%",1)
@@ -187,7 +187,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR01231","%Undercity%",0)
   Global("AYSpawnRandomSetAR01231_0","%Undercity%",1)
@@ -200,7 +200,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR01231","%Undercity%",0)
@@ -216,7 +216,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR01231","%Undercity%",0)
   Global("AYSpawnRandomSetAR01231_0","%Undercity%",1)
@@ -233,15 +233,15 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("ZOMBIE_D",60)
+  !Range("ZOMBIE_D",75)
 
-  !Range("ZOMBIE_A",60)
+  !Range("ZOMBIE_A",75)
 
-  !Range("ZOMBIE_B",60)
+  !Range("ZOMBIE_B",75)
 
-  !Range("SKELET_B",60)
+  !Range("SKELET_B",75)
   Global("AYSpawnResetAR01231","%Undercity%",1)
   GlobalTimerExpired("AYSpawnTimerAR01231","%Undercity%")
 THEN
@@ -255,7 +255,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR01231","%Undercity%",0)
 THEN
   RESPONSE #100

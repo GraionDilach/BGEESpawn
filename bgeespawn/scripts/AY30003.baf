@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -55,7 +55,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -68,7 +68,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -82,7 +82,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -96,7 +96,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -110,7 +110,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -125,7 +125,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -140,7 +140,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -155,7 +155,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
   Global("AYSpawnRandomSetAR30003_1","%SpiderWood%",1)
@@ -169,7 +169,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -182,7 +182,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -195,7 +195,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -208,7 +208,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -222,7 +222,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -236,7 +236,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -250,7 +250,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -265,7 +265,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -280,7 +280,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -295,7 +295,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
@@ -311,7 +311,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
   Global("AYSpawnRandomSetAR30003_0","%SpiderWood%",1)
@@ -326,11 +326,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("ETTERC",60)
+  !Range("ETTERC",75)
 
-  !Range("SPIDGI",60)
+  !Range("SPIDGI",75)
   Global("AYSpawnResetAR30003","%SpiderWood%",1)
   GlobalTimerExpired("AYSpawnTimerAR30003","%SpiderWood%")
 THEN
@@ -342,7 +342,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR30003","%SpiderWood%",0)
 THEN
   RESPONSE #100

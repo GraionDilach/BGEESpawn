@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR02260","%ESewers%",0)
   Global("AYSpawnRandomSetAR02260_0","%ESewers%",1)
 THEN
@@ -35,9 +35,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("CARRIO",60)
+  !Range("CARRIO",75)
   Global("AYSpawnResetAR02260","%ESewers%",1)
   GlobalTimerExpired("AYSpawnTimerAR02260","%ESewers%")
 THEN
@@ -48,7 +48,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR02260","%ESewers%",0)
 THEN
   RESPONSE #100

@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -55,7 +55,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -68,7 +68,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -82,7 +82,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -96,7 +96,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -110,7 +110,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -125,7 +125,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -140,7 +140,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -155,7 +155,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
   Global("AYSpawnRandomSetAR21007_1","%CloakwoodNest%",1)
@@ -169,7 +169,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -182,7 +182,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -196,7 +196,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -211,7 +211,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -227,7 +227,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
@@ -244,7 +244,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
   Global("AYSpawnRandomSetAR21007_0","%CloakwoodNest%",1)
@@ -261,11 +261,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("SPIDHU",60)
+  !Range("SPIDHU",75)
 
-  !Range("SPIDGI",60)
+  !Range("SPIDGI",75)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",1)
   GlobalTimerExpired("AYSpawnTimerAR21007","%CloakwoodNest%")
 THEN
@@ -277,7 +277,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR21007","%CloakwoodNest%",0)
 THEN
   RESPONSE #100

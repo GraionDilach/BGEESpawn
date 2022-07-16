@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
@@ -52,7 +52,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
@@ -66,7 +66,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
@@ -81,7 +81,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
@@ -97,7 +97,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
@@ -114,7 +114,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR22000_2","%CloakwoodLodge%",1)
@@ -131,7 +131,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR22000_1","%CloakwoodLodge%",1)
@@ -143,7 +143,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
@@ -158,7 +158,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
@@ -175,7 +175,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR22000_1","%CloakwoodLodge%",1)
@@ -192,7 +192,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR22000_0","%CloakwoodLodge%",1)
@@ -206,7 +206,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR22000_0","%CloakwoodLodge%",1)
@@ -223,13 +223,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("TASLOI",60)
+  !Range("TASLOI",75)
 
-  !Range("WOLF",60)
+  !Range("WOLF",75)
 
-  !Range("SPIDHU",60)
+  !Range("SPIDHU",75)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",1)
   GlobalTimerExpired("AYSpawnTimerAR22000","%CloakwoodLodge%")
 THEN
@@ -242,7 +242,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR22000","%CloakwoodLodge%",0)
 THEN
   RESPONSE #100

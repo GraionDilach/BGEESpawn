@@ -1,0 +1,371 @@
+IF
+  Global("AYSpawnRandomBeenSetAR29000","%Larswood%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR29000","%Larswood%",1)
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(4,1)
+  Global("AYSpawnRandomSetAR29000_3","%Larswood%",0)
+  Global("AYSpawnRandomBeenSetAR29000","%Larswood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR29000_3","%Larswood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR29000","%Larswood%",1)
+END
+
+IF
+  RandomNum(4,2)
+  Global("AYSpawnRandomSetAR29000_2","%Larswood%",0)
+  Global("AYSpawnRandomBeenSetAR29000","%Larswood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR29000_2","%Larswood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR29000","%Larswood%",1)
+END
+
+IF
+  RandomNum(4,3)
+  Global("AYSpawnRandomSetAR29000_1","%Larswood%",0)
+  Global("AYSpawnRandomBeenSetAR29000","%Larswood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR29000_1","%Larswood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR29000","%Larswood%",1)
+END
+
+IF
+  RandomNum(4,4)
+  Global("AYSpawnRandomSetAR29000_0","%Larswood%",0)
+  Global("AYSpawnRandomBeenSetAR29000","%Larswood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR29000_0","%Larswood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR29000","%Larswood%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_3","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+	CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_3","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_3","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_3","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_3","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[768.809],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_2","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_2","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_2","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_2","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_2","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+	CreateCreature("WOLF",[768.809],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+  Global("AYSpawnRandomSetAR29000_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[768.809],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BEARBL",75)
+
+  !Range("WOLF",75)
+
+  !Range("DOGWI",75)
+
+  !Range("IRONELIT",75)
+  Global("AYSpawnResetAR29000","%Larswood%",1)
+  GlobalTimerExpired("AYSpawnTimerAR29000","%Larswood%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR29000","%Larswood%",0)
+    SetGlobal("AYSpawnRandomSetAR29000_3","%Larswood%",0)
+    SetGlobal("AYSpawnRandomSetAR29000_2","%Larswood%",0)
+    SetGlobal("AYSpawnRandomSetAR29000_1","%Larswood%",0)
+    SetGlobal("AYSpawnRandomSetAR29000_0","%Larswood%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR29000","%Larswood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR29000","%Larswood%",1)
+    CreateCreature("DOGWI",[768.809],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR29000","%Larswood%",AY_SPAWN_TIMER)
+END
+

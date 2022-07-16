@@ -1,0 +1,281 @@
+IF
+  Global("AYSpawnRandomBeenSetAR54006","%NashkelMines%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR54006","%NashkelMines%",1)
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR54006_2","%NashkelMines%",0)
+  Global("AYSpawnRandomBeenSetAR54006","%NashkelMines%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR54006_2","%NashkelMines%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR54006","%NashkelMines%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR54006_1","%NashkelMines%",0)
+  Global("AYSpawnRandomBeenSetAR54006","%NashkelMines%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR54006_1","%NashkelMines%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR54006","%NashkelMines%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR54006_0","%NashkelMines%",0)
+  Global("AYSpawnRandomBeenSetAR54006","%NashkelMines%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR54006_0","%NashkelMines%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR54006","%NashkelMines%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_2","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("BEARCA",[4665.1383],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_2","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("BEARCA",[4665.1383],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_2","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("BEARCA",[4665.1383],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4665.1383],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_2","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("BEARCA",[4665.1383],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4665.1383],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_2","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("BEARCA",[4665.1383],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4665.1383],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4665.1383],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_1","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_1","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_1","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_1","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_1","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_0","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_0","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_0","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_0","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+  Global("AYSpawnRandomSetAR54006_0","%NashkelMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    CreateCreature("WOLF",[4665.1383],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("WOLF",75)
+
+  !Range("KOBOLD_E",75)
+
+  !Range("BEARCA",75)
+  Global("AYSpawnResetAR54006","%NashkelMines%",1)
+  GlobalTimerExpired("AYSpawnTimerAR54006","%NashkelMines%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR54006","%NashkelMines%",0)
+    SetGlobal("AYSpawnRandomSetAR54006_2","%NashkelMines%",0)
+    SetGlobal("AYSpawnRandomSetAR54006_1","%NashkelMines%",0)
+    SetGlobal("AYSpawnRandomSetAR54006_0","%NashkelMines%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR54006","%NashkelMines%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR54006","%NashkelMines%",1)
+    CreateCreature("KOBOLD_E",[4665.1383],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR54006","%NashkelMines%",AY_SPAWN_TIMER)
+END
+

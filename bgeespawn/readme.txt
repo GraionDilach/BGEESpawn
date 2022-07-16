@@ -1,12 +1,14 @@
 BGEE Leveled Spawns Mod
 by AstroBryGuy (http://forum.baldursgate.com/profile/14405/AstroBryGuy)
-Version 0.4
+Version 0.6
 
-BGEE Leveled Spawns replaces the default spawns with spawns that scale in difficulty with the average level of the party.  Each spawn point will spawn groups of 1-6 creatures, depending on party level and creature strength.
+BGEE Leveled Spawns replaces the default spawns with spawns that scale in difficulty with the average level of the party or with the game difficulty setting.  Each spawn point will spawn groups of 1-8 creatures, depending on party level andcreature strength or game difficulty setting.
 
 The user can select the time interval between spawnings as well as the probability that a triggering of a spawn point will result in that point being populated.  
 
-This mod is based on the "Tutu-style leveled spawns" component of the BGT Tweaks mod (http://readme.spellholdstudios.net/BGTTweakReadme.htm).  However, the spawn point scripts have been greatly simplified.  First, party-size checks have been removed.  Level checks above 12th level have also been removed.
+The first setting is based on the "Tutu-style leveled spawns" component of the BGT Tweaks mod (http://readme.spellholdstudios.net/BGTTweakReadme.htm).  However, the spawn point scripts have been greatly simplified.  First, party-size checks have been removed.  Level checks above 12th level have also been removed.
+
+The second setting is basically a copy of the spawn system from the easytutu mod for BG1. It's entirely based on difficulty leveled and has a set amount of enemies per level per spawn. Everything else about this setting is the same as the first, only the trigger for and amount of enemies per spawn have changed.
 
 Additional inspiration has come from the Tutu spawn system by CamDawg and the EasyTutu Spawn Randomizer by Maccready.
 
@@ -49,6 +51,10 @@ Notes:
 * If you set a low spawn % and a long time between spawns, you will see very few spawns.
 * Game default spawn percentages are 85% in most areas, with 100% in certain areas like Firewine Ruins.
 
+3. Spawn system selection
+
+[1] Spawns are based on average party level
+[2] Spawns are base on game difficulty setting (easytutu style)
 INSTALLATION
 
 Windows

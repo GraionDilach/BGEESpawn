@@ -1,0 +1,284 @@
+IF
+  Global("AYSpawnRandomBeenSetAR18000","%CloakwoodMines%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR18000","%CloakwoodMines%",1)
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR18000_2","%CloakwoodMines%",0)
+  Global("AYSpawnRandomBeenSetAR18000","%CloakwoodMines%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR18000_2","%CloakwoodMines%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR18000","%CloakwoodMines%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR18000_1","%CloakwoodMines%",0)
+  Global("AYSpawnRandomBeenSetAR18000","%CloakwoodMines%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR18000_1","%CloakwoodMines%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR18000","%CloakwoodMines%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR18000_0","%CloakwoodMines%",0)
+  Global("AYSpawnRandomBeenSetAR18000","%CloakwoodMines%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR18000_0","%CloakwoodMines%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR18000","%CloakwoodMines%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_2","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+	CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_2","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_2","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_2","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_2","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1161.449],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_1","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_1","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_1","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_1","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_1","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+	CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_0","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_0","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_0","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_0","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+  Global("AYSpawnRandomSetAR18000_0","%CloakwoodMines%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    CreateCreature("WOLF",[1161.449],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("IRONGU",75)
+
+  !Range("WOLF",75)
+
+  !Range("IRONELIT",75)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",1)
+  GlobalTimerExpired("AYSpawnTimerAR18000","%CloakwoodMines%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR18000","%CloakwoodMines%",0)
+    SetGlobal("AYSpawnRandomSetAR18000_2","%CloakwoodMines%",0)
+    SetGlobal("AYSpawnRandomSetAR18000_1","%CloakwoodMines%",0)
+    SetGlobal("AYSpawnRandomSetAR18000_0","%CloakwoodMines%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR18000","%CloakwoodMines%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18000","%CloakwoodMines%",1)
+    CreateCreature("IRONGU",[1161.449],0)  // ~Guard~
+    SetGlobalTimer("AYSpawnTimerAR18000","%CloakwoodMines%",AY_SPAWN_TIMER)
+END
+

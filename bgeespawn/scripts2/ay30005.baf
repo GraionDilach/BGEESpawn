@@ -1,0 +1,196 @@
+IF
+  Global("AYSpawnRandomBeenSetAR30005","%SpiderWood%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR30005","%SpiderWood%",1)
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR30005_1","%SpiderWood%",0)
+  Global("AYSpawnRandomBeenSetAR30005","%SpiderWood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR30005_1","%SpiderWood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR30005","%SpiderWood%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR30005_0","%SpiderWood%",0)
+  Global("AYSpawnRandomBeenSetAR30005","%SpiderWood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR30005_0","%SpiderWood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR30005","%SpiderWood%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+    CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+    CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3712.3072],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30005_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SPIDHU",75)
+
+  !Range("SPIDGI",75)
+  Global("AYSpawnResetAR30005","%SpiderWood%",1)
+  GlobalTimerExpired("AYSpawnTimerAR30005","%SpiderWood%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR30005","%SpiderWood%",0)
+    SetGlobal("AYSpawnRandomSetAR30005_1","%SpiderWood%",0)
+    SetGlobal("AYSpawnRandomSetAR30005_0","%SpiderWood%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR30005","%SpiderWood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30005","%SpiderWood%",1)
+    CreateCreature("SPIDHU",[3712.3072],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR30005","%SpiderWood%",AY_SPAWN_TIMER)
+END
+

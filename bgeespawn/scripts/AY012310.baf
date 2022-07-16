@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -32,7 +32,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -45,7 +45,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -59,7 +59,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -73,7 +73,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -88,7 +88,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -103,7 +103,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -118,7 +118,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -134,7 +134,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -150,7 +150,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR012310","%Undercity%",0)
@@ -167,7 +167,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR012310","%Undercity%",0)
   Global("AYSpawnRandomSetAR012310_0","%Undercity%",1)
@@ -183,9 +183,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("GHAST",60)
+  !Range("GHAST",75)
   Global("AYSpawnResetAR012310","%Undercity%",1)
   GlobalTimerExpired("AYSpawnTimerAR012310","%Undercity%")
 THEN
@@ -196,7 +196,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR012310","%Undercity%",0)
 THEN
   RESPONSE #100

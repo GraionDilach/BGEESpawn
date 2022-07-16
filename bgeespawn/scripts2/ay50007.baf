@@ -1,0 +1,308 @@
+IF
+  Global("AYSpawnRandomBeenSetAR50007","%ValleyoftheTombs%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR50007","%ValleyoftheTombs%",1)
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR50007_2","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomBeenSetAR50007","%ValleyoftheTombs%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR50007_2","%ValleyoftheTombs%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50007","%ValleyoftheTombs%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR50007_1","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomBeenSetAR50007","%ValleyoftheTombs%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR50007_1","%ValleyoftheTombs%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50007","%ValleyoftheTombs%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR50007_0","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomBeenSetAR50007","%ValleyoftheTombs%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR50007_0","%ValleyoftheTombs%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR50007","%ValleyoftheTombs%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_2","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_2","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_2","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_2","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+	CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_2","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+	CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+	CreateCreature("SKELET_C",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_1","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_1","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_1","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_1","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_1","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_0","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_0","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_0","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_0","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+	CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+  Global("AYSpawnRandomSetAR50007_0","%ValleyoftheTombs%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+	CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+	CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SKELET_A",75)
+
+  !Range("SKELET_B",75)
+
+  !Range("SKELET_C",75)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+  GlobalTimerExpired("AYSpawnTimerAR50007","%ValleyoftheTombs%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR50007","%ValleyoftheTombs%",0)
+    SetGlobal("AYSpawnRandomSetAR50007_2","%ValleyoftheTombs%",0)
+    SetGlobal("AYSpawnRandomSetAR50007_1","%ValleyoftheTombs%",0)
+    SetGlobal("AYSpawnRandomSetAR50007_0","%ValleyoftheTombs%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR50007","%ValleyoftheTombs%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR50007","%ValleyoftheTombs%",1)
+    CreateCreature("SKELET_A",[4466.2935],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR50007","%ValleyoftheTombs%",AY_SPAWN_TIMER)
+END
+

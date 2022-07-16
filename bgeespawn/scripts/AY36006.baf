@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR36006","%Lighthouse%",0)
   Global("AYSpawnRandomSetAR36006_1","%Lighthouse%",1)
@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR36006","%Lighthouse%",0)
@@ -58,7 +58,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR36006","%Lighthouse%",0)
   Global("AYSpawnRandomSetAR36006_1","%Lighthouse%",1)
@@ -75,7 +75,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR36006","%Lighthouse%",0)
   Global("AYSpawnRandomSetAR36006_0","%Lighthouse%",1)
@@ -88,7 +88,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR36006","%Lighthouse%",0)
@@ -104,7 +104,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR36006","%Lighthouse%",0)
   Global("AYSpawnRandomSetAR36006_0","%Lighthouse%",1)
@@ -121,11 +121,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("HOBGOA_C",60)
+  !Range("HOBGOA_C",75)
 
-  !Range("HOBGOA_E",60)
+  !Range("HOBGOA_E",75)
   Global("AYSpawnResetAR36006","%Lighthouse%",1)
   GlobalTimerExpired("AYSpawnTimerAR36006","%Lighthouse%")
 THEN
@@ -137,7 +137,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR36006","%Lighthouse%",0)
 THEN
   RESPONSE #100

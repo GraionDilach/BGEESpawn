@@ -1,0 +1,112 @@
+IF
+  Global("AYSpawnRandomBeenSetAR21001","%CloakwoodNest%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR21001","%CloakwoodNest%",1)
+    SetGlobal("AYSpawnResetAR21001","%CloakwoodNest%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR21001_0","%CloakwoodNest%",0)
+  Global("AYSpawnRandomBeenSetAR21001","%CloakwoodNest%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR21001_0","%CloakwoodNest%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR21001","%CloakwoodNest%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR21001","%CloakwoodNest%",0)
+  Global("AYSpawnRandomSetAR21001_0","%CloakwoodNest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21001","%CloakwoodNest%",1)
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21001","%CloakwoodNest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR21001","%CloakwoodNest%",0)
+  Global("AYSpawnRandomSetAR21001_0","%CloakwoodNest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21001","%CloakwoodNest%",1)
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21001","%CloakwoodNest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR21001","%CloakwoodNest%",0)
+  Global("AYSpawnRandomSetAR21001_0","%CloakwoodNest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21001","%CloakwoodNest%",1)
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21001","%CloakwoodNest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR21001","%CloakwoodNest%",0)
+  Global("AYSpawnRandomSetAR21001_0","%CloakwoodNest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21001","%CloakwoodNest%",1)
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21001","%CloakwoodNest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR21001","%CloakwoodNest%",0)
+  Global("AYSpawnRandomSetAR21001_0","%CloakwoodNest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21001","%CloakwoodNest%",1)
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21001","%CloakwoodNest%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("SPIDHU",75)
+  Global("AYSpawnResetAR21001","%CloakwoodNest%",1)
+  GlobalTimerExpired("AYSpawnTimerAR21001","%CloakwoodNest%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21001","%CloakwoodNest%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR21001","%CloakwoodNest%",0)
+    SetGlobal("AYSpawnRandomSetAR21001_0","%CloakwoodNest%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR21001","%CloakwoodNest%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR21001","%CloakwoodNest%",1)
+    CreateCreature("SPIDHU",[4182.1573],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR21001","%CloakwoodNest%",AY_SPAWN_TIMER)
+END
+

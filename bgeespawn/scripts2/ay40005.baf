@@ -1,0 +1,186 @@
+IF
+  Global("AYSpawnRandomBeenSetAR40005","%Gullykin%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR40005","%Gullykin%",1)
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR40005_1","%Gullykin%",0)
+  Global("AYSpawnRandomBeenSetAR40005","%Gullykin%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR40005_1","%Gullykin%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR40005","%Gullykin%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR40005_0","%Gullykin%",0)
+  Global("AYSpawnRandomBeenSetAR40005","%Gullykin%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR40005_0","%Gullykin%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR40005","%Gullykin%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[778.2115],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40005_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("WOLFDI",75)
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR40005","%Gullykin%",1)
+  GlobalTimerExpired("AYSpawnTimerAR40005","%Gullykin%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR40005","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomSetAR40005_1","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomSetAR40005_0","%Gullykin%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR40005","%Gullykin%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40005","%Gullykin%",1)
+    CreateCreature("WOLFDI",[778.2115],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR40005","%Gullykin%",AY_SPAWN_TIMER)
+END
+

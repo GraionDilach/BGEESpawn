@@ -49,7 +49,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50002_3","%ValleyoftheTombs%",1)
@@ -61,7 +61,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
@@ -75,7 +75,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
@@ -90,7 +90,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
@@ -106,7 +106,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
@@ -123,7 +123,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50002_3","%ValleyoftheTombs%",1)
@@ -140,7 +140,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50002_2","%ValleyoftheTombs%",1)
@@ -154,7 +154,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50002_2","%ValleyoftheTombs%",1)
@@ -171,7 +171,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50002_1","%ValleyoftheTombs%",1)
@@ -185,7 +185,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50002_1","%ValleyoftheTombs%",1)
@@ -202,7 +202,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50002_0","%ValleyoftheTombs%",1)
@@ -214,7 +214,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
@@ -229,7 +229,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
@@ -245,7 +245,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50002_0","%ValleyoftheTombs%",1)
@@ -262,15 +262,15 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("GNOLL",60)
+  !Range("GNOLL",75)
 
-  !Range("DOGWI",60)
+  !Range("DOGWI",75)
 
-  !Range("GIBBER",60)
+  !Range("GIBBER",75)
 
-  !Range("OGREGR",60)
+  !Range("OGREGR",75)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",1)
   GlobalTimerExpired("AYSpawnTimerAR50002","%ValleyoftheTombs%")
 THEN
@@ -284,7 +284,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR50002","%ValleyoftheTombs%",0)
 THEN
   RESPONSE #100

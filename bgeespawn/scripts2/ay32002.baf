@@ -1,0 +1,279 @@
+IF
+  Global("AYSpawnRandomBeenSetAR32002","%HighHedge%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR32002","%HighHedge%",1)
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR32002_2","%HighHedge%",0)
+  Global("AYSpawnRandomBeenSetAR32002","%HighHedge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR32002_2","%HighHedge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR32002","%HighHedge%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR32002_1","%HighHedge%",0)
+  Global("AYSpawnRandomBeenSetAR32002","%HighHedge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR32002_1","%HighHedge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR32002","%HighHedge%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR32002_0","%HighHedge%",0)
+  Global("AYSpawnRandomBeenSetAR32002","%HighHedge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR32002_0","%HighHedge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR32002","%HighHedge%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_2","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARCA",[4159.722],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_2","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARCA",[4159.722],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_2","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARCA",[4159.722],0)  // ~Cave Bear~
+	CreateCreature("BEARCA",[4159.722],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_2","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARCA",[4159.722],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4159.722],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_2","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARCA",[4159.722],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4159.722],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4159.722],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_1","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_1","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_1","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_1","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+	CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_1","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+	CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+	CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_0","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARBR",[4159.722],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_0","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARBR",[4159.722],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_0","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARBR",[4159.722],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[4159.722],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_0","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARBR",[4159.722],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[4159.722],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+  Global("AYSpawnRandomSetAR32002_0","%HighHedge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("BEARBR",[4159.722],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[4159.722],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[4159.722],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BEARBR",75)
+
+  !Range("SKELETS",75)
+
+  !Range("BEARCA",75)
+  Global("AYSpawnResetAR32002","%HighHedge%",1)
+  GlobalTimerExpired("AYSpawnTimerAR32002","%HighHedge%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR32002","%HighHedge%",0)
+    SetGlobal("AYSpawnRandomSetAR32002_2","%HighHedge%",0)
+    SetGlobal("AYSpawnRandomSetAR32002_1","%HighHedge%",0)
+    SetGlobal("AYSpawnRandomSetAR32002_0","%HighHedge%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR32002","%HighHedge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR32002","%HighHedge%",1)
+    CreateCreature("SKELETS",[4159.722],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR32002","%HighHedge%",AY_SPAWN_TIMER)
+END
+

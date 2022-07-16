@@ -1,0 +1,299 @@
+IF
+  Global("AYSpawnRandomBeenSetAR49001","%NashkelCarnival%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR49001","%NashkelCarnival%",1)
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR49001_2","%NashkelCarnival%",0)
+  Global("AYSpawnRandomBeenSetAR49001","%NashkelCarnival%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR49001_2","%NashkelCarnival%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR49001","%NashkelCarnival%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",0)
+  Global("AYSpawnRandomBeenSetAR49001","%NashkelCarnival%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR49001","%NashkelCarnival%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",0)
+  Global("AYSpawnRandomBeenSetAR49001","%NashkelCarnival%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR49001","%NashkelCarnival%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_2","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_2","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_2","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_2","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_2","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2589.272],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+  Global("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("KOBOLD_C",75)
+
+  !Range("KOBOLD_E",75)
+
+  !Range("OGREBERZ",75)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",1)
+  GlobalTimerExpired("AYSpawnTimerAR49001","%NashkelCarnival%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR49001","%NashkelCarnival%",0)
+    SetGlobal("AYSpawnRandomSetAR49001_2","%NashkelCarnival%",0)
+    SetGlobal("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",0)
+    SetGlobal("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR49001","%NashkelCarnival%",1)
+    CreateCreature("KOBOLD_C",[2589.272],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR49001","%NashkelCarnival%",AY_SPAWN_TIMER)
+END
+

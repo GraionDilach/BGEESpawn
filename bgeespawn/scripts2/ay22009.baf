@@ -1,0 +1,287 @@
+IF
+  Global("AYSpawnRandomBeenSetAR22009","%CloakwoodLodge%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR22009","%CloakwoodLodge%",1)
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR22009_2","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomBeenSetAR22009","%CloakwoodLodge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR22009_2","%CloakwoodLodge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22009","%CloakwoodLodge%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR22009_1","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomBeenSetAR22009","%CloakwoodLodge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR22009_1","%CloakwoodLodge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22009","%CloakwoodLodge%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR22009_0","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomBeenSetAR22009","%CloakwoodLodge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR22009_0","%CloakwoodLodge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR22009","%CloakwoodLodge%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_2","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_2","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_2","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_2","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_2","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[1028.1582],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_1","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_1","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_1","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_1","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_1","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_0","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_0","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_0","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_0","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+  Global("AYSpawnRandomSetAR22009_0","%CloakwoodLodge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1028.1582],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("WOLFDR",75)
+
+  !Range("TASLOI",75)
+
+  !Range("SPIDHU",75)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+  GlobalTimerExpired("AYSpawnTimerAR22009","%CloakwoodLodge%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR22009","%CloakwoodLodge%",0)
+    SetGlobal("AYSpawnRandomSetAR22009_2","%CloakwoodLodge%",0)
+    SetGlobal("AYSpawnRandomSetAR22009_1","%CloakwoodLodge%",0)
+    SetGlobal("AYSpawnRandomSetAR22009_0","%CloakwoodLodge%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR22009","%CloakwoodLodge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR22009","%CloakwoodLodge%",1)
+    CreateCreature("TASLOI",[1028.1582],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR22009","%CloakwoodLodge%",AY_SPAWN_TIMER)
+END
+

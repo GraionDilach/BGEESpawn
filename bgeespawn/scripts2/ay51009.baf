@@ -1,0 +1,125 @@
+IF
+  Global("AYSpawnRandomBeenSetAR51009","%GnollStronghold%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR51009","%GnollStronghold%",1)
+    SetGlobal("AYSpawnResetAR51009","%GnollStronghold%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR51009_0","%GnollStronghold%",0)
+  Global("AYSpawnRandomBeenSetAR51009","%GnollStronghold%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR51009_0","%GnollStronghold%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR51009","%GnollStronghold%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR51009","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51009_0","%GnollStronghold%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51009","%GnollStronghold%",1)
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR51009","%GnollStronghold%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR51009","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51009_0","%GnollStronghold%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51009","%GnollStronghold%",1)
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR51009","%GnollStronghold%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR51009","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51009_0","%GnollStronghold%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51009","%GnollStronghold%",1)
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+	CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR51009","%GnollStronghold%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR51009","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51009_0","%GnollStronghold%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51009","%GnollStronghold%",1)
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+	CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+	CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR51009","%GnollStronghold%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR51009","%GnollStronghold%",0)
+  Global("AYSpawnRandomSetAR51009_0","%GnollStronghold%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51009","%GnollStronghold%",1)
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+	CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+	CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR51009","%GnollStronghold%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("XVART",75)
+  Global("AYSpawnResetAR51009","%GnollStronghold%",1)
+  GlobalTimerExpired("AYSpawnTimerAR51009","%GnollStronghold%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51009","%GnollStronghold%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR51009","%GnollStronghold%",0)
+    SetGlobal("AYSpawnRandomSetAR51009_0","%GnollStronghold%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR51009","%GnollStronghold%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR51009","%GnollStronghold%",1)
+    CreateCreature("XVART",[1855.3592],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR51009","%GnollStronghold%",AY_SPAWN_TIMER)
+END
+

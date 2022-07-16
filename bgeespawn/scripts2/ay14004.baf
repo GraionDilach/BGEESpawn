@@ -1,0 +1,108 @@
+IF
+  Global("AYSpawnRandomBeenSetAR14004","%FishingVillage%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR14004","%FishingVillage%",1)
+    SetGlobal("AYSpawnResetAR14004","%FishingVillage%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR14004_0","%FishingVillage%",0)
+  Global("AYSpawnRandomBeenSetAR14004","%FishingVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR14004_0","%FishingVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR14004","%FishingVillage%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR14004","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14004_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","%FishingVillage%",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","%FishingVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR14004","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14004_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","%FishingVillage%",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","%FishingVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR14004","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14004_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","%FishingVillage%",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","%FishingVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR14004","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14004_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","%FishingVillage%",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","%FishingVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR14004","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14004_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","%FishingVillage%",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","%FishingVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("ANKHEG",75)
+  Global("AYSpawnResetAR14004","%FishingVillage%",1)
+  GlobalTimerExpired("AYSpawnTimerAR14004","%FishingVillage%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","%FishingVillage%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR14004","%FishingVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR14004_0","%FishingVillage%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR14004","%FishingVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14004","%FishingVillage%",1)
+    CreateCreature("ANKHEG",[3537.1514],0)  // ~Ankheg~
+    SetGlobalTimer("AYSpawnTimerAR14004","%FishingVillage%",AY_SPAWN_TIMER)
+END
+

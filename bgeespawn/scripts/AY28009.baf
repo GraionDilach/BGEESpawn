@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR28009","%CoastWay%",0)
   Global("AYSpawnRandomSetAR28009_1","%CoastWay%",1)
@@ -41,7 +41,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR28009","%CoastWay%",0)
@@ -56,7 +56,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR28009","%CoastWay%",0)
@@ -72,7 +72,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR28009","%CoastWay%",0)
   Global("AYSpawnRandomSetAR28009_1","%CoastWay%",1)
@@ -89,7 +89,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR28009","%CoastWay%",0)
   Global("AYSpawnRandomSetAR28009_0","%CoastWay%",1)
@@ -101,7 +101,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR28009","%CoastWay%",0)
@@ -116,7 +116,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR28009","%CoastWay%",0)
@@ -132,7 +132,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR28009","%CoastWay%",0)
   Global("AYSpawnRandomSetAR28009_0","%CoastWay%",1)
@@ -149,11 +149,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("XVART",60)
+  !Range("XVART",75)
 
-  !Range("GIBBER",60)
+  !Range("GIBBER",75)
   Global("AYSpawnResetAR28009","%CoastWay%",1)
   GlobalTimerExpired("AYSpawnTimerAR28009","%CoastWay%")
 THEN
@@ -165,7 +165,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR28009","%CoastWay%",0)
 THEN
   RESPONSE #100

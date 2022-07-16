@@ -1,0 +1,196 @@
+IF
+  Global("AYSpawnRandomBeenSetAR37008","%RedCanyons%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR37008","%RedCanyons%",1)
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR37008_1","%RedCanyons%",0)
+  Global("AYSpawnRandomBeenSetAR37008","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR37008_1","%RedCanyons%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR37008","%RedCanyons%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR37008_0","%RedCanyons%",0)
+  Global("AYSpawnRandomBeenSetAR37008","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR37008_0","%RedCanyons%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR37008","%RedCanyons%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+	CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+    CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+	CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+    CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+	CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+	CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+    CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+    CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+	CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+	CreateCreature("GHAST",[2560.1984],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37008_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GHOUL",75)
+
+  !Range("GHAST",75)
+  Global("AYSpawnResetAR37008","%RedCanyons%",1)
+  GlobalTimerExpired("AYSpawnTimerAR37008","%RedCanyons%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR37008","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomSetAR37008_1","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomSetAR37008_0","%RedCanyons%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR37008","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37008","%RedCanyons%",1)
+    CreateCreature("GHOUL",[2560.1984],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR37008","%RedCanyons%",AY_SPAWN_TIMER)
+END
+

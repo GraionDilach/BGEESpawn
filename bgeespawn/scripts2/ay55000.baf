@@ -1,0 +1,125 @@
+IF
+  Global("AYSpawnRandomBeenSetAR55000","%GibberlingMountains%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR55000","%GibberlingMountains%",1)
+    SetGlobal("AYSpawnResetAR55000","%GibberlingMountains%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR55000_0","%GibberlingMountains%",0)
+  Global("AYSpawnRandomBeenSetAR55000","%GibberlingMountains%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR55000_0","%GibberlingMountains%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR55000","%GibberlingMountains%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR55000","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55000_0","%GibberlingMountains%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR55000","%GibberlingMountains%",1)
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR55000","%GibberlingMountains%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR55000","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55000_0","%GibberlingMountains%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR55000","%GibberlingMountains%",1)
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR55000","%GibberlingMountains%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR55000","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55000_0","%GibberlingMountains%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR55000","%GibberlingMountains%",1)
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR55000","%GibberlingMountains%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR55000","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55000_0","%GibberlingMountains%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR55000","%GibberlingMountains%",1)
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR55000","%GibberlingMountains%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR55000","%GibberlingMountains%",0)
+  Global("AYSpawnRandomSetAR55000_0","%GibberlingMountains%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR55000","%GibberlingMountains%",1)
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR55000","%GibberlingMountains%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GIBBER",75)
+  Global("AYSpawnResetAR55000","%GibberlingMountains%",1)
+  GlobalTimerExpired("AYSpawnTimerAR55000","%GibberlingMountains%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR55000","%GibberlingMountains%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR55000","%GibberlingMountains%",0)
+    SetGlobal("AYSpawnRandomSetAR55000_0","%GibberlingMountains%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR55000","%GibberlingMountains%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR55000","%GibberlingMountains%",1)
+    CreateCreature("GIBBER",[4030.625],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR55000","%GibberlingMountains%",AY_SPAWN_TIMER)
+END
+

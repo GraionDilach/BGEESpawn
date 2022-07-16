@@ -1,0 +1,108 @@
+IF
+  Global("AYSpawnRandomBeenSetAR39016","%UlcasterRuins%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR39016","%UlcasterRuins%",1)
+    SetGlobal("AYSpawnResetAR39016","%UlcasterRuins%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR39016_0","%UlcasterRuins%",0)
+  Global("AYSpawnRandomBeenSetAR39016","%UlcasterRuins%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR39016_0","%UlcasterRuins%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR39016","%UlcasterRuins%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR39016","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39016_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39016","%UlcasterRuins%",1)
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39016","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR39016","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39016_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39016","%UlcasterRuins%",1)
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39016","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR39016","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39016_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39016","%UlcasterRuins%",1)
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39016","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR39016","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39016_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39016","%UlcasterRuins%",1)
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39016","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR39016","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39016_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39016","%UlcasterRuins%",1)
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39016","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR39016","%UlcasterRuins%",1)
+  GlobalTimerExpired("AYSpawnTimerAR39016","%UlcasterRuins%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39016","%UlcasterRuins%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR39016","%UlcasterRuins%",0)
+    SetGlobal("AYSpawnRandomSetAR39016_0","%UlcasterRuins%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR39016","%UlcasterRuins%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39016","%UlcasterRuins%",1)
+    CreateCreature("WOLFDR",[1409.1408],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR39016","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+

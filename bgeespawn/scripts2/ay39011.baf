@@ -1,0 +1,112 @@
+IF
+  Global("AYSpawnRandomBeenSetAR39011","%UlcasterRuins%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR39011","%UlcasterRuins%",1)
+    SetGlobal("AYSpawnResetAR39011","%UlcasterRuins%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR39011_0","%UlcasterRuins%",0)
+  Global("AYSpawnRandomBeenSetAR39011","%UlcasterRuins%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR39011_0","%UlcasterRuins%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR39011","%UlcasterRuins%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR39011","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39011_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39011","%UlcasterRuins%",1)
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR39011","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR39011","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39011_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39011","%UlcasterRuins%",1)
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR39011","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR39011","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39011_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39011","%UlcasterRuins%",1)
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR39011","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR39011","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39011_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39011","%UlcasterRuins%",1)
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR39011","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR39011","%UlcasterRuins%",0)
+  Global("AYSpawnRandomSetAR39011_0","%UlcasterRuins%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39011","%UlcasterRuins%",1)
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR39011","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("SPIDHU",75)
+  Global("AYSpawnResetAR39011","%UlcasterRuins%",1)
+  GlobalTimerExpired("AYSpawnTimerAR39011","%UlcasterRuins%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39011","%UlcasterRuins%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR39011","%UlcasterRuins%",0)
+    SetGlobal("AYSpawnRandomSetAR39011_0","%UlcasterRuins%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR39011","%UlcasterRuins%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39011","%UlcasterRuins%",1)
+    CreateCreature("SPIDHU",[868.615],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR39011","%UlcasterRuins%",AY_SPAWN_TIMER)
+END
+

@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
@@ -32,7 +32,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
@@ -45,7 +45,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
@@ -59,7 +59,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
@@ -74,7 +74,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
@@ -89,7 +89,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
@@ -105,7 +105,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
@@ -121,7 +121,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
@@ -138,7 +138,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
   Global("AYSpawnRandomSetAR19001_0","%BanditCamp%",1)
@@ -155,8 +155,8 @@ THEN
 END
 
 IF
-  !Range([PC],60)
-  !Range("HOBELITE",60)
+  !Range([PC],75)
+  !Range("HOBELITE",75)
   Global("AYSpawnResetAR19001","%BanditCamp%",1)
   GlobalTimerExpired("AYSpawnTimerAR19001","%BanditCamp%")
 THEN
@@ -167,7 +167,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR19001","%BanditCamp%",0)
 THEN
   RESPONSE #100

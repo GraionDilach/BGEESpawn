@@ -1,0 +1,112 @@
+IF
+  Global("AYSpawnRandomBeenSetAR20122","%WerewolfCaverns%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR20122","%WerewolfCaverns%",1)
+    SetGlobal("AYSpawnResetAR20122","%WerewolfCaverns%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR20122_0","%WerewolfCaverns%",0)
+  Global("AYSpawnRandomBeenSetAR20122","%WerewolfCaverns%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR20122_0","%WerewolfCaverns%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR20122","%WerewolfCaverns%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR20121","%WerewolfCaverns%",0)
+  Global("AYSpawnRandomSetAR20122_0","%WerewolfCaverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20121","%WerewolfCaverns%",1)
+    CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+    SetGlobalTimer("AYSpawnTimerAR20122","%WerewolfCaverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR20121","%WerewolfCaverns%",0)
+  Global("AYSpawnRandomSetAR20122_0","%WerewolfCaverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20121","%WerewolfCaverns%",1)
+    CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+    SetGlobalTimer("AYSpawnTimerAR20122","%WerewolfCaverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR20121","%WerewolfCaverns%",0)
+  Global("AYSpawnRandomSetAR20122_0","%WerewolfCaverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20121","%WerewolfCaverns%",1)
+    CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+    SetGlobalTimer("AYSpawnTimerAR20122","%WerewolfCaverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR20121","%WerewolfCaverns%",0)
+  Global("AYSpawnRandomSetAR20122_0","%WerewolfCaverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20121","%WerewolfCaverns%",1)
+    CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+    SetGlobalTimer("AYSpawnTimerAR20122","%WerewolfCaverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR20121","%WerewolfCaverns%",0)
+  Global("AYSpawnRandomSetAR20122_0","%WerewolfCaverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20121","%WerewolfCaverns%",1)
+    CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+	CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+    SetGlobalTimer("AYSpawnTimerAR20122","%WerewolfCaverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("WEREWO",75)
+  Global("AYSpawnResetAR20122","%WerewolfCaverns%",1)
+  GlobalTimerExpired("AYSpawnTimerAR20122","%WerewolfCaverns%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20122","%WerewolfCaverns%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR20122","%WerewolfCaverns%",0)
+    SetGlobal("AYSpawnRandomSetAR20122_0","%WerewolfCaverns%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR20122","%WerewolfCaverns%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20122","%WerewolfCaverns%",1)
+    CreateCreature("WEREWO",[2868.850],0)  // ~Werewolf~
+    SetGlobalTimer("AYSpawnTimerAR20122","%WerewolfCaverns%",AY_SPAWN_TIMER)
+END
+

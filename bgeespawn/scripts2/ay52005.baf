@@ -1,0 +1,292 @@
+IF
+  Global("AYSpawnRandomBeenSetAR52005","%DryadFalls%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR52005","%DryadFalls%",1)
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR52005_2","%DryadFalls%",0)
+  Global("AYSpawnRandomBeenSetAR52005","%DryadFalls%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR52005_2","%DryadFalls%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR52005","%DryadFalls%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR52005_1","%DryadFalls%",0)
+  Global("AYSpawnRandomBeenSetAR52005","%DryadFalls%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR52005_1","%DryadFalls%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR52005","%DryadFalls%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR52005_0","%DryadFalls%",0)
+  Global("AYSpawnRandomBeenSetAR52005","%DryadFalls%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR52005_0","%DryadFalls%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR52005","%DryadFalls%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_2","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_2","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_2","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_2","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_2","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[889.3148],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+	CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[889.3148],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+	CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+	CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+	CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52005_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+	CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+	CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("XVART",75)
+
+  !Range("GNOLL",75)
+
+  !Range("WOLFWI",75)
+  Global("AYSpawnResetAR52005","%DryadFalls%",1)
+  GlobalTimerExpired("AYSpawnTimerAR52005","%DryadFalls%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR52005","%DryadFalls%",0)
+    SetGlobal("AYSpawnRandomSetAR52005_2","%DryadFalls%",0)
+    SetGlobal("AYSpawnRandomSetAR52005_1","%DryadFalls%",0)
+    SetGlobal("AYSpawnRandomSetAR52005_0","%DryadFalls%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR52005","%DryadFalls%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52005","%DryadFalls%",1)
+    CreateCreature("XVART",[889.3148],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR52005","%DryadFalls%",AY_SPAWN_TIMER)
+END
+

@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37003_2","%RedCanyons%",1)
@@ -52,7 +52,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
@@ -68,7 +68,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37003_2","%RedCanyons%",1)
@@ -85,7 +85,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37003_1","%RedCanyons%",1)
@@ -98,7 +98,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
@@ -114,7 +114,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37003_1","%RedCanyons%",1)
@@ -131,7 +131,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37003_0","%RedCanyons%",1)
@@ -144,7 +144,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
@@ -160,7 +160,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37003_0","%RedCanyons%",1)
@@ -177,13 +177,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("SKELET_A",60)
+  !Range("SKELET_A",75)
 
-  !Range("SKELET_C",60)
+  !Range("SKELET_C",75)
 
-  !Range("SKELET_B",60)
+  !Range("SKELET_B",75)
   Global("AYSpawnResetAR37003","%RedCanyons%",1)
   GlobalTimerExpired("AYSpawnTimerAR37003","%RedCanyons%")
 THEN
@@ -196,7 +196,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR37003","%RedCanyons%",0)
 THEN
   RESPONSE #100

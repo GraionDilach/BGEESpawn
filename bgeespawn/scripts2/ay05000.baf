@@ -1,0 +1,201 @@
+IF
+  Global("AYSpawnRandomBeenSetAR05000","%DurlagsTower%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR05000","%DurlagsTower%",1)
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR05000_1","%DurlagsTower%",0)
+  Global("AYSpawnRandomBeenSetAR05000","%DurlagsTower%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05000_1","%DurlagsTower%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05000","%DurlagsTower%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR05000_0","%DurlagsTower%",0)
+  Global("AYSpawnRandomBeenSetAR05000","%DurlagsTower%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05000_0","%DurlagsTower%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05000","%DurlagsTower%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_1","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+	CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_1","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+	CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_1","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_1","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_1","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_0","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_0","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_0","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_0","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+  Global("AYSpawnRandomSetAR05000_0","%DurlagsTower%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+	CreateCreature("DOPPLE",[3328.1408],0)  // ~Doppleganger~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("DOPPLE",75)
+
+  !Range("GNOLL",75)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",1)
+  GlobalTimerExpired("AYSpawnTimerAR05000","%DurlagsTower%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05000","%DurlagsTower%",0)
+    SetGlobal("AYSpawnRandomSetAR05000_1","%DurlagsTower%",0)
+    SetGlobal("AYSpawnRandomSetAR05000_0","%DurlagsTower%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR05000","%DurlagsTower%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05000","%DurlagsTower%",1)
+    CreateCreature("GNOLL",[3328.1408],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR05000","%DurlagsTower%",AY_SPAWN_TIMER)
+END
+

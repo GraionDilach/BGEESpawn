@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR42008","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42008_1","%FishermansLake%",1)
@@ -41,7 +41,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR42008","%FishermansLake%",0)
@@ -56,7 +56,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR42008","%FishermansLake%",0)
@@ -72,7 +72,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR42008","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42008_1","%FishermansLake%",1)
@@ -89,7 +89,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR42008","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42008_0","%FishermansLake%",1)
@@ -103,7 +103,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR42008","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42008_0","%FishermansLake%",1)
@@ -120,11 +120,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("DOGWI",60)
+  !Range("DOGWI",75)
 
-  !Range("DOGWA",60)
+  !Range("DOGWA",75)
   Global("AYSpawnResetAR42008","%FishermansLake%",1)
   GlobalTimerExpired("AYSpawnTimerAR42008","%FishermansLake%")
 THEN
@@ -136,7 +136,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR42008","%FishermansLake%",0)
 THEN
   RESPONSE #100

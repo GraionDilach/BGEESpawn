@@ -1,0 +1,204 @@
+IF
+  Global("AYSpawnRandomBeenSetAR05115","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR05115","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR05115_1","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomBeenSetAR05115","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05115_1","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05115","%DurlagsTower_D1%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR05115_0","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomBeenSetAR05115","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05115_0","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05115","%DurlagsTower_D1%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+	CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+	CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+	CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05115_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[611.1449],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SPIDPH",75)
+
+  !Range("ZOMBIE",75)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+  GlobalTimerExpired("AYSpawnTimerAR05115","%DurlagsTower_D1%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05115","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05115_1","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05115_0","%DurlagsTower_D1%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR05115","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05115","%DurlagsTower_D1%",1)
+    CreateCreature("ZOMBIE",[611.1449],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR05115","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+

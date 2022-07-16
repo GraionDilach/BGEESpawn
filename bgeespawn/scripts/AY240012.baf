@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
   Global("AYSpawnRandomSetAR240012_1","%Peldvale%",1)
@@ -41,7 +41,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
@@ -55,7 +55,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
@@ -70,7 +70,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
@@ -86,7 +86,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
@@ -103,7 +103,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
   Global("AYSpawnRandomSetAR240012_1","%Peldvale%",1)
@@ -120,7 +120,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
   Global("AYSpawnRandomSetAR240012_0","%Peldvale%",1)
@@ -132,7 +132,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
@@ -147,7 +147,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
@@ -163,7 +163,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
   Global("AYSpawnRandomSetAR240012_0","%Peldvale%",1)
@@ -180,11 +180,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("FLIND",60)
+  !Range("FLIND",75)
 
-  !Range("IRONELIT",60)
+  !Range("IRONELIT",75)
   Global("AYSpawnResetAR240012","%Peldvale%",1)
   GlobalTimerExpired("AYSpawnTimerAR240012","%Peldvale%")
 THEN
@@ -196,7 +196,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR240012","%Peldvale%",0)
 THEN
   RESPONSE #100

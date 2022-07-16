@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR14000","%FishingVillage%",0)
   Global("AYSpawnRandomSetAR14000_0","%FishingVillage%",1)
@@ -32,7 +32,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR14000","%FishingVillage%",0)
@@ -48,7 +48,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR14000","%FishingVillage%",0)
   Global("AYSpawnRandomSetAR14000_0","%FishingVillage%",1)
@@ -65,9 +65,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("BANDIT",60)
+  !Range("BANDIT",75)
   Global("AYSpawnResetAR14000","%FishingVillage%",1)
   GlobalTimerExpired("AYSpawnTimerAR14000","%FishingVillage%")
 THEN
@@ -78,7 +78,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR14000","%FishingVillage%",0)
 THEN
   RESPONSE #100

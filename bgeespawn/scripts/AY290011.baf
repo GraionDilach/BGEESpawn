@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR290011","%Larswood%",0)
@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR290011","%Larswood%",0)
@@ -55,7 +55,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR290011","%Larswood%",0)
@@ -69,7 +69,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR290011","%Larswood%",0)
@@ -84,7 +84,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR290011","%Larswood%",0)
@@ -99,7 +99,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR290011","%Larswood%",0)
@@ -115,7 +115,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR290011","%Larswood%",0)
@@ -131,7 +131,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR290011","%Larswood%",0)
@@ -148,7 +148,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   Global("AYSpawnResetAR290011","%Larswood%",0)
   Global("AYSpawnRandomSetAR290011_1","%Larswood%",1)
@@ -165,7 +165,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR290011","%Larswood%",0)
   Global("AYSpawnRandomSetAR290011_0","%Larswood%",1)
@@ -179,7 +179,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR290011","%Larswood%",0)
   Global("AYSpawnRandomSetAR290011_0","%Larswood%",1)
@@ -196,11 +196,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("GIBBER",60)
+  !Range("GIBBER",75)
 
-  !Range("WOLFDR",60)
+  !Range("WOLFDR",75)
   Global("AYSpawnResetAR290011","%Larswood%",1)
   GlobalTimerExpired("AYSpawnTimerAR290011","%Larswood%")
 THEN
@@ -212,7 +212,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR290011","%Larswood%",0)
 THEN
   RESPONSE #100

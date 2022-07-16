@@ -1,0 +1,287 @@
+IF
+  Global("AYSpawnRandomBeenSetAR46004","%BearRiver%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR46004","%BearRiver%",1)
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR46004_2","%BearRiver%",0)
+  Global("AYSpawnRandomBeenSetAR46004","%BearRiver%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR46004_2","%BearRiver%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR46004","%BearRiver%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR46004_1","%BearRiver%",0)
+  Global("AYSpawnRandomBeenSetAR46004","%BearRiver%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR46004_1","%BearRiver%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR46004","%BearRiver%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR46004_0","%BearRiver%",0)
+  Global("AYSpawnRandomBeenSetAR46004","%BearRiver%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR46004_0","%BearRiver%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR46004","%BearRiver%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_2","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_2","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_2","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_2","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_2","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[4023.1684],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_1","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_1","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_1","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_1","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_1","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[4023.1684],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_0","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_0","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_0","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_0","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+  Global("AYSpawnRandomSetAR46004_0","%BearRiver%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("HOBGOB_C",75)
+
+  !Range("OGREGR",75)
+
+  !Range("HOBELITE",75)
+  Global("AYSpawnResetAR46004","%BearRiver%",1)
+  GlobalTimerExpired("AYSpawnTimerAR46004","%BearRiver%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR46004","%BearRiver%",0)
+    SetGlobal("AYSpawnRandomSetAR46004_2","%BearRiver%",0)
+    SetGlobal("AYSpawnRandomSetAR46004_1","%BearRiver%",0)
+    SetGlobal("AYSpawnRandomSetAR46004_0","%BearRiver%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR46004","%BearRiver%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR46004","%BearRiver%",1)
+    CreateCreature("HOBGOB_C",[4023.1684],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR46004","%BearRiver%",AY_SPAWN_TIMER)
+END
+

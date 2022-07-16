@@ -19,8 +19,8 @@ THEN
 END
 
 IF
-  !Range([PC],60)
-  !Range("WEREWO",60)
+  !Range([PC],75)
+  !Range("WEREWO",75)
   Global("AYSpawnResetAR20125","%WerewolfCaverns%",1)
   GlobalTimerExpired("AYSpawnTimerAR20125","%WerewolfCaverns%")
 THEN
@@ -31,7 +31,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR20125","%WerewolfCaverns%",0)
 THEN
   RESPONSE #100

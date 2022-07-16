@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR02243","%WSewers%",0)
@@ -32,7 +32,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR02243","%WSewers%",0)
@@ -45,7 +45,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR02243","%WSewers%",0)
@@ -58,7 +58,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR02243","%WSewers%",0)
@@ -71,7 +71,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR02243","%WSewers%",0)
@@ -85,7 +85,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR02243","%WSewers%",0)
@@ -99,7 +99,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR02243","%WSewers%",0)
@@ -113,7 +113,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR02243","%WSewers%",0)
@@ -127,7 +127,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR02243","%WSewers%",0)
   Global("AYSpawnRandomSetAR02243_0","%WSewers%",1)
@@ -141,9 +141,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("SPIDPH",60)
+  !Range("SPIDPH",75)
   Global("AYSpawnResetAR02243","%WSewers%",1)
   GlobalTimerExpired("AYSpawnTimerAR02243","%WSewers%")
 THEN
@@ -154,7 +154,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR02243","%WSewers%",0)
 THEN
   RESPONSE #100

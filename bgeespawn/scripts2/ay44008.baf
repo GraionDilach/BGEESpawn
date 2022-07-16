@@ -1,0 +1,267 @@
+IF
+  Global("AYSpawnRandomBeenSetAR44008","%LonelyPeaks%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR44008","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR44008_2","%LonelyPeaks%",0)
+  Global("AYSpawnRandomBeenSetAR44008","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44008_2","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44008","%LonelyPeaks%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR44008_1","%LonelyPeaks%",0)
+  Global("AYSpawnRandomBeenSetAR44008","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44008_1","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44008","%LonelyPeaks%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR44008_0","%LonelyPeaks%",0)
+  Global("AYSpawnRandomBeenSetAR44008","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44008_0","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44008","%LonelyPeaks%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARCA",[4106.3318],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARCA",[4106.3318],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARCA",[4106.3318],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4106.3318],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARCA",[4106.3318],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4106.3318],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARCA",[4106.3318],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4106.3318],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4106.3318],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBR",[4106.3318],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBR",[4106.3318],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBR",[4106.3318],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[4106.3318],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBR",[4106.3318],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[4106.3318],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBR",[4106.3318],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[4106.3318],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[4106.3318],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44008_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BEARBL",75)
+
+  !Range("BEARBR",75)
+
+  !Range("BEARCA",75)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",1)
+  GlobalTimerExpired("AYSpawnTimerAR44008","%LonelyPeaks%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR44008","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomSetAR44008_2","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomSetAR44008_1","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomSetAR44008_0","%LonelyPeaks%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR44008","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44008","%LonelyPeaks%",1)
+    CreateCreature("BEARBL",[4106.3318],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR44008","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+

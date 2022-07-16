@@ -1,0 +1,109 @@
+IF
+  Global("AYSpawnRandomBeenSetAR27002","%LionsWay%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR27002","%LionsWay%",1)
+    SetGlobal("AYSpawnResetAR27002","%LionsWay%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR27002_0","%LionsWay%",0)
+  Global("AYSpawnRandomBeenSetAR27002","%LionsWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR27002_0","%LionsWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR27002","%LionsWay%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR27002","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27002_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27002","%LionsWay%",1)
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27002","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR27002","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27002_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27002","%LionsWay%",1)
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27002","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR27002","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27002_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27002","%LionsWay%",1)
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27002","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR27002","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27002_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27002","%LionsWay%",1)
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27002","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR27002","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27002_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27002","%LionsWay%",1)
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27002","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("WOLF",75)
+  Global("AYSpawnResetAR27002","%LionsWay%",1)
+  GlobalTimerExpired("AYSpawnTimerAR27002","%LionsWay%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27002","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR27002","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomSetAR27002_0","%LionsWay%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR27002","%LionsWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27002","%LionsWay%",1)
+    CreateCreature("WOLF",[4154.1612],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27002","%LionsWay%",AY_SPAWN_TIMER)
+END
+

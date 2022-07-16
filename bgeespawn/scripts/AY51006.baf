@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51006_2","%GnollStronghold%",1)
@@ -51,7 +51,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
@@ -66,7 +66,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
@@ -82,7 +82,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51006_2","%GnollStronghold%",1)
@@ -99,7 +99,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51006_1","%GnollStronghold%",1)
@@ -113,7 +113,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51006_1","%GnollStronghold%",1)
@@ -130,7 +130,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51006_0","%GnollStronghold%",1)
@@ -142,7 +142,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
@@ -157,7 +157,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
@@ -173,7 +173,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51006_0","%GnollStronghold%",1)
@@ -190,13 +190,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("GNOLL",60)
+  !Range("GNOLL",75)
 
-  !Range("XVART_C",60)
+  !Range("XVART_C",75)
 
-  !Range("GNOLL_D",60)
+  !Range("GNOLL_D",75)
   Global("AYSpawnResetAR51006","%GnollStronghold%",1)
   GlobalTimerExpired("AYSpawnTimerAR51006","%GnollStronghold%")
 THEN
@@ -209,7 +209,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR51006","%GnollStronghold%",0)
 THEN
   RESPONSE #100

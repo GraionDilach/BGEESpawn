@@ -1,0 +1,283 @@
+IF
+  Global("AYSpawnRandomBeenSetAR37001","%RedCanyons%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR37001","%RedCanyons%",1)
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR37001_2","%RedCanyons%",0)
+  Global("AYSpawnRandomBeenSetAR37001","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR37001_2","%RedCanyons%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR37001","%RedCanyons%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR37001_1","%RedCanyons%",0)
+  Global("AYSpawnRandomBeenSetAR37001","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR37001_1","%RedCanyons%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR37001","%RedCanyons%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR37001_0","%RedCanyons%",0)
+  Global("AYSpawnRandomBeenSetAR37001","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR37001_0","%RedCanyons%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR37001","%RedCanyons%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_2","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2463.255],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+	CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_1","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+	CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+	CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+  Global("AYSpawnRandomSetAR37001_0","%RedCanyons%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+	CreateCreature("WOLF",[2463.255],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("WOLF",75)
+
+  !Range("ZOMBIE_D",75)
+
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR37001","%RedCanyons%",1)
+  GlobalTimerExpired("AYSpawnTimerAR37001","%RedCanyons%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR37001","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomSetAR37001_2","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomSetAR37001_1","%RedCanyons%",0)
+    SetGlobal("AYSpawnRandomSetAR37001_0","%RedCanyons%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR37001","%RedCanyons%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR37001","%RedCanyons%",1)
+    CreateCreature("ZOMBIE_D",[2463.255],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR37001","%RedCanyons%",AY_SPAWN_TIMER)
+END
+

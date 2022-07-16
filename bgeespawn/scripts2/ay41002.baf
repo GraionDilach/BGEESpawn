@@ -1,0 +1,364 @@
+IF
+  Global("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",1)
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(4,1)
+  Global("AYSpawnRandomSetAR41002_3","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR41002_3","%ArchaeologicalSite%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",1)
+END
+
+IF
+  RandomNum(4,2)
+  Global("AYSpawnRandomSetAR41002_2","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR41002_2","%ArchaeologicalSite%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",1)
+END
+
+IF
+  RandomNum(4,3)
+  Global("AYSpawnRandomSetAR41002_1","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR41002_1","%ArchaeologicalSite%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",1)
+END
+
+IF
+  RandomNum(4,4)
+  Global("AYSpawnRandomSetAR41002_0","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR41002_0","%ArchaeologicalSite%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_3","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_3","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_3","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_3","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_3","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[4556.1035],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_2","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_2","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_2","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_2","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_2","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_1","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("BEARCA",[4556.1035],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_1","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("BEARCA",[4556.1035],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_1","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("BEARCA",[4556.1035],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4556.1035],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_1","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("BEARCA",[4556.1035],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4556.1035],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_1","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("BEARCA",[4556.1035],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4556.1035],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4556.1035],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_0","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_0","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_0","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_0","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+  Global("AYSpawnRandomSetAR41002_0","%ArchaeologicalSite%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+	CreateCreature("WOLF",[4556.1035],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("WOLF",75)
+
+  !Range("BEARCA",75)
+
+  !Range("TASLOI",75)
+
+  !Range("GHOUL",75)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+  GlobalTimerExpired("AYSpawnTimerAR41002","%ArchaeologicalSite%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR41002","%ArchaeologicalSite%",0)
+    SetGlobal("AYSpawnRandomSetAR41002_3","%ArchaeologicalSite%",0)
+    SetGlobal("AYSpawnRandomSetAR41002_2","%ArchaeologicalSite%",0)
+    SetGlobal("AYSpawnRandomSetAR41002_1","%ArchaeologicalSite%",0)
+    SetGlobal("AYSpawnRandomSetAR41002_0","%ArchaeologicalSite%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR41002","%ArchaeologicalSite%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR41002","%ArchaeologicalSite%",1)
+    CreateCreature("TASLOI",[4556.1035],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR41002","%ArchaeologicalSite%",AY_SPAWN_TIMER)
+END
+

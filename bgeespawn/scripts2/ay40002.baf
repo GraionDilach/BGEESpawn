@@ -1,0 +1,291 @@
+IF
+  Global("AYSpawnRandomBeenSetAR40002","%Gullykin%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR40002","%Gullykin%",1)
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR40002_2","%Gullykin%",0)
+  Global("AYSpawnRandomBeenSetAR40002","%Gullykin%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR40002_2","%Gullykin%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR40002","%Gullykin%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR40002_1","%Gullykin%",0)
+  Global("AYSpawnRandomBeenSetAR40002","%Gullykin%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR40002_1","%Gullykin%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR40002","%Gullykin%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR40002_0","%Gullykin%",0)
+  Global("AYSpawnRandomBeenSetAR40002","%Gullykin%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR40002_0","%Gullykin%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR40002","%Gullykin%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_2","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_2","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+	CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_2","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+    CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+	CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_2","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+    CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+	CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+	CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_2","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+    CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+    CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+	CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+	CreateCreature("GHAST",[2417.2957],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_1","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2417.2957],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+  Global("AYSpawnRandomSetAR40002_0","%Gullykin%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("KOBOLD_E",75)
+
+  !Range("GHOUL",75)
+
+  !Range("GHAST",75)
+  Global("AYSpawnResetAR40002","%Gullykin%",1)
+  GlobalTimerExpired("AYSpawnTimerAR40002","%Gullykin%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR40002","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomSetAR40002_2","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomSetAR40002_1","%Gullykin%",0)
+    SetGlobal("AYSpawnRandomSetAR40002_0","%Gullykin%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR40002","%Gullykin%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR40002","%Gullykin%",1)
+    CreateCreature("KOBOLD_E",[2417.2957],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR40002","%Gullykin%",AY_SPAWN_TIMER)
+END
+

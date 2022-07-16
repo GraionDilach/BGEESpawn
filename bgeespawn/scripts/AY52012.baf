@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR52012","%FirewineRuins%",0)
   Global("AYSpawnRandomSetAR52012_0","%FirewineRuins%",1)
@@ -31,7 +31,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR52012","%FirewineRuins%",0)
@@ -45,7 +45,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR52012","%FirewineRuins%",0)
@@ -60,7 +60,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR52012","%FirewineRuins%",0)
@@ -76,7 +76,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR52012","%FirewineRuins%",0)
@@ -93,7 +93,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   Global("AYSpawnResetAR52012","%FirewineRuins%",0)
   Global("AYSpawnRandomSetAR52012_0","%FirewineRuins%",1)
@@ -110,9 +110,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("KOBCOMM",60)
+  !Range("KOBCOMM",75)
   Global("AYSpawnResetAR52012","%FirewineRuins%",1)
   GlobalTimerExpired("AYSpawnTimerAR52012","%FirewineRuins%")
 THEN
@@ -123,7 +123,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR52012","%FirewineRuins%",0)
 THEN
   RESPONSE #100

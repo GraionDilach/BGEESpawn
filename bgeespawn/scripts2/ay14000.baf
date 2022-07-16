@@ -1,0 +1,117 @@
+IF
+  Global("AYSpawnRandomBeenSetAR14000","%FishingVillage%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR14000","%FishingVillage%",1)
+    SetGlobal("AYSpawnResetAR14000","%FishingVillage%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR14000_0","%FishingVillage%",0)
+  Global("AYSpawnRandomBeenSetAR14000","%FishingVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR14000_0","%FishingVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR14000","%FishingVillage%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR14000","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14000_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14000","%FishingVillage%",1)
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR14000","%FishingVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR14000","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14000_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14000","%FishingVillage%",1)
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR14000","%FishingVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR14000","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14000_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14000","%FishingVillage%",1)
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR14000","%FishingVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR14000","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14000_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14000","%FishingVillage%",1)
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR14000","%FishingVillage%",AY_SPAWN_TIMER)
+END
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR14000","%FishingVillage%",0)
+  Global("AYSpawnRandomSetAR14000_0","%FishingVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14000","%FishingVillage%",1)
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR14000","%FishingVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BANDIT",75)
+  Global("AYSpawnResetAR14000","%FishingVillage%",1)
+  GlobalTimerExpired("AYSpawnTimerAR14000","%FishingVillage%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14000","%FishingVillage%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR14000","%FishingVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR14000_0","%FishingVillage%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR14000","%FishingVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR14000","%FishingVillage%",1)
+    CreateCreature("BANDIT",[790.3187],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR14000","%FishingVillage%",AY_SPAWN_TIMER)
+END
+

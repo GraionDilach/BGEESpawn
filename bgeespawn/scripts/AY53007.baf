@@ -69,7 +69,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_5","%FireLeafForest%",1)
@@ -82,7 +82,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
@@ -98,7 +98,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_5","%FireLeafForest%",1)
@@ -115,7 +115,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_4","%FireLeafForest%",1)
@@ -128,7 +128,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
@@ -144,7 +144,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_4","%FireLeafForest%",1)
@@ -161,7 +161,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_3","%FireLeafForest%",1)
@@ -173,7 +173,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
@@ -187,7 +187,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
@@ -202,7 +202,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
@@ -218,7 +218,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
@@ -235,7 +235,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_3","%FireLeafForest%",1)
@@ -252,7 +252,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_2","%FireLeafForest%",1)
@@ -265,7 +265,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
@@ -281,7 +281,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_2","%FireLeafForest%",1)
@@ -298,7 +298,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_1","%FireLeafForest%",1)
@@ -312,7 +312,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_1","%FireLeafForest%",1)
@@ -329,7 +329,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_0","%FireLeafForest%",1)
@@ -343,7 +343,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_0","%FireLeafForest%",1)
@@ -360,17 +360,17 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("XVART_C",60)
+  !Range("XVART_C",75)
 
-  !Range("XVART_B",60)
+  !Range("XVART_B",75)
 
-  !Range("KOBCOMM",60)
+  !Range("KOBCOMM",75)
 
-  !Range("SKELET_B",60)
+  !Range("SKELET_B",75)
 
-  !Range("SKELET_C",60)
+  !Range("SKELET_C",75)
   Global("AYSpawnResetAR53007","%FireLeafForest%",1)
   GlobalTimerExpired("AYSpawnTimerAR53007","%FireLeafForest%")
 THEN
@@ -386,7 +386,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
 THEN
   RESPONSE #100

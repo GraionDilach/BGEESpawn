@@ -1,0 +1,109 @@
+IF
+  Global("AYSpawnRandomBeenSetAR05113","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR05113","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnResetAR05113","%DurlagsTower_D1%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR05113_0","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomBeenSetAR05113","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05113_0","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05113","%DurlagsTower_D1%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR05113","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05113_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05113","%DurlagsTower_D1%",1)
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR05113","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR05113","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05113_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05113","%DurlagsTower_D1%",1)
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR05113","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR05113","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05113_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05113","%DurlagsTower_D1%",1)
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR05113","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR05113","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05113_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05113","%DurlagsTower_D1%",1)
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR05113","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR05113","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05113_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05113","%DurlagsTower_D1%",1)
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR05113","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("OGREBERZ",75)
+  Global("AYSpawnResetAR05113","%DurlagsTower_D1%",1)
+  GlobalTimerExpired("AYSpawnTimerAR05113","%DurlagsTower_D1%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05113","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05113","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05113_1","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05113_0","%DurlagsTower_D1%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR05113","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05113","%DurlagsTower_D1%",1)
+    CreateCreature("OGREBERZ",[2076.1879],0)  // ~Ogre Berserker~
+    SetGlobalTimer("AYSpawnTimerAR05113","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+

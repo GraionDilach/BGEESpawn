@@ -1,0 +1,202 @@
+IF
+  Global("AYSpawnRandomBeenSetAR53002","%FireLeafForest%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR53002","%FireLeafForest%",1)
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR53002_1","%FireLeafForest%",0)
+  Global("AYSpawnRandomBeenSetAR53002","%FireLeafForest%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR53002_1","%FireLeafForest%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR53002","%FireLeafForest%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR53002_0","%FireLeafForest%",0)
+  Global("AYSpawnRandomBeenSetAR53002","%FireLeafForest%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR53002_0","%FireLeafForest%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR53002","%FireLeafForest%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("BEARCA",[2340.3320],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("BEARCA",[2340.3320],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("BEARCA",[2340.3320],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[2340.3320],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("BEARCA",[2340.3320],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[2340.3320],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("BEARCA",[2340.3320],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[2340.3320],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[2340.3320],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53002_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+	CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SKELET_B",75)
+
+  !Range("BEARCA",75)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",1)
+  GlobalTimerExpired("AYSpawnTimerAR53002","%FireLeafForest%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR53002","%FireLeafForest%",0)
+    SetGlobal("AYSpawnRandomSetAR53002_1","%FireLeafForest%",0)
+    SetGlobal("AYSpawnRandomSetAR53002_0","%FireLeafForest%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR53002","%FireLeafForest%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53002","%FireLeafForest%",1)
+    CreateCreature("SKELET_B",[2340.3320],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR53002","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+

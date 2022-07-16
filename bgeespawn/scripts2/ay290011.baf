@@ -1,0 +1,204 @@
+IF
+  Global("AYSpawnRandomBeenSetAR290011","%Larswood%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR290011","%Larswood%",1)
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR290011_1","%Larswood%",0)
+  Global("AYSpawnRandomBeenSetAR290011","%Larswood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR290011_1","%Larswood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR290011","%Larswood%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR290011_0","%Larswood%",0)
+  Global("AYSpawnRandomBeenSetAR290011","%Larswood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR290011_0","%Larswood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR290011","%Larswood%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_1","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[902.2884],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+  Global("AYSpawnRandomSetAR290011_0","%Larswood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GIBBER",75)
+
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR290011","%Larswood%",1)
+  GlobalTimerExpired("AYSpawnTimerAR290011","%Larswood%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR290011","%Larswood%",0)
+    SetGlobal("AYSpawnRandomSetAR290011_1","%Larswood%",0)
+    SetGlobal("AYSpawnRandomSetAR290011_0","%Larswood%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR290011","%Larswood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR290011","%Larswood%",1)
+    CreateCreature("GIBBER",[902.2884],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR290011","%Larswood%",AY_SPAWN_TIMER)
+END
+

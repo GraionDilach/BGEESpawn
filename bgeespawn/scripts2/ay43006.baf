@@ -1,0 +1,213 @@
+IF
+  Global("AYSpawnRandomBeenSetAR43006","%NorthNashkelRoad%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR43006","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR43006_1","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43006","%NorthNashkelRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR43006_1","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43006","%NorthNashkelRoad%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR43006_0","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43006","%NorthNashkelRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR43006_0","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43006","%NorthNashkelRoad%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+	CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43006_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+	CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+	CreateCreature("BANDIT",[955.2836],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BANDIT",75)
+
+  !Range("GIBBER",75)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+  GlobalTimerExpired("AYSpawnTimerAR43006","%NorthNashkelRoad%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR43006","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43006_1","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43006_0","%NorthNashkelRoad%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR43006","%NorthNashkelRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43006","%NorthNashkelRoad%",1)
+    CreateCreature("GIBBER",[955.2836],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR43006","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+

@@ -1,0 +1,113 @@
+IF
+  Global("AYSpawnRandomBeenSetAR27005","%LionsWay%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR27005","%LionsWay%",1)
+    SetGlobal("AYSpawnResetAR27005","%LionsWay%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR27005_0","%LionsWay%",0)
+  Global("AYSpawnRandomBeenSetAR27005","%LionsWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR27005_0","%LionsWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR27005","%LionsWay%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR27005","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27005_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27005","%LionsWay%",1)
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR27005","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR27005","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27005_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27005","%LionsWay%",1)
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR27005","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR27005","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27005_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27005","%LionsWay%",1)
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR27005","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR27005","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27005_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27005","%LionsWay%",1)
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR27005","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR27005","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27005_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27005","%LionsWay%",1)
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR27005","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BEARBL",75)
+  Global("AYSpawnResetAR27005","%LionsWay%",1)
+  GlobalTimerExpired("AYSpawnTimerAR27005","%LionsWay%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27005","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR27005","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomSetAR27005_0","%LionsWay%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR27005","%LionsWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27005","%LionsWay%",1)
+    CreateCreature("BEARBL",[1823.1113],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR27005","%LionsWay%",AY_SPAWN_TIMER)
+END
+

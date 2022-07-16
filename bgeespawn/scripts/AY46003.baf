@@ -59,7 +59,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -72,7 +72,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -85,7 +85,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -99,7 +99,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -114,7 +114,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -129,7 +129,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -145,7 +145,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -161,7 +161,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -178,7 +178,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
   Global("AYSpawnRandomSetAR46003_4","%BearRiver%",1)
@@ -195,7 +195,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -208,7 +208,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -221,7 +221,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -235,7 +235,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -250,7 +250,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -265,7 +265,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -281,7 +281,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -297,7 +297,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -314,7 +314,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
   Global("AYSpawnRandomSetAR46003_3","%BearRiver%",1)
@@ -331,7 +331,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
   Global("AYSpawnRandomSetAR46003_2","%BearRiver%",1)
@@ -345,7 +345,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
   Global("AYSpawnRandomSetAR46003_2","%BearRiver%",1)
@@ -362,7 +362,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
   Global("AYSpawnRandomSetAR46003_1","%BearRiver%",1)
@@ -374,7 +374,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -389,7 +389,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
@@ -405,7 +405,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
   Global("AYSpawnRandomSetAR46003_1","%BearRiver%",1)
@@ -422,7 +422,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
   Global("AYSpawnRandomSetAR46003_0","%BearRiver%",1)
@@ -436,7 +436,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
   Global("AYSpawnRandomSetAR46003_0","%BearRiver%",1)
@@ -453,17 +453,17 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("DOGWI",60)
+  !Range("DOGWI",75)
 
-  !Range("DOGWA",60)
+  !Range("DOGWA",75)
 
-  !Range("GIBBER",60)
+  !Range("GIBBER",75)
 
-  !Range("OGRE",60)
+  !Range("OGRE",75)
 
-  !Range("OGREBERZ",60)
+  !Range("OGREBERZ",75)
   Global("AYSpawnResetAR46003","%BearRiver%",1)
   GlobalTimerExpired("AYSpawnTimerAR46003","%BearRiver%")
 THEN
@@ -478,7 +478,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR46003","%BearRiver%",0)
 THEN
   RESPONSE #100

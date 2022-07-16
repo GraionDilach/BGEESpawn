@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR39000","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39000_0","%Ulcaster%",1)
@@ -34,7 +34,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR39000","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39000_0","%Ulcaster%",1)
@@ -51,9 +51,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("KOBOLA_D",60)
+  !Range("KOBOLA_D",75)
   Global("AYSpawnResetAR39000","%Ulcaster%",1)
   GlobalTimerExpired("AYSpawnTimerAR39000","%Ulcaster%")
 THEN
@@ -64,7 +64,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR39000","%Ulcaster%",0)
 THEN
   RESPONSE #100

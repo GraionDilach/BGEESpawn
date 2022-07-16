@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
   Global("AYSpawnRandomSetAR18021_2","%CloakwoodMines_L3%",1)
@@ -52,7 +52,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
@@ -68,7 +68,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
   Global("AYSpawnRandomSetAR18021_2","%CloakwoodMines_L3%",1)
@@ -85,7 +85,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
   Global("AYSpawnRandomSetAR18021_1","%CloakwoodMines_L3%",1)
@@ -98,7 +98,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
@@ -114,7 +114,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
   Global("AYSpawnRandomSetAR18021_1","%CloakwoodMines_L3%",1)
@@ -131,7 +131,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
   Global("AYSpawnRandomSetAR18021_0","%CloakwoodMines_L3%",1)
@@ -144,7 +144,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
@@ -160,7 +160,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
   Global("AYSpawnRandomSetAR18021_0","%CloakwoodMines_L3%",1)
@@ -177,13 +177,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("HOBGOB_D",60)
+  !Range("HOBGOB_D",75)
 
-  !Range("HOBGOB_C",60)
+  !Range("HOBGOB_C",75)
 
-  !Range("HOBGOA_E",60)
+  !Range("HOBGOA_E",75)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",1)
   GlobalTimerExpired("AYSpawnTimerAR18021","%CloakwoodMines_L3%")
 THEN
@@ -196,7 +196,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR18021","%CloakwoodMines_L3%",0)
 THEN
   RESPONSE #100

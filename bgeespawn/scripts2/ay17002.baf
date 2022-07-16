@@ -1,0 +1,215 @@
+IF
+  Global("AYSpawnRandomBeenSetAR17002","%CloakwoodWyverns%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR17002","%CloakwoodWyverns%",1)
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR17002_2","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomBeenSetAR17002","%CloakwoodWyverns%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR17002_2","%CloakwoodWyverns%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR17002","%CloakwoodWyverns%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR17002_1","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomBeenSetAR17002","%CloakwoodWyverns%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR17002_1","%CloakwoodWyverns%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR17002","%CloakwoodWyverns%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR17002_0","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomBeenSetAR17002","%CloakwoodWyverns%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR17002_0","%CloakwoodWyverns%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR17002","%CloakwoodWyverns%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_2","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("BEARCA",[4687.1301],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_2","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("BEARCA",[4687.1301],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_2","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("BEARCA",[4687.1301],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4687.1301],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_2","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("BEARCA",[4687.1301],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4687.1301],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_2","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("BEARCA",[4687.1301],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4687.1301],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[4687.1301],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_1","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_1","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_1","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_1","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+  Global("AYSpawnRandomSetAR17002_1","%CloakwoodWyverns%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4687.1301],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("IRONGU",75)
+
+  !Range("TASLOI",75)
+
+  !Range("BEARCA",75)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+  GlobalTimerExpired("AYSpawnTimerAR17002","%CloakwoodWyverns%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR17002","%CloakwoodWyverns%",0)
+    SetGlobal("AYSpawnRandomSetAR17002_2","%CloakwoodWyverns%",0)
+    SetGlobal("AYSpawnRandomSetAR17002_1","%CloakwoodWyverns%",0)
+    SetGlobal("AYSpawnRandomSetAR17002_0","%CloakwoodWyverns%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR17002","%CloakwoodWyverns%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR17002","%CloakwoodWyverns%",1)
+    CreateCreature("IRONGU",[4687.1301],0)  // ~Guard~
+    SetGlobalTimer("AYSpawnTimerAR17002","%CloakwoodWyverns%",AY_SPAWN_TIMER)
+END
+

@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -32,7 +32,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -45,7 +45,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -59,7 +59,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -73,7 +73,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -88,7 +88,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -103,7 +103,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -119,7 +119,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -135,7 +135,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -152,7 +152,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR02262","%ESewers%",0)
@@ -169,7 +169,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR02262","%ESewers%",0)
   Global("AYSpawnRandomSetAR02262_0","%ESewers%",1)
@@ -186,8 +186,8 @@ THEN
 END
 
 IF
-  !Range([PC],60)
-  !Range("CARRIO",60)
+  !Range([PC],75)
+  !Range("CARRIO",75)
   Global("AYSpawnResetAR02262","%ESewers%",1)
   GlobalTimerExpired("AYSpawnTimerAR02262","%ESewers%")
 THEN
@@ -198,7 +198,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR02262","%ESewers%",0)
 THEN
   RESPONSE #100

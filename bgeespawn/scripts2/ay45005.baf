@@ -1,0 +1,374 @@
+IF
+  Global("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",1)
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(4,1)
+  Global("AYSpawnRandomSetAR45005_3","%FirewineBridge%",0)
+  Global("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR45005_3","%FirewineBridge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",1)
+END
+
+IF
+  RandomNum(4,2)
+  Global("AYSpawnRandomSetAR45005_2","%FirewineBridge%",0)
+  Global("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR45005_2","%FirewineBridge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",1)
+END
+
+IF
+  RandomNum(4,3)
+  Global("AYSpawnRandomSetAR45005_1","%FirewineBridge%",0)
+  Global("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR45005_1","%FirewineBridge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",1)
+END
+
+IF
+  RandomNum(4,4)
+  Global("AYSpawnRandomSetAR45005_0","%FirewineBridge%",0)
+  Global("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR45005_0","%FirewineBridge%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_3","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_3","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_3","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_3","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_3","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[3776.2432],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_2","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_2","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_2","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_2","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_2","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_E",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_1","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_1","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_1","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_1","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_1","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_0","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_0","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_0","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_0","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+  Global("AYSpawnRandomSetAR45005_0","%FirewineBridge%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+	CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    CreateCreature("KOBOLD_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("KOBOLD_C",75)
+
+  !Range("KOBOLA_C",75)
+
+  !Range("KOBOLA_E",75)
+
+  !Range("KOBCOMM",75)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",1)
+  GlobalTimerExpired("AYSpawnTimerAR45005","%FirewineBridge%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR45005","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomSetAR45005_3","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomSetAR45005_2","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomSetAR45005_1","%FirewineBridge%",0)
+    SetGlobal("AYSpawnRandomSetAR45005_0","%FirewineBridge%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR45005","%FirewineBridge%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR45005","%FirewineBridge%",1)
+    CreateCreature("KOBOLA_C",[3776.2432],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR45005","%FirewineBridge%",AY_SPAWN_TIMER)
+END
+

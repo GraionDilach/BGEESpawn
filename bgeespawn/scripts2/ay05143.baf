@@ -1,0 +1,109 @@
+IF
+  Global("AYSpawnRandomBeenSetAR05143","%DurlagsTower_D4%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR05143","%DurlagsTower_D4%",1)
+    SetGlobal("AYSpawnResetAR05143","%DurlagsTower_D4%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR05143_0","%DurlagsTower_D4%",0)
+  Global("AYSpawnRandomBeenSetAR05143","%DurlagsTower_D4%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05143_0","%DurlagsTower_D4%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05143","%DurlagsTower_D4%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR05143","%DurlagsTower_D4%",0)
+  Global("AYSpawnRandomSetAR05143_0","%DurlagsTower_D4%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05143","%DurlagsTower_D4%",1)
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05143","%DurlagsTower_D4%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR05143","%DurlagsTower_D4%",0)
+  Global("AYSpawnRandomSetAR05143_0","%DurlagsTower_D4%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05143","%DurlagsTower_D4%",1)
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05143","%DurlagsTower_D4%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR05143","%DurlagsTower_D4%",0)
+  Global("AYSpawnRandomSetAR05143_0","%DurlagsTower_D4%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05143","%DurlagsTower_D4%",1)
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05143","%DurlagsTower_D4%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR05143","%DurlagsTower_D4%",0)
+  Global("AYSpawnRandomSetAR05143_0","%DurlagsTower_D4%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05143","%DurlagsTower_D4%",1)
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05143","%DurlagsTower_D4%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR05143","%DurlagsTower_D4%",0)
+  Global("AYSpawnRandomSetAR05143_0","%DurlagsTower_D4%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05143","%DurlagsTower_D4%",1)
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05143","%DurlagsTower_D4%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GHOULLOR",75)
+  Global("AYSpawnResetAR05143","%DurlagsTower_D4%",1)
+  GlobalTimerExpired("AYSpawnTimerAR05143","%DurlagsTower_D4%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05143","%DurlagsTower_D4%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05143","%DurlagsTower_D4%",0)
+    SetGlobal("AYSpawnRandomSetAR05143_0","%DurlagsTower_D4%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR05143","%DurlagsTower_D4%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05143","%DurlagsTower_D4%",1)
+    CreateCreature("GHOULLOR",[1355.1943],0)  // ~Greater Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR05143","%DurlagsTower_D4%",AY_SPAWN_TIMER)
+END
+

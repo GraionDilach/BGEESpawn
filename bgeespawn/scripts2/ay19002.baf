@@ -1,0 +1,220 @@
+IF
+  Global("AYSpawnRandomBeenSetAR19002","%BanditCamp%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR19002","%BanditCamp%",1)
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR19002_1","%BanditCamp%",0)
+  Global("AYSpawnRandomBeenSetAR19002","%BanditCamp%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR19002_1","%BanditCamp%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR19002","%BanditCamp%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR19002_0","%BanditCamp%",0)
+  Global("AYSpawnRandomBeenSetAR19002","%BanditCamp%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR19002_0","%BanditCamp%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR19002","%BanditCamp%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_1","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_C",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+  Global("AYSpawnRandomSetAR19002_0","%BanditCamp%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("HOBGOA_B",75)
+
+  !Range("HOBGOB_C",75)
+  Global("AYSpawnResetAR19002","%BanditCamp%",1)
+  GlobalTimerExpired("AYSpawnTimerAR19002","%BanditCamp%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR19002","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomSetAR19002_1","%BanditCamp%",0)
+    SetGlobal("AYSpawnRandomSetAR19002_0","%BanditCamp%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR19002","%BanditCamp%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR19002","%BanditCamp%",1)
+    CreateCreature("HOBGOA_B",[1694.2548],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR19002","%BanditCamp%",AY_SPAWN_TIMER)
+END
+

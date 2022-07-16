@@ -1,0 +1,186 @@
+IF
+  Global("AYSpawnRandomBeenSetAR16007","%CloakwoodDruids%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR16007","%CloakwoodDruids%",1)
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR16007_1","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomBeenSetAR16007","%CloakwoodDruids%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR16007_1","%CloakwoodDruids%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR16007","%CloakwoodDruids%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR16007_0","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomBeenSetAR16007","%CloakwoodDruids%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR16007_0","%CloakwoodDruids%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR16007","%CloakwoodDruids%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_1","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_1","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_1","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_1","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_1","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_0","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("BEARCA",[2976.3277],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_0","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("BEARCA",[2976.3277],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_0","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("BEARCA",[2976.3277],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[2976.3277],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_0","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("BEARCA",[2976.3277],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[2976.3277],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+  Global("AYSpawnRandomSetAR16007_0","%CloakwoodDruids%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("BEARCA",[2976.3277],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[2976.3277],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[2976.3277],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BEARCA",75)
+
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+  GlobalTimerExpired("AYSpawnTimerAR16007","%CloakwoodDruids%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR16007","%CloakwoodDruids%",0)
+    SetGlobal("AYSpawnRandomSetAR16007_1","%CloakwoodDruids%",0)
+    SetGlobal("AYSpawnRandomSetAR16007_0","%CloakwoodDruids%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR16007","%CloakwoodDruids%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR16007","%CloakwoodDruids%",1)
+    CreateCreature("WOLFDR",[2976.3277],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR16007","%CloakwoodDruids%",AY_SPAWN_TIMER)
+END
+

@@ -1,0 +1,191 @@
+IF
+  Global("AYSpawnRandomBeenSetAR24009","%Peldvale%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR24009","%Peldvale%",1)
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR24009_1","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR24009","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24009_1","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24009","%Peldvale%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR24009_0","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR24009","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24009_0","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24009","%Peldvale%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+	CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("BEARBR",[1661.2363],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("BEARBR",[1661.2363],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("BEARBR",[1661.2363],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[1661.2363],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("BEARBR",[1661.2363],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[1661.2363],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24009_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("BEARBR",[1661.2363],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[1661.2363],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[1661.2363],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BEARBR",75)
+
+  !Range("IRONELIT",75)
+  Global("AYSpawnResetAR24009","%Peldvale%",1)
+  GlobalTimerExpired("AYSpawnTimerAR24009","%Peldvale%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR24009","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR24009_1","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR24009_0","%Peldvale%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR24009","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24009","%Peldvale%",1)
+    CreateCreature("IRONELIT",[1661.2363],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR24009","%Peldvale%",AY_SPAWN_TIMER)
+END
+

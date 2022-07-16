@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
@@ -52,7 +52,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
@@ -65,7 +65,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
@@ -79,7 +79,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
@@ -94,7 +94,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
@@ -109,7 +109,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
@@ -125,7 +125,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
@@ -141,7 +141,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
@@ -158,7 +158,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
   Global("AYSpawnRandomSetAR49001_2","%NashkelCarnival%",1)
@@ -175,7 +175,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
   Global("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",1)
@@ -190,7 +190,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
   Global("AYSpawnRandomSetAR49001_1","%NashkelCarnival%",1)
@@ -207,7 +207,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
   Global("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",1)
@@ -222,7 +222,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
   Global("AYSpawnRandomSetAR49001_0","%NashkelCarnival%",1)
@@ -239,13 +239,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("KOBOLD_C",60)
+  !Range("KOBOLD_C",75)
 
-  !Range("KOBOLD_E",60)
+  !Range("KOBOLD_E",75)
 
-  !Range("OGREBERZ",60)
+  !Range("OGREBERZ",75)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",1)
   GlobalTimerExpired("AYSpawnTimerAR49001","%NashkelCarnival%")
 THEN
@@ -258,7 +258,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR49001","%NashkelCarnival%",0)
 THEN
   RESPONSE #100

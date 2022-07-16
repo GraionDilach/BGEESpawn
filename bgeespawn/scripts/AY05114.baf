@@ -19,8 +19,8 @@ THEN
 END
 
 IF
-  !Range([PC],60)
-  !Range("BATTHO",60)
+  !Range([PC],75)
+  !Range("BATTHO",75)
   Global("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
   GlobalTimerExpired("AYSpawnTimerAR05114","%DurlagsTower_D1%")
 THEN
@@ -31,7 +31,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
 THEN
   RESPONSE #100

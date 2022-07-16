@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR45004","%FirewineBridge%",0)
   Global("AYSpawnRandomSetAR45004_2","%FirewineBridge%",1)
@@ -54,7 +54,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR45004","%FirewineBridge%",0)
   Global("AYSpawnRandomSetAR45004_2","%FirewineBridge%",1)
@@ -71,7 +71,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR45004","%FirewineBridge%",0)
   Global("AYSpawnRandomSetAR45004_1","%FirewineBridge%",1)
@@ -86,7 +86,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR45004","%FirewineBridge%",0)
   Global("AYSpawnRandomSetAR45004_1","%FirewineBridge%",1)
@@ -103,7 +103,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR45004","%FirewineBridge%",0)
   Global("AYSpawnRandomSetAR45004_0","%FirewineBridge%",1)
@@ -118,7 +118,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR45004","%FirewineBridge%",0)
   Global("AYSpawnRandomSetAR45004_0","%FirewineBridge%",1)
@@ -135,13 +135,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("KOBOLA_E",60)
+  !Range("KOBOLA_E",75)
 
-  !Range("KOBOLA_C",60)
+  !Range("KOBOLA_C",75)
 
-  !Range("KOBOLD_D",60)
+  !Range("KOBOLD_D",75)
   Global("AYSpawnResetAR45004","%FirewineBridge%",1)
   GlobalTimerExpired("AYSpawnTimerAR45004","%FirewineBridge%")
 THEN
@@ -154,7 +154,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR45004","%FirewineBridge%",0)
 THEN
   RESPONSE #100

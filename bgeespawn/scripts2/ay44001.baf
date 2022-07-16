@@ -1,0 +1,374 @@
+IF
+  Global("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(4,1)
+  Global("AYSpawnRandomSetAR44001_3","%LonelyPeaks%",0)
+  Global("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44001_3","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",1)
+END
+
+IF
+  RandomNum(4,2)
+  Global("AYSpawnRandomSetAR44001_2","%LonelyPeaks%",0)
+  Global("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44001_2","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",1)
+END
+
+IF
+  RandomNum(4,3)
+  Global("AYSpawnRandomSetAR44001_1","%LonelyPeaks%",0)
+  Global("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44001_1","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",1)
+END
+
+IF
+  RandomNum(4,4)
+  Global("AYSpawnRandomSetAR44001_0","%LonelyPeaks%",0)
+  Global("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44001_0","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_3","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_3","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_3","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_3","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_3","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    CreateCreature("KOBCOMM",[2540.446],0)  // ~Kobold Commando~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_2","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[2540.446],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+	CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+	CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+	CreateCreature("KOBOLD_D",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44001_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("KOBOLA_C",75)
+
+  !Range("KOBOLD_D",75)
+
+  !Range("OGREGR",75)
+
+  !Range("KOBCOMM",75)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",1)
+  GlobalTimerExpired("AYSpawnTimerAR44001","%LonelyPeaks%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR44001","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomSetAR44001_3","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomSetAR44001_2","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomSetAR44001_1","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomSetAR44001_0","%LonelyPeaks%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR44001","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44001","%LonelyPeaks%",1)
+    CreateCreature("KOBOLA_C",[2540.446],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR44001","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+

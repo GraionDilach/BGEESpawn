@@ -1,0 +1,118 @@
+IF
+  Global("AYSpawnRandomBeenSetAR26191","%Candlekeep_Catacombs_L2%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR26191","%Candlekeep_Catacombs_L2%",1)
+    SetGlobal("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR26191_0","%Candlekeep_Catacombs_L2%",0)
+  Global("AYSpawnRandomBeenSetAR26191","%Candlekeep_Catacombs_L2%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR26191_0","%Candlekeep_Catacombs_L2%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR26191","%Candlekeep_Catacombs_L2%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",0)
+  Global("AYSpawnRandomSetAR26191_0","%Candlekeep_Catacombs_L2%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",1)
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR26191","%Candlekeep_Catacombs_L2%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",0)
+  Global("AYSpawnRandomSetAR26191_0","%Candlekeep_Catacombs_L2%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",1)
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR26191","%Candlekeep_Catacombs_L2%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",0)
+  Global("AYSpawnRandomSetAR26191_0","%Candlekeep_Catacombs_L2%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",1)
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR26191","%Candlekeep_Catacombs_L2%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",0)
+  Global("AYSpawnRandomSetAR26191_0","%Candlekeep_Catacombs_L2%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",1)
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR26191","%Candlekeep_Catacombs_L2%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",0)
+  Global("AYSpawnRandomSetAR26191_0","%Candlekeep_Catacombs_L2%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",1)
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR26191","%Candlekeep_Catacombs_L2%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SKELET_C",75)
+  Global("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",1)
+  GlobalTimerExpired("AYSpawnTimerAR26191","%Candlekeep_Catacombs_L2%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR26191","%Candlekeep_Catacombs_L2%",0)
+    SetGlobal("AYSpawnRandomSetAR26191_0","%Candlekeep_Catacombs_L2%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR26191","%Candlekeep_Catacombs_L2%",1)
+    CreateCreature("SKELET_C",[3096.1204],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR26191","%Candlekeep_Catacombs_L2%",AY_SPAWN_TIMER)
+END
+

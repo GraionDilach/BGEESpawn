@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
@@ -52,7 +52,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
@@ -65,7 +65,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
@@ -79,7 +79,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
@@ -94,7 +94,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
@@ -109,7 +109,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
@@ -125,7 +125,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
@@ -141,7 +141,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
@@ -158,7 +158,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37005_2","%RedCanyons%",1)
@@ -175,7 +175,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37005_1","%RedCanyons%",1)
@@ -188,7 +188,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
@@ -204,7 +204,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37005_1","%RedCanyons%",1)
@@ -221,7 +221,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37005_0","%RedCanyons%",1)
@@ -235,7 +235,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
   Global("AYSpawnRandomSetAR37005_0","%RedCanyons%",1)
@@ -252,13 +252,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("GIBBER",60)
+  !Range("GIBBER",75)
 
-  !Range("SKELET_B",60)
+  !Range("SKELET_B",75)
 
-  !Range("HOBELITE",60)
+  !Range("HOBELITE",75)
   Global("AYSpawnResetAR37005","%RedCanyons%",1)
   GlobalTimerExpired("AYSpawnTimerAR37005","%RedCanyons%")
 THEN
@@ -271,7 +271,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR37005","%RedCanyons%",0)
 THEN
   RESPONSE #100

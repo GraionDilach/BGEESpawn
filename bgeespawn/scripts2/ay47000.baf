@@ -1,0 +1,125 @@
+IF
+  Global("AYSpawnRandomBeenSetAR47000","%XvartVillage%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR47000","%XvartVillage%",1)
+    SetGlobal("AYSpawnResetAR47000","%XvartVillage%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR47000_0","%XvartVillage%",0)
+  Global("AYSpawnRandomBeenSetAR47000","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR47000_0","%XvartVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR47000","%XvartVillage%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR47000","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47000_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47000","%XvartVillage%",1)
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47000","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR47000","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47000_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47000","%XvartVillage%",1)
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47000","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR47000","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47000_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47000","%XvartVillage%",1)
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+	CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47000","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR47000","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47000_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47000","%XvartVillage%",1)
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+	CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+	CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47000","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR47000","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47000_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47000","%XvartVillage%",1)
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+	CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+	CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47000","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("XVART_A",75)
+  Global("AYSpawnResetAR47000","%XvartVillage%",1)
+  GlobalTimerExpired("AYSpawnTimerAR47000","%XvartVillage%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47000","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR47000","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR47000_0","%XvartVillage%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR47000","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47000","%XvartVillage%",1)
+    CreateCreature("XVART_A",[2592.1935],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47000","%XvartVillage%",AY_SPAWN_TIMER)
+END
+

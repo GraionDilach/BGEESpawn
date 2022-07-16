@@ -1,0 +1,213 @@
+IF
+  Global("AYSpawnRandomBeenSetAR35001","%MutaminsGarden%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR35001","%MutaminsGarden%",1)
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR35001_1","%MutaminsGarden%",0)
+  Global("AYSpawnRandomBeenSetAR35001","%MutaminsGarden%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR35001_1","%MutaminsGarden%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR35001","%MutaminsGarden%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR35001_0","%MutaminsGarden%",0)
+  Global("AYSpawnRandomBeenSetAR35001","%MutaminsGarden%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR35001_0","%MutaminsGarden%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR35001","%MutaminsGarden%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_1","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+	CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_1","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_1","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  LevelPartyGT(4)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_1","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_1","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    CreateCreature("GNOLL_D",[2626.264],0)  // ~Gnoll Slasher~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_0","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_0","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_0","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_0","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+  Global("AYSpawnRandomSetAR35001_0","%MutaminsGarden%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GIBBER",75)
+
+  !Range("GNOLL_D",75)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",1)
+  GlobalTimerExpired("AYSpawnTimerAR35001","%MutaminsGarden%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR35001","%MutaminsGarden%",0)
+    SetGlobal("AYSpawnRandomSetAR35001_1","%MutaminsGarden%",0)
+    SetGlobal("AYSpawnRandomSetAR35001_0","%MutaminsGarden%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR35001","%MutaminsGarden%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR35001","%MutaminsGarden%",1)
+    CreateCreature("GIBBER",[2626.264],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR35001","%MutaminsGarden%",AY_SPAWN_TIMER)
+END
+

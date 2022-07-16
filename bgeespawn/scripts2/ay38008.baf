@@ -1,0 +1,208 @@
+IF
+  Global("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[2471.2690],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("HOBGOB_A",75)
+
+  !Range("GHOUL",75)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+  GlobalTimerExpired("AYSpawnTimerAR38008","%SouthBeregostRoad%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR38008","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR38008_1","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR38008_0","%SouthBeregostRoad%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR38008","%SouthBeregostRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38008","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_A",[2471.2690],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38008","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+

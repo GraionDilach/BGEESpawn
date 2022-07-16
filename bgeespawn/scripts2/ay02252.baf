@@ -1,0 +1,258 @@
+IF
+  Global("AYSpawnRandomBeenSetAR02252","%CentralSewers%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR02252","%CentralSewers%",1)
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR02252_2","%CentralSewers%",0)
+  Global("AYSpawnRandomBeenSetAR02252","%CentralSewers%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR02252_2","%CentralSewers%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR02252","%CentralSewers%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR02252_1","%CentralSewers%",0)
+  Global("AYSpawnRandomBeenSetAR02252","%CentralSewers%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR02252_1","%CentralSewers%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR02252","%CentralSewers%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR02252_0","%CentralSewers%",0)
+  Global("AYSpawnRandomBeenSetAR02252","%CentralSewers%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR02252_0","%CentralSewers%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR02252","%CentralSewers%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_2","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYMU",[1809.912],0)  // ~Mustard Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_2","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYMU",[1809.912],0)  // ~Mustard Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_2","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYMU",[1809.912],0)  // ~Mustard Jelly~
+    CreateCreature("JELLYMU",[1809.912],0)  // ~Mustard Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_2","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYMU",[1809.912],0)  // ~Mustard Jelly~
+    CreateCreature("JELLYMU",[1809.912],0)  // ~Mustard Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_2","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYMU",[1809.912],0)  // ~Mustard Jelly~
+    CreateCreature("JELLYMU",[1809.912],0)  // ~Mustard Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_1","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLOC",[1809.912],0)  // ~Ochre Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_1","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLOC",[1809.912],0)  // ~Ochre Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_1","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLOC",[1809.912],0)  // ~Ochre Jelly~
+    CreateCreature("JELLOC",[1809.912],0)  // ~Ochre Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_1","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLOC",[1809.912],0)  // ~Ochre Jelly~
+    CreateCreature("JELLOC",[1809.912],0)  // ~Ochre Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_1","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLOC",[1809.912],0)  // ~Ochre Jelly~
+    CreateCreature("JELLOC",[1809.912],0)  // ~Ochre Jelly~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_0","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYGR",[1809.912],0)  // ~Green Slime~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_0","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYGR",[1809.912],0)  // ~Green Slime~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_0","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYGR",[1809.912],0)  // ~Green Slime~
+    CreateCreature("JELLYGR",[1809.912],0)  // ~Green Slime~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_0","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYGR",[1809.912],0)  // ~Green Slime~
+    CreateCreature("JELLYGR",[1809.912],0)  // ~Green Slime~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+  Global("AYSpawnRandomSetAR02252_0","%CentralSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYGR",[1809.912],0)  // ~Green Slime~
+    CreateCreature("JELLYGR",[1809.912],0)  // ~Green Slime~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("JELLYGR",75)
+
+  !Range("JELLOC",75)
+
+  !Range("JELLYMU",75)
+  Global("AYSpawnResetAR02252","%CentralSewers%",1)
+  GlobalTimerExpired("AYSpawnTimerAR02252","%CentralSewers%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR02252","%CentralSewers%",0)
+    SetGlobal("AYSpawnRandomSetAR02252_2","%CentralSewers%",0)
+    SetGlobal("AYSpawnRandomSetAR02252_1","%CentralSewers%",0)
+    SetGlobal("AYSpawnRandomSetAR02252_0","%CentralSewers%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR02252","%CentralSewers%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02252","%CentralSewers%",1)
+    CreateCreature("JELLYGR",[1809.912],0)  // ~Green Slime~
+    SetGlobalTimer("AYSpawnTimerAR02252","%CentralSewers%",AY_SPAWN_TIMER)
+END
+

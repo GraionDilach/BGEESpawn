@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR40001","%Gullykin%",0)
   Global("AYSpawnRandomSetAR40001_1","%Gullykin%",1)
@@ -41,7 +41,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR40001","%Gullykin%",0)
@@ -55,7 +55,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR40001","%Gullykin%",0)
@@ -70,7 +70,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR40001","%Gullykin%",0)
@@ -86,7 +86,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   Global("AYSpawnResetAR40001","%Gullykin%",0)
   Global("AYSpawnRandomSetAR40001_1","%Gullykin%",1)
@@ -103,7 +103,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR40001","%Gullykin%",0)
   Global("AYSpawnRandomSetAR40001_0","%Gullykin%",1)
@@ -118,7 +118,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR40001","%Gullykin%",0)
   Global("AYSpawnRandomSetAR40001_0","%Gullykin%",1)
@@ -135,11 +135,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("KOBOLA_B",60)
+  !Range("KOBOLA_B",75)
 
-  !Range("WORG",60)
+  !Range("WORG",75)
   Global("AYSpawnResetAR40001","%Gullykin%",1)
   GlobalTimerExpired("AYSpawnTimerAR40001","%Gullykin%")
 THEN
@@ -151,7 +151,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR40001","%Gullykin%",0)
 THEN
   RESPONSE #100

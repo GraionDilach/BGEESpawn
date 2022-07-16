@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -55,7 +55,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -68,7 +68,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -82,7 +82,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -96,7 +96,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -110,7 +110,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -125,7 +125,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -140,7 +140,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -155,7 +155,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
   Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
@@ -169,7 +169,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -182,7 +182,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -195,7 +195,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -208,7 +208,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -221,7 +221,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -235,7 +235,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -249,7 +249,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -263,7 +263,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
@@ -277,7 +277,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
   Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
@@ -291,11 +291,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("SPIDPH",60)
+  !Range("SPIDPH",75)
 
-  !Range("SPIDWR",60)
+  !Range("SPIDWR",75)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
   GlobalTimerExpired("AYSpawnTimerAR05111","%DurlagsTower_D1%")
 THEN
@@ -307,7 +307,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
 THEN
   RESPONSE #100

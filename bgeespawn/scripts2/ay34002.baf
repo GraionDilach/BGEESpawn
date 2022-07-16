@@ -1,0 +1,190 @@
+IF
+  Global("AYSpawnRandomBeenSetAR34002","%Temple%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR34002","%Temple%",1)
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR34002_1","%Temple%",0)
+  Global("AYSpawnRandomBeenSetAR34002","%Temple%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR34002_1","%Temple%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR34002","%Temple%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR34002_0","%Temple%",0)
+  Global("AYSpawnRandomBeenSetAR34002","%Temple%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR34002_0","%Temple%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR34002","%Temple%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4420.2111],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+  Global("AYSpawnRandomSetAR34002_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+	CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("WOLF",75)
+
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR34002","%Temple%",1)
+  GlobalTimerExpired("AYSpawnTimerAR34002","%Temple%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR34002","%Temple%",0)
+    SetGlobal("AYSpawnRandomSetAR34002_1","%Temple%",0)
+    SetGlobal("AYSpawnRandomSetAR34002_0","%Temple%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR34002","%Temple%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34002","%Temple%",1)
+    CreateCreature("WOLF",[4420.2111],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR34002","%Temple%",AY_SPAWN_TIMER)
+END
+

@@ -1,0 +1,358 @@
+IF
+  Global("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",1)
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(4,1)
+  Global("AYSpawnRandomSetAR31004_3","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR31004_3","%ShipwrecksCoast%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",1)
+END
+
+IF
+  RandomNum(4,2)
+  Global("AYSpawnRandomSetAR31004_2","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR31004_2","%ShipwrecksCoast%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",1)
+END
+
+IF
+  RandomNum(4,3)
+  Global("AYSpawnRandomSetAR31004_1","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR31004_1","%ShipwrecksCoast%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",1)
+END
+
+IF
+  RandomNum(4,4)
+  Global("AYSpawnRandomSetAR31004_0","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR31004_0","%ShipwrecksCoast%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_3","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_3","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_3","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_3","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_3","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[3983.3025],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_2","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_2","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_2","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_2","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_2","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[3983.3025],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_1","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_1","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_1","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_1","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_1","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    CreateCreature("OGREGR",[3983.3025],0)  // ~Ogrillon~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_0","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_0","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_0","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_0","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+  Global("AYSpawnRandomSetAR31004_0","%ShipwrecksCoast%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+	CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("WOLF",75)
+
+  !Range("OGREGR",75)
+
+  !Range("WOLFDI",75)
+
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+  GlobalTimerExpired("AYSpawnTimerAR31004","%ShipwrecksCoast%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR31004","%ShipwrecksCoast%",0)
+    SetGlobal("AYSpawnRandomSetAR31004_3","%ShipwrecksCoast%",0)
+    SetGlobal("AYSpawnRandomSetAR31004_2","%ShipwrecksCoast%",0)
+    SetGlobal("AYSpawnRandomSetAR31004_1","%ShipwrecksCoast%",0)
+    SetGlobal("AYSpawnRandomSetAR31004_0","%ShipwrecksCoast%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR31004","%ShipwrecksCoast%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR31004","%ShipwrecksCoast%",1)
+    CreateCreature("WOLF",[3983.3025],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR31004","%ShipwrecksCoast%",AY_SPAWN_TIMER)
+END
+

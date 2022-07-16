@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR01236","%Undercity%",0)
   Global("AYSpawnRandomSetAR01236_0","%Undercity%",1)
@@ -32,7 +32,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR01236","%Undercity%",0)
@@ -48,7 +48,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR01236","%Undercity%",0)
   Global("AYSpawnRandomSetAR01236_0","%Undercity%",1)
@@ -65,9 +65,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("SKELET_C",60)
+  !Range("SKELET_C",75)
   Global("AYSpawnResetAR01236","%Undercity%",1)
   GlobalTimerExpired("AYSpawnTimerAR01236","%Undercity%")
 THEN
@@ -78,7 +78,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR01236","%Undercity%",0)
 THEN
   RESPONSE #100

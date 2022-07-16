@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38005_0","%SouthBeregostRoad%",1)
@@ -32,7 +32,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
@@ -48,7 +48,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38005_0","%SouthBeregostRoad%",1)
@@ -65,9 +65,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("HOBGOB_B",60)
+  !Range("HOBGOB_B",75)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",1)
   GlobalTimerExpired("AYSpawnTimerAR38005","%SouthBeregostRoad%")
 THEN
@@ -78,7 +78,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
 THEN
   RESPONSE #100

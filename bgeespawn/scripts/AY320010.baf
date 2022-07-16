@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR320010","%HighHedge%",0)
   Global("AYSpawnRandomSetAR320010_0","%HighHedge%",1)
@@ -32,7 +32,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR320010","%HighHedge%",0)
@@ -48,7 +48,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR320010","%HighHedge%",0)
   Global("AYSpawnRandomSetAR320010_0","%HighHedge%",1)
@@ -65,9 +65,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("SKELETS",60)
+  !Range("SKELETS",75)
   Global("AYSpawnResetAR320010","%HighHedge%",1)
   GlobalTimerExpired("AYSpawnTimerAR320010","%HighHedge%")
 THEN
@@ -78,7 +78,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR320010","%HighHedge%",0)
 THEN
   RESPONSE #100

@@ -1,0 +1,204 @@
+IF
+  Global("AYSpawnRandomBeenSetAR53004","%FireLeafForest%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR53004","%FireLeafForest%",1)
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR53004_1","%FireLeafForest%",0)
+  Global("AYSpawnRandomBeenSetAR53004","%FireLeafForest%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR53004_1","%FireLeafForest%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR53004","%FireLeafForest%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR53004_0","%FireLeafForest%",0)
+  Global("AYSpawnRandomBeenSetAR53004","%FireLeafForest%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR53004_0","%FireLeafForest%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR53004","%FireLeafForest%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_1","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    CreateCreature("WOLFWI",[4281.1831],0)  // ~Winter Wolf~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+	CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+	CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+	CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+  Global("AYSpawnRandomSetAR53004_0","%FireLeafForest%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+	CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+	CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("XVART",75)
+
+  !Range("WOLFWI",75)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",1)
+  GlobalTimerExpired("AYSpawnTimerAR53004","%FireLeafForest%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR53004","%FireLeafForest%",0)
+    SetGlobal("AYSpawnRandomSetAR53004_1","%FireLeafForest%",0)
+    SetGlobal("AYSpawnRandomSetAR53004_0","%FireLeafForest%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR53004","%FireLeafForest%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR53004","%FireLeafForest%",1)
+    CreateCreature("XVART",[4281.1831],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR53004","%FireLeafForest%",AY_SPAWN_TIMER)
+END
+

@@ -1,0 +1,195 @@
+IF
+  Global("AYSpawnRandomBeenSetAR52007","%DryadFalls%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR52007","%DryadFalls%",1)
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR52007_1","%DryadFalls%",0)
+  Global("AYSpawnRandomBeenSetAR52007","%DryadFalls%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR52007_1","%DryadFalls%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR52007","%DryadFalls%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR52007_0","%DryadFalls%",0)
+  Global("AYSpawnRandomBeenSetAR52007","%DryadFalls%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR52007_0","%DryadFalls%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR52007","%DryadFalls%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("BEARCA",[3264.1216],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("BEARCA",[3264.1216],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("BEARCA",[3264.1216],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[3264.1216],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("BEARCA",[3264.1216],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[3264.1216],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_1","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("BEARCA",[3264.1216],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[3264.1216],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[3264.1216],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+	CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+  Global("AYSpawnRandomSetAR52007_0","%DryadFalls%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GNOLL",75)
+
+  !Range("BEARCA",75)
+  Global("AYSpawnResetAR52007","%DryadFalls%",1)
+  GlobalTimerExpired("AYSpawnTimerAR52007","%DryadFalls%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR52007","%DryadFalls%",0)
+    SetGlobal("AYSpawnRandomSetAR52007_1","%DryadFalls%",0)
+    SetGlobal("AYSpawnRandomSetAR52007_0","%DryadFalls%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR52007","%DryadFalls%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR52007","%DryadFalls%",1)
+    CreateCreature("GNOLL",[3264.1216],0)  // ~Gnoll~
+    SetGlobalTimer("AYSpawnTimerAR52007","%DryadFalls%",AY_SPAWN_TIMER)
+END
+

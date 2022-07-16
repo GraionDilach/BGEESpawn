@@ -1,0 +1,283 @@
+IF
+  Global("AYSpawnRandomBeenSetAR27001","%LionsWay%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR27001","%LionsWay%",1)
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR27001_2","%LionsWay%",0)
+  Global("AYSpawnRandomBeenSetAR27001","%LionsWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR27001_2","%LionsWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR27001","%LionsWay%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR27001_1","%LionsWay%",0)
+  Global("AYSpawnRandomBeenSetAR27001","%LionsWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR27001_1","%LionsWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR27001","%LionsWay%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR27001_0","%LionsWay%",0)
+  Global("AYSpawnRandomBeenSetAR27001","%LionsWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR27001_0","%LionsWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR27001","%LionsWay%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_2","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_2","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_2","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+	CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_2","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+	CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_2","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+	CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[4249.321],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_1","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_1","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_1","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_1","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_1","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    CreateCreature("WOLF",[4249.321],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+  Global("AYSpawnRandomSetAR27001_0","%LionsWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GIBBER2",75)
+
+  !Range("WOLF",75)
+
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR27001","%LionsWay%",1)
+  GlobalTimerExpired("AYSpawnTimerAR27001","%LionsWay%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR27001","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomSetAR27001_2","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomSetAR27001_1","%LionsWay%",0)
+    SetGlobal("AYSpawnRandomSetAR27001_0","%LionsWay%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR27001","%LionsWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR27001","%LionsWay%",1)
+    CreateCreature("GIBBER2",[4249.321],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR27001","%LionsWay%",AY_SPAWN_TIMER)
+END
+

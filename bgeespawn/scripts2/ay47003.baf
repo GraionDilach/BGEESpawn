@@ -1,0 +1,360 @@
+IF
+  Global("AYSpawnRandomBeenSetAR47003","%XvartVillage%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR47003","%XvartVillage%",1)
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(4,1)
+  Global("AYSpawnRandomSetAR47003_3","%XvartVillage%",0)
+  Global("AYSpawnRandomBeenSetAR47003","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR47003_3","%XvartVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR47003","%XvartVillage%",1)
+END
+
+IF
+  RandomNum(4,2)
+  Global("AYSpawnRandomSetAR47003_2","%XvartVillage%",0)
+  Global("AYSpawnRandomBeenSetAR47003","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR47003_2","%XvartVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR47003","%XvartVillage%",1)
+END
+
+IF
+  RandomNum(4,3)
+  Global("AYSpawnRandomSetAR47003_1","%XvartVillage%",0)
+  Global("AYSpawnRandomBeenSetAR47003","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR47003_1","%XvartVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR47003","%XvartVillage%",1)
+END
+
+IF
+  RandomNum(4,4)
+  Global("AYSpawnRandomSetAR47003_0","%XvartVillage%",0)
+  Global("AYSpawnRandomBeenSetAR47003","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR47003_0","%XvartVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR47003","%XvartVillage%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_3","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_3","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_3","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_3","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_3","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[437.763],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+	CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+	CreateCreature("WOLF",[437.763],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+	CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+	CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+	CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47003_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+	CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+	CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("XVART",75)
+
+  !Range("WOLF",75)
+
+  !Range("WOLFDI",75)
+  Global("AYSpawnResetAR47003","%XvartVillage%",1)
+  GlobalTimerExpired("AYSpawnTimerAR47003","%XvartVillage%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR47003","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR47003_3","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR47003_2","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR47003_1","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR47003_0","%XvartVillage%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR47003","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47003","%XvartVillage%",1)
+    CreateCreature("XVART",[437.763],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR47003","%XvartVillage%",AY_SPAWN_TIMER)
+END
+

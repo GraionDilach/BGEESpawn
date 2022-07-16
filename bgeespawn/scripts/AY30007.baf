@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR30007","%SpiderWood%",0)
   Global("AYSpawnRandomSetAR30007_0","%SpiderWood%",1)
@@ -33,7 +33,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR30007","%SpiderWood%",0)
   Global("AYSpawnRandomSetAR30007_0","%SpiderWood%",1)
@@ -50,9 +50,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("TASLOI",60)
+  !Range("TASLOI",75)
   Global("AYSpawnResetAR30007","%SpiderWood%",1)
   GlobalTimerExpired("AYSpawnTimerAR30007","%SpiderWood%")
 THEN
@@ -63,7 +63,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR30007","%SpiderWood%",0)
 THEN
   RESPONSE #100

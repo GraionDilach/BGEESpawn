@@ -1,0 +1,204 @@
+IF
+  Global("AYSpawnRandomBeenSetAR44004","%LonelyPeaks%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR44004","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR44004_1","%LonelyPeaks%",0)
+  Global("AYSpawnRandomBeenSetAR44004","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44004_1","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44004","%LonelyPeaks%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR44004_0","%LonelyPeaks%",0)
+  Global("AYSpawnRandomBeenSetAR44004","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR44004_0","%LonelyPeaks%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR44004","%LonelyPeaks%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_1","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+	CreateCreature("WOLF",[2530.2112],0)  // ~Wolf~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+	CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+	CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+	CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+  Global("AYSpawnRandomSetAR44004_0","%LonelyPeaks%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+	CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+	CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("XVART_B",75)
+
+  !Range("WOLF",75)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",1)
+  GlobalTimerExpired("AYSpawnTimerAR44004","%LonelyPeaks%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR44004","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomSetAR44004_1","%LonelyPeaks%",0)
+    SetGlobal("AYSpawnRandomSetAR44004_0","%LonelyPeaks%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR44004","%LonelyPeaks%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR44004","%LonelyPeaks%",1)
+    CreateCreature("XVART_B",[2530.2112],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR44004","%LonelyPeaks%",AY_SPAWN_TIMER)
+END
+

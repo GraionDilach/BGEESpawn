@@ -49,7 +49,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR34000","%Temple%",0)
   Global("AYSpawnRandomSetAR34000_3","%Temple%",1)
@@ -62,7 +62,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR34000","%Temple%",0)
@@ -78,7 +78,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR34000","%Temple%",0)
   Global("AYSpawnRandomSetAR34000_3","%Temple%",1)
@@ -95,7 +95,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR34000","%Temple%",0)
   Global("AYSpawnRandomSetAR34000_2","%Temple%",1)
@@ -107,7 +107,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR34000","%Temple%",0)
@@ -122,7 +122,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR34000","%Temple%",0)
@@ -139,7 +139,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR34000","%Temple%",0)
   Global("AYSpawnRandomSetAR34000_2","%Temple%",1)
@@ -156,7 +156,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR34000","%Temple%",0)
   Global("AYSpawnRandomSetAR34000_1","%Temple%",1)
@@ -168,7 +168,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR34000","%Temple%",0)
@@ -183,7 +183,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR34000","%Temple%",0)
@@ -199,7 +199,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR34000","%Temple%",0)
   Global("AYSpawnRandomSetAR34000_1","%Temple%",1)
@@ -216,7 +216,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR34000","%Temple%",0)
   Global("AYSpawnRandomSetAR34000_0","%Temple%",1)
@@ -230,7 +230,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR34000","%Temple%",0)
   Global("AYSpawnRandomSetAR34000_0","%Temple%",1)
@@ -247,15 +247,15 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("DOGWI",60)
+  !Range("DOGWI",75)
 
-  !Range("DOGWA",60)
+  !Range("DOGWA",75)
 
-  !Range("WOLF",60)
+  !Range("WOLF",75)
 
-  !Range("HOBGOA_B",60)
+  !Range("HOBGOA_B",75)
   Global("AYSpawnResetAR34000","%Temple%",1)
   GlobalTimerExpired("AYSpawnTimerAR34000","%Temple%")
 THEN
@@ -269,7 +269,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR34000","%Temple%",0)
 THEN
   RESPONSE #100

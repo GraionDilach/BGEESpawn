@@ -1,0 +1,287 @@
+IF
+  Global("AYSpawnRandomBeenSetAR36005","%Lighthouse%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR36005","%Lighthouse%",1)
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR36005_2","%Lighthouse%",0)
+  Global("AYSpawnRandomBeenSetAR36005","%Lighthouse%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR36005_2","%Lighthouse%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR36005","%Lighthouse%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR36005_1","%Lighthouse%",0)
+  Global("AYSpawnRandomBeenSetAR36005","%Lighthouse%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR36005_1","%Lighthouse%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR36005","%Lighthouse%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR36005_0","%Lighthouse%",0)
+  Global("AYSpawnRandomBeenSetAR36005","%Lighthouse%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR36005_0","%Lighthouse%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR36005","%Lighthouse%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_2","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_2","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_2","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_2","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_2","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[2826.2791],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_1","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_1","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_1","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_1","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_1","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    CreateCreature("WORG",[2826.2791],0)  // ~Worg~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_0","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_0","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_0","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_0","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+  Global("AYSpawnRandomSetAR36005_0","%Lighthouse%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("TASLOI",75)
+
+  !Range("WORG",75)
+
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR36005","%Lighthouse%",1)
+  GlobalTimerExpired("AYSpawnTimerAR36005","%Lighthouse%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR36005","%Lighthouse%",0)
+    SetGlobal("AYSpawnRandomSetAR36005_2","%Lighthouse%",0)
+    SetGlobal("AYSpawnRandomSetAR36005_1","%Lighthouse%",0)
+    SetGlobal("AYSpawnRandomSetAR36005_0","%Lighthouse%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR36005","%Lighthouse%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR36005","%Lighthouse%",1)
+    CreateCreature("TASLOI",[2826.2791],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR36005","%Lighthouse%",AY_SPAWN_TIMER)
+END
+

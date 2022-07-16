@@ -59,7 +59,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -72,7 +72,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -85,7 +85,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -99,7 +99,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -114,7 +114,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -129,7 +129,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -145,7 +145,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -161,7 +161,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -178,7 +178,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
   Global("AYSpawnRandomSetAR44005_4","%LonelyPeaks%",1)
@@ -195,7 +195,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -208,7 +208,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -221,7 +221,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -235,7 +235,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -250,7 +250,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -265,7 +265,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -281,7 +281,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -297,7 +297,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -314,7 +314,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
   Global("AYSpawnRandomSetAR44005_3","%LonelyPeaks%",1)
@@ -331,7 +331,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
   Global("AYSpawnRandomSetAR44005_2","%LonelyPeaks%",1)
@@ -343,7 +343,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -357,7 +357,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -372,7 +372,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -388,7 +388,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
@@ -405,7 +405,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
   Global("AYSpawnRandomSetAR44005_2","%LonelyPeaks%",1)
@@ -422,7 +422,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
   Global("AYSpawnRandomSetAR44005_1","%LonelyPeaks%",1)
@@ -437,7 +437,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
   Global("AYSpawnRandomSetAR44005_1","%LonelyPeaks%",1)
@@ -454,7 +454,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
   Global("AYSpawnRandomSetAR44005_0","%LonelyPeaks%",1)
@@ -468,7 +468,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
   Global("AYSpawnRandomSetAR44005_0","%LonelyPeaks%",1)
@@ -485,17 +485,17 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("XVART",60)
+  !Range("XVART",75)
 
-  !Range("KOBOLD_D",60)
+  !Range("KOBOLD_D",75)
 
-  !Range("OGREGR",60)
+  !Range("OGREGR",75)
 
-  !Range("OGRE",60)
+  !Range("OGRE",75)
 
-  !Range("OGREBERZ",60)
+  !Range("OGREBERZ",75)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",1)
   GlobalTimerExpired("AYSpawnTimerAR44005","%LonelyPeaks%")
 THEN
@@ -510,7 +510,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR44005","%LonelyPeaks%",0)
 THEN
   RESPONSE #100

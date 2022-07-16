@@ -49,7 +49,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35000_3","%MutaminsGarden%",1)
@@ -61,7 +61,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
@@ -76,7 +76,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
@@ -92,7 +92,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35000_3","%MutaminsGarden%",1)
@@ -109,7 +109,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35000_2","%MutaminsGarden%",1)
@@ -121,7 +121,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
@@ -136,7 +136,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
@@ -152,7 +152,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35000_2","%MutaminsGarden%",1)
@@ -169,7 +169,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35000_1","%MutaminsGarden%",1)
@@ -181,7 +181,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
@@ -196,7 +196,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
@@ -212,7 +212,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35000_1","%MutaminsGarden%",1)
@@ -229,7 +229,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35000_0","%MutaminsGarden%",1)
@@ -243,7 +243,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35000_0","%MutaminsGarden%",1)
@@ -260,15 +260,15 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("TASLOI",60)
+  !Range("TASLOI",75)
 
-  !Range("GNOLL_B",60)
+  !Range("GNOLL_B",75)
 
-  !Range("GNOLL_A",60)
+  !Range("GNOLL_A",75)
 
-  !Range("GNOLL_D",60)
+  !Range("GNOLL_D",75)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",1)
   GlobalTimerExpired("AYSpawnTimerAR35000","%MutaminsGarden%")
 THEN
@@ -282,7 +282,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR35000","%MutaminsGarden%",0)
 THEN
   RESPONSE #100

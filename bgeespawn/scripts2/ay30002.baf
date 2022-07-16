@@ -1,0 +1,208 @@
+IF
+  Global("AYSpawnRandomBeenSetAR30002","%SpiderWood%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR30002","%SpiderWood%",1)
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR30002_1","%SpiderWood%",0)
+  Global("AYSpawnRandomBeenSetAR30002","%SpiderWood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR30002_1","%SpiderWood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR30002","%SpiderWood%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR30002_0","%SpiderWood%",0)
+  Global("AYSpawnRandomBeenSetAR30002","%SpiderWood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR30002_0","%SpiderWood%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR30002","%SpiderWood%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+	CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+	CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+	CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+    CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+	CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+	CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_1","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+    CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+	CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+	CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+	CreateCreature("ETTERC",[4032.704],0)  // ~Ettercap~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+  Global("AYSpawnRandomSetAR30002_0","%SpiderWood%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+	CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("TASLOI",75)
+
+  !Range("ETTERC",75)
+  Global("AYSpawnResetAR30002","%SpiderWood%",1)
+  GlobalTimerExpired("AYSpawnTimerAR30002","%SpiderWood%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR30002","%SpiderWood%",0)
+    SetGlobal("AYSpawnRandomSetAR30002_1","%SpiderWood%",0)
+    SetGlobal("AYSpawnRandomSetAR30002_0","%SpiderWood%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR30002","%SpiderWood%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR30002","%SpiderWood%",1)
+    CreateCreature("TASLOI",[4032.704],0)  // ~Tasloi~
+    SetGlobalTimer("AYSpawnTimerAR30002","%SpiderWood%",AY_SPAWN_TIMER)
+END
+

@@ -1,0 +1,109 @@
+IF
+  Global("AYSpawnRandomBeenSetAR02243","%WSewers%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR02243","%WSewers%",1)
+    SetGlobal("AYSpawnResetAR02243","%WSewers%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR02243_0","%WSewers%",0)
+  Global("AYSpawnRandomBeenSetAR02243","%WSewers%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR02243_0","%WSewers%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR02243","%WSewers%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR02243","%WSewers%",0)
+  Global("AYSpawnRandomSetAR02243_0","%WSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02243","%WSewers%",1)
+    CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR02243","%WSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR02243","%WSewers%",0)
+  Global("AYSpawnRandomSetAR02243_0","%WSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02243","%WSewers%",1)
+    CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR02243","%WSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR02243","%WSewers%",0)
+  Global("AYSpawnRandomSetAR02243_0","%WSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02243","%WSewers%",1)
+    CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR02243","%WSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR02243","%WSewers%",0)
+  Global("AYSpawnRandomSetAR02243_0","%WSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02243","%WSewers%",1)
+    CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR02243","%WSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR02243","%WSewers%",0)
+  Global("AYSpawnRandomSetAR02243_0","%WSewers%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02243","%WSewers%",1)
+    CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR02243","%WSewers%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SPIDPH",75)
+  Global("AYSpawnResetAR02243","%WSewers%",1)
+  GlobalTimerExpired("AYSpawnTimerAR02243","%WSewers%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02243","%WSewers%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR02243","%WSewers%",0)
+    SetGlobal("AYSpawnRandomSetAR02243_0","%WSewers%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR02243","%WSewers%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR02243","%WSewers%",1)
+    CreateCreature("SPIDPH",[1286.1669],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR02243","%WSewers%",AY_SPAWN_TIMER)
+END
+

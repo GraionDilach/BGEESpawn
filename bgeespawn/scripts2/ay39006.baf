@@ -1,0 +1,208 @@
+IF
+  Global("AYSpawnRandomBeenSetAR39006","%Ulcaster%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR39006","%Ulcaster%",1)
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR39006_1","%Ulcaster%",0)
+  Global("AYSpawnRandomBeenSetAR39006","%Ulcaster%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR39006_1","%Ulcaster%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR39006","%Ulcaster%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR39006_0","%Ulcaster%",0)
+  Global("AYSpawnRandomBeenSetAR39006","%Ulcaster%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR39006_0","%Ulcaster%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR39006","%Ulcaster%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_1","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_1","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_1","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_1","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_1","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLD_E",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_0","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_0","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_0","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_0","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+  Global("AYSpawnRandomSetAR39006_0","%Ulcaster%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+	CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("KOBOLA_D",75)
+
+  !Range("KOBOLD_E",75)
+  Global("AYSpawnResetAR39006","%Ulcaster%",1)
+  GlobalTimerExpired("AYSpawnTimerAR39006","%Ulcaster%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR39006","%Ulcaster%",0)
+    SetGlobal("AYSpawnRandomSetAR39006_1","%Ulcaster%",0)
+    SetGlobal("AYSpawnRandomSetAR39006_0","%Ulcaster%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR39006","%Ulcaster%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR39006","%Ulcaster%",1)
+    CreateCreature("KOBOLA_D",[4216.1116],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR39006","%Ulcaster%",AY_SPAWN_TIMER)
+END
+

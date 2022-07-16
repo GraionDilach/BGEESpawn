@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR39003","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39003_1","%Ulcaster%",1)
@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR39003","%Ulcaster%",0)
@@ -58,7 +58,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR39003","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39003_1","%Ulcaster%",1)
@@ -75,7 +75,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR39003","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39003_0","%Ulcaster%",1)
@@ -88,7 +88,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR39003","%Ulcaster%",0)
@@ -104,7 +104,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR39003","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39003_0","%Ulcaster%",1)
@@ -121,11 +121,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("ZOMBIE_D",60)
+  !Range("ZOMBIE_D",75)
 
-  !Range("SKELET_A",60)
+  !Range("SKELET_A",75)
   Global("AYSpawnResetAR39003","%Ulcaster%",1)
   GlobalTimerExpired("AYSpawnTimerAR39003","%Ulcaster%")
 THEN
@@ -137,7 +137,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR39003","%Ulcaster%",0)
 THEN
   RESPONSE #100

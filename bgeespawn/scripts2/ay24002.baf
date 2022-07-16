@@ -1,0 +1,303 @@
+IF
+  Global("AYSpawnRandomBeenSetAR24002","%Peldvale%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR24002","%Peldvale%",1)
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR24002_2","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR24002","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24002_2","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24002","%Peldvale%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR24002_1","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR24002","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24002_1","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24002","%Peldvale%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR24002_0","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR24002","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24002_0","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24002","%Peldvale%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[4096.1485],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+	CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+	CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+	CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+	CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+	CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+	CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+	CreateCreature("DOGWA",[4096.1485],0)  // ~War Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24002_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("DOGWI",75)
+
+  !Range("DOGWA",75)
+
+  !Range("SPIDHU",75)
+  Global("AYSpawnResetAR24002","%Peldvale%",1)
+  GlobalTimerExpired("AYSpawnTimerAR24002","%Peldvale%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR24002","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR24002_2","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR24002_1","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR24002_0","%Peldvale%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR24002","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24002","%Peldvale%",1)
+    CreateCreature("DOGWI",[4096.1485],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR24002","%Peldvale%",AY_SPAWN_TIMER)
+END
+

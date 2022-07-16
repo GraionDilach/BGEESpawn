@@ -1,0 +1,188 @@
+IF
+  Global("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+    CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+    CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+	CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+    CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+	CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+	CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+    CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+	CreateCreature("SPIDPH",[2894.1102],0)  // ~Phase Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SPIDPH",75)
+
+  !Range("SPIDWR",75)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+  GlobalTimerExpired("AYSpawnTimerAR05111","%DurlagsTower_D1%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05111","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05111_1","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05111_0","%DurlagsTower_D1%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR05111","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05111","%DurlagsTower_D1%",1)
+    CreateCreature("SPIDWR",[2894.1102],0)  // ~Wraith Spider~
+    SetGlobalTimer("AYSpawnTimerAR05111","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+

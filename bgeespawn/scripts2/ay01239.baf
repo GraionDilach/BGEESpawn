@@ -1,0 +1,113 @@
+IF
+  Global("AYSpawnRandomBeenSetAR01239","%Undercity%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR01239","%Undercity%",1)
+    SetGlobal("AYSpawnResetAR01239","%Undercity%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR01239_0","%Undercity%",0)
+  Global("AYSpawnRandomBeenSetAR01239","%Undercity%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR01239_0","%Undercity%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR01239","%Undercity%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR01239","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01239_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01239","%Undercity%",1)
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR01239","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR01239","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01239_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01239","%Undercity%",1)
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR01239","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR01239","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01239_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01239","%Undercity%",1)
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR01239","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR01239","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01239_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01239","%Undercity%",1)
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR01239","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR01239","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01239_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01239","%Undercity%",1)
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR01239","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GHAST",75)
+  Global("AYSpawnResetAR01239","%Undercity%",1)
+  GlobalTimerExpired("AYSpawnTimerAR01239","%Undercity%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01239","%Undercity%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR01239","%Undercity%",0)
+    SetGlobal("AYSpawnRandomSetAR01239_0","%Undercity%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR01239","%Undercity%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01239","%Undercity%",1)
+    CreateCreature("GHAST",[613.1170],0)  // ~Ghast~
+    SetGlobalTimer("AYSpawnTimerAR01239","%Undercity%",AY_SPAWN_TIMER)
+END
+

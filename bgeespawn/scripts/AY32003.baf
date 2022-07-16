@@ -69,7 +69,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_5","%HighHedge%",1)
@@ -81,7 +81,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -96,7 +96,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -112,7 +112,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_5","%HighHedge%",1)
@@ -129,7 +129,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_4","%HighHedge%",1)
@@ -141,7 +141,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -156,7 +156,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -172,7 +172,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_4","%HighHedge%",1)
@@ -189,7 +189,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_3","%HighHedge%",1)
@@ -201,7 +201,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -216,7 +216,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -232,7 +232,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_3","%HighHedge%",1)
@@ -249,7 +249,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_2","%HighHedge%",1)
@@ -261,7 +261,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -275,7 +275,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -290,7 +290,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -306,7 +306,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -323,7 +323,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_2","%HighHedge%",1)
@@ -340,7 +340,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_1","%HighHedge%",1)
@@ -353,7 +353,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -369,7 +369,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_1","%HighHedge%",1)
@@ -386,7 +386,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_0","%HighHedge%",1)
@@ -398,7 +398,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -413,7 +413,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
@@ -429,7 +429,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
   Global("AYSpawnRandomSetAR32003_0","%HighHedge%",1)
@@ -446,19 +446,19 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("GNOLL",60)
+  !Range("GNOLL",75)
 
-  !Range("SKELETS",60)
+  !Range("SKELETS",75)
 
-  !Range("BEARBL",60)
+  !Range("BEARBL",75)
 
-  !Range("GNOLL_A",60)
+  !Range("GNOLL_A",75)
 
-  !Range("GNOLL_D",60)
+  !Range("GNOLL_D",75)
 
-  !Range("GNOLL_E",60)
+  !Range("GNOLL_E",75)
   Global("AYSpawnResetAR32003","%HighHedge%",1)
   GlobalTimerExpired("AYSpawnTimerAR32003","%HighHedge%")
 THEN
@@ -474,7 +474,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR32003","%HighHedge%",0)
 THEN
   RESPONSE #100

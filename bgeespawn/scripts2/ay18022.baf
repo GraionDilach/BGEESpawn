@@ -1,0 +1,208 @@
+IF
+  Global("AYSpawnRandomBeenSetAR18022","%CloakwoodMines_L3%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR18022","%CloakwoodMines_L3%",1)
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR18022_1","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomBeenSetAR18022","%CloakwoodMines_L3%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR18022_1","%CloakwoodMines_L3%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR18022","%CloakwoodMines_L3%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR18022_0","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomBeenSetAR18022","%CloakwoodMines_L3%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR18022_0","%CloakwoodMines_L3%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR18022","%CloakwoodMines_L3%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_1","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_1","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_1","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_1","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_1","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_D",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_0","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_0","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_0","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_0","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+  Global("AYSpawnRandomSetAR18022_0","%CloakwoodMines_L3%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("HOBGOA_C",75)
+
+  !Range("HOBGOA_D",75)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+  GlobalTimerExpired("AYSpawnTimerAR18022","%CloakwoodMines_L3%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR18022","%CloakwoodMines_L3%",0)
+    SetGlobal("AYSpawnRandomSetAR18022_1","%CloakwoodMines_L3%",0)
+    SetGlobal("AYSpawnRandomSetAR18022_0","%CloakwoodMines_L3%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR18022","%CloakwoodMines_L3%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR18022","%CloakwoodMines_L3%",1)
+    CreateCreature("HOBGOA_C",[195.1664],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR18022","%CloakwoodMines_L3%",AY_SPAWN_TIMER)
+END
+

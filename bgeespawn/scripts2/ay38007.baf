@@ -1,0 +1,299 @@
+IF
+  Global("AYSpawnRandomBeenSetAR38007","%SouthBeregostRoad%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR38007","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR38007_2","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomBeenSetAR38007","%SouthBeregostRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR38007_2","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38007","%SouthBeregostRoad%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR38007_1","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomBeenSetAR38007","%SouthBeregostRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR38007_1","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38007","%SouthBeregostRoad%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR38007_0","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomBeenSetAR38007","%SouthBeregostRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR38007_0","%SouthBeregostRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR38007","%SouthBeregostRoad%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_2","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_2","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_2","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_2","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_2","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[3266.3611],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_1","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+	CreateCreature("HOBGOB_E",[3266.3611],0)  // ~Hobgoblin~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+  Global("AYSpawnRandomSetAR38007_0","%SouthBeregostRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GIBBER",75)
+
+  !Range("HOBGOB_E",75)
+
+  !Range("HOBELITE",75)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+  GlobalTimerExpired("AYSpawnTimerAR38007","%SouthBeregostRoad%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR38007","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR38007_2","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR38007_1","%SouthBeregostRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR38007_0","%SouthBeregostRoad%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR38007","%SouthBeregostRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR38007","%SouthBeregostRoad%",1)
+    CreateCreature("GIBBER",[3266.3611],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR38007","%SouthBeregostRoad%",AY_SPAWN_TIMER)
+END
+

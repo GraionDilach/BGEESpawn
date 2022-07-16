@@ -19,7 +19,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR55002","%GibberlingMountains%",0)
   Global("AYSpawnRandomSetAR55002_0","%GibberlingMountains%",1)
@@ -33,7 +33,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR55002","%GibberlingMountains%",0)
   Global("AYSpawnRandomSetAR55002_0","%GibberlingMountains%",1)
@@ -50,9 +50,9 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("GIBBER",60)
+  !Range("GIBBER",75)
   Global("AYSpawnResetAR55002","%GibberlingMountains%",1)
   GlobalTimerExpired("AYSpawnTimerAR55002","%GibberlingMountains%")
 THEN
@@ -63,7 +63,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR55002","%GibberlingMountains%",0)
 THEN
   RESPONSE #100

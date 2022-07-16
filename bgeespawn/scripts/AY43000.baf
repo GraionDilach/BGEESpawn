@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR43000","%NorthNashkelRoad%",0)
   Global("AYSpawnRandomSetAR43000_1","%NorthNashkelRoad%",1)
@@ -42,7 +42,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR43000","%NorthNashkelRoad%",0)
@@ -58,7 +58,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR43000","%NorthNashkelRoad%",0)
   Global("AYSpawnRandomSetAR43000_1","%NorthNashkelRoad%",1)
@@ -75,7 +75,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR43000","%NorthNashkelRoad%",0)
   Global("AYSpawnRandomSetAR43000_0","%NorthNashkelRoad%",1)
@@ -90,7 +90,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR43000","%NorthNashkelRoad%",0)
   Global("AYSpawnRandomSetAR43000_0","%NorthNashkelRoad%",1)
@@ -107,11 +107,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("KOBOLD_D",60)
+  !Range("KOBOLD_D",75)
 
-  !Range("HOBGOB_C",60)
+  !Range("HOBGOB_C",75)
   Global("AYSpawnResetAR43000","%NorthNashkelRoad%",1)
   GlobalTimerExpired("AYSpawnTimerAR43000","%NorthNashkelRoad%")
 THEN
@@ -123,7 +123,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR43000","%NorthNashkelRoad%",0)
 THEN
   RESPONSE #100

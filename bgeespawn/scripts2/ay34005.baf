@@ -1,0 +1,285 @@
+IF
+  Global("AYSpawnRandomBeenSetAR34005","%Temple%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR34005","%Temple%",1)
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR34005_2","%Temple%",0)
+  Global("AYSpawnRandomBeenSetAR34005","%Temple%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR34005_2","%Temple%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR34005","%Temple%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR34005_1","%Temple%",0)
+  Global("AYSpawnRandomBeenSetAR34005","%Temple%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR34005_1","%Temple%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR34005","%Temple%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR34005_0","%Temple%",0)
+  Global("AYSpawnRandomBeenSetAR34005","%Temple%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR34005_0","%Temple%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR34005","%Temple%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_2","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_2","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_2","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_2","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_2","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+	CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBR",[620.2817],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBR",[620.2817],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBR",[620.2817],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[620.2817],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBR",[620.2817],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[620.2817],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_1","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBR",[620.2817],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[620.2817],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[620.2817],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+  Global("AYSpawnRandomSetAR34005_0","%Temple%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[620.2817],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BEARBL",75)
+
+  !Range("BEARBR",75)
+
+  !Range("DOGWI",75)
+  Global("AYSpawnResetAR34005","%Temple%",1)
+  GlobalTimerExpired("AYSpawnTimerAR34005","%Temple%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR34005","%Temple%",0)
+    SetGlobal("AYSpawnRandomSetAR34005_2","%Temple%",0)
+    SetGlobal("AYSpawnRandomSetAR34005_1","%Temple%",0)
+    SetGlobal("AYSpawnRandomSetAR34005_0","%Temple%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR34005","%Temple%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR34005","%Temple%",1)
+    CreateCreature("DOGWI",[620.2817],0)  // ~Wild Dog~
+    SetGlobalTimer("AYSpawnTimerAR34005","%Temple%",AY_SPAWN_TIMER)
+END
+

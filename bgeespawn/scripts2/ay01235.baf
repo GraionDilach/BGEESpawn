@@ -1,0 +1,296 @@
+IF
+  Global("AYSpawnRandomBeenSetAR01235","%Undercity%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR01235","%Undercity%",1)
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR01235_2","%Undercity%",0)
+  Global("AYSpawnRandomBeenSetAR01235","%Undercity%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR01235_2","%Undercity%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR01235","%Undercity%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR01235_1","%Undercity%",0)
+  Global("AYSpawnRandomBeenSetAR01235","%Undercity%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR01235_1","%Undercity%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR01235","%Undercity%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR01235_0","%Undercity%",0)
+  Global("AYSpawnRandomBeenSetAR01235","%Undercity%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR01235_0","%Undercity%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR01235","%Undercity%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_2","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_2","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_2","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_2","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+	CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_2","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+	CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+	CreateCreature("ZOMBIE_C",[862.1937],0)  // ~Zombie~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_1","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_1","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_1","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_1","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_1","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    CreateCreature("GHOUL",[862.1937],0)  // ~Ghoul~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+  Global("AYSpawnRandomSetAR01235_0","%Undercity%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SKELET_C",75)
+
+  !Range("GHOUL",75)
+
+  !Range("ZOMBIE_C",75)
+  Global("AYSpawnResetAR01235","%Undercity%",1)
+  GlobalTimerExpired("AYSpawnTimerAR01235","%Undercity%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR01235","%Undercity%",0)
+    SetGlobal("AYSpawnRandomSetAR01235_2","%Undercity%",0)
+    SetGlobal("AYSpawnRandomSetAR01235_1","%Undercity%",0)
+    SetGlobal("AYSpawnRandomSetAR01235_0","%Undercity%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR01235","%Undercity%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR01235","%Undercity%",1)
+    CreateCreature("SKELET_C",[862.1937],0)  // ~Skeleton~
+    SetGlobalTimer("AYSpawnTimerAR01235","%Undercity%",AY_SPAWN_TIMER)
+END
+

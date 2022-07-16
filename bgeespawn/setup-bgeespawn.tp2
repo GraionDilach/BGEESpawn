@@ -6,7 +6,7 @@ BACKUP ~bgeespawn/backup~
 
 AUTHOR ~AstroBryGuy~
 
-VERSION ~v0.3~
+VERSION ~v0.6~
 
 README ~bgeespawn/readme.txt~
 
@@ -153,8 +153,7 @@ END
 [9] 14 days of game time between spawnings
 [0] 1000 days of game time between spawnings
 
-Note: Game default spawn point reset timing is approximately 16 hours.
-~
+Note: Game default spawn point reset timing is approximately 16 hours.~
     ACTION_READLN ~spawntimer~
   END
 
@@ -213,8 +212,7 @@ Note: Game default spawn point reset timing is approximately 16 hours.
 [9] 95% chance of spawning
 [0] 100% chance of spawning
 
-Note: Game defaults are 85-100%, depending on area.
-~
+Note: Game defaults are 85-100%, depending on area.~
     ACTION_READLN ~spawnchance~
   END
 
@@ -268,6 +266,34 @@ Note: Game defaults are 85-100%, depending on area.
         OUTER_SPRINT ~NoSpawn~ ~0~
         PRINT ~100% chance of spawning~
         END
+		
+//added for difficulty based option
+  OUTER_SPRINT ~spawntype~ ~placeholder_value~
+  OUTER_WHILE (!(IS_AN_INT ~spawntype~) OR (~spawntype~ > 0x9) OR (~spawntype~ < 0x0)) BEGIN
+    PRINT ~Please choose one of the following options for the type of spawn system:
+[1] Spawns are based on average party level
+[2] Spawns are based on game difficulty level (easytutu style)~
+    ACTION_READLN ~spawntype~
+  END
+
+ACTION_IF ("spawntype" = 1) THEN BEGIN
+	ACTION_BASH_FOR ~bgeespawn/scripts~ ~.*.baf~ BEGIN
+		COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
+		REPLACE_TEXTUALLY EXACT_MATCH ~#GOSPAWN~ ~#%GoSpawn%~
+		REPLACE_TEXTUALLY EXACT_MATCH ~#NOSPAWN~ ~#%NoSpawn%~
+	BUT_ONLY_IF_IT_CHANGES
+	END
+END
+
+ACTION_IF ("spawntype" = 2) THEN BEGIN
+	ACTION_BASH_FOR ~bgeespawn/scripts2~ ~.*.baf~ BEGIN
+		COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
+		REPLACE_TEXTUALLY EXACT_MATCH ~#GOSPAWN~ ~#%GoSpawn%~
+		REPLACE_TEXTUALLY EXACT_MATCH ~#NOSPAWN~ ~#%NoSpawn%~
+	BUT_ONLY_IF_IT_CHANGES
+	END
+END
+///////////////////////////////////////////////
 
 ACTION_BASH_FOR ~bgeespawn/info~ ~.*.nfp~ BEGIN
 COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
@@ -308,7 +334,6 @@ COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
           READ_LONG 0xbc song_off
           READ_LONG 0xc0 rest_off
           READ_LONG 0xc4 automap_off
-
           READ_SHORT 0x5a info_num
           READ_SHORT 0x64 spawn_num
           READ_SHORT 0x74 container_num
@@ -389,11 +414,370 @@ COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
 BUT_ONLY_IF_IT_CHANGES
 END
 
-ACTION_BASH_FOR ~bgeespawn/scripts~ ~.*.baf~ BEGIN
-  COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
-  	REPLACE_TEXTUALLY EXACT_MATCH ~#GOSPAWN~ ~#%GoSpawn%~
-  	REPLACE_TEXTUALLY EXACT_MATCH ~#NOSPAWN~ ~#%NoSpawn%~
-  BUT_ONLY_IF_IT_CHANGES
-END
+COPY_EXISTING ~ankheg.cre~ ~override~
+  WRITE_ASCII 0x280 ~ankheg~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
 
+COPY_EXISTING ~bandit.cre~ ~override~
+  WRITE_ASCII 0x280 ~bandit~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~battho.cre~ ~override~
+  WRITE_ASCII 0x280 ~battho~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bearbl.cre~ ~override~
+  WRITE_ASCII 0x280 ~bearbl~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bearbr.cre~ ~override~
+  WRITE_ASCII 0x280 ~bearbr~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~bearca.cre~ ~override~
+  WRITE_ASCII 0x280 ~bearca~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~carrio.cre~ ~override~
+  WRITE_ASCII 0x280 ~carrio~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~dogwa.cre~ ~override~
+  WRITE_ASCII 0x280 ~dogwa~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~dogwi.cre~ ~override~
+  WRITE_ASCII 0x280 ~dogwi~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~doppgr.cre~ ~override~
+  WRITE_ASCII 0x280 ~doppgr~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~dopple.cre~ ~override~
+  WRITE_ASCII 0x280 ~dopple~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~etterc.cre~ ~override~
+  WRITE_ASCII 0x280 ~etterc~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~fgolem.cre~ ~override~
+  WRITE_ASCII 0x280 ~fgolem~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~flind.cre~ ~override~
+  WRITE_ASCII 0x280 ~flind~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~ghast.cre~ ~override~
+  WRITE_ASCII 0x280 ~ghast~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~ghoul.cre~ ~override~
+  WRITE_ASCII 0x280 ~ghoul~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~ghoullor.cre~ ~override~
+  WRITE_ASCII 0x280 ~ghoullor~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~gibber.cre~ ~override~
+  WRITE_ASCII 0x280 ~gibber~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~gibber2.cre~ ~override~
+  WRITE_ASCII 0x280 ~gibber2~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~gnoll.cre~ ~override~
+  WRITE_ASCII 0x280 ~gnoll~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~gnoll_a.cre~ ~override~
+  WRITE_ASCII 0x280 ~gnoll_a~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~gnoll_b.cre~ ~override~
+  WRITE_ASCII 0x280 ~gnoll_b~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~gnoll_d.cre~ ~override~
+  WRITE_ASCII 0x280 ~gnoll_d~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~gnoll_e.cre~ ~override~
+  WRITE_ASCII 0x280 ~gnoll_e~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobelite.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobelite~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgoa_a.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgoa_a~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgoa_b.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgoa_b~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgoa_c.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgoa_c~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgoa_d.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgoa_d~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgoa_e.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgoa_e~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgob.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgob~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgob_a.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgob_a~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgob_b.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgob_b~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgob_c.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgob_c~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgob_d.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgob_d~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~hobgob_e.cre~ ~override~
+  WRITE_ASCII 0x280 ~hobgob_e~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~ironelit.cre~ ~override~
+  WRITE_ASCII 0x280 ~ironelit~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~irongu.cre~ ~override~
+  WRITE_ASCII 0x280 ~irongu~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~jellgr.cre~ ~override~
+  WRITE_ASCII 0x280 ~jellgr~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~jellmu.cre~ ~override~
+  WRITE_ASCII 0x280 ~jellmu~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~jelloc.cre~ ~override~
+  WRITE_ASCII 0x280 ~jelloc~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~jellygr.cre~ ~override~
+  WRITE_ASCII 0x280 ~jellygr~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~jellymu.cre~ ~override~
+  WRITE_ASCII 0x280 ~jellymu~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobcomm.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobcomm~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobola_a.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobola_a~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobola_b.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobola_b~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobola_c.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobola_c~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobola_d.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobola_d~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobola_e.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobola_e~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobold.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobold~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobold_a.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobold_a~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobold_b.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobold_b~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobold_c.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobold_c~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobold_d.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobold_d~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobold_e.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobold_e~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~kobolda.cre~ ~override~
+  WRITE_ASCII 0x280 ~kobolda~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~ogre.cre~ ~override~
+  WRITE_ASCII 0x280 ~ogre~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~ogreberz.cre~ ~override~
+  WRITE_ASCII 0x280 ~ogreberz~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~ogregr.cre~ ~override~
+  WRITE_ASCII 0x280 ~ogregr~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~ogrema.cre~ ~override~
+  WRITE_ASCII 0x280 ~ogrema~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~skelet_a.cre~ ~override~
+  WRITE_ASCII 0x280 ~skelet_a~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~skelet_b.cre~ ~override~
+  WRITE_ASCII 0x280 ~skelet_b~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~skelet_c.cre~ ~override~
+  WRITE_ASCII 0x280 ~skelet_c~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~skelet03.cre~ ~override~
+  WRITE_ASCII 0x280 ~skelet03~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~skelets.cre~ ~override~
+  WRITE_ASCII 0x280 ~skelets~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~spidgi.cre~ ~override~
+  WRITE_ASCII 0x280 ~spidgi~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~spidhu.cre~ ~override~
+  WRITE_ASCII 0x280 ~spidhu~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~spidph.cre~ ~override~
+  WRITE_ASCII 0x280 ~spidph~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~spidsw.cre~ ~override~
+  WRITE_ASCII 0x280 ~spidsw~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~spidwr.cre~ ~override~
+  WRITE_ASCII 0x280 ~spidwr~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~tasloi.cre~ ~override~
+  WRITE_ASCII 0x280 ~tasloi~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~werewo.cre~ ~override~
+  WRITE_ASCII 0x280 ~werewo~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~wolf.cre~ ~override~
+  WRITE_ASCII 0x280 ~wolf~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~wolfdi.cre~ ~override~
+  WRITE_ASCII 0x280 ~wolfdi~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~wolfdr.cre~ ~override~
+  WRITE_ASCII 0x280 ~wolfdr~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~wolfva.cre~ ~override~
+  WRITE_ASCII 0x280 ~wolfva~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~wolfwe.cre~ ~override~
+  WRITE_ASCII 0x280 ~wolfwe~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~wolfwegl.cre~ ~override~
+  WRITE_ASCII 0x280 ~wolfwegl~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~wolfwi.cre~ ~override~
+  WRITE_ASCII 0x280 ~wolfwi~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~worg.cre~ ~override~
+  WRITE_ASCII 0x280 ~worg~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~xvart.cre~ ~override~
+  WRITE_ASCII 0x280 ~xvart~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~xvart_a.cre~ ~override~
+  WRITE_ASCII 0x280 ~xvart_a~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~xvart_b.cre~ ~override~
+  WRITE_ASCII 0x280 ~xvart_b~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~xvart_c.cre~ ~override~
+  WRITE_ASCII 0x280 ~xvart_c~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~zombie.cre~ ~override~
+  WRITE_ASCII 0x280 ~zombie~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~zombie_a.cre~ ~override~
+  WRITE_ASCII 0x280 ~zombie_a~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~zombie_b.cre~ ~override~
+  WRITE_ASCII 0x280 ~zombie_b~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~zombie_c.cre~ ~override~
+  WRITE_ASCII 0x280 ~zombie_c~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~zombie_d.cre~ ~override~
+  WRITE_ASCII 0x280 ~zombie_d~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~zombie_e.cre~ ~override~
+  WRITE_ASCII 0x280 ~zombie_e~ #32 // dv
+BUT_ONLY_IF_IT_CHANGES
+
+//added if statements for script compile for difficulty option
+ACTION_IF ("spawntype" = 1) THEN BEGIN
 COMPILE ~bgeespawn/scripts~ EVALUATE_BUFFER
+END
+ACTION_IF ("spawntype" = 2) THEN BEGIN
+COMPILE ~bgeespawn/scripts2~ EVALUATE_BUFFER
+END

@@ -1,0 +1,296 @@
+IF
+  Global("AYSpawnRandomBeenSetAR43002","%NorthNashkelRoad%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR43002","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR43002_2","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43002","%NorthNashkelRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR43002_2","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43002","%NorthNashkelRoad%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR43002_1","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43002","%NorthNashkelRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR43002_1","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43002","%NorthNashkelRoad%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR43002_0","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomBeenSetAR43002","%NorthNashkelRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR43002_0","%NorthNashkelRoad%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR43002","%NorthNashkelRoad%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_2","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_2","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_2","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_2","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_2","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    CreateCreature("BANDIT",[2109.1655],0)  // ~Bandit~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_1","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+	CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+	CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+  Global("AYSpawnRandomSetAR43002_0","%NorthNashkelRoad%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+	CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+	CreateCreature("KOBOLD_D",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("KOBOLD_D",75)
+
+  !Range("KOBOLA_C",75)
+
+  !Range("BANDIT",75)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+  GlobalTimerExpired("AYSpawnTimerAR43002","%NorthNashkelRoad%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR43002","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43002_2","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43002_1","%NorthNashkelRoad%",0)
+    SetGlobal("AYSpawnRandomSetAR43002_0","%NorthNashkelRoad%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR43002","%NorthNashkelRoad%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR43002","%NorthNashkelRoad%",1)
+    CreateCreature("KOBOLA_C",[2109.1655],0)  // ~Kobold~
+    SetGlobalTimer("AYSpawnTimerAR43002","%NorthNashkelRoad%",AY_SPAWN_TIMER)
+END
+

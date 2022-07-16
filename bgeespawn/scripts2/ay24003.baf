@@ -1,0 +1,196 @@
+IF
+  Global("AYSpawnRandomBeenSetAR24003","%Peldvale%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR24003","%Peldvale%",1)
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR24003_1","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR24003","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24003_1","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24003","%Peldvale%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR24003_0","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR24003","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR24003_0","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR24003","%Peldvale%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+	CreateCreature("SPIDGI",[3859.2696],0)  // ~Giant Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR24003_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("SPIDHU",75)
+
+  !Range("SPIDGI",75)
+  Global("AYSpawnResetAR24003","%Peldvale%",1)
+  GlobalTimerExpired("AYSpawnTimerAR24003","%Peldvale%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR24003","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR24003_1","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR24003_0","%Peldvale%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR24003","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR24003","%Peldvale%",1)
+    CreateCreature("SPIDHU",[3859.2696],0)  // ~Huge Spider~
+    SetGlobalTimer("AYSpawnTimerAR24003","%Peldvale%",AY_SPAWN_TIMER)
+END
+

@@ -1,0 +1,108 @@
+IF
+  Global("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(1,1)
+  Global("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
+    CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+    SetGlobalTimer("AYSpawnTimerAR05114","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
+    CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+    SetGlobalTimer("AYSpawnTimerAR05114","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
+    CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+	CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+    SetGlobalTimer("AYSpawnTimerAR05114","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
+    CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+	CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+	CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+    SetGlobalTimer("AYSpawnTimerAR05114","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
+  Global("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
+    CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+	CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+	CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+	CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+    SetGlobalTimer("AYSpawnTimerAR05114","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("BATTHO",75)
+  Global("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
+  GlobalTimerExpired("AYSpawnTimerAR05114","%DurlagsTower_D1%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR05114","%DurlagsTower_D1%",0)
+    SetGlobal("AYSpawnRandomSetAR05114_0","%DurlagsTower_D1%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR05114","%DurlagsTower_D1%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR05114","%DurlagsTower_D1%",1)
+    CreateCreature("BATTHO",[2028.443],0)  // ~Battle Horror~
+    SetGlobalTimer("AYSpawnTimerAR05114","%DurlagsTower_D1%",AY_SPAWN_TIMER)
+END
+

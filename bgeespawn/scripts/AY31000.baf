@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -52,7 +52,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -65,7 +65,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -79,7 +79,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -94,7 +94,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -109,7 +109,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -125,7 +125,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -141,7 +141,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -158,7 +158,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31000_2","%ShipwrecksCoast%",1)
@@ -175,7 +175,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31000_1","%ShipwrecksCoast%",1)
@@ -187,7 +187,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -201,7 +201,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -216,7 +216,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -232,7 +232,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -249,7 +249,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31000_1","%ShipwrecksCoast%",1)
@@ -266,7 +266,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31000_0","%ShipwrecksCoast%",1)
@@ -278,7 +278,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -293,7 +293,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
@@ -310,7 +310,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31000_0","%ShipwrecksCoast%",1)
@@ -327,13 +327,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("WOLF",60)
+  !Range("WOLF",75)
 
-  !Range("OGREGR",60)
+  !Range("OGREGR",75)
 
-  !Range("OGREBERZ",60)
+  !Range("OGREBERZ",75)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",1)
   GlobalTimerExpired("AYSpawnTimerAR31000","%ShipwrecksCoast%")
 THEN
@@ -346,7 +346,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR31000","%ShipwrecksCoast%",0)
 THEN
   RESPONSE #100

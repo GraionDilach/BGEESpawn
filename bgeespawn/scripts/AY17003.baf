@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
   Global("AYSpawnRandomSetAR17003_2","%CloakwoodWyverns%",1)
@@ -51,7 +51,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
@@ -65,7 +65,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
@@ -80,7 +80,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
@@ -96,7 +96,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
   Global("AYSpawnRandomSetAR17003_2","%CloakwoodWyverns%",1)
@@ -113,7 +113,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
   Global("AYSpawnRandomSetAR17003_1","%CloakwoodWyverns%",1)
@@ -125,7 +125,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
@@ -140,7 +140,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
@@ -157,7 +157,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
   Global("AYSpawnRandomSetAR17003_1","%CloakwoodWyverns%",1)
@@ -174,7 +174,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
   Global("AYSpawnRandomSetAR17003_0","%CloakwoodWyverns%",1)
@@ -188,7 +188,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
   Global("AYSpawnRandomSetAR17003_0","%CloakwoodWyverns%",1)
@@ -205,13 +205,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("TASLOI",60)
+  !Range("TASLOI",75)
 
-  !Range("WOLF",60)
+  !Range("WOLF",75)
 
-  !Range("WORG",60)
+  !Range("WORG",75)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",1)
   GlobalTimerExpired("AYSpawnTimerAR17003","%CloakwoodWyverns%")
 THEN
@@ -224,7 +224,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR17003","%CloakwoodWyverns%",0)
 THEN
   RESPONSE #100

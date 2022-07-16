@@ -1,0 +1,190 @@
+IF
+  Global("AYSpawnRandomBeenSetAR15004","%IsleofBalduranN%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR15004","%IsleofBalduranN%",1)
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR15004_1","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomBeenSetAR15004","%IsleofBalduranN%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR15004_1","%IsleofBalduranN%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR15004","%IsleofBalduranN%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR15004_0","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomBeenSetAR15004","%IsleofBalduranN%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR15004_0","%IsleofBalduranN%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR15004","%IsleofBalduranN%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_1","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_1","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_1","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_1","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_1","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    CreateCreature("WOLFDR",[1024.2752],0)  // ~Dread Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_0","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_0","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_0","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_0","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+  Global("AYSpawnRandomSetAR15004_0","%IsleofBalduranN%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  !Range("WOLFDI",75)
+  !Range("WOLFDR",75)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+  GlobalTimerExpired("AYSpawnTimerAR15004","%IsleofBalduranN%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR15004","%IsleofBalduranN%",0)
+    SetGlobal("AYSpawnRandomSetAR15004_1","%IsleofBalduranN%",0)
+    SetGlobal("AYSpawnRandomSetAR15004_0","%IsleofBalduranN%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR15004","%IsleofBalduranN%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR15004","%IsleofBalduranN%",1)
+    CreateCreature("WOLFDI",[1024.2752],0)  // ~Dire Wolf~
+    SetGlobalTimer("AYSpawnTimerAR15004","%IsleofBalduranN%",AY_SPAWN_TIMER)
+END
+

@@ -1,0 +1,189 @@
+IF
+  Global("AYSpawnRandomBeenSetAR20000","%IsleofBalduranS%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR20000","%IsleofBalduranS%",1)
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  Global("AYSpawnRandomSetAR20000_1","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomBeenSetAR20000","%IsleofBalduranS%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR20000_1","%IsleofBalduranS%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR20000","%IsleofBalduranS%",1)
+END
+
+IF
+  RandomNum(2,2)
+  Global("AYSpawnRandomSetAR20000_0","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomBeenSetAR20000","%IsleofBalduranS%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR20000_0","%IsleofBalduranS%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR20000","%IsleofBalduranS%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_1","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_1","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_1","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_1","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_1","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_0","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_0","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_0","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_0","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+  Global("AYSpawnRandomSetAR20000_0","%IsleofBalduranS%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+	CreateCreature("BEARBL",[704.320],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+  
+  !Range("BEARBL",75)
+  !Range("BEARBR",75)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+  GlobalTimerExpired("AYSpawnTimerAR20000","%IsleofBalduranS%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR20000","%IsleofBalduranS%",0)
+    SetGlobal("AYSpawnRandomSetAR20000_1","%IsleofBalduranS%",0)
+    SetGlobal("AYSpawnRandomSetAR20000_0","%IsleofBalduranS%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR20000","%IsleofBalduranS%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR20000","%IsleofBalduranS%",1)
+    CreateCreature("BEARBR",[704.320],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR20000","%IsleofBalduranS%",AY_SPAWN_TIMER)
+END
+

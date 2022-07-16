@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -52,7 +52,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -65,7 +65,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -78,7 +78,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -92,7 +92,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -106,7 +106,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -120,7 +120,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -135,7 +135,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -150,7 +150,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -165,7 +165,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
   Global("AYSpawnRandomSetAR15000_1","%IsleofBalduranN%",1)
@@ -179,7 +179,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
   Global("AYSpawnRandomSetAR15000_0","%IsleofBalduranN%",1)
@@ -191,7 +191,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -206,7 +206,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
@@ -223,7 +223,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
   Global("AYSpawnRandomSetAR15000_0","%IsleofBalduranN%",1)
@@ -240,13 +240,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("WOLFWEGL",60)
+  !Range("WOLFWEGL",75)
 
-  !Range("WOLF",60)
+  !Range("WOLF",75)
 
-  !Range("BEARCA",60)
+  !Range("BEARCA",75)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",1)
   GlobalTimerExpired("AYSpawnTimerAR15000","%IsleofBalduranN%")
 THEN
@@ -259,7 +259,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR15000","%IsleofBalduranN%",0)
 THEN
   RESPONSE #100

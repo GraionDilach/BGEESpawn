@@ -1,0 +1,313 @@
+IF
+  Global("AYSpawnRandomBeenSetAR28004","%CoastWay%",0)
+THEN
+  RESPONSE #0
+    SetGlobal("AYSpawnRandomBeenSetAR28004","%CoastWay%",1)
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR28004_2","%CoastWay%",0)
+  Global("AYSpawnRandomBeenSetAR28004","%CoastWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR28004_2","%CoastWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR28004","%CoastWay%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR28004_1","%CoastWay%",0)
+  Global("AYSpawnRandomBeenSetAR28004","%CoastWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR28004_1","%CoastWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR28004","%CoastWay%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR28004_0","%CoastWay%",0)
+  Global("AYSpawnRandomBeenSetAR28004","%CoastWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR28004_0","%CoastWay%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR28004","%CoastWay%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_2","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_2","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_2","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+	CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_2","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+	CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+	CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_2","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+	CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+	CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    CreateCreature("XVART",[4567.3310],0)  // ~Xvart~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_1","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_1","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_1","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_1","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_1","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_0","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_0","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_0","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_0","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+  Global("AYSpawnRandomSetAR28004_0","%CoastWay%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+	CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GIBBER2",75)
+
+  !Range("XVART",75)
+  Global("AYSpawnResetAR28004","%CoastWay%",1)
+  GlobalTimerExpired("AYSpawnTimerAR28004","%CoastWay%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR28004","%CoastWay%",0)
+    SetGlobal("AYSpawnRandomSetAR28004_2","%CoastWay%",0)
+    SetGlobal("AYSpawnRandomSetAR28004_1","%CoastWay%",0)
+    SetGlobal("AYSpawnRandomSetAR28004_0","%CoastWay%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR28004","%CoastWay%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR28004","%CoastWay%",1)
+    CreateCreature("GIBBER2",[4567.3310],0)  // ~Diseased Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR28004","%CoastWay%",AY_SPAWN_TIMER)
+END
+

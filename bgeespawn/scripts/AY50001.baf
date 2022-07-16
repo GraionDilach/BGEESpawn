@@ -39,7 +39,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_2","%ValleyoftheTombs%",1)
@@ -54,7 +54,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_2","%ValleyoftheTombs%",1)
@@ -71,7 +71,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_1","%ValleyoftheTombs%",1)
@@ -83,7 +83,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
@@ -98,7 +98,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
@@ -114,7 +114,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_1","%ValleyoftheTombs%",1)
@@ -131,7 +131,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_0","%ValleyoftheTombs%",1)
@@ -145,7 +145,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_0","%ValleyoftheTombs%",1)
@@ -162,13 +162,13 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("DOGWI",60)
+  !Range("DOGWI",75)
 
-  !Range("DOGWA",60)
+  !Range("DOGWA",75)
 
-  !Range("KOBOLD_E",60)
+  !Range("KOBOLD_E",75)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",1)
   GlobalTimerExpired("AYSpawnTimerAR50001","%ValleyoftheTombs%")
 THEN
@@ -181,7 +181,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
 THEN
   RESPONSE #100

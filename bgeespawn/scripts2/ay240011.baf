@@ -1,0 +1,288 @@
+IF
+  Global("AYSpawnRandomBeenSetAR240011","%Peldvale%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR240011","%Peldvale%",1)
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR240011_2","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR240011","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR240011_2","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR240011","%Peldvale%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR240011_1","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR240011","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR240011_1","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR240011","%Peldvale%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR240011_0","%Peldvale%",0)
+  Global("AYSpawnRandomBeenSetAR240011","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR240011_0","%Peldvale%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR240011","%Peldvale%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+	CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_2","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    CreateCreature("IRONELIT",[2502.3638],0)  // ~Black Talon Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_1","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    CreateCreature("HOBELITE",[2502.3638],0)  // ~Hobgoblin Elite~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+  Global("AYSpawnRandomSetAR240011_0","%Peldvale%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+	CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("GIBBER",75)
+
+  !Range("HOBELITE",75)
+
+  !Range("IRONELIT",75)
+  Global("AYSpawnResetAR240011","%Peldvale%",1)
+  GlobalTimerExpired("AYSpawnTimerAR240011","%Peldvale%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR240011","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR240011_2","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR240011_1","%Peldvale%",0)
+    SetGlobal("AYSpawnRandomSetAR240011_0","%Peldvale%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR240011","%Peldvale%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR240011","%Peldvale%",1)
+    CreateCreature("GIBBER",[2502.3638],0)  // ~Gibberling~
+    SetGlobalTimer("AYSpawnTimerAR240011","%Peldvale%",AY_SPAWN_TIMER)
+END
+

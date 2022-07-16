@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR53003","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53003_1","%FireLeafForest%",1)
@@ -43,7 +43,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR53003","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53003_1","%FireLeafForest%",1)
@@ -60,7 +60,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR53003","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53003_0","%FireLeafForest%",1)
@@ -75,7 +75,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR53003","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53003_0","%FireLeafForest%",1)
@@ -92,11 +92,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("KOBOLA_E",60)
+  !Range("KOBOLA_E",75)
 
-  !Range("XVART",60)
+  !Range("XVART",75)
   Global("AYSpawnResetAR53003","%FireLeafForest%",1)
   GlobalTimerExpired("AYSpawnTimerAR53003","%FireLeafForest%")
 THEN
@@ -108,7 +108,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR53003","%FireLeafForest%",0)
 THEN
   RESPONSE #100

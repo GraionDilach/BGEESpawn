@@ -1,0 +1,269 @@
+IF
+  Global("AYSpawnRandomBeenSetAR47004","%XvartVillage%",0)
+THEN
+  RESPONSE #NOSPAWN
+    SetGlobal("AYSpawnRandomBeenSetAR47004","%XvartVillage%",1)
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+  RESPONSE #GOSPAWN
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  Global("AYSpawnRandomSetAR47004_2","%XvartVillage%",0)
+  Global("AYSpawnRandomBeenSetAR47004","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR47004_2","%XvartVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR47004","%XvartVillage%",1)
+END
+
+IF
+  RandomNum(3,2)
+  Global("AYSpawnRandomSetAR47004_1","%XvartVillage%",0)
+  Global("AYSpawnRandomBeenSetAR47004","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR47004_1","%XvartVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR47004","%XvartVillage%",1)
+END
+
+IF
+  RandomNum(3,3)
+  Global("AYSpawnRandomSetAR47004_0","%XvartVillage%",0)
+  Global("AYSpawnRandomBeenSetAR47004","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnRandomSetAR47004_0","%XvartVillage%",1)
+    SetGlobal("AYSpawnRandomBeenSetAR47004","%XvartVillage%",1)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARCA",[793.2728],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARCA",[793.2728],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARCA",[793.2728],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[793.2728],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARCA",[793.2728],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[793.2728],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_2","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARCA",[793.2728],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[793.2728],0)  // ~Cave Bear~
+    CreateCreature("BEARCA",[793.2728],0)  // ~Cave Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_1","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    CreateCreature("BEARBR",[793.2728],0)  // ~Brown Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(1)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(2)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(3)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(4)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  Range([PC],75)
+  Difficulty(5)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+  Global("AYSpawnRandomSetAR47004_0","%XvartVillage%",1)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+
+IF
+  !Range([PC],75)
+
+  !Range("BEARBL",75)
+
+  !Range("BEARBR",75)
+
+  !Range("BEARCA",75)
+  Global("AYSpawnResetAR47004","%XvartVillage%",1)
+  GlobalTimerExpired("AYSpawnTimerAR47004","%XvartVillage%")
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomBeenSetAR47004","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR47004_2","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR47004_1","%XvartVillage%",0)
+    SetGlobal("AYSpawnRandomSetAR47004_0","%XvartVillage%",0)
+END
+
+IF
+  Range([PC],75)
+  Global("AYSpawnResetAR47004","%XvartVillage%",0)
+THEN
+  RESPONSE #100
+    SetGlobal("AYSpawnResetAR47004","%XvartVillage%",1)
+    CreateCreature("BEARBL",[793.2728],0)  // ~Black Bear~
+    SetGlobalTimer("AYSpawnTimerAR47004","%XvartVillage%",AY_SPAWN_TIMER)
+END
+

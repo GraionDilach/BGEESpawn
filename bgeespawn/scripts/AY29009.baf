@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR29009","%Larswood%",0)
   Global("AYSpawnRandomSetAR29009_1","%Larswood%",1)
@@ -41,7 +41,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR29009","%Larswood%",0)
@@ -55,7 +55,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR29009","%Larswood%",0)
@@ -70,7 +70,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR29009","%Larswood%",0)
@@ -86,7 +86,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR29009","%Larswood%",0)
@@ -103,7 +103,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(5)
   Global("AYSpawnResetAR29009","%Larswood%",0)
   Global("AYSpawnRandomSetAR29009_1","%Larswood%",1)
@@ -120,7 +120,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR29009","%Larswood%",0)
   Global("AYSpawnRandomSetAR29009_0","%Larswood%",1)
@@ -133,7 +133,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR29009","%Larswood%",0)
@@ -149,7 +149,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   LevelPartyGT(2)
   Global("AYSpawnResetAR29009","%Larswood%",0)
   Global("AYSpawnRandomSetAR29009_0","%Larswood%",1)
@@ -166,11 +166,11 @@ THEN
 END
 
 IF
-  !Range([PC],60)
+  !Range([PC],75)
 
-  !Range("BANDIT",60)
+  !Range("BANDIT",75)
 
-  !Range("IRONELIT",60)
+  !Range("IRONELIT",75)
   Global("AYSpawnResetAR29009","%Larswood%",1)
   GlobalTimerExpired("AYSpawnTimerAR29009","%Larswood%")
 THEN
@@ -182,7 +182,7 @@ THEN
 END
 
 IF
-  Range([PC],60)
+  Range([PC],75)
   Global("AYSpawnResetAR29009","%Larswood%",0)
 THEN
   RESPONSE #100
