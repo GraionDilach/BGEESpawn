@@ -4,9 +4,10 @@
 
 BACKUP ~bgeespawn/backup~
 
-AUTHOR ~AstroBryGuy~
+// AUTHOR ~AstroBryGuy~
+SUPPORT ~https://forums.beamdog.com/discussion/34840~
 
-VERSION ~v0.6~
+VERSION ~v0.7~
 
 README ~bgeespawn/readme.txt~
 
@@ -132,6 +133,7 @@ END
 BEGIN ~BGEE Leveling Spawns Mod~
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) ~Baldur's Gate Enhanced Edition / EET could not be detected.~
 DESIGNATED 101
+LABEL AY-BGEESPAWN
 
 ACTION_IF (GAME_IS ~bgee~) BEGIN
 	INCLUDE ~bgeespawn/lib/liam_bgee_vars.tpa~
