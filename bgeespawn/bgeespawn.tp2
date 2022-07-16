@@ -139,7 +139,12 @@ END ELSE ACTION_IF (GAME_IS ~eet~) BEGIN
 	INCLUDE ~bgeespawn/lib/eet_cpmvars.tpa~
 END
 
-  OUTER_SPRINT ~spawntimer~ ~placeholder_value~
+ACTION_IF !(FILE_EXISTS ~override/ay_bgeespawn.ini~) BEGIN
+	COPY ~BGEESpawn/ini/ay_bgeespawn.ini~ ~override~
+END
+
+INCLUDE ~override/ay_bgeespawn.ini~
+
   OUTER_WHILE (!(IS_AN_INT ~spawntimer~) OR (~spawntimer~ > 0x9) OR (~spawntimer~ < 0x0)) BEGIN
     PRINT ~Please choose one of the following options for the time interval between spawn point resets:
 [1] 4 HOURS of game time between spawnings
@@ -198,7 +203,6 @@ Note: Game default spawn point reset timing is approximately 16 hours.~
         PRINT ~1000 days of game time between spawns~
         END
 
-  OUTER_SPRINT ~spawnchance~ ~placeholder_value~
   OUTER_WHILE (!(IS_AN_INT ~spawnchance~) OR (~spawnchance~ > 0x9) OR (~spawnchance~ < 0x0)) BEGIN
     PRINT ~Please choose one of the following options for the probability of spawn point being populated when triggered:
 [1] 10% chance of spawning
@@ -268,7 +272,6 @@ Note: Game defaults are 85-100%, depending on area.~
         END
 		
 //added for difficulty based option
-  OUTER_SPRINT ~spawntype~ ~placeholder_value~
   OUTER_WHILE (!(IS_AN_INT ~spawntype~) OR (~spawntype~ > 0x9) OR (~spawntype~ < 0x0)) BEGIN
     PRINT ~Please choose one of the following options for the type of spawn system:
 [1] Spawns are based on average party level
