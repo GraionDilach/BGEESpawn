@@ -343,9 +343,11 @@ COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_DIRECTORY%~
           READ_SHORT 0x80 vertex_num
           READ_SHORT 0xa4 door_num
 
-          //deactivate spawn point using its flag
-          FOR (n=0;n<"%spawn_num%";n+=1) BEGIN
-            WRITE_SHORT ("%spawn_off%" + "%n%"*0xc8 + 0x86) 0
+          //deactivate spawn point using its flag when set
+          PATCH_IF ("disablevanillaspawns" = 1) BEGIN
+            FOR (n=0;n<"%spawn_num%";n+=1) BEGIN
+              WRITE_SHORT ("%spawn_off%" + "%n%"*0xc8 + 0x86) 0
+            END
           END
 
           //update offsets for info information insert first
