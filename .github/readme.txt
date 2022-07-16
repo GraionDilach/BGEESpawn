@@ -2,13 +2,13 @@ BGEE Leveled Spawns Mod
 by AstroBryGuy (http://forum.baldursgate.com/profile/14405/AstroBryGuy) & others
 Version 0.7
 
-BGEE Leveled Spawns replaces the default spawns with spawns that scale in difficulty with the average level of the party or with the game difficulty setting.  Each spawn point will spawn groups of 1-8 creatures, depending on party level andcreature strength or game difficulty setting.
+BGEE Leveled Spawns replaces the default spawns with spawns that scale in difficulty with the average level of the party or with the game difficulty setting.  Each spawn point will spawn groups of 1-8 creatures, depending on party level and creature strength or game difficulty setting.
 
 The user can select the time interval between spawnings as well as the probability that a triggering of a spawn point will result in that point being populated.  
 
 The first setting is based on the "Tutu-style leveled spawns" component of the BGT Tweaks mod (http://readme.spellholdstudios.net/BGTTweakReadme.htm).  However, the spawn point scripts have been greatly simplified.  First, party-size checks have been removed.  Level checks above 12th level have also been removed.
 
-The second setting is basically a copy of the spawn system from the easytutu mod for BG1. It's entirely based on difficulty leveled and has a set amount of enemies per level per spawn. Everything else about this setting is the same as the first, only the trigger for and amount of enemies per spawn have changed.
+The second setting is basically a copy of the spawn system from the EasyTutu mod for BG1. It's entirely based on difficulty leveled and has a set amount of enemies per level per spawn. Everything else about this setting is the same as the first, only the trigger for and amount of enemies per spawn have changed.
 
 Additional inspiration has come from the Tutu spawn system by CamDawg and the EasyTutu Spawn Randomizer by Maccready.
 
@@ -56,6 +56,7 @@ Notes:
 
 [1] Spawns are based on average party level
 [2] Spawns are base on game difficulty setting (easytutu style)
+
 INSTALLATION
 
 Windows
@@ -68,7 +69,7 @@ If properly extracted, you should have a bgeespawn folder, setup-bgeespawn, and 
 Linux
 Download the latest version of WeiDU for Linux from WeiDU.org and copy weidu, weinstall, and tolower to /usr/bin. Then, open a terminal, cd to your BGEE installation directory, run 'tolower' and answer Y to both queries. Run 'weinstall setup-bgeespawn' in your game folder to install the mod.
 
-If you have installation problems or encounter any bugs, please contact me at the BGEE Forums (http://forum.baldursgate.com/).
+If you have installation problems or encounter any bugs, please report it at the Beamdog thread https://forums.beamdog.com/discussion/34840.
 
 
 COMPATIBILITY
@@ -125,5 +126,7 @@ Version 0.5: Attempt increasing the range checks, added death variables, WeiDU u
 Version 0.4: Added native Baldur's Gate: Enhanced Edition Trilogy (EET) support
 
 Version 0.3: Added notes regarding game defaults, update spawn trigger reset timings to include selection equivalent to game default, updating spawning probability values to give more options at high probabilities
+
 Version 0.2: Install bug fixes, update spawn trigger reset timings.
+
 Version 0.1: Initial public release
