@@ -39,7 +39,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_2","%ValleyoftheTombs%",1)
@@ -52,7 +58,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_2","%ValleyoftheTombs%",1)
@@ -67,7 +79,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_2","%ValleyoftheTombs%",1)
@@ -84,7 +102,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_2","%ValleyoftheTombs%",1)
@@ -102,7 +126,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_2","%ValleyoftheTombs%",1)
@@ -121,7 +151,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_1","%ValleyoftheTombs%",1)
@@ -134,7 +170,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_1","%ValleyoftheTombs%",1)
@@ -149,7 +191,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_1","%ValleyoftheTombs%",1)
@@ -166,7 +214,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_1","%ValleyoftheTombs%",1)
@@ -184,7 +238,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_1","%ValleyoftheTombs%",1)
@@ -203,7 +263,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_0","%ValleyoftheTombs%",1)
@@ -216,7 +282,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_0","%ValleyoftheTombs%",1)
@@ -231,7 +303,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_0","%ValleyoftheTombs%",1)
@@ -248,7 +326,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_0","%ValleyoftheTombs%",1)
@@ -266,7 +350,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
   Global("AYSpawnRandomSetAR50001_0","%ValleyoftheTombs%",1)
@@ -285,7 +375,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("DOGWI",75)
 
@@ -304,7 +400,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR50001","%ValleyoftheTombs%",0)
 THEN
   RESPONSE #100

@@ -49,7 +49,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_3","%SouthBeregostRoad%",1)
@@ -61,7 +67,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_3","%SouthBeregostRoad%",1)
@@ -73,7 +85,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_3","%SouthBeregostRoad%",1)
@@ -86,7 +104,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_3","%SouthBeregostRoad%",1)
@@ -100,7 +124,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_3","%SouthBeregostRoad%",1)
@@ -115,7 +145,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_2","%SouthBeregostRoad%",1)
@@ -127,7 +163,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_2","%SouthBeregostRoad%",1)
@@ -140,7 +182,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_2","%SouthBeregostRoad%",1)
@@ -154,7 +202,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_2","%SouthBeregostRoad%",1)
@@ -169,7 +223,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_2","%SouthBeregostRoad%",1)
@@ -185,7 +245,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_1","%SouthBeregostRoad%",1)
@@ -198,7 +264,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_1","%SouthBeregostRoad%",1)
@@ -213,7 +285,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_1","%SouthBeregostRoad%",1)
@@ -230,7 +308,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_1","%SouthBeregostRoad%",1)
@@ -248,7 +332,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_1","%SouthBeregostRoad%",1)
@@ -266,7 +356,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_0","%SouthBeregostRoad%",1)
@@ -279,7 +375,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_0","%SouthBeregostRoad%",1)
@@ -294,7 +396,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_0","%SouthBeregostRoad%",1)
@@ -311,7 +419,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_0","%SouthBeregostRoad%",1)
@@ -329,7 +443,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38000_0","%SouthBeregostRoad%",1)
@@ -348,7 +468,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("GIBBER",75)
 
@@ -370,7 +496,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR38000","%SouthBeregostRoad%",0)
 THEN
   RESPONSE #100

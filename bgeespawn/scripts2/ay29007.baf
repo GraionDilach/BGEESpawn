@@ -19,7 +19,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR29007","%Larswood%",0)
   Global("AYSpawnRandomSetAR29007_0","%Larswood%",1)
@@ -32,7 +38,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR29007","%Larswood%",0)
   Global("AYSpawnRandomSetAR29007_0","%Larswood%",1)
@@ -47,7 +59,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR29007","%Larswood%",0)
   Global("AYSpawnRandomSetAR29007_0","%Larswood%",1)
@@ -63,7 +81,13 @@ THEN
     SetGlobalTimer("AYSpawnTimerAR29007","%Larswood%",AY_SPAWN_TIMER)
 END
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR29007","%Larswood%",0)
   Global("AYSpawnRandomSetAR29007_0","%Larswood%",1)
@@ -80,7 +104,13 @@ THEN
     SetGlobalTimer("AYSpawnTimerAR29007","%Larswood%",AY_SPAWN_TIMER)
 END
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR29007","%Larswood%",0)
   Global("AYSpawnRandomSetAR29007_0","%Larswood%",1)
@@ -99,7 +129,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("GIBBER",75)
   Global("AYSpawnResetAR29007","%Larswood%",1)
@@ -112,7 +148,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR29007","%Larswood%",0)
 THEN
   RESPONSE #100

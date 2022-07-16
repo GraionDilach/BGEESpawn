@@ -29,7 +29,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_1","%MutaminsGarden%",1)
@@ -41,7 +47,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_1","%MutaminsGarden%",1)
@@ -53,7 +65,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_1","%MutaminsGarden%",1)
@@ -66,7 +84,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_1","%MutaminsGarden%",1)
@@ -79,7 +103,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_1","%MutaminsGarden%",1)
@@ -93,7 +123,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_0","%MutaminsGarden%",1)
@@ -105,7 +141,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_0","%MutaminsGarden%",1)
@@ -118,7 +160,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_0","%MutaminsGarden%",1)
@@ -132,7 +180,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_0","%MutaminsGarden%",1)
@@ -147,7 +201,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
   Global("AYSpawnRandomSetAR35002_0","%MutaminsGarden%",1)
@@ -163,7 +223,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("BEARBL",75)
 
@@ -179,7 +245,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR35002","%MutaminsGarden%",0)
 THEN
   RESPONSE #100

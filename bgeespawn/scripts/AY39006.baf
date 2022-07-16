@@ -29,7 +29,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR39006","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39006_1","%Ulcaster%",1)
@@ -44,7 +50,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR39006","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39006_1","%Ulcaster%",1)
@@ -61,7 +73,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR39006","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39006_0","%Ulcaster%",1)
@@ -76,7 +94,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR39006","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR39006_0","%Ulcaster%",1)
@@ -93,7 +117,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("KOBOLA_D",75)
 
@@ -109,7 +139,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR39006","%Ulcaster%",0)
 THEN
   RESPONSE #100

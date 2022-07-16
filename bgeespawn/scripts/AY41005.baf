@@ -39,7 +39,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -52,7 +58,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -65,7 +77,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -79,7 +97,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -93,7 +117,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -108,7 +138,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -123,7 +159,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -139,7 +181,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -155,7 +203,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -172,7 +226,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -189,7 +249,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
   Global("AYSpawnRandomSetAR41005_2","%ArchaeologicalSite%",1)
@@ -206,7 +272,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -219,7 +291,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -233,7 +311,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -248,7 +332,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -264,7 +354,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
@@ -281,7 +377,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(6)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
   Global("AYSpawnRandomSetAR41005_1","%ArchaeologicalSite%",1)
@@ -298,7 +400,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
   Global("AYSpawnRandomSetAR41005_0","%ArchaeologicalSite%",1)
@@ -312,7 +420,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
   Global("AYSpawnRandomSetAR41005_0","%ArchaeologicalSite%",1)
@@ -329,7 +443,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("TASLOI",75)
 
@@ -348,7 +468,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR41005","%ArchaeologicalSite%",0)
 THEN
   RESPONSE #100

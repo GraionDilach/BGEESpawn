@@ -49,7 +49,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
@@ -62,7 +68,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
@@ -76,7 +88,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
@@ -91,7 +109,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
@@ -107,7 +131,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
@@ -124,7 +154,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(6)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
   Global("AYSpawnRandomSetAR47003_3","%XvartVillage%",1)
@@ -141,7 +177,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
   Global("AYSpawnRandomSetAR47003_2","%XvartVillage%",1)
@@ -153,7 +195,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
@@ -168,7 +216,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
@@ -185,7 +239,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
   Global("AYSpawnRandomSetAR47003_2","%XvartVillage%",1)
@@ -202,7 +262,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
   Global("AYSpawnRandomSetAR47003_1","%XvartVillage%",1)
@@ -214,7 +280,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(1)
   LevelPartyLT(3)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
@@ -229,7 +301,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
@@ -246,7 +324,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(3)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
   Global("AYSpawnRandomSetAR47003_1","%XvartVillage%",1)
@@ -263,7 +347,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyLT(2)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
   Global("AYSpawnRandomSetAR47003_0","%XvartVillage%",1)
@@ -277,7 +367,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(1)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
   Global("AYSpawnRandomSetAR47003_0","%XvartVillage%",1)
@@ -294,7 +390,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("XVART",75)
 
@@ -314,7 +416,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR47003","%XvartVillage%",0)
 THEN
   RESPONSE #100

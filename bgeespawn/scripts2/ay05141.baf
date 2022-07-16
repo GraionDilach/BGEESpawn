@@ -19,7 +19,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR05141","%DurlagsTower_D4%",0)
   Global("AYSpawnRandomSetAR05141_0","%DurlagsTower_D4%",1)
@@ -31,7 +37,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR05141","%DurlagsTower_D4%",0)
   Global("AYSpawnRandomSetAR05141_0","%DurlagsTower_D4%",1)
@@ -43,7 +55,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR05141","%DurlagsTower_D4%",0)
   Global("AYSpawnRandomSetAR05141_0","%DurlagsTower_D4%",1)
@@ -56,7 +74,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR05141","%DurlagsTower_D4%",0)
   Global("AYSpawnRandomSetAR05141_0","%DurlagsTower_D4%",1)
@@ -70,7 +94,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR05141","%DurlagsTower_D4%",0)
   Global("AYSpawnRandomSetAR05141_0","%DurlagsTower_D4%",1)
@@ -85,7 +115,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("GHOULLOR",75)
   Global("AYSpawnResetAR05141","%DurlagsTower_D4%",1)
@@ -98,7 +134,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR05141","%DurlagsTower_D4%",0)
 THEN
   RESPONSE #100

@@ -19,7 +19,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR52011","%FirewineRuins%",0)
   Global("AYSpawnRandomSetAR52011_0","%FirewineRuins%",1)
@@ -31,7 +37,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR52011","%FirewineRuins%",0)
   Global("AYSpawnRandomSetAR52011_0","%FirewineRuins%",1)
@@ -44,7 +56,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR52011","%FirewineRuins%",0)
   Global("AYSpawnRandomSetAR52011_0","%FirewineRuins%",1)
@@ -58,7 +76,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR52011","%FirewineRuins%",0)
   Global("AYSpawnRandomSetAR52011_0","%FirewineRuins%",1)
@@ -73,7 +97,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR52011","%FirewineRuins%",0)
   Global("AYSpawnRandomSetAR52011_0","%FirewineRuins%",1)
@@ -89,7 +119,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("KOBCOMM",75)
   Global("AYSpawnResetAR52011","%FirewineRuins%",1)
@@ -102,7 +138,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR52011","%FirewineRuins%",0)
 THEN
   RESPONSE #100

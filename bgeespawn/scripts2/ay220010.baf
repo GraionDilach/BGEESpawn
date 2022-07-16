@@ -39,7 +39,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_2","%CloakwoodLodge%",1)
@@ -51,7 +57,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_2","%CloakwoodLodge%",1)
@@ -63,7 +75,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_2","%CloakwoodLodge%",1)
@@ -76,7 +94,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_2","%CloakwoodLodge%",1)
@@ -90,7 +114,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_2","%CloakwoodLodge%",1)
@@ -105,7 +135,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_1","%CloakwoodLodge%",1)
@@ -118,7 +154,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_1","%CloakwoodLodge%",1)
@@ -133,7 +175,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_1","%CloakwoodLodge%",1)
@@ -150,7 +198,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_1","%CloakwoodLodge%",1)
@@ -168,7 +222,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_1","%CloakwoodLodge%",1)
@@ -187,7 +247,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_0","%CloakwoodLodge%",1)
@@ -199,7 +265,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_0","%CloakwoodLodge%",1)
@@ -211,7 +283,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_0","%CloakwoodLodge%",1)
@@ -224,7 +302,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_0","%CloakwoodLodge%",1)
@@ -238,7 +322,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
   Global("AYSpawnRandomSetAR220010_0","%CloakwoodLodge%",1)
@@ -253,7 +343,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("WOLF",75)
 
@@ -272,7 +368,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR220010","%CloakwoodLodge%",0)
 THEN
   RESPONSE #100

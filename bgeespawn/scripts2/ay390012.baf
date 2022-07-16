@@ -49,7 +49,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_3","%Ulcaster%",1)
@@ -61,7 +67,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_3","%Ulcaster%",1)
@@ -73,7 +85,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_3","%Ulcaster%",1)
@@ -86,7 +104,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_3","%Ulcaster%",1)
@@ -100,7 +124,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_3","%Ulcaster%",1)
@@ -115,7 +145,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_2","%Ulcaster%",1)
@@ -128,7 +164,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_2","%Ulcaster%",1)
@@ -141,7 +183,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_2","%Ulcaster%",1)
@@ -155,7 +203,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_2","%Ulcaster%",1)
@@ -170,7 +224,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_2","%Ulcaster%",1)
@@ -186,7 +246,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_1","%Ulcaster%",1)
@@ -198,7 +264,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_1","%Ulcaster%",1)
@@ -211,7 +283,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_1","%Ulcaster%",1)
@@ -225,7 +303,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_1","%Ulcaster%",1)
@@ -240,7 +324,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_1","%Ulcaster%",1)
@@ -256,7 +346,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_0","%Ulcaster%",1)
@@ -269,7 +365,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_0","%Ulcaster%",1)
@@ -284,7 +386,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_0","%Ulcaster%",1)
@@ -300,7 +408,13 @@ THEN
     SetGlobalTimer("AYSpawnTimerAR390012","%Ulcaster%",AY_SPAWN_TIMER)
 END
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_0","%Ulcaster%",1)
@@ -317,7 +431,13 @@ THEN
     SetGlobalTimer("AYSpawnTimerAR390012","%Ulcaster%",AY_SPAWN_TIMER)
 END
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
   Global("AYSpawnRandomSetAR390012_0","%Ulcaster%",1)
@@ -336,7 +456,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("HOBGOB_D",75)
 
@@ -358,7 +484,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR390012","%Ulcaster%",0)
 THEN
   RESPONSE #100

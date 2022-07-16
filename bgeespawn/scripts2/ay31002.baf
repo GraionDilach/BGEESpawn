@@ -49,7 +49,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_3","%ShipwrecksCoast%",1)
@@ -61,7 +67,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_3","%ShipwrecksCoast%",1)
@@ -74,7 +86,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_3","%ShipwrecksCoast%",1)
@@ -88,7 +106,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_3","%ShipwrecksCoast%",1)
@@ -103,7 +127,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_3","%ShipwrecksCoast%",1)
@@ -119,7 +149,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_2","%ShipwrecksCoast%",1)
@@ -131,7 +167,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_2","%ShipwrecksCoast%",1)
@@ -143,7 +185,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_2","%ShipwrecksCoast%",1)
@@ -156,7 +204,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_2","%ShipwrecksCoast%",1)
@@ -170,7 +224,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_2","%ShipwrecksCoast%",1)
@@ -185,7 +245,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_1","%ShipwrecksCoast%",1)
@@ -197,7 +263,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_1","%ShipwrecksCoast%",1)
@@ -209,7 +281,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_1","%ShipwrecksCoast%",1)
@@ -222,7 +300,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_1","%ShipwrecksCoast%",1)
@@ -236,7 +320,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_1","%ShipwrecksCoast%",1)
@@ -251,7 +341,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_0","%ShipwrecksCoast%",1)
@@ -263,7 +359,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_0","%ShipwrecksCoast%",1)
@@ -276,7 +378,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_0","%ShipwrecksCoast%",1)
@@ -290,7 +398,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_0","%ShipwrecksCoast%",1)
@@ -305,7 +419,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
   Global("AYSpawnRandomSetAR31002_0","%ShipwrecksCoast%",1)
@@ -321,7 +441,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("WOLF",75)
 
@@ -343,7 +469,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR31002","%ShipwrecksCoast%",0)
 THEN
   RESPONSE #100

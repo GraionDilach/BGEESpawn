@@ -69,7 +69,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_5","%FishermansLake%",1)
@@ -82,7 +88,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_5","%FishermansLake%",1)
@@ -97,7 +109,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_5","%FishermansLake%",1)
@@ -114,7 +132,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_5","%FishermansLake%",1)
@@ -132,7 +156,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_5","%FishermansLake%",1)
@@ -151,7 +181,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_4","%FishermansLake%",1)
@@ -163,7 +199,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_4","%FishermansLake%",1)
@@ -176,7 +218,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_4","%FishermansLake%",1)
@@ -191,7 +239,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_4","%FishermansLake%",1)
@@ -207,7 +261,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_4","%FishermansLake%",1)
@@ -224,7 +284,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_3","%FishermansLake%",1)
@@ -236,7 +302,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_3","%FishermansLake%",1)
@@ -249,7 +321,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_3","%FishermansLake%",1)
@@ -264,7 +342,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_3","%FishermansLake%",1)
@@ -280,7 +364,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_3","%FishermansLake%",1)
@@ -297,7 +387,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_2","%FishermansLake%",1)
@@ -309,7 +405,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_2","%FishermansLake%",1)
@@ -321,7 +423,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_2","%FishermansLake%",1)
@@ -334,7 +442,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_2","%FishermansLake%",1)
@@ -347,7 +461,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_2","%FishermansLake%",1)
@@ -361,7 +481,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_1","%FishermansLake%",1)
@@ -373,7 +499,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_1","%FishermansLake%",1)
@@ -386,7 +518,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_1","%FishermansLake%",1)
@@ -400,7 +538,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_1","%FishermansLake%",1)
@@ -415,7 +559,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_1","%FishermansLake%",1)
@@ -431,7 +581,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_0","%FishermansLake%",1)
@@ -444,7 +600,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_0","%FishermansLake%",1)
@@ -458,7 +620,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_0","%FishermansLake%",1)
@@ -473,7 +641,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_0","%FishermansLake%",1)
@@ -489,7 +663,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
   Global("AYSpawnRandomSetAR42005_0","%FishermansLake%",1)
@@ -506,7 +686,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("GNOLL",75)
 
@@ -532,7 +718,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR42005","%FishermansLake%",0)
 THEN
   RESPONSE #100

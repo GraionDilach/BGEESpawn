@@ -19,7 +19,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38005_0","%SouthBeregostRoad%",1)
@@ -32,7 +38,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38005_0","%SouthBeregostRoad%",1)
@@ -47,7 +59,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38005_0","%SouthBeregostRoad%",1)
@@ -64,7 +82,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38005_0","%SouthBeregostRoad%",1)
@@ -82,7 +106,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
   Global("AYSpawnRandomSetAR38005_0","%SouthBeregostRoad%",1)
@@ -101,7 +131,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("HOBGOB_B",75)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",1)
@@ -114,7 +150,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR38005","%SouthBeregostRoad%",0)
 THEN
   RESPONSE #100

@@ -39,7 +39,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -52,7 +58,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -65,7 +77,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -79,7 +97,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -93,7 +117,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -107,7 +137,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -122,7 +158,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -137,7 +179,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -153,7 +201,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -169,7 +223,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -185,7 +245,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
   Global("AYSpawnRandomSetAR16000_2","%CloakwoodDruids%",1)
@@ -201,7 +267,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -214,7 +286,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -227,7 +305,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -240,7 +324,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -254,7 +344,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -268,7 +364,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -282,7 +384,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -297,7 +405,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -312,7 +426,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -327,7 +447,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
   Global("AYSpawnRandomSetAR16000_1","%CloakwoodDruids%",1)
@@ -341,7 +467,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(2)
   LevelPartyLT(4)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -354,7 +486,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(3)
   LevelPartyLT(5)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -367,7 +505,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(4)
   LevelPartyLT(6)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -381,7 +525,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(5)
   LevelPartyLT(7)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -395,7 +545,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(6)
   LevelPartyLT(8)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -410,7 +566,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(7)
   LevelPartyLT(9)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -425,7 +587,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(8)
   LevelPartyLT(10)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -441,7 +609,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(9)
   LevelPartyLT(11)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -457,7 +631,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(10)
   LevelPartyLT(12)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -474,7 +654,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(11)
   LevelPartyLT(13)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
@@ -491,7 +677,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   LevelPartyGT(12)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
   Global("AYSpawnRandomSetAR16000_0","%CloakwoodDruids%",1)
@@ -508,7 +700,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("BEARBR",75)
 
@@ -527,7 +725,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR16000","%CloakwoodDruids%",0)
 THEN
   RESPONSE #100

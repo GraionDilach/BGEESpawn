@@ -69,7 +69,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_5","%FireLeafForest%",1)
@@ -82,7 +88,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_5","%FireLeafForest%",1)
@@ -96,7 +108,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_5","%FireLeafForest%",1)
@@ -111,7 +129,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_5","%FireLeafForest%",1)
@@ -127,7 +151,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_5","%FireLeafForest%",1)
@@ -144,7 +174,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_4","%FireLeafForest%",1)
@@ -157,7 +193,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_4","%FireLeafForest%",1)
@@ -172,7 +214,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_4","%FireLeafForest%",1)
@@ -189,7 +237,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_4","%FireLeafForest%",1)
@@ -207,7 +261,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_4","%FireLeafForest%",1)
@@ -226,7 +286,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_3","%FireLeafForest%",1)
@@ -238,7 +304,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_3","%FireLeafForest%",1)
@@ -251,7 +323,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_3","%FireLeafForest%",1)
@@ -265,7 +343,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_3","%FireLeafForest%",1)
@@ -280,7 +364,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_3","%FireLeafForest%",1)
@@ -296,7 +386,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_2","%FireLeafForest%",1)
@@ -309,7 +405,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_2","%FireLeafForest%",1)
@@ -324,7 +426,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_2","%FireLeafForest%",1)
@@ -341,7 +449,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_2","%FireLeafForest%",1)
@@ -359,7 +473,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_2","%FireLeafForest%",1)
@@ -378,7 +498,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_1","%FireLeafForest%",1)
@@ -391,7 +517,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_1","%FireLeafForest%",1)
@@ -406,7 +538,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_1","%FireLeafForest%",1)
@@ -423,7 +561,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_1","%FireLeafForest%",1)
@@ -441,7 +585,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_1","%FireLeafForest%",1)
@@ -460,7 +610,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_0","%FireLeafForest%",1)
@@ -473,7 +629,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_0","%FireLeafForest%",1)
@@ -488,7 +650,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_0","%FireLeafForest%",1)
@@ -505,7 +673,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_0","%FireLeafForest%",1)
@@ -523,7 +697,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
   Global("AYSpawnRandomSetAR53007_0","%FireLeafForest%",1)
@@ -542,7 +722,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("XVART_C",75)
 
@@ -570,7 +756,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR53007","%FireLeafForest%",0)
 THEN
   RESPONSE #100

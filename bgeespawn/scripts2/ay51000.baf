@@ -29,7 +29,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_1","%GnollStronghold%",1)
@@ -42,7 +48,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_1","%GnollStronghold%",1)
@@ -57,7 +69,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_1","%GnollStronghold%",1)
@@ -73,7 +91,13 @@ THEN
     SetGlobalTimer("AYSpawnTimerAR51000","%GnollStronghold%",AY_SPAWN_TIMER)
 END
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_1","%GnollStronghold%",1)
@@ -91,7 +115,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_1","%GnollStronghold%",1)
@@ -110,7 +140,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(1)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_0","%GnollStronghold%",1)
@@ -123,7 +159,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(2)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_0","%GnollStronghold%",1)
@@ -138,7 +180,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(3)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_0","%GnollStronghold%",1)
@@ -155,7 +203,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(4)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_0","%GnollStronghold%",1)
@@ -173,7 +227,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Difficulty(5)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
   Global("AYSpawnRandomSetAR51000_0","%GnollStronghold%",1)
@@ -192,7 +252,13 @@ THEN
 END
 
 IF
-  !Range([PC],75)
+  !OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
 
   !Range("XVART_A",75)
 
@@ -208,7 +274,13 @@ THEN
 END
 
 IF
-  Range([PC],75)
+  OR(6)
+	Range(Player1,75)
+	Range(Player2,75)
+	Range(Player3,75)
+	Range(Player4,75)
+	Range(Player5,75)
+	Range(Player6,75)
   Global("AYSpawnResetAR51000","%GnollStronghold%",0)
 THEN
   RESPONSE #100
